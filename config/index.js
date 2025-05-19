@@ -9,7 +9,7 @@ async function imageWithClassShortcode(src, cls, alt) {
 
   const metadata = await Image(src, {
     formats: [fileType],
-    outputDir: "./_site/img/",
+    outputDir: "./docs/img/",
   });
 
   const data = metadata[fileType] ? metadata[fileType][0] : metadata.jpeg[0];

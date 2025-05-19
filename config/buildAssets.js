@@ -27,7 +27,7 @@ async function getFontFiles(assetPath) {
 }
 
 async function createAssetPaths() {
-  const assetPath = path.join(__dirname, "../_site/assets");
+  const assetPath = path.join(__dirname, "../docs/assets");
   let assetDirs = await fs.readdir(assetPath, { withFileTypes: true });
   const fontFiles = await getFontFiles(assetPath);
 
@@ -38,7 +38,7 @@ async function createAssetPaths() {
   const assetsFiles = await Promise.all(
     assetDirs.map(async (dir) => {
       const files = await fs.readdir(
-        path.join(__dirname, "../_site/assets", dir)
+        path.join(__dirname, "../docs/assets", dir)
       );
       return files.map((file) => {
         const { name, ext } = path.parse(file);
@@ -66,7 +66,7 @@ esbuild
       "js/uswds-init.js",
     ],
     entryNames: "[dir]/[name]-[hash]",
-    outdir: "_site/assets",
+    outdir: "docs/assets",
     format: "iife",
     loader: {
       ".jpg": "file",
