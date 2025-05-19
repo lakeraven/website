@@ -38,7 +38,7 @@ to modify some of the meta-data for the site, this is the place to do it.
   <script src="{{ assetPaths['uswds-init.js'] }}"></script>
   <!-- CSS
     ================================================== -->
-  <link rel="stylesheet" href="{{ assetPaths['styles.css'] }}" type="text/css" />
+  <link rel="stylesheet" href="{{ assetPaths['styles.css'] | url }}" type="text/css" />
 
   {% comment %}
   Preload only the files that are needed for the content in the initial viewport. This

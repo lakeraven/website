@@ -11,7 +11,7 @@ const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 
 module.exports = function (config) {
   // Set pathPrefix for site
-  let pathPrefix = "/";
+  let pathPrefix = "/website";
 
   // Copy the `admin` folders to the output
   config.addPassthroughCopy("admin");
