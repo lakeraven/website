@@ -1,51 +1,5 @@
 <footer class="usa-footer site-footer" role="contentinfo">
     <div class="usa-footer__primary-section">
-  <nav
-    id="menu-navigation"
-    aria-label="Menu navigation"
-    role="navigation"
-    class="usa-nav"
-  >
-    <div class="usa-nav__inner">
-      <button class="usa-nav__close">
-        {% image "./node_modules/@uswds/uswds/dist/img/usa-icons/close.svg" "close" %}
-      </button>
-      <ul class="usa-nav__primary usa-accordion">
-        {% for nav_item in primary_navigation %}
-          {% unless nav_item.children %}
-        {% assign basedir = page.url | remove_first: '/' | split: '/' | first |
-        lstrip %} {% assign linkdir = nav_item.url | replace: "/", "" | lstrip
-        %}
-        <li class="usa-nav__primary-item">
-          <a
-            class="usa-nav__link{% if basedir == linkdir %} usa-current{% endif %}"
-            href="{{ nav_item.url }}"
-            ><span>{{ nav_item.name | escape }}</span></a
-          >
-        </li>
-        {% else %} {% assign nav_id = 'primary-nav-' | append: forloop.index %}
-        <li class="usa-nav__primary-item">
-          <button
-            class="usa-accordion__button usa-nav__link"
-            aria-expanded="false"
-            aria-controls="{{ nav_id }}"
-          >
-            <span>{{ nav_item.name | escape }}</span>
-          </button>
-          <ul id="{{ nav_id }}" class="usa-nav__submenu">
-            {% for subnav_item in nav_item.children %}
-            <li class="usa-nav__submenu-item">
-              <a href="{{ subnav_item.url  }}"
-                >{{ subnav_item.name | escape }}</a
-              >
-            </li>
-            {% endfor %}
-          </ul>
-        </li>
-        {% endunless %} {% endfor %}
-      </ul>
-    </div>
-  </nav>
     </div>
     <div class="usa-footer__secondary-section">
       <div class="grid-container">
@@ -54,11 +8,13 @@
             class="usa-footer__logo grid-row mobile-lg:grid-col-6 mobile-lg:grid-gap-2"
           >
             <div class="mobile-lg:grid-col-auto">
+<!--
               <img
                 class="usa-footer__logo-img"
                 src="/assets/img/logo-img.png"
                 alt=""
               />
+-->
             </div>
             <div class="mobile-lg:grid-col-auto">
               <p class="usa-footer__logo-heading">Lakeraven © 2025</p>
