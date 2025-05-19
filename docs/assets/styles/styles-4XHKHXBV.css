@@ -30351,8 +30351,16 @@ button.usa-combo-box__clear-input[aria-disabled=true] {
 }
 .usa-hero {
   background-position-y: -100px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: auto;
+}
+@media (min-width: 1024px) {
+  .usa-hero {
+    background-size: cover;
+  }
 }
 /*! uswds @version */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
-/*# sourceMappingURL=styles-4RODS7BR.css.map */
+/*# sourceMappingURL=styles-4XHKHXBV.css.map */

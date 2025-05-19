@@ -33471,7 +33471,10 @@ example:
   }
 }
 .usa-hero {
-  background-position-y: -100px;
+  background-position-y: -300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto; /* Default for <1024px */
 }
 
 /*# sourceMappingURL=styles.css.map */
