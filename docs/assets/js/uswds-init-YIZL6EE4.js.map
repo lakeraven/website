@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../node_modules/@uswds/uswds/dist/js/uswds-init.js", "../../../js/uswds-init.js"],
+  "sourcesContent": ["/* eslint-disable no-var */\n(function uswdsInit() {\n  \"use strict\";\n\n  var loadingClass = \"usa-js-loading\";\n  var fallback;\n\n  document.documentElement.classList.add(loadingClass);\n  function revertClass() {\n    document.documentElement.classList.remove(loadingClass);\n  }\n\n  fallback = setTimeout(revertClass, 8000);\n\n  function verifyLoaded() {\n    if (window.uswdsPresent) {\n      clearTimeout(fallback);\n      revertClass();\n      window.removeEventListener(\"load\", verifyLoaded, true);\n    }\n  }\n\n  window.addEventListener(\"load\", verifyLoaded, true);\n})();\n", "require('../node_modules/@uswds/uswds/dist/js/uswds-init');\n"],
+  "mappings": ";;;;;;;AAAA;AAAA;AACA,OAAC,SAAS,YAAY;AACpB;AAEA,YAAI,eAAe;AACnB,YAAI;AAEJ,iBAAS,gBAAgB,UAAU,IAAI,YAAY;AACnD,iBAAS,cAAc;AACrB,mBAAS,gBAAgB,UAAU,OAAO,YAAY;AAAA,QACxD;AAEA,mBAAW,WAAW,aAAa,GAAI;AAEvC,iBAAS,eAAe;AACtB,cAAI,OAAO,cAAc;AACvB,yBAAa,QAAQ;AACrB,wBAAY;AACZ,mBAAO,oBAAoB,QAAQ,cAAc,IAAI;AAAA,UACvD;AAAA,QACF;AAEA,eAAO,iBAAiB,QAAQ,cAAc,IAAI;AAAA,MACpD,GAAG;AAAA;AAAA;;;ACvBH;",
+  "names": []
+}
