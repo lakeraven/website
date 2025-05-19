@@ -1,66 +1,128 @@
 <footer class="usa-footer site-footer" role="contentinfo">
-  <div class="usa-identifier site-identifier">
-    <section class="usa-identifier__section usa-identifier__section--masthead" aria-label="Agency identifier">
-        <div class="usa-identifier__container">
-            <div class="usa-identifier__logos">
-                <a href="https://www.gsa.gov">
-                    {% image_with_class "_img/gsa-logo.svg" "usa-identifier__logo" "GSA logo identifier" %}
-                </a>
+    <div class="usa-footer__primary-section">
+  <nav
+    id="menu-navigation"
+    aria-label="Menu navigation"
+    role="navigation"
+    class="usa-nav"
+  >
+    <div class="usa-nav__inner">
+      <button class="usa-nav__close">
+        {% image "./node_modules/@uswds/uswds/dist/img/usa-icons/close.svg" "close" %}
+      </button>
+      <ul class="usa-nav__primary usa-accordion">
+        {% for nav_item in primary_navigation %}
+          {% unless nav_item.children %}
+        {% assign basedir = page.url | remove_first: '/' | split: '/' | first |
+        lstrip %} {% assign linkdir = nav_item.url | replace: "/", "" | lstrip
+        %}
+        <li class="usa-nav__primary-item">
+          <a
+            class="usa-nav__link{% if basedir == linkdir %} usa-current{% endif %}"
+            href="{{ nav_item.url }}"
+            ><span>{{ nav_item.name | escape }}</span></a
+          >
+        </li>
+        {% else %} {% assign nav_id = 'primary-nav-' | append: forloop.index %}
+        <li class="usa-nav__primary-item">
+          <button
+            class="usa-accordion__button usa-nav__link"
+            aria-expanded="false"
+            aria-controls="{{ nav_id }}"
+          >
+            <span>{{ nav_item.name | escape }}</span>
+          </button>
+          <ul id="{{ nav_id }}" class="usa-nav__submenu">
+            {% for subnav_item in nav_item.children %}
+            <li class="usa-nav__submenu-item">
+              <a href="{{ subnav_item.url  }}"
+                >{{ subnav_item.name | escape }}</a
+              >
+            </li>
+            {% endfor %}
+          </ul>
+        </li>
+        {% endunless %} {% endfor %}
+      </ul>
+    </div>
+  </nav>
+    </div>
+    <div class="usa-footer__secondary-section">
+      <div class="grid-container">
+        <div class="grid-row grid-gap">
+          <div
+            class="usa-footer__logo grid-row mobile-lg:grid-col-6 mobile-lg:grid-gap-2"
+          >
+            <div class="mobile-lg:grid-col-auto">
+              <img
+                class="usa-footer__logo-img"
+                src="/assets/img/logo-img.png"
+                alt=""
+              />
             </div>
-            <div class="usa-identifier__identity" aria-label="Agency description">
-                <p class="usa-identifier__identity-domain">cloud.gov</p>
-                <p class="usa-identifier__identity-disclaimer">
-                    An official website of the <a class="external_link" href="https://gsa.gov">General Services Administration</a>
-                </p>
+            <div class="mobile-lg:grid-col-auto">
+              <p class="usa-footer__logo-heading">Lakeraven © 2025</p>
             </div>
+          </div>
+          <div class="usa-footer__contact-links mobile-lg:grid-col-6">
+            <div class="usa-footer__social-links grid-row grid-gap-1">
+<!--
+              <div class="grid-col-auto">
+                <a class="usa-social-link" href="javascript:void(0);"
+                  ><img
+                    class="usa-social-link__icon"
+                    src="/assets/img/usa-icons/facebook.svg"
+                    alt="Facebook"
+                /></a>
+              </div>
+              <div class="grid-col-auto">
+                <a class="usa-social-link" href="javascript:void(0);"
+                  ><img
+                    class="usa-social-link__icon"
+                    src="/assets/img/usa-icons/twitter.svg"
+                    alt="Twitter"
+                /></a>
+              </div>
+              <div class="grid-col-auto">
+                <a class="usa-social-link" href="javascript:void(0);"
+                  ><img
+                    class="usa-social-link__icon"
+                    src="/assets/img/usa-icons/youtube.svg"
+                    alt="YouTube"
+                /></a>
+              </div>
+              <div class="grid-col-auto">
+                <a class="usa-social-link" href="javascript:void(0);"
+                  ><img
+                    class="usa-social-link__icon"
+                    src="/assets/img/usa-icons/instagram.svg"
+                    alt="Instagram"
+                /></a>
+              </div>
+              <div class="grid-col-auto">
+                <a class="usa-social-link" href="javascript:void(0);"
+                  ><img
+                    class="usa-social-link__icon"
+                    src="/assets/img/usa-icons/rss_feed.svg"
+                    alt="RSS"
+                /></a>
+              </div>
+            </div>
+-->
+            <address class="usa-footer__address">
+              <div class="usa-footer__contact-info grid-row grid-gap">
+                <div class="grid-col-auto">
+<!--
+                  <a href="tel:1-800-555-5555">&lt;(800) 555-GOVT&gt;</a>
+-->
+                </div>
+                <div class="grid-col-auto">
+                  <a href="mailto:info@agency.gov">info@lakeraven.com</a>
+                </div>
+              </div>
+            </address>
+          </div>
         </div>
-    </section>
-    <nav class="usa-identifier__section usa-identifier__section--required-links" aria-label="Important links">
-        <div class="usa-identifier__container">
-            <ul class="usa-identifier__required-links-list">
-                <li class="usa-identifier__required-links-item">
-                    <a href="https://www.gsa.gov/about-us" class="usa-identifier__required-link usa-link">
-                        About GSA
-                    </a>
-                </li>
-                <li class="usa-identifier__required-links-item">
-                    <a href="https://www.gsa.gov/website-information/accessibility-aids" class="usa-identifier__required-link usa-link">
-                        Accessibility support
-                    </a>
-                </li>
-                <li class="usa-identifier__required-links-item">
-                    <a href="https://www.gsa.gov/reference/freedom-of-information-act-foia" class="usa-identifier__required-link usa-link">
-                        FOIA requests
-                    </a>
-                </li>
-                <li class="usa-identifier__required-links-item">
-                    <a href="https://www.gsa.gov/reference/civil-rights-programs/notification-and-federal-employee-antidiscrimination-and-retaliation-act-of-2002" class="usa-identifier__required-link usa-link">
-                        No FEAR Act data
-                    </a>
-                </li>
-                <li class="usa-identifier__required-links-item">
-                    <a href="https://www.gsaig.gov/" class="usa-identifier__required-link usa-link">
-                        Office of the Inspector General
-                    </a>
-                </li>
-                <li class="usa-identifier__required-links-item">
-                    <a href="https://www.gsa.gov/reference/reports/budget-performance" class="usa-identifier__required-link usa-link">
-                        Performance reports
-                    </a>
-                </li>
-                <li class="usa-identifier__required-links-item">
-                    <a href="https://www.gsa.gov/website-information/website-policies" class="usa-identifier__required-link usa-link">
-                        Privacy policy
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <section class="usa-identifier__section usa-identifier__section--usagov" aria-label="Government information and services">
-        <div class="usa-identifier__container">
-            <div class="usa-identifier__usagov-description">Looking for U.S. government information and services?</div>
-            <a href="https://www.usa.gov/" class="external_link">Visit USA.gov</a>
-        </div>
-    </section>
-  </div>
+      </div>
+    </div>
 </footer>

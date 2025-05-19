@@ -10,6 +10,7 @@
     "assets:clean": "rimraf _site/assets",
     "assets:refresh": "npm run assets:clean && npm run assets:build",
     "assets:watch": "chokidar 'js/**' 'styles/**' -c 'npm run assets:refresh' --polling",
+    "build:css": "sass --load-path=node_modules/@uswds/uswds/packages styles/styles.scss assets/css/styles.css",
     "clean": "rimraf _site",
     "dev": "npm run clean && npm run assets:build && npm-run-all -p dev:assets dev:serve",
     "dev:clean": "npm run clean && npm run dev",
@@ -20,6 +21,7 @@
     "pages": "ELEVENTY_ENV=production npm run build",
     "serve": "npx @11ty/eleventy --serve",
     "start": "npx @11ty/eleventy --serve",
+    "watch:css": "sass --watch styles/styles.scss assets/css/styles.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -45,6 +47,7 @@
   },
   "dependencies": {
     "@uswds/uswds": "^3.8.2",
-    "decap-cms": "^3.3.3"
+    "decap-cms": "^3.3.3",
+    "sharp": "^0.34.1"
   }
 }
