@@ -104,7 +104,7 @@ module.exports = function (config) {
   config.setBrowserSyncConfig({
     callbacks: {
       ready: function (err, browserSync) {
-        const content_404 = fs.readFileSync("_site/404/index.html");
+        const content_404 = fs.readFileSync("docs/404/index.html");
 
         browserSync.addMiddleware("*", (req, res) => {
           // Provides the 404 content without redirect.
@@ -167,7 +167,7 @@ module.exports = function (config) {
       input: ".",
       includes: "_includes",
       data: "_data",
-      output: "_site",
+      output: "docs",
     },
   };
 };
