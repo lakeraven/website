@@ -12,9 +12,10 @@ We’d love to hear from you. Whether you're a government partner, potential tea
 
 ## Email
 
-- General Inquiries: [hello@lakeraven.com](mailto:hello@lakeraven.com)  
+- General Inquiries: [info@lakeraven.com](mailto:info@lakeraven.com)  
+<!--
 - Contracting & Partnerships: [contracts@lakeraven.com](mailto:contracts@lakeraven.com)
-
+-->
 ---
 
 ## Connect  

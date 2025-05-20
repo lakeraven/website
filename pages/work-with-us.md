@@ -17,8 +17,8 @@ We are experienced, easy to partner with, and ready to get to work.
 
 We are registered in SAM.gov and eligible for federal, state, and tribal contracting.
 
-- **UEI:** `XXXXXXXXXXXX`
-- **CAGE Code:** `XXXXX`
+- **UEI:** `WY1JY5ML91Y7`
+- **CAGE Code:** `124D2`
 - **NAICS Codes:**
   - `541511` – Custom Computer Programming Services (Primary)
   - `541512` – Computer Systems Design Services
@@ -42,8 +42,7 @@ We are registered in SAM.gov and eligible for federal, state, and tribal contrac
 Our team has led major digital modernization efforts across federal, state, and tribal contexts—including:
 
 - U.S. Department of State: Passport Modernization  
-- Indian Health Service: Electronic Health Records Modernization  
-- State of New Mexico: Water Data Infrastructure Discovery  
+- Indian Health Service: Electronic Health Records Modernization   
 - Tribal Nations: Enrollment and PRC Product Development
 
 ---
@@ -52,8 +51,10 @@ Our team has led major digital modernization efforts across federal, state, and 
 
 To partner with Lakeraven, get in touch:
 
-📬 **Email:** [hello@lakeraven.com](mailto:hello@lakeraven.com)  
+📬 **Email:** [info@lakeraven.com](mailto:info@lakeraven.com)  
+<!--
 📞 **Phone:** (555) 123-4567  
+-->
 🌐 Full company profile available on [SAM.gov](https://sam.gov/)
 
 We welcome teaming opportunities, direct awards, and collaborative contracting.
