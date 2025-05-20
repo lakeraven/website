@@ -41,10 +41,10 @@ Our team has led major digital modernization efforts across federal, state, and 
 
 To partner with Lakeraven, get in touch:
 
-📬 **Email:** [info@lakeraven.com](mailto:info@lakeraven.com)  
+**Email:** [info@lakeraven.com](mailto:info@lakeraven.com)  
 <!--
-📞 **Phone:** (555) 123-4567  
+**Phone:** (555) 123-4567  
 -->
-🌐 Full company profile available on [SAM.gov](https://sam.gov/)
+Full company profile available on [SAM.gov](https://sam.gov/)
 
 We welcome teaming opportunities, direct awards, and collaborative contracting.
