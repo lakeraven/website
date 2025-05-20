@@ -1,6 +1,6 @@
 ---
 title: Services
-layout: layouts/page
+layout: layouts/services
 permalink: /services/
 sidenav: false
 ---
