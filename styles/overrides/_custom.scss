@@ -1,3 +1,13 @@
+@use "uswds-core" as *;
+
+h1, h2, h3 {
+  font-family: family("sans") !important;
+}
+
+.direct-link{
+  display:none;
+}
+
 .usa-hero {
   background-position-y: -100px;
   background-repeat: no-repeat;
