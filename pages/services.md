@@ -1,5 +1,5 @@
 ---
-title: Document
+title: Services
 layout: layouts/page
 permalink: /services/
 sidenav: false
