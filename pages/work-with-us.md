@@ -1,6 +1,6 @@
 ---
 title: Work With Us
-layout: layouts/page
+layout: layouts/wwu
 permalink: /work-with-us/
 description: Partner with Lakeraven for accessible, human-centered digital services. Government contracting info, NAICS codes, and contact details.
 ---
@@ -24,16 +24,6 @@ We are registered in SAM.gov and eligible for federal, state, and tribal contrac
   - `541512` – Computer Systems Design Services
   - `541519` – Other Computer Related Services
   - `541611` – Administrative Management & General Management Consulting Services
-
----
-
-## Designations
-
-- Native-Owned  
-- Veteran-Led  
-- Former 18F Technologists  
-- Eligible for Indian Incentive Program  
-- Active SAM.gov Registration
 
 ---
 

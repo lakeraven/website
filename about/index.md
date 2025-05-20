@@ -7,7 +7,6 @@ eleventyNavigation:
 ---
 
 # About Us
-Calm Authority. Deep Experience. Genuine Impact.
 
 Lakeraven is built on a legacy of service. Our team is composed entirely of former federal technologists and accessibility leaders—many from 18F, TTS, and the Presidential Innovation Fellows. We’ve modernized mission-critical systems for federal agencies, states, and tribal governments, bringing empathy, expertise, and a focus on lasting impact.
 
