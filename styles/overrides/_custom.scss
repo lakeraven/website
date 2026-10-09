@@ -49,6 +49,11 @@ body {
   font-weight: font-weight("bold");
   cursor: pointer;
 
+  // Stay hidden until app.js wires up the click handler.
+  &[hidden] {
+    display: none;
+  }
+
   &::before {
     content: "";
     width: units(4);
@@ -74,7 +79,8 @@ body {
   }
 }
 
-.usa-navbar {
+.usa-navbar,
+.usa-header--extended .usa-navbar {
   display: flex;
 }
 
@@ -122,6 +128,30 @@ html[data-theme="dark"] {
     &:visited {
       color: $dark-link-visited;
     }
+  }
+
+  // Side navigation: USWDS sets gray link text and a light hover fill.
+  .usa-sidenav {
+    border-color: $dark-line;
+  }
+
+  .usa-sidenav__item {
+    border-color: $dark-line;
+  }
+
+  .usa-sidenav a:not(.usa-button),
+  .usa-sidenav a:not(.usa-button):not(.usa-current),
+  .usa-sidenav a:not(.usa-button):visited {
+    color: $dark-muted;
+  }
+
+  .usa-sidenav a:not(.usa-button).usa-current {
+    color: $dark-link;
+  }
+
+  .usa-sidenav a:not(.usa-button):hover {
+    background-color: $dark-surface;
+    color: $dark-link;
   }
 
   // Buttons and dark-blue panels keep their white text.

@@ -30337,6 +30337,9 @@ body {
   font-weight: 700;
   cursor: pointer;
 }
+.theme-toggle[hidden] {
+  display: none;
+}
 .theme-toggle::before {
   content: "";
   width: 2rem;
@@ -30365,7 +30368,8 @@ body {
     margin-right: 0;
   }
 }
-.usa-navbar {
+.usa-navbar,
+.usa-header--extended .usa-navbar {
   display: flex;
 }
 html[data-theme=dark] {
@@ -30397,6 +30401,24 @@ html[data-theme=dark] .usa-link {
 html[data-theme=dark] a:not(.usa-button):visited,
 html[data-theme=dark] .usa-link:visited {
   color: #b8a7e8;
+}
+html[data-theme=dark] .usa-sidenav {
+  border-color: #3d4551;
+}
+html[data-theme=dark] .usa-sidenav__item {
+  border-color: #3d4551;
+}
+html[data-theme=dark] .usa-sidenav a:not(.usa-button),
+html[data-theme=dark] .usa-sidenav a:not(.usa-button):not(.usa-current),
+html[data-theme=dark] .usa-sidenav a:not(.usa-button):visited {
+  color: #c6cace;
+}
+html[data-theme=dark] .usa-sidenav a:not(.usa-button).usa-current {
+  color: #73b3e7;
+}
+html[data-theme=dark] .usa-sidenav a:not(.usa-button):hover {
+  background-color: #1a2430;
+  color: #73b3e7;
 }
 html[data-theme=dark] .usa-dark-background a:not(.usa-button),
 html[data-theme=dark] .usa-dark-background a:not(.usa-button):visited {
@@ -30472,4 +30494,4 @@ html[data-theme=dark] .usa-skipnav:focus {
 }
 /*! uswds @version */
 
-/*# sourceMappingURL=styles-HLCF2L66.css.map */
+/*# sourceMappingURL=styles-KJUC5HIW.css.map */
