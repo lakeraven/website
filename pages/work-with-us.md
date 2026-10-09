@@ -2,12 +2,12 @@
 title: Work With Us
 layout: layouts/wwu
 permalink: /work-with-us/
-description: Partner with Lakeraven for accessible, human-centered digital services. Government contracting info, NAICS codes, and contact details.
+description: Partner with Lakeraven, a Native-owned health IT firm. Government contracting info, NAICS codes, and contact details.
 ---
 
 # Work With Us
 
-Lakeraven is a Native-owned, veteran-led digital services consultancy delivering modern, accessible, and human-centered solutions to government and tribal agencies.
+Lakeraven is a Native-owned health IT firm helping tribes move from IHS-run systems to health programs they run themselves.
 
 We are experienced, easy to partner with, and ready to get to work.
 
@@ -31,7 +31,6 @@ We are registered in SAM.gov and eligible for federal, state, and tribal contrac
 
 Our team has led major digital modernization efforts across federal, state, and tribal contexts—including:
 
-- U.S. Department of State: Passport Modernization  
 - Indian Health Service: Electronic Health Records Modernization   
 - Tribal Nations: Enrollment and PRC Product Development
 

@@ -30303,6 +30303,12 @@ h3 {
     background-size: cover;
   }
 }
+body {
+  overflow-wrap: anywhere;
+}
+.usa-media-block__body {
+  min-width: 0;
+}
 /*! uswds @version */
 
-/*# sourceMappingURL=styles-M6JDUGJL.css.map */
+/*# sourceMappingURL=styles-ECBGY652.css.map */

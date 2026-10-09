@@ -7,83 +7,39 @@ sidenav: false
 
 # Services
 
-### Transforming Public Services with Technology and Empathy
+<p class="usa-intro">Helping tribes move to self-governance on modern systems</p>
 
-At Lakeraven, we help governments and tribal nations modernize critical services with an approach rooted in human-centered design, agile delivery, and cloud-native technology. Our goal is always the same: build what works and help teams sustain it.
-
----
-
-## Our Approach
-
-We partner with you to build modern, accessible services—while also strengthening your team’s long-term capacity.
-
-- **Human-Centered Design**  
-  We work side-by-side with users, staff, and leadership to design services that meet real needs. Our process includes inclusive research, journey mapping, and co-design.
-
-- **Iterative Development**  
-  We ship early and often, using agile practices and user feedback to improve services continuously and reduce delivery risk.
-
-- **Cloud-Native Solutions**  
-  We design scalable, secure platforms that reduce tech debt and operating costs—built to adapt as your mission evolves.
-
-- **Smart Automation**  
-  We integrate modern cloud and AI tools to streamline delivery, reduce manual work, and help teams stay focused on impact.
+Lakeraven helps tribes plan and carry out the move from IHS-run systems to health programs they run themselves. We combine transition planning, data and workflow mapping, our own software, and hands-on coaching, so the systems stay yours after we leave.
 
 ---
 
-## What We Do
+## How We Help
 
-We offer consulting, engineering, and team enablement services for state, tribal, and local governments.
+- **Prepare for self-governance**  
+  We help tribal leadership weigh the self-governance path, pursue IHS planning and negotiation funding, and lay the legal, budget and organizational groundwork, always at the Nation’s direction.
 
----
+- **Plan the transition**  
+  We work with your leadership and staff to map what moves, what changes, and when, from the systems you run today to the ones you’ll own.
 
-### Digital Services
+- **Map your data and workflows**  
+  We document the records and the ways of working your staff depend on, so the move to new systems doesn’t ask them to start over.
 
-- **UX Research & Strategy**  
-  Service blueprints, journey maps, personas, and inclusive design practices.
+- **Run modern systems**  
+  Our software covers Purchased/Referred Care and program reporting, with a modern EHR coming soon. Use the pieces you need. Each one works on its own.
 
-- **Product & Agile Delivery**  
-  Outcome-focused product leadership and delivery using agile methods.
-
-- **Custom Software Development**  
-  Secure, modern, and maintainable platforms—built with accessibility and open-source in mind.
-
-- **Cloud Architecture & DevOps**  
-  Resilient infrastructure with continuous deployment, monitoring, and scaling.
-
-- **Data Modernization**  
-  Data cleanup, integration, and transition from legacy systems to affordable, open platforms.
+- **Build your team’s capacity**  
+  We train and coach your staff so the systems stay yours after we leave.
 
 ---
 
-### Digital Accessibility
+## Our Products
 
-We help agencies meet WCAG 2.2, Section 508, and ADA Title II requirements through:
-
-- **Full Audits & Assessments**  
-- **Issue Remediation & Developer Support**  
-- **Manual & Automated Testing**  
-- **Accessible Design & Content Strategy**  
-- **Governance Planning & Policy Development**  
-- **Live Support, Office Hours, and QA Pairing**
+- **Corvid** (early access): Purchased/Referred Care, from referral to authorization against your budget. Works alongside the EHR you already use.
+- **Lakeraven EHR** (coming soon): a modern EHR powered by RPMS, the system Indian health clinics have run for decades.
+- **Rook** (early access): quality reporting for tribal health programs, starting with GPRA measures. UDS reporting is in development.
 
 ---
 
-### Consulting & Enablement
+## Beyond Health Care
 
-- **Digital Strategy & Discovery**  
-  Roadmaps and insights to guide your transformation.
-
-- **Digital Team Formation**  
-  Support with hiring, mentoring, and onboarding.
-
-- **Workforce Development**  
-  Training and coaching for designers, engineers, content creators, and procurement staff.
-
-- **Acquisition Support**  
-  Build-vs-buy guidance, RFP reviews, and vendor evaluation.
-
-- **Design Systems & Playbooks**  
-  Pattern libraries and implementation support to scale design and code.
-
-
+We also take on broader technology modernization and digital services work for governments and public programs. See [Technology Modernization](/modernization/).

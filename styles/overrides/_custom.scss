@@ -19,3 +19,12 @@ h1, h2, h3 {
     background-size: cover;
   }
 }
+// Let long words and slashed terms (e.g. "Purchased/Referred") wrap
+// instead of forcing horizontal scroll at narrow widths (WCAG 1.4.10, 1.4.12).
+body {
+  overflow-wrap: anywhere;
+}
+
+.usa-media-block__body {
+  min-width: 0;
+}
