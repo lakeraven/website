@@ -23,6 +23,8 @@ primary_navigation:
     url: /about/
   - name: Services
     url: /services/
+  - name: Modernization
+    url: /modernization/
   - name: Work with Us
     url: /work-with-us/
   - name: Contact
