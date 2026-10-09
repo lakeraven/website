@@ -7,7 +7,7 @@ sidenav: false
 
 # Services
 
-### Helping tribes move to self-governance on modern systems
+<p class="usa-intro">Helping tribes move to self-governance on modern systems</p>
 
 Lakeraven helps tribes plan and carry out the move from IHS-run systems to health programs they run themselves. We combine transition planning, data and workflow mapping, our own software, and hands-on coaching, so the systems stay yours after we leave.
 

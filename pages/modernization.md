@@ -8,7 +8,7 @@ sidenav: false
 
 # Technology Modernization
 
-### Digital services for governments and public programs
+<p class="usa-intro">Digital services for governments and public programs</p>
 
 Beyond tribal health, Lakeraven helps tribal, state, and local governments and public programs modernize the systems their services run on. We replace or rebuild legacy systems, move data to open platforms, and coach your team to run what we build together. Our approach is rooted in human-centered design, agile delivery, and cloud-native technology. Our goal is always the same: build what works and help teams sustain it.
 

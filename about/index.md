@@ -7,7 +7,7 @@ eleventyNavigation:
 ---
 
 # About Us
-### Native-owned health IT for tribal and rural health programs
+<p class="usa-intro">Native-owned health IT for tribal and rural health programs</p>
 
 Lakeraven is a Native-owned health IT firm based in Washington State. We help tribes move from IHS-run systems to health programs they run themselves, and we build the software to run them: Corvid for Purchased/Referred Care, Rook for quality reporting, and Lakeraven EHR, coming soon.
 
@@ -30,12 +30,10 @@ We meet you where you are, work shoulder-to-shoulder with your team, and build s
 
 ## Company Snapshot
 
-|                                |                                        |
-| :----------------------------- | :------------------------------------- |
-| **Ownership**                  | Native-Owned |
-| **Website**                    | Lakeraven.com |
-| **UEI**                        | WY1JY5ML91Y7      |
-| **CAGE Code**                  | 124D2     |
-| **NAICS Codes**                | `541511`, `541512`, `541519`, `541611`                    |
-| **Contacts**                   | General Inquiry: info@lakeraven.com |
-|                                | Kimball Bighorse: kimball.bighorse@lakeraven.com |
+- **Ownership:** Native-Owned
+- **Website:** Lakeraven.com
+- **UEI:** `WY1JY5ML91Y7`
+- **CAGE Code:** `124D2`
+- **NAICS Codes:** `541511`, `541512`, `541519`, `541611`
+- **General Inquiry:** info@lakeraven.com
+- **Kimball Bighorse:** kimball.bighorse@lakeraven.com
