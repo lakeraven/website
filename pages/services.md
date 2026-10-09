@@ -7,6 +7,19 @@ sidenav: false
 
 # Services
 
+### Helping tribes move to self-governance on modern systems
+
+Lakeraven helps tribes plan and carry out the move from IHS-run systems to health programs they run themselves. We combine transition planning, data and workflow mapping, our own software, and hands-on coaching, so the systems stay yours after we leave.
+
+---
+title: Services
+layout: layouts/services
+permalink: /services/
+sidenav: false
+---
+
+# Services
+
 ### Transforming Public Services with Technology and Empathy
 
 At Lakeraven, we help governments and tribal nations modernize critical services with an approach rooted in human-centered design, agile delivery, and cloud-native technology. Our goal is always the same: build what works and help teams sustain it.
@@ -33,7 +46,7 @@ We partner with you to build modern, accessible services—while also strengthen
 
 ## What We Do
 
-We offer consulting, engineering, and team enablement services for state, tribal, and local governments.
+We offer consulting, engineering, and team enablement for tribal health programs and the governments that work with them.
 
 ---
 
@@ -53,19 +66,6 @@ We offer consulting, engineering, and team enablement services for state, tribal
 
 - **Data Modernization**  
   Data cleanup, integration, and transition from legacy systems to affordable, open platforms.
-
----
-
-### Digital Accessibility
-
-We help agencies meet WCAG 2.2, Section 508, and ADA Title II requirements through:
-
-- **Full Audits & Assessments**  
-- **Issue Remediation & Developer Support**  
-- **Manual & Automated Testing**  
-- **Accessible Design & Content Strategy**  
-- **Governance Planning & Policy Development**  
-- **Live Support, Office Hours, and QA Pairing**
 
 ---
 

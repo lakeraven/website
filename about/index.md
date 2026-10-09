@@ -1,28 +1,21 @@
 ---
 layout: layouts/page
-title: About Me
+title: About
 eleventyNavigation:
-  key: About Me
+  key: About
   order: 3
 ---
 
 # About Us
-### Modernizing Public Services with Technology and Empathy
+### Native-owned health IT for tribal and rural health programs
 
-Lakeraven is a Native-owned, veteran-led digital services firm built on a legacy of trust and public service. Our team includes former 18F engineers, federal accessibility leaders, and seasoned technologists from across government and tribal organizations.
+Lakeraven is a Native-owned health IT firm based in Washington State. We help tribes move from IHS-run systems to health programs they run themselves, and we build the software to run them: Corvid for Purchased/Referred Care, Rook for quality reporting, and Lakeraven EHR, coming soon.
 
-We help public institutions modernize critical systems, improve service delivery, and build internal capacity—with a people-first, mission-driven approach.
-
-We bring a people-first approach rooted in **agile, human-centered practices**, delivering digital solutions that are faster to launch, easier to maintain, and more impactful for users.
-
-## Who We Are
-* Native-owned, veteran-led
-* Former GS-15s, 18F engineers, and digital service experts
-* Deep roots in government, tribal affairs, and accessibility
+We bring a people-first approach rooted in **agile, human-centered practices**, delivering systems that are faster to launch, easier to maintain, and more useful to the staff who run them.
 
 ## How We Work
 
-We partner with tribal nations and government agencies at all levels to tackle complex digital challenges. Our approach is grounded in:
+We partner with tribal nations and health programs to plan and carry out their move to modern systems. Our approach is grounded in:
 
 * **Human-Centered Design**  
   We co-create solutions that are inclusive, accessible, and responsive to real needs.
@@ -39,11 +32,10 @@ We meet you where you are, work shoulder-to-shoulder with your team, and build s
 
 |                                |                                        |
 | :----------------------------- | :------------------------------------- |
-| **Certifications**             | Native-Owned, Veteran-Led, 8(a)-Eligible |
+| **Ownership**                  | Native-Owned |
 | **Website**                    | Lakeraven.com |
 | **UEI**                        | WY1JY5ML91Y7      |
 | **CAGE Code**                  | 124D2     |
 | **NAICS Codes**                | `541511`, `541512`, `541519`, `541611`                    |
 | **Contacts**                   | General Inquiry: info@lakeraven.com |
-|                                | Jason Nakai: jason.nakai@lakeraven.com |
 |                                | Kimball Bighorse: kimball.bighorse@lakeraven.com |
