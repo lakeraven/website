@@ -16,7 +16,7 @@ to modify some of the meta-data for the site, this is the place to do it.
   <!-- Title and meta description
     ================================================== -->
   {% assign pageTitle = title | append: " | " | append: site.title  -%}
-  {%- assign pageDesc = page.description | default: site.description -%}
+  {%- assign pageDesc = description | default: site.description -%}
   {%- assign pageUrl = site.url | append: page.url  -%}
 
   <title>{{pageTitle}}</title>
