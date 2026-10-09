@@ -30309,6 +30309,167 @@ body {
 .usa-media-block__body {
   min-width: 0;
 }
+.theme-toggle {
+  align-self: center;
+  margin-left: auto;
+  margin-right: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #a9aeb1;
+  border-radius: 999px;
+  background: transparent;
+  color: inherit;
+  font-family:
+    Public Sans Web,
+    -apple-system,
+    BlinkMacSystemFont,
+    Segoe UI,
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif,
+    Apple Color Emoji,
+    Segoe UI Emoji,
+    Segoe UI Symbol;
+  font-size: 0.88rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.theme-toggle::before {
+  content: "";
+  width: 2rem;
+  height: 1rem;
+  border-radius: 999px;
+  background:
+    #dfe1e2 radial-gradient(
+      circle at 25% 50%,
+      #3d4551 30%,
+      transparent 32%);
+  flex: none;
+}
+.theme-toggle[aria-pressed=true]::before {
+  background:
+    #58b4ff radial-gradient(
+      circle at 75% 50%,
+      white 30%,
+      transparent 32%);
+}
+.theme-toggle:focus-visible {
+  outline: 0.25rem solid #2491ff;
+  outline-offset: 0.25rem;
+}
+@media all and (min-width: 64em) {
+  .theme-toggle {
+    margin-right: 0;
+  }
+}
+.usa-navbar {
+  display: flex;
+}
+html[data-theme=dark] {
+  color-scheme: dark;
+}
+html[data-theme=dark] body {
+  background-color: #0f1720;
+  color: #f0f0f0;
+}
+html[data-theme=dark] .usa-prose,
+html[data-theme=dark] .usa-prose > p,
+html[data-theme=dark] .usa-prose > ul li,
+html[data-theme=dark] .usa-prose > h1,
+html[data-theme=dark] .usa-prose > h2,
+html[data-theme=dark] .usa-prose > h3,
+html[data-theme=dark] .usa-intro,
+html[data-theme=dark] .usa-section,
+html[data-theme=dark] .usa-layout-docs {
+  color: #f0f0f0;
+}
+html[data-theme=dark] .usa-prose > hr,
+html[data-theme=dark] hr {
+  border-color: #3d4551;
+}
+html[data-theme=dark] a:not(.usa-button),
+html[data-theme=dark] .usa-link {
+  color: #73b3e7;
+}
+html[data-theme=dark] a:not(.usa-button):visited,
+html[data-theme=dark] .usa-link:visited {
+  color: #b8a7e8;
+}
+html[data-theme=dark] .usa-dark-background a:not(.usa-button),
+html[data-theme=dark] .usa-dark-background a:not(.usa-button):visited {
+  color: #fff;
+}
+html[data-theme=dark] .usa-prose > code,
+html[data-theme=dark] code {
+  background: #1a2430;
+  color: #f0f0f0;
+}
+html[data-theme=dark] .usa-header,
+html[data-theme=dark] .usa-header--extended .usa-nav,
+html[data-theme=dark] .usa-nav {
+  background-color: #1a2430;
+}
+html[data-theme=dark] .usa-header--extended .usa-navbar,
+html[data-theme=dark] .usa-header--extended .usa-nav {
+  border-color: #3d4551;
+}
+html[data-theme=dark] .usa-logo a,
+html[data-theme=dark] .usa-logo__text a {
+  color: #f0f0f0;
+}
+html[data-theme=dark] .usa-nav__primary > .usa-nav__primary-item > a,
+html[data-theme=dark] .usa-nav__primary button,
+html[data-theme=dark] .usa-nav__link {
+  color: #f0f0f0;
+}
+html[data-theme=dark] .usa-nav__primary > .usa-nav__primary-item > a:hover,
+html[data-theme=dark] .usa-nav__primary button:hover,
+html[data-theme=dark] .usa-nav__link:hover {
+  color: #73b3e7;
+  background-color: transparent;
+}
+html[data-theme=dark] .usa-nav__primary > .usa-nav__primary-item > .usa-current::after,
+html[data-theme=dark] .usa-nav__link:hover::after {
+  background-color: #73b3e7;
+}
+html[data-theme=dark] .usa-nav__primary .usa-current {
+  color: #73b3e7;
+}
+html[data-theme=dark] .usa-nav__close img {
+  filter: invert(1);
+}
+html[data-theme=dark] .theme-toggle {
+  border-color: #3d4551;
+  color: #f0f0f0;
+}
+html[data-theme=dark] .usa-section:not(.usa-section--dark) {
+  background-color: #0f1720;
+}
+html[data-theme=dark] .usa-card__container {
+  background-color: #1a2430;
+  border-color: #3d4551;
+  color: #f0f0f0;
+}
+html[data-theme=dark] .usa-card__heading {
+  color: #f0f0f0;
+}
+html[data-theme=dark] .usa-footer,
+html[data-theme=dark] .usa-footer__primary-section,
+html[data-theme=dark] .usa-footer__secondary-section {
+  background-color: #1a2430;
+  color: #f0f0f0;
+}
+html[data-theme=dark] .usa-footer__logo-heading,
+html[data-theme=dark] .usa-footer__contact-info a {
+  color: #f0f0f0;
+}
+html[data-theme=dark] .usa-skipnav:focus {
+  background-color: #1a2430;
+  color: #73b3e7;
+}
 /*! uswds @version */
 
-/*# sourceMappingURL=styles-ECBGY652.css.map */
+/*# sourceMappingURL=styles-HLCF2L66.css.map */
