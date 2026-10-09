@@ -15,6 +15,9 @@ Lakeraven helps tribes plan and carry out the move from IHS-run systems to healt
 
 ## How We Help
 
+- **Prepare for self-governance**  
+  We help tribal leadership weigh the self-governance path, pursue IHS planning and negotiation funding, and lay the legal, budget and organizational groundwork, always at the Nation’s direction.
+
 - **Plan the transition**  
   We work with your leadership and staff to map what moves, what changes, and when, from the systems you run today to the ones you’ll own.
 
