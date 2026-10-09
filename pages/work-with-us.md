@@ -29,10 +29,11 @@ We are registered in SAM.gov and eligible for federal, state, and tribal contrac
 
 ## Past Performance
 
-Our team has led major digital modernization efforts across federal, state, and tribal contexts—including:
+Lakeraven has delivered digital modernization work for state and tribal governments, including:
 
-- Indian Health Service: Electronic Health Records Modernization   
-- Tribal Nations: Enrollment and PRC Product Development
+- State government: Digital accessibility
+- Public water data: Data modernization
+- Tribal nation: RPMS electronic health record support
 
 ---
 
