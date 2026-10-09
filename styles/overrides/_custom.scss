@@ -28,3 +28,222 @@ body {
 .usa-media-block__body {
   min-width: 0;
 }
+
+// ---------------------------------------------------------------------------
+// Theme toggle (header). aria-pressed="true" means dark mode is on.
+// ---------------------------------------------------------------------------
+.theme-toggle {
+  align-self: center;
+  margin-left: auto;
+  margin-right: units(1);
+  display: inline-flex;
+  align-items: center;
+  gap: units(1);
+  padding: units(1) units(1.5);
+  border: 1px solid color("base-light");
+  border-radius: 999px;
+  background: transparent;
+  color: inherit;
+  font-family: family("sans");
+  font-size: size("sans", "2xs");
+  font-weight: font-weight("bold");
+  cursor: pointer;
+
+  // Stay hidden until app.js wires up the click handler.
+  &[hidden] {
+    display: none;
+  }
+
+  &::before {
+    content: "";
+    width: units(4);
+    height: units(2);
+    border-radius: 999px;
+    background: color("base-lighter")
+      radial-gradient(circle at 25% 50%, color("base-darker") 30%, transparent 32%);
+    flex: none;
+  }
+
+  &[aria-pressed="true"]::before {
+    background: color("blue-30v")
+      radial-gradient(circle at 75% 50%, color("white") 30%, transparent 32%);
+  }
+
+  &:focus-visible {
+    outline: units(0.5) solid color("blue-40v");
+    outline-offset: units(0.5);
+  }
+
+  @include at-media("desktop") {
+    margin-right: 0;
+  }
+}
+
+.usa-navbar,
+.usa-header--extended .usa-navbar {
+  display: flex;
+}
+
+// ---------------------------------------------------------------------------
+// Dark theme (default). Light theme is the USWDS default styling.
+// ---------------------------------------------------------------------------
+$dark-bg: #0f1720;
+$dark-surface: #1a2430;
+$dark-line: #3d4551;
+$dark-fg: #f0f0f0;
+$dark-muted: #c6cace;
+$dark-link: #73b3e7;
+$dark-link-visited: #b8a7e8;
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+
+  body {
+    background-color: $dark-bg;
+    color: $dark-fg;
+  }
+
+  // Page content
+  .usa-prose,
+  .usa-prose > p,
+  .usa-prose > ul li,
+  .usa-prose > h1,
+  .usa-prose > h2,
+  .usa-prose > h3,
+  .usa-intro,
+  .usa-section,
+  .usa-layout-docs {
+    color: $dark-fg;
+  }
+
+  .usa-prose > hr,
+  hr {
+    border-color: $dark-line;
+  }
+
+  a:not(.usa-button),
+  .usa-link {
+    color: $dark-link;
+
+    &:visited {
+      color: $dark-link-visited;
+    }
+  }
+
+  // Side navigation: USWDS sets gray link text and a light hover fill.
+  .usa-sidenav {
+    border-color: $dark-line;
+  }
+
+  .usa-sidenav__item {
+    border-color: $dark-line;
+  }
+
+  .usa-sidenav a:not(.usa-button),
+  .usa-sidenav a:not(.usa-button):not(.usa-current),
+  .usa-sidenav a:not(.usa-button):visited {
+    color: $dark-muted;
+  }
+
+  .usa-sidenav a:not(.usa-button).usa-current {
+    color: $dark-link;
+  }
+
+  .usa-sidenav a:not(.usa-button):hover {
+    background-color: $dark-surface;
+    color: $dark-link;
+  }
+
+  // Buttons and dark-blue panels keep their white text.
+  .usa-dark-background a:not(.usa-button),
+  .usa-dark-background a:not(.usa-button):visited {
+    color: #fff;
+  }
+
+  .usa-prose > code,
+  code {
+    background: $dark-surface;
+    color: $dark-fg;
+  }
+
+  // Header and navigation
+  .usa-header,
+  .usa-header--extended .usa-nav,
+  .usa-nav {
+    background-color: $dark-surface;
+  }
+
+  .usa-header--extended .usa-navbar,
+  .usa-header--extended .usa-nav {
+    border-color: $dark-line;
+  }
+
+  .usa-logo a,
+  .usa-logo__text a {
+    color: $dark-fg;
+  }
+
+  .usa-nav__primary > .usa-nav__primary-item > a,
+  .usa-nav__primary button,
+  .usa-nav__link {
+    color: $dark-fg;
+
+    &:hover {
+      color: $dark-link;
+      background-color: transparent;
+    }
+  }
+
+  .usa-nav__primary > .usa-nav__primary-item > .usa-current::after,
+  .usa-nav__link:hover::after {
+    background-color: $dark-link;
+  }
+
+  .usa-nav__primary .usa-current {
+    color: $dark-link;
+  }
+
+  .usa-nav__close img {
+    filter: invert(1);
+  }
+
+  .theme-toggle {
+    border-color: $dark-line;
+    color: $dark-fg;
+  }
+
+  // Homepage tagline section
+  .usa-section:not(.usa-section--dark) {
+    background-color: $dark-bg;
+  }
+
+  // Cards
+  .usa-card__container {
+    background-color: $dark-surface;
+    border-color: $dark-line;
+    color: $dark-fg;
+  }
+
+  .usa-card__heading {
+    color: $dark-fg;
+  }
+
+  // Footer
+  .usa-footer,
+  .usa-footer__primary-section,
+  .usa-footer__secondary-section {
+    background-color: $dark-surface;
+    color: $dark-fg;
+  }
+
+  .usa-footer__logo-heading,
+  .usa-footer__contact-info a {
+    color: $dark-fg;
+  }
+
+  // Skip link
+  .usa-skipnav:focus {
+    background-color: $dark-surface;
+    color: $dark-link;
+  }
+}
