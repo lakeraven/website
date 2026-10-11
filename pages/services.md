@@ -1,5 +1,6 @@
 ---
 title: Services
+description: Lakeraven helps tribes move to self-governance, with transition planning, data and workflow mapping, staff coaching, and software for Purchased/Referred Care and quality reporting.
 layout: layouts/services
 permalink: /services/
 sidenav: false
@@ -34,7 +35,7 @@ Lakeraven helps tribes plan and carry out the move from IHS-run systems to healt
 
 ## Our Products
 
-- **Corvid** (early access): Purchased/Referred Care, from referral to authorization against your budget. Works alongside the EHR you already use.
+- **[Corvid](/prc/)** (early access): Purchased/Referred Care (PRC), from referral to authorization against your budget. Works alongside the EHR you already use.
 - **Lakeraven EHR** (coming soon): a modern EHR powered by RPMS, the system Indian health clinics have run for decades.
 - **Rook** (early access): quality reporting for tribal health programs, starting with GPRA measures. UDS reporting is in development.
 
