@@ -282,6 +282,21 @@
 
 
 
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GPG9L6ESM5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  /**
+    * `forceSSL` was used for analytics.js (the older Google Analytics script).
+    * It isn't documented for gtag.js, but the term occurs in the gtag.js code;
+    * figure it doesn't hurt to leave it in. -@afeld, 5/29/19
+    */
+  gtag('config', 'G-GPG9L6ESM5', { 'anonymize_ip': true, 'forceSSL': true });
+</script>
+
 
 
 
