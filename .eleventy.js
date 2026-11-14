@@ -15,6 +15,7 @@ module.exports = function (config) {
 
   // Copy the `admin` folders to the output
   config.addPassthroughCopy("admin");
+  config.addPassthroughCopy("assets/pdfs");
 
   // Add plugins
   config.addPlugin(pluginRss);
