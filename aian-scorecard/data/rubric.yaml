@@ -65,8 +65,8 @@ requirements:
     citation: 42 CFR 447.51 (route 1); 25 U.S.C. 1603(13), (14)
     fix: members of tribes based in other states are exempt, with the same ways to show it as members of in-state tribes
     model: OR
-# Impact: estimated people a state's policy reaches, drawn to scale: one dot per dot_size people,
-# plus a partial dot for the remainder (Kimball, 18 Nov 2026).
+# Impact: estimated people a state's policy reaches: one whole dot per dot_size people, rounded down;
+# a state under dot_size shows a single half dot (Kimball, 18 Nov 2026).
 # Estimate = Census 2020 American Indian and Alaska Native alone population (population.csv,
 # 2020 PL table P1) x subject_share. subject_share is our assumption [J]: no published source gives
 # the share of AI/AN people who are expansion adults subject to the work rule. It matches

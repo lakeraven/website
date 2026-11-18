@@ -29,12 +29,14 @@ test("contradictions are listed before unpublished requirements", () => {
   }
 });
 
-test("impact dots are to scale: one per 10,000, California shows 7 whole dots", () => {
+test("impact dots: one whole dot per 10,000 rounded down, a half dot under 10,000; California shows 7", () => {
   const ca = data.states.find((s) => s.state === "CA");
   assert.strictEqual(ca.impact.full, 7);
+  assert.strictEqual(ca.impact.part, 0);
   for (const s of data.states) {
     if (s.status === "not_subject") { assert.strictEqual(s.impact.full + s.impact.part, 0, s.state); continue; }
     const est = s.impact.population * data.rubric.impact.subject_share;
-    assert.ok(Math.abs((s.impact.full + s.impact.part) * 10000 - est) <= 100, s.state);
+    assert.strictEqual(s.impact.full, Math.floor(est / 10000), s.state);
+    assert.strictEqual(s.impact.part, est < 10000 ? 0.5 : 0, s.state);
   }
 });

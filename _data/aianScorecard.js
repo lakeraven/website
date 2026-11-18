@@ -84,10 +84,10 @@ module.exports = function () {
     const est = pop[s.state] * imp.subject_share;
     const rounded = Number(est.toPrecision(2));
     const subject = s.status !== "not_subject";
-    // To scale: whole dots per dot_size, then the remainder as a fraction of a dot.
+    // One whole dot per dot_size, rounded down; under dot_size shows a single half dot (Kimball, 18 Nov 2026).
     const full = subject ? Math.floor(est / imp.dot_size) : 0;
-    const part = subject ? (est - full * imp.dot_size) / imp.dot_size : 0;
-    s.impact = { population: pop[s.state], estimate: rounded, full, part: Math.round(part * 100) / 100, published: (imp.published || {})[s.state] || null };
+    const part = subject && full === 0 ? 0.5 : 0;
+    s.impact = { population: pop[s.state], estimate: rounded, full, part, published: (imp.published || {})[s.state] || null };
   }
 
   if (problems.length) throw new Error("AI/AN scorecard evidence is missing sources:\n" + problems.join("\n"));
