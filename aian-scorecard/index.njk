@@ -15,22 +15,32 @@ description: How closely each state's published Medicaid policy follows CMS rule
 
 <p>Grades update as states publish new policy. A state, tribe, or Indian health program can <a href="{{ '/aian-medicaid-scorecard/process/' | url }}">submit evidence</a> on any state's page. Last checked {{ sc.lastChecked }}.</p>
 
+<h2>By the numbers</h2>
+{% set sm = sc.summary %}
+<ul class="usa-list">
+  <li><strong>{{ sm.allMet }} of {{ sm.subject }}</strong> states subject to the new rules meet all {{ sm.total }} requirements in their published policy.</li>
+  <li>The median state meets <strong>{{ sm.median }} of {{ sm.total }}</strong>.</li>
+  <li><strong>{{ sm.anyContradiction }}</strong> states publish policy that contradicts at least one requirement.</li>
+  <li><strong>{{ sm.tribalChannel }}</strong> states publish a way for tribes or Indian health programs to confirm a person's status.</li>
+</ul>
+
 <h2>Grades at a glance</h2>
 <ul class="usa-list">
 {% for c in sc.counts %}{% if c.n > 0 %}<li><strong>{{ c.grade }}</strong>: {{ c.n }} {% if c.n == 1 %}state{% else %}states{% endif %}</li>{% endif %}{% endfor %}
 </ul>
 
-<h2>All states</h2>
+<h2>All states, ranked</h2>
+<p>Ranked by requirements met, then fewest contradicted, then fewest unpublished. The grade follows mechanically from those counts (see <a href="#rubric">How grades work</a>).</p>
 <table class="usa-table usa-table--borderless usa-table--stacked">
-  <caption class="usa-sr-only">Grade for each state, with counts of requirements met, contradicted, and unpublished</caption>
-  <thead><tr><th scope="col">State</th><th scope="col">Grade</th><th scope="col">Met</th><th scope="col">Contradicted</th><th scope="col">Not published</th><th scope="col">Last checked</th></tr></thead>
+  <caption class="usa-sr-only">States ranked by requirements met, with counts contradicted and unpublished, and the grade derived from them</caption>
+  <thead><tr><th scope="col">State</th><th scope="col">Score</th><th scope="col">Grade</th><th scope="col">Contradicted</th><th scope="col">Not published</th><th scope="col">Last checked</th></tr></thead>
   <tbody>
-  {% for s in sc.states %}
+  {% for s in sc.ranked %}
     <tr>
       <th scope="row" data-label="State"><a href="{{ ('/aian-medicaid-scorecard/' + s.slug + '/') | url }}">{{ s.name }}</a>{% if s.under_review %} <span class="usa-tag">Evidence under review</span>{% endif %}</th>
+      <td data-label="Score">{% if s.status != 'not_subject' %}{{ s.met }} of {{ sc.summary.total }} met{% endif %}</td>
       <td data-label="Grade">{{ s.grade }}{% if s.status == 'not_subject' and not s.confirmed %} (to confirm){% endif %}</td>
-      <td data-label="Met">{% if s.status != 'not_subject' %}{{ s.met }}{% endif %}</td>
-      <td data-label="Contradicted">{% if s.status != 'not_subject' %}{{ s.contradicts }}{% endif %}</td>
+            <td data-label="Contradicted">{% if s.status != 'not_subject' %}{{ s.contradicts }}{% endif %}</td>
       <td data-label="Not published">{% if s.status != 'not_subject' %}{{ s.unpublished }}{% endif %}</td>
       <td data-label="Last checked">{{ s.checked }}</td>
     </tr>
