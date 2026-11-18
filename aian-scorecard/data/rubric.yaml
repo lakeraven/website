@@ -1,6 +1,9 @@
 # Grading rubric. Approved 2026-11-18.
 approved: true
-not_graded_unpublished_min: 7
+not_graded_unpublished_min: 8
+# Grade thresholds, scaled to ten requirements (2026-11-18).
+a_met_min: 9
+c_met_max: 5
 requirements:
   - id: tribal_members
     label: Members of federally recognized tribes, including Alaska Native villages
@@ -29,23 +32,26 @@ requirements:
   - id: twelve_month_renewal
     label: Keeps 12-month renewals for American Indians and Alaska Natives in the expansion group
     citation: Social Security Act 1902(e)(14)(L)(ii); CMS SMD 26-001
+  - id: out_of_state
+    label: Covers members of any federally recognized tribe, not only tribes in the state, and accepts proof from people whose tribe is elsewhere
+    citation: 42 CFR 447.51 (route 1); 25 U.S.C. 1603(13), (14)
 best_practices:
   - id: tribal_or_clinic_channel
     label: A way for tribes, IHS and urban Indian clinics to confirm a person's status
     citation: Tribal recommendation, not a CMS requirement
 grades:
   - grade: A
-    rule: No contradictions, and 8 or 9 requirements met
+    rule: No contradictions, and 9 or 10 requirements met
   - grade: B
-    rule: No contradictions, and 5 to 7 met
+    rule: No contradictions, and 6 to 8 met
   - grade: C
-    rule: One contradiction, or none but 4 or fewer met
+    rule: One contradiction, or none but 5 or fewer met
   - grade: D
     rule: Two contradictions
   - grade: F
     rule: Three or more contradictions
   - grade: Not graded
-    rule: Seven or more requirements unpublished, or sources could not be verified
+    rule: Eight or more requirements unpublished, or sources could not be verified
   - grade: Not subject
     rule: State has not expanded Medicaid, so the expansion-group rules do not apply
 submission:

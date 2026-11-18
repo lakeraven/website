@@ -6,6 +6,14 @@ start: '2027-01-01'
 unverified: false
 under_review: false
 components:
+  out_of_state:
+    mark: meets
+    quote: In 2027, documentation is required only for four categories ... income, VA disability, work hours, and education ... for all other categories, a member's self-attestation is accepted.
+    url: https://www.nj.gov/humanservices/dmahs/documents/providers-stakeholders/obbba/Expansion_Adult_Stakeholder_Guidance.pdf
+    read: '2026-11-18'
+    secondary:
+      quote: A member of a federally recognized American Indian tribe or an Alaska Native; visit https://www.usa.gov/tribes for list
+      url: https://www.nj.gov/humanservices/dmahs/documents/providers-stakeholders/obbba/Expansion_Adult_Stakeholder_Guidance.pdf
   tribal_members:
     mark: meets
     quote: A member of a federally recognized American Indian or Alaska Native tribe.

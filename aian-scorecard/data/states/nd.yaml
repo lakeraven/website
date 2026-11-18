@@ -6,6 +6,8 @@ start: 2027-01-01 (applicants); members with a review due 2027-02-28
 unverified: false
 under_review: false
 components:
+  out_of_state:
+    mark: unpublished
   tribal_members:
     mark: meets
     quote: Native Americans or Alaska Natives

@@ -6,6 +6,14 @@ start: '2027-01-01'
 unverified: false
 under_review: false
 components:
+  out_of_state:
+    mark: meets
+    quote: 'IHS Face Sheet: A medical record certified by IHS as being from their original records.'
+    url: https://medicaid.utah.gov/aian/
+    read: '2026-11-18'
+    secondary:
+      quote: verified Federal Indian status, AI/AN status, or tribal enrollment
+      url: https://medicaid.utah.gov/aian/
   tribal_members:
     mark: meets
     quote: with a verified Federal Indian status, AI/AN status, or tribal enrollment

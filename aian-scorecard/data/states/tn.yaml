@@ -3,6 +3,8 @@ state: TN
 name: Tennessee
 under_review: false
 components:
+  out_of_state:
+    mark: unpublished
   tribal_members:
     mark: unpublished
   urban_and_descendants:

@@ -6,6 +6,14 @@ start: 2027-01-01 new applicants; current members at renewals due 2027-03-31 onw
 unverified: false
 under_review: false
 components:
+  out_of_state:
+    mark: meets
+    quote: Effective October 26, 2026, self-attestation will be accepted from applicants and members
+    url: https://www.dhs.wisconsin.gov/dms/memos/ops/dms-ops-2026-33.pdf
+    read: '2026-11-18'
+    secondary:
+      quote: child or grandchild of a Tribal member (first or second degree), Urban Indian, California Indian, or eligible to receive health care from the Indian Health Service.
+      url: https://www.dhs.wisconsin.gov/dms/memos/ops/dms-ops-2026-33.pdf
   tribal_members:
     mark: meets
     quote: Members of an American Indian Tribe or Alaska Native Village; children or grandchildren of a Tribal member
@@ -48,6 +56,10 @@ components:
     quote: This will be kept on file and you won’t have to report it again.
     url: https://www.dhs.wisconsin.gov/publications/p03809c.pdf
     read: '2026-11-18'
+    follow_up: >-
+      Wisconsin's work-requirement page says exemptions are checked annually at renewal, while this
+      flyer for tribal members and Operations Memo 26-33 say tribal status stays on file. We have not yet confirmed
+      which applies; this finding is open for review.
   twelve_month_renewal:
     mark: meets
     quote: We will check for compliance or an exemption when someone first applies and then we'll check annually at renewal.

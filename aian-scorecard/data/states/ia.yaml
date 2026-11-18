@@ -6,6 +6,8 @@ start: '2026-12-01 (Iowa HHS Sept 2026 deck: ''Starting December 1, 2026''); sta
 unverified: false
 under_review: false
 components:
+  out_of_state:
+    mark: unpublished
   tribal_members:
     mark: meets
     quote: You are an American Indian or Alaska Native

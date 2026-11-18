@@ -6,6 +6,8 @@ start: 2027-01-01 (new applicants); current members from February 2027 renewals
 unverified: false
 under_review: false
 components:
+  out_of_state:
+    mark: unpublished
   tribal_members:
     mark: meets
     quote: Member of a federally recognized tribe (American Indian or Alaska Native)

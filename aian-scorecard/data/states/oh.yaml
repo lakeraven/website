@@ -6,6 +6,14 @@ start: '2027-01-01'
 unverified: false
 under_review: false
 components:
+  out_of_state:
+    mark: meets
+    quote: Official Statement from Federally Recognized Tribe
+    url: https://dam.assets.ohio.gov/image/upload/medicaid.ohio.gov/Families%2C%20Individuals/Programs/Community/Group_VIII_Partner_Packet_08132026.pdf
+    read: '2026-11-18'
+    secondary:
+      quote: Native American, Urban Native American, or California Native American (as defined in the Indian Health Care Improvement Act)
+      url: https://dam.assets.ohio.gov/image/upload/medicaid.ohio.gov/Families%2C%20Individuals/Programs/Community/Group_VIII_Partner_Packet_08132026.pdf
   tribal_members:
     mark: meets
     quote: Native American, Urban Native American, or California Native American

@@ -6,6 +6,14 @@ start: '2027-01-01'
 unverified: false
 under_review: false
 components:
+  out_of_state:
+    mark: meets
+    quote: You do not need to send any proof.
+    url: https://www.oregon.gov/oha/HSD/OHP/Documents/Work-Activity-Exemptions.pdf
+    read: '2026-11-18'
+    secondary:
+      quote: American Indian as defined at 447.51
+      url: https://www.oregon.gov/oha/HSD/OHP/Announcements/WFTC-Changes1026.pdf
   tribal_members:
     mark: meets
     quote: You're an enrolled member of a federally recognized tribe (or your parent or grandparent is)

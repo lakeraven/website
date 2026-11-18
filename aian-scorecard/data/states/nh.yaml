@@ -6,6 +6,8 @@ start: 2027-01-01 (first redetermination in 2027, per NHPR)
 unverified: false
 under_review: false
 components:
+  out_of_state:
+    mark: unpublished
   tribal_members:
     mark: unpublished
   urban_and_descendants:

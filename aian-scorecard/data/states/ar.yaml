@@ -6,6 +6,8 @@ start: Penalties 2027-01-01 (soft launch 2026-07-01); DHS letter to CMS 2026-11-
 unverified: false
 under_review: false
 components:
+  out_of_state:
+    mark: unpublished
   tribal_members:
     mark: unpublished
     quote: pregnant and postpartum women, disabled veterans, caregivers, and those with special medical needs

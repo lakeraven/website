@@ -6,6 +6,14 @@ start: 2027-01-01 (existing members at first 2027 redetermination; new applicant
 unverified: false
 under_review: false
 components:
+  out_of_state:
+    mark: meets
+    quote: In 2027, the state will accept "self-attestation" from customers of exemptions to work requirements
+    url: https://hfs.illinois.gov/medicalclients/medicaidguide/changes.html
+    read: '2026-11-18'
+    secondary:
+      quote: An American Indian/Alaska Native, an American Urban Indian, a California Indian, a member of a recognized tribe, or qualified to receive healthcare through the Indian Health Service (IHS)
+      url: https://hfs.illinois.gov/content/dam/soi/en/web/hfs/medicalclients/medicaidguide/ACAAdultCustomerNotice083126ToPrint.pdf
   tribal_members:
     mark: meets
     quote: An American Indian/Alaska Native, an American Urban Indian, a California Indian, a member of a recognized tribe,

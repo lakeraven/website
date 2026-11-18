@@ -6,6 +6,14 @@ start: Live 2026-05-01
 unverified: false
 under_review: false
 components:
+  out_of_state:
+    mark: meets
+    quote: Mark that the applicant is Native American on the Medicaid application and/or screener questions
+    url: https://dhhs.ne.gov/Documents/Tribal%20H.R.1%20Timeline.pdf
+    read: '2026-11-18'
+    secondary:
+      quote: If you are a member of a federally recognized Native American tribe, an Urban Indian, a California Indian, or if you receive services through the Indian Health Services (IHS)
+      url: https://dhhs.ne.gov/Documents/MWR%20Tribal%20Exemptions%20One-Pager.pdf
   tribal_members:
     mark: meets
     quote: If you are a member of a federally recognized Native American tribe, an Urban Indian, a California Indian,
@@ -47,7 +55,7 @@ components:
     url: https://dhhs.ne.gov/Documents/Tribal%20H.R.1%20Timeline.pdf
     read: '2026-11-18'
   status_not_rechecked:
-    mark: unpublished
+    mark: contradicts
     quote: DHHS will only check that you're meeting work requirements or have an exemption at each regularly scheduled renewal.
     url: https://dhhs.ne.gov/Documents/MLTC-WR-Requirements-FAQ.pdf
     read: '2026-11-18'

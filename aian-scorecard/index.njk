@@ -39,7 +39,7 @@ description: How closely each state's published Medicaid policy follows CMS rule
 </table>
 
 <h2 id="rubric">How grades work</h2>
-<p>Each state is checked against nine requirements. For each one, published state policy either <strong>meets</strong> it, <strong>contradicts</strong> it, or has <strong>not published</strong> anything. Silence never counts as meeting a requirement.</p>
+<p>Each state is checked against {{ aianScorecard.rubric.requirements.length }} requirements. For each one, published state policy either <strong>meets</strong> it, <strong>contradicts</strong> it, or has <strong>not published</strong> anything. Silence never counts as meeting a requirement.</p>
 <table class="usa-table usa-table--borderless">
   <thead><tr><th scope="col">Requirement</th><th scope="col">Source</th></tr></thead>
   <tbody>{% for r in sc.rubric.requirements %}<tr><td>{{ r.label }}</td><td>{{ r.citation }}</td></tr>{% endfor %}</tbody>

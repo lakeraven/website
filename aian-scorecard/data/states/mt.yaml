@@ -6,6 +6,8 @@ start: Live 2026-07-01; denials/disenrollments from October 2026
 unverified: false
 under_review: false
 components:
+  out_of_state:
+    mark: unpublished
   tribal_members:
     mark: meets
     quote: I am American Indian, Alaska Native, California Indian

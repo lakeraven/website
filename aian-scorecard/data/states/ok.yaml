@@ -6,6 +6,8 @@ start: 2027-01-01 (contingent on CMS approval)
 unverified: false
 under_review: false
 components:
+  out_of_state:
+    mark: unpublished
   tribal_members:
     mark: meets
     quote: an American Indian or Alaska Native individual who meets the criteria in 42 C.F.R. § 435.554

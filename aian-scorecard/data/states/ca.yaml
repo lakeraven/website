@@ -6,6 +6,8 @@ start: 2027-01-01 per MEDIL I 26-25 (member letter says March 2027); DHCS reques
 unverified: false
 under_review: false
 components:
+  out_of_state:
+    mark: unpublished
   tribal_members:
     mark: meets
     quote: Are American Indian or Alaska Native.

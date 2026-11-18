@@ -6,6 +6,8 @@ start: 2027-01-01 (IB 26-19, 2026-10-21)
 unverified: false
 under_review: false
 components:
+  out_of_state:
+    mark: unpublished
   tribal_members:
     mark: meets
     quote: n. American Indians and Alaska Natives as defined in 42 C.F.R. §447.51.

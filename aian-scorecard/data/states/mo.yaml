@@ -6,6 +6,8 @@ start: 2027-01-01 (6-month AEG redeterminations begin 2026-12-31 per DSS toolkit
 unverified: false
 under_review: false
 components:
+  out_of_state:
+    mark: unpublished
   tribal_members:
     mark: meets
     quote: You meet the federal definition of an American Indian or Alaska Native.

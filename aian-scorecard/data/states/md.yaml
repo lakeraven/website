@@ -6,6 +6,8 @@ start: '2027-01-01'
 unverified: false
 under_review: false
 components:
+  out_of_state:
+    mark: unpublished
   tribal_members:
     mark: meets
     quote: You are American Indian or Alaska Native

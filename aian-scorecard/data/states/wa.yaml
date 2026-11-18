@@ -6,6 +6,14 @@ start: '2027-01-01'
 unverified: false
 under_review: false
 components:
+  out_of_state:
+    mark: meets
+    quote: HCA accepts self-attestation of AI/AN status, and this will not change for work requirements.
+    url: https://www.hca.wa.gov/assets/program/hr1-frequently-asked-questions.pdf
+    read: '2026-11-18'
+    secondary:
+      quote: No. Enrollment in a federally recognized Tribe is not required.
+      url: https://www.hca.wa.gov/assets/program/hr1-frequently-asked-questions.pdf
   tribal_members:
     mark: meets
     quote: • Enrolled in a federally recognized Tribe
