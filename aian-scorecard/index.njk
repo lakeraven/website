@@ -10,19 +10,28 @@ description: How closely each state's published Medicaid policy follows CMS rule
 {% endif %}
 
 <h1>American Indian and Alaska Native Medicaid exemption scorecard</h1>
+{% set sm = sc.summary %}
+<p class="usa-intro aian-headline">Only <strong>{{ sm.allMet }} of {{ sm.subject }}</strong> states meet all {{ sm.total }} requirements in their published policy. The median state meets <strong>{{ sm.median }}</strong>, and <strong>{{ sm.anyContradiction }}</strong> publish policy that contradicts at least one.</p>
 
 <p>Federal law exempts American Indians and Alaska Natives from Medicaid's new work requirement and keeps their renewals at 12 months. This scorecard grades how closely each state's <strong>published</strong> policy follows the CMS rules that carry out those protections. It measures what states have written down, not what happens at every eligibility office.</p>
 
 <p>Grades update as states publish new policy. A state, tribe, or Indian health program can <a href="{{ '/aian-medicaid-scorecard/process/' | url }}">submit evidence</a> on any state's page. Last checked {{ sc.lastChecked }}.</p>
 
 <h2>By the numbers</h2>
-{% set sm = sc.summary %}
 <ul class="usa-list">
   <li><strong>{{ sm.allMet }} of {{ sm.subject }}</strong> states subject to the new rules meet all {{ sm.total }} requirements in their published policy.</li>
   <li>The median state meets <strong>{{ sm.median }} of {{ sm.total }}</strong>.</li>
   <li><strong>{{ sm.anyContradiction }}</strong> states publish policy that contradicts at least one requirement.</li>
   <li><strong>{{ sm.tribalChannel }}</strong> states publish a way for tribes or Indian health programs to confirm a person's status.</li>
 </ul>
+
+<h2 id="how-grades-change">How a state raises its grade</h2>
+<ol class="usa-list">
+  <li><strong>Publish a qualifying policy.</strong> Each state's page lists every requirement it does not yet meet, the policy that would meet it, model language from a state that already does, and the grade the state would reach.</li>
+  <li><strong>Send us the public link.</strong> Use the Submit evidence button on the state's page. A state agency, tribe, Indian health program, or anyone else can submit, and evidence from tribes and Indian health programs counts the same as the state's.</li>
+  <li><strong>We review within {{ sc.rubric.submission.review_business_days }} business days.</strong> The state's page shows Evidence under review until we finish.</li>
+  <li><strong>The grade updates.</strong> An upgrade publishes right away. A downgrade waits {{ sc.rubric.submission.downgrade_notice_days }} days after we notify the state. Every change is listed in the state's history with its date and source.</li>
+</ol>
 
 <h2>Grades at a glance</h2>
 <ul class="usa-list">
@@ -31,18 +40,20 @@ description: How closely each state's published Medicaid policy follows CMS rule
 
 <h2>All states, ranked</h2>
 <p>Ranked by requirements met, then fewest contradicted, then fewest unpublished. The grade follows mechanically from those counts (see <a href="#rubric">How grades work</a>).</p>
-<table class="usa-table usa-table--borderless usa-table--stacked">
-  <caption class="usa-sr-only">States ranked by requirements met, with counts contradicted and unpublished, and the grade derived from them</caption>
-  <thead><tr><th scope="col">State</th><th scope="col">Score</th><th scope="col">Grade</th><th scope="col">Contradicted</th><th scope="col">Not published</th><th scope="col">Last checked</th></tr></thead>
+{% set im = sc.rubric.impact %}
+<p class="aian-legend"><strong>Impact</strong> is our estimate of how many American Indian and Alaska Native people in the state could be exempt, on a log scale: {% for l in sc.impactLegend %}<span class="aian-dots" aria-hidden="true">{% for i in range(0, l.dots) %}&#9679;{% endfor %}</span> {{ l.range }}{% if not loop.last %}; {% endif %}{% endfor %}. It is the 2020 Census American Indian and Alaska Native population times an assumed {{ (im.subject_share * 100) | round }}% who are expansion adults subject to the work rule; no published source gives that share. <strong>To fix</strong> lists every requirement the state does not meet: contradictions first, then requirements with no published policy. Each links to the fix on the state's page.</p>
+<table class="usa-table usa-table--borderless usa-table--stacked aian-roster">
+  <caption class="usa-sr-only">States ranked by requirements met, with grade, estimated impact, and the requirements each state still needs to fix</caption>
+  <thead><tr><th scope="col">State</th><th scope="col">Score</th><th scope="col">Grade</th><th scope="col">Impact</th><th scope="col">To fix</th></tr></thead>
   <tbody>
   {% for s in sc.ranked %}
+    {% set url = ('/aian-medicaid-scorecard/' + s.slug + '/') | url %}
     <tr>
-      <th scope="row" data-label="State"><a href="{{ ('/aian-medicaid-scorecard/' + s.slug + '/') | url }}">{{ s.name }}</a>{% if s.under_review %} <span class="usa-tag">Evidence under review</span>{% endif %}</th>
-      <td data-label="Score">{% if s.status != 'not_subject' %}{{ s.met }} of {{ sc.summary.total }} met{% endif %}</td>
+      <th scope="row" data-label="State"><a href="{{ url }}">{{ s.name }}</a>{% if s.under_review %} <span class="usa-tag">Evidence under review</span>{% endif %}</th>
+      <td data-label="Score">{% if s.status != 'not_subject' %}<strong>{{ s.met }}/{{ sc.summary.total }}</strong><br><span class="text-base aian-sub">{{ s.contradicts }} contradicted, {{ s.unpublished }} unpublished</span>{% endif %}</td>
       <td data-label="Grade">{{ s.grade }}{% if s.status == 'not_subject' and not s.confirmed %} (to confirm){% endif %}</td>
-            <td data-label="Contradicted">{% if s.status != 'not_subject' %}{{ s.contradicts }}{% endif %}</td>
-      <td data-label="Not published">{% if s.status != 'not_subject' %}{{ s.unpublished }}{% endif %}</td>
-      <td data-label="Last checked">{{ s.checked }}</td>
+      <td data-label="Impact">{% if s.impact.dots %}<span class="aian-dots" role="img" aria-label="{{ s.impact.dots }} of 5: about {{ s.impact.estimate | aianNum }} estimated">{% for i in range(0, 5) %}{% if i < s.impact.dots %}&#9679;{% else %}&#9675;{% endif %}{% endfor %}</span><br><span class="text-base">about {{ s.impact.estimate | aianNum }}</span>{% if s.impact.published %}<br><span class="text-base">State reports {{ s.impact.published.count | aianNum }} <a href="{{ s.impact.published.url }}">verified</a></span>{% endif %}{% endif %}</td>
+      <td data-label="To fix">{% if s.status == 'not_subject' %}Not subject{% elif not s.improvements.length %}Nothing{% else %}{% set con = s.fixContradicts %}{% set unp = s.fixUnpublished %}{% if con.length %}<span class="aian-fix-kind">Contradicts:</span> {% for i in con %}<a href="{{ url }}#fix-{{ i.id }}">{{ i.short }}</a>{% if not loop.last %} · {% endif %}{% endfor %}{% endif %}{% if con.length and unp.length %}<br>{% endif %}{% if unp.length %}<span class="aian-fix-kind">Not published:</span> {% for i in unp %}<a href="{{ url }}#fix-{{ i.id }}">{{ i.short }}</a>{% if not loop.last %} · {% endif %}{% endfor %}{% endif %}{% endif %}</td>
     </tr>
   {% endfor %}
   </tbody>

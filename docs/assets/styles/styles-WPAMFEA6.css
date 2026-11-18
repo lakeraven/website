@@ -30502,6 +30502,73 @@ html[data-theme=dark] .usa-table caption {
 .aian-finding {
   white-space: nowrap;
 }
+.aian-raise {
+  border-left: 0.5rem solid #005ea2;
+  background: #f0f7fc;
+  padding: 0.5rem 1.25rem 1rem;
+  margin: 1.5rem 0;
+}
+.aian-fixes > li {
+  margin-bottom: 1.25rem;
+}
+.aian-fixes > li p {
+  margin: 0.25rem 0;
+}
+html[data-theme=dark] .aian-raise {
+  background: #1a2430;
+  border-left-color: #73b3e7;
+  color: #f0f0f0;
+}
+.aian-dots {
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+  color: #005ea2;
+}
+html[data-theme=dark] .aian-dots {
+  color: #73b3e7;
+}
+.aian-fix-kind {
+  font-weight: 700;
+}
+.aian-roster td,
+.aian-roster th {
+  vertical-align: top;
+}
+.aian-roster th[scope=row] {
+  min-width: 8rem;
+}
+.aian-roster thead th {
+  white-space: nowrap;
+}
+.aian-roster td[data-label=Score],
+.aian-roster td[data-label=Impact] {
+  white-space: nowrap;
+}
+@media all and (max-width: 29.99em) {
+  .usa-prose > .aian-roster.usa-table--stacked tr {
+    padding: 0.5rem 0;
+  }
+  .usa-prose > .aian-roster.usa-table--stacked th[data-label],
+  .usa-prose > .aian-roster.usa-table--stacked td[data-label] {
+    padding: 0.2rem 0.5rem;
+    border-top: 0;
+    border-bottom: 0;
+  }
+  .usa-prose > .aian-roster.usa-table--stacked th[data-label]::before,
+  .usa-prose > .aian-roster.usa-table--stacked td[data-label]::before {
+    display: inline;
+    margin: 0 0.5rem 0 0;
+    padding: 0;
+  }
+  .usa-prose > .aian-roster.usa-table--stacked td[data-label=Impact] br,
+  .usa-prose > .aian-roster.usa-table--stacked td[data-label=Score] br {
+    display: none;
+  }
+  .usa-prose > .aian-roster.usa-table--stacked .aian-sub,
+  .usa-prose > .aian-roster.usa-table--stacked td[data-label=Impact] .text-base {
+    margin-left: 0.5rem;
+  }
+}
 /*! uswds @version */
 
-/*# sourceMappingURL=styles-NHK2HEIU.css.map */
+/*# sourceMappingURL=styles-WPAMFEA6.css.map */

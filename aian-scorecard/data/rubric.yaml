@@ -6,35 +6,81 @@ a_met_min: 10
 c_met_max: 5
 requirements:
   - id: tribal_members
+    short: Tribal members
     label: Members of federally recognized tribes, including Alaska Native villages
     citation: 42 CFR 447.51 (route 1)
+    fix: members of any federally recognized tribe, including Alaska Native villages and regional or village corporations, are exempt
+    model: OR
   - id: urban_and_descendants
+    short: Urban Indians and descendants
     label: Urban Indians, including members of terminated or state-recognized tribes and first- or second-degree descendants
     citation: 42 CFR 447.51 (route 2); 25 U.S.C. 1603(28)
+    fix: urban Indians are exempt, including members of terminated or state-recognized tribes and the children and grandchildren of tribal members
+    model: WI
   - id: alaska_natives
+    short: Alaska Natives
     label: Alaska Natives
     citation: 42 CFR 447.51 (routes 2 and 4)
+    fix: Alaska Natives are exempt
+    model: NE
   - id: ihs_eligible
+    short: IHS-eligible
     label: Anyone eligible for Indian Health Service, tribal or urban Indian program services
     citation: 42 CFR 447.51 (route 4); 42 CFR 136.12
+    fix: anyone eligible for services from the Indian Health Service or a tribal or urban Indian health program is exempt
+    model: OR
   - id: california_indians
+    short: California Indians
     label: California Indians
     citation: 42 CFR 447.51 (route 4); 25 U.S.C. 1679(a)
+    fix: California Indians, as defined at 25 U.S.C. 1679(a), are exempt
+    model: IL
   - id: data_first
+    short: Check own data first
     label: State checks its own records (claims, eligibility data) before asking the person
     citation: 42 CFR 435.557(b), (c)(1)
+    fix: the state first checks records it already holds, such as prior American Indian or Alaska Native status and claims from Indian health providers, before asking the person for anything
+    model: MT
   - id: non_document_proof
+    short: Proof without documents
     label: Accepts proof other than documents; no denial solely for missing documents
     citation: 42 CFR 435.557(b)(2)
+    fix: a person can qualify without documents, for example by self-attestation, and is never denied only for lacking documents
+    model: OR
   - id: status_not_rechecked
+    short: No re-checks
     label: Status is not re-checked between renewals
     citation: 42 CFR 435.557(d)(4)
+    fix: once a person's status is established it stays on file and is not checked again, including at renewal
+    model: OR
   - id: twelve_month_renewal
+    short: 12-month renewals
     label: Keeps 12-month renewals for American Indians and Alaska Natives in the expansion group
     citation: Social Security Act 1902(e)(14)(L)(ii); CMS SMD 26-001
+    fix: American Indians and Alaska Natives in the expansion group keep 12-month renewals
+    model: OK
   - id: out_of_state
+    short: Out-of-state tribes
     label: Covers members of any federally recognized tribe, not only tribes in the state, and accepts proof from people whose tribe is elsewhere
     citation: 42 CFR 447.51 (route 1); 25 U.S.C. 1603(13), (14)
+    fix: members of tribes based in other states are exempt, with the same ways to show it as members of in-state tribes
+    model: OR
+# Impact: estimated people a state's policy reaches, shown as 0 to 5 dots on a log scale.
+# Estimate = Census 2020 American Indian and Alaska Native alone population (population.csv,
+# 2020 PL table P1) x subject_share. subject_share is our assumption [J]: no published source gives
+# the share of AI/AN people who are expansion adults subject to the work rule. It matches
+# /mnt/project-files/aian-adherence/estimate/params.yml.
+impact:
+  subject_share: 0.12
+  # Lower bound of 2, 3, 4 and 5 dots (estimated people). Below the first bound is 1 dot.
+  dot_floors: [1500, 5000, 15000, 50000]
+  # Counts a state has published itself, shown beside the estimate.
+  published:
+    NC:
+      count: 3400
+      what: American Indians verified as exempt
+      source: KFF Health News, 13 Nov 2026, citing NC DHHS
+      url: https://kffhealthnews.org/health-care-costs/medicaid-work-rule-requirement-native-american-north-carolina-exemption-coverage/
 best_practices:
   - id: tribal_or_clinic_channel
     label: A way for tribes, IHS and urban Indian clinics to confirm a person's status

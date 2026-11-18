@@ -262,3 +262,43 @@ html[data-theme="dark"] .usa-table {
 .aian-finding {
   white-space: nowrap;
 }
+
+// Scorecard: how a state raises its grade
+.aian-raise {
+  border-left: 0.5rem solid #005ea2;
+  background: #f0f7fc;
+  padding: 0.5rem 1.25rem 1rem;
+  margin: 1.5rem 0;
+}
+.aian-fixes > li {
+  margin-bottom: 1.25rem;
+  p { margin: 0.25rem 0; }
+}
+html[data-theme="dark"] .aian-raise {
+  background: $dark-surface;
+  border-left-color: $dark-link;
+  color: $dark-fg;
+}
+.aian-dots {
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+  color: #005ea2;
+}
+html[data-theme="dark"] .aian-dots { color: $dark-link; }
+.aian-fix-kind { font-weight: 700; }
+.aian-roster td, .aian-roster th { vertical-align: top; }
+.aian-roster {
+  th[scope="row"] { min-width: 8rem; }
+  thead th { white-space: nowrap; }
+  td[data-label="Score"], td[data-label="Impact"] { white-space: nowrap; }
+}
+// Phones: compact rows, label and value on one line.
+@media all and (max-width: 29.99em) {
+  .usa-prose > .aian-roster.usa-table--stacked {
+    tr { padding: 0.5rem 0; }
+    th[data-label], td[data-label] { padding: 0.2rem 0.5rem; border-top: 0; border-bottom: 0; }
+    th[data-label]::before, td[data-label]::before { display: inline; margin: 0 0.5rem 0 0; padding: 0; }
+    td[data-label="Impact"] br, td[data-label="Score"] br { display: none; }
+    .aian-sub, td[data-label="Impact"] .text-base { margin-left: 0.5rem; }
+  }
+}

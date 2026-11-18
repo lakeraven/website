@@ -34,6 +34,59 @@ module.exports = function () {
     })
     .sort((a, b) => a.name.localeCompare(b.name));
 
+  // How each state raises its grade: for every requirement it does not meet, the fix, the grade it
+  // would reach with only that fix, and model language from a state whose policy meets it.
+  const byCode = Object.fromEntries(states.map((s) => [s.state, s]));
+  for (const r of rubric.requirements) {
+    const m = byCode[r.model];
+    const c = m && m.requirements.find((x) => x.id === r.id);
+    if (!c || c.mark !== "meets") problems.push(`rubric.${r.id}: model state ${r.model} must meet this requirement`);
+  }
+  const withMark = (s, id, mark) => ({ ...s, components: { ...(s.components || {}), [id]: { mark } } });
+  for (const s of states) {
+    if (s.status === "not_subject") { s.improvements = []; s.fixContradicts = []; s.fixUnpublished = []; continue; }
+    s.improvements = s.requirements.filter((r) => r.mark !== "meets").map((r) => {
+      const m = byCode[r.model];
+      const mc = m.requirements.find((x) => x.id === r.id);
+      return {
+        id: r.id, label: r.label, short: r.short, citation: r.citation, mark: r.mark, fix: r.fix,
+        gradeIfFixed: gradeState(withMark(s, r.id, "meets"), rubric).grade,
+        model: { state: m.state, name: m.name, slug: m.slug, quote: mc.quote, url: mc.url },
+      };
+    });
+    // Contradictions first: fixing one lowers the contradiction count and raises the score together.
+    s.improvements.sort((a, b) => (a.mark === "contradicts" ? 0 : 1) - (b.mark === "contradicts" ? 0 : 1));
+    // Smallest set of fixes, in that order, that reaches a better grade.
+    const rank = ["A", "B", "C", "D", "F", "Not graded"];
+    s.nextStep = null;
+    let t = s;
+    for (let k = 0; k < s.improvements.length; k++) {
+      t = withMark(t, s.improvements[k].id, "meets");
+      const g = gradeState(t, rubric).grade;
+      if (rank.indexOf(g) < rank.indexOf(s.grade)) {
+        s.nextStep = { grade: g, fixes: s.improvements.slice(0, k + 1).map((i) => i.label) };
+        break;
+      }
+    }
+    s.fixContradicts = s.improvements.filter((i) => i.mark === "contradicts");
+    s.fixUnpublished = s.improvements.filter((i) => i.mark === "unpublished");
+    s.gradeIfAllFixed = gradeState({ ...s, components: Object.fromEntries(rubric.requirements.map((r) => [r.id, { mark: "meets" }])) }, rubric).grade;
+  }
+
+  // Impact: estimated exemptable people, as 0-5 dots on a log scale (see rubric.impact).
+  const pop = Object.fromEntries(
+    fs.readFileSync(path.join(dir, "population.csv"), "utf8").trim().split("\n").slice(1)
+      .map((line) => line.split(",")).map((c) => [c[0], Number(c[2])])
+  );
+  const imp = rubric.impact;
+  for (const s of states) {
+    if (!(s.state in pop)) { problems.push(`${s.state}: no population row`); continue; }
+    const est = pop[s.state] * imp.subject_share;
+    const rounded = Number(est.toPrecision(2));
+    const dots = s.status === "not_subject" ? 0 : 1 + imp.dot_floors.filter((f) => rounded >= f).length;
+    s.impact = { population: pop[s.state], estimate: rounded, dots, published: (imp.published || {})[s.state] || null };
+  }
+
   if (problems.length) throw new Error("AI/AN scorecard evidence is missing sources:\n" + problems.join("\n"));
 
   const order = ["A", "B", "C", "D", "F", "Not graded", "Not subject"];
@@ -56,5 +109,10 @@ module.exports = function () {
   // Roster order: by score (most met, then fewest contradicted, then fewest silent), then name.
   const ranked = [...subject].sort((a, b) => b.met - a.met || a.contradicts - b.contradicts || a.unpublished - b.unpublished || a.name.localeCompare(b.name))
     .concat(states.filter((s) => s.status === "not_subject"));
-  return { rubric, states, ranked, counts, lastChecked, summary };
+  const fl = imp.dot_floors, fmt = (n) => n.toLocaleString("en-US");
+  const impactLegend = [1, 2, 3, 4, 5].map((d) => ({
+    dots: d,
+    range: d === 1 ? `under ${fmt(fl[0])}` : d === 5 ? `${fmt(fl[3])} or more` : `${fmt(fl[d - 2])} to ${fmt(fl[d - 1] - 1)}`,
+  }));
+  return { rubric, states, ranked, impactLegend, counts, lastChecked, summary };
 };

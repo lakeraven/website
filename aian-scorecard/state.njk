@@ -27,6 +27,34 @@ eleventyComputed:
 <p class="font-sans-lg">Grade: <strong>{{ s.grade }}</strong>. Meets {{ s.met }} of {{ aianScorecard.rubric.requirements.length }} requirements, contradicts {{ s.contradicts }}, and has not published policy on {{ s.unpublished }}.</p>
 <p>Evidence last checked {{ s.checked }}.{% if s.start %} Work requirement start date: {{ s.start }}.{% endif %}</p>
 
+{% if s.improvements.length %}
+<section class="aian-raise" aria-labelledby="raise">
+<h2 id="raise">How to raise this grade</h2>
+{% if s.nextStep %}
+<p><strong>To reach {{ s.nextStep.grade }}</strong>, {{ s.name }} needs to publish policy on {{ s.nextStep.fixes.length }} {% if s.nextStep.fixes.length == 1 %}requirement{% else %}requirements{% endif %}:</p>
+<ul class="usa-list">{% for f in s.nextStep.fixes %}<li>{{ f }}</li>{% endfor %}</ul>
+{% endif %}
+<p>Meeting all {{ s.improvements.length }} open requirements earns an <strong>{{ s.gradeIfAllFixed }}</strong>. Fixing a contradiction counts most, because it removes a contradiction and adds a met requirement.</p>
+<ol class="usa-list aian-fixes">
+{% for i in s.improvements %}
+  <li id="fix-{{ i.id }}">
+    <p><strong>{{ i.label }}</strong> ({{ i.citation }})<br>
+    Now: {% if i.mark == 'contradicts' %}published policy contradicts this{% else %}nothing published{% endif %}.</p>
+    <p>{% if i.mark == 'contradicts' %}Replace the conflicting policy with policy that says{% else %}Publish policy that says{% endif %} {{ i.fix }}.</p>
+    <p>With this fix alone: {{ s.met }} of {{ sc.rubric.requirements.length }} becomes {{ s.met + 1 }} of {{ sc.rubric.requirements.length }}, and the grade {% if i.gradeIfFixed == s.grade %}stays {{ s.grade }}{% else %}rises to {{ i.gradeIfFixed }}{% endif %}.</p>
+    <p>Model language from <a href="{{ ('/aian-medicaid-scorecard/' + i.model.slug + '/') | url }}">{{ i.model.name }}</a>: &ldquo;{{ i.model.quote }}&rdquo; <a href="{{ i.model.url }}">Source</a></p>
+    {% if sub.form_url %}
+    <p><a class="usa-button usa-button--outline" href="{{ sub.form_url }}{{ s.state }}">Submit evidence for this requirement</a></p>
+    {% else %}
+    <p><a class="usa-button usa-button--outline" href="mailto:{{ sub.email }}?subject={{ ('Scorecard evidence: ' + s.name + ': ' + i.label) | urlencode }}&body={{ 'Link to the published policy:%0D%0AYour organization (state agency, tribe, Indian health program, other):%0D%0A' }}">Submit evidence for this requirement</a></p>
+    {% endif %}
+  </li>
+{% endfor %}
+</ol>
+<p>Upgrades publish as soon as review confirms the policy, within {{ sub.review_business_days }} business days. <a href="{{ '/aian-medicaid-scorecard/process/' | url }}">How review works</a>.</p>
+</section>
+{% endif %}
+
 <h2>Requirements</h2>
 <table class="usa-table usa-table--borderless usa-table--stacked">
   <thead><tr><th scope="col">Requirement</th><th scope="col" class="aian-finding">Finding</th><th scope="col">What the state published</th></tr></thead>
