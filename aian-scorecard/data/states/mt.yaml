@@ -1,0 +1,56 @@
+# Evidence re-verified 2026-11-18 against primary sources.
+state: MT
+name: Montana
+checked: '2026-11-18'
+start: Live 2026-07-01; denials/disenrollments from October 2026
+unverified: false
+under_review: false
+components:
+  tribal_members:
+    mark: meets
+    quote: I am American Indian, Alaska Native, California Indian
+    url: https://www.dphhs.mt.gov/assets/medicaidchanges/AppendixB-CommunityEngagementExclusionForm.pdf
+    read: '2026-11-18'
+  urban_and_descendants:
+    mark: unpublished
+  alaska_natives:
+    mark: meets
+    quote: I am American Indian, Alaska Native, California Indian
+    url: https://www.dphhs.mt.gov/assets/medicaidchanges/AppendixB-CommunityEngagementExclusionForm.pdf
+    read: '2026-11-18'
+  ihs_eligible:
+    mark: meets
+    quote: I am eligible for services through Indian Health Services
+    url: https://www.dphhs.mt.gov/assets/medicaidchanges/AppendixB-CommunityEngagementExclusionForm.pdf
+    read: '2026-11-18'
+  california_indians:
+    mark: meets
+    quote: American Indian, Alaska Native, California Indian Exclusion
+    url: https://www.dphhs.mt.gov/assets/medicaidchanges/AppendixB-CommunityEngagementExclusionForm.pdf
+    read: '2026-11-18'
+  data_first:
+    mark: meets
+    quote: DPHHS will first attempt to verify that you meet this requirement or qualify for an exclusion using existing data sources.
+    url: https://dphhs.mt.gov/medicaidchanges/faqs
+    read: '2026-11-18'
+  non_document_proof:
+    mark: meets
+    quote: Enrollment Number, letter from IHS, or Self Declaration Form
+    url: https://www.dphhs.mt.gov/assets/medicaidchanges/AppendixB-CommunityEngagementExclusionForm.pdf
+    read: '2026-11-18'
+  tribal_or_clinic_channel:
+    mark: meets
+    quote: Enrollment Number, letter from IHS, or Self Declaration Form
+    url: https://www.dphhs.mt.gov/assets/medicaidchanges/AppendixB-CommunityEngagementExclusionForm.pdf
+    read: '2026-11-18'
+  status_not_rechecked:
+    mark: contradicts
+    quote: Where auditable self-declaration is accepted, the department generally verifies the information at redetermination,
+    url: https://dphhs.mt.gov/medicaidchanges/VerificationMatrix
+    read: '2026-11-18'
+  twelve_month_renewal:
+    mark: meets
+    quote: This does not apply to American Indian/Alaskan Natives, as they must redetermine coverage every 12 months.
+    url: https://dphhs.mt.gov/medicaidchanges/faqs
+    read: '2026-11-18'
+history: []

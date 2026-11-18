@@ -1,0 +1,53 @@
+# Evidence re-verified 2026-11-18 against primary sources.
+state: WV
+name: West Virginia
+checked: '2026-11-18'
+start: '2027-01-01'
+unverified: false
+under_review: false
+components:
+  tribal_members:
+    mark: meets
+    quote: Are an American Indian or Alaska Native
+    url: https://wvmedicaidhelp.org/faqs/
+    read: '2026-11-18'
+  urban_and_descendants:
+    mark: unpublished
+    quote: Are an American Indian or Alaska Native
+    url: https://wvmedicaidhelp.org/faqs/
+    read: '2026-11-18'
+  alaska_natives:
+    mark: meets
+    quote: Are an American Indian or Alaska Native
+    url: https://wvmedicaidhelp.org/faqs/
+    read: '2026-11-18'
+  ihs_eligible:
+    mark: unpublished
+    quote: Are an American Indian or Alaska Native
+    url: https://wvmedicaidhelp.org/faqs/
+    read: '2026-11-18'
+  california_indians:
+    mark: unpublished
+    quote: Are an American Indian or Alaska Native
+    url: https://wvmedicaidhelp.org/faqs/
+    read: '2026-11-18'
+  data_first:
+    mark: meets
+    quote: DoHS will automatically check your status to see if you qualify for an exclusion
+    url: https://wvmedicaidhelp.org/faqs/
+    read: '2026-11-18'
+  non_document_proof:
+    mark: unpublished
+  tribal_or_clinic_channel:
+    mark: unpublished
+  status_not_rechecked:
+    mark: contradicts
+    quote: as long as their exclusion is present for all or part of at least one month of a renewal period.
+    url: https://wvmedicaidhelp.org/faqs/
+    read: '2026-11-18'
+  twelve_month_renewal:
+    mark: unpublished
+    quote: renewals for some members will be scheduled more often – every six months rather than every 12 months
+    url: https://wvmedicaidhelp.org/
+    read: '2026-11-18'
+history: []

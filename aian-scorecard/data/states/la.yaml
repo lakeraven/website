@@ -1,0 +1,53 @@
+# Evidence re-verified 2026-11-18 against primary sources.
+state: LA
+name: Louisiana
+checked: '2026-11-18'
+start: 2027-01-01 (IB 26-19, 2026-10-21)
+unverified: false
+under_review: false
+components:
+  tribal_members:
+    mark: meets
+    quote: n. American Indians and Alaska Natives as defined in 42 C.F.R. §447.51.
+    url: https://www.ldh.la.gov/assets/medicaid/Rulemaking/NoticesofIntent/July2026/NewAdultEligGroupNOI.pdf
+    read: '2026-11-18'
+  urban_and_descendants:
+    mark: unpublished
+    quote: Native American or Alaska Native eligible for Indian Health Service
+    url: https://ldh.la.gov/assets/docs/BayouHealth/Informational_Bulletins/2026/IB26-19.pdf
+    read: '2026-11-18'
+  alaska_natives:
+    mark: meets
+    quote: n. American Indians and Alaska Natives as defined in 42 C.F.R. §447.51.
+    url: https://www.ldh.la.gov/assets/medicaid/Rulemaking/NoticesofIntent/July2026/NewAdultEligGroupNOI.pdf
+    read: '2026-11-18'
+  ihs_eligible:
+    mark: meets
+    quote: Native American or Alaska Native eligible for Indian Health Service
+    url: https://ldh.la.gov/assets/docs/BayouHealth/Informational_Bulletins/2026/IB26-19.pdf
+    read: '2026-11-18'
+  california_indians:
+    mark: meets
+    quote: n. American Indians and Alaska Natives as defined in 42 C.F.R. §447.51.
+    url: https://www.ldh.la.gov/assets/medicaid/Rulemaking/NoticesofIntent/July2026/NewAdultEligGroupNOI.pdf
+    read: '2026-11-18'
+  data_first:
+    mark: meets
+    quote: The department shall first verify community engagement compliance or excluded status using electronic data sources
+    url: https://www.ldh.la.gov/assets/medicaid/Rulemaking/NoticesofIntent/July2026/NewAdultEligGroupNOI.pdf
+    read: '2026-11-18'
+  non_document_proof:
+    mark: unpublished
+    quote: 'Please note: For 2027 renewals, members can self-attest that they meet the medical frailty exemption.'
+    url: https://ldh.la.gov/assets/docs/BayouHealth/Informational_Bulletins/2026/IB26-19.pdf
+    read: '2026-11-18'
+  tribal_or_clinic_channel:
+    mark: unpublished
+  status_not_rechecked:
+    mark: unpublished
+    quote: At renewal, applicable individuals who are not specified excluded individuals must demonstrate
+    url: https://www.ldh.la.gov/assets/medicaid/Rulemaking/NoticesofIntent/July2026/NewAdultEligGroupNOI.pdf
+    read: '2026-11-18'
+  twelve_month_renewal:
+    mark: unpublished
+history: []

@@ -1,0 +1,50 @@
+# Evidence re-verified 2026-11-18 against primary sources.
+state: VA
+name: Virginia
+checked: '2026-11-18'
+start: '2027-01-01'
+unverified: false
+under_review: false
+components:
+  tribal_members:
+    mark: meets
+    quote: Being an American Indian or Alaska Native
+    url: https://www.dmas.virginia.gov/media/1zudegm1/hr1-federal-work-requirement-faqs-07-24-2026.pdf
+    read: '2026-11-18'
+  urban_and_descendants:
+    mark: unpublished
+    quote: Being an American Indian or Alaska Native
+    url: https://www.dmas.virginia.gov/media/1zudegm1/hr1-federal-work-requirement-faqs-07-24-2026.pdf
+    read: '2026-11-18'
+  alaska_natives:
+    mark: meets
+    quote: Being an American Indian or Alaska Native
+    url: https://www.dmas.virginia.gov/media/1zudegm1/hr1-federal-work-requirement-faqs-07-24-2026.pdf
+    read: '2026-11-18'
+  ihs_eligible:
+    mark: unpublished
+  california_indians:
+    mark: unpublished
+  data_first:
+    mark: meets
+    quote: Virginia Medicaid will first use information from the member’s application, case record
+    url: https://www.dmas.virginia.gov/media/1zudegm1/hr1-federal-work-requirement-faqs-07-24-2026.pdf
+    read: '2026-11-18'
+  non_document_proof:
+    mark: unpublished
+    quote: accepts her declaration* from her application about meeting an exception from the work requirement
+    url: https://dmas.virginia.gov/media/bf0lzoyd/hr1-work-requirement-member-toolkit.pdf
+    read: '2026-11-18'
+  tribal_or_clinic_channel:
+    mark: unpublished
+  status_not_rechecked:
+    mark: contradicts
+    quote: A person must meet one of the exclusions listed below in the month that they apply or in the month that their renewal is processed
+    url: https://www.dmas.virginia.gov/media/to5j12el/hr-1-work-requirement-member-toolkit-final-8.pdf
+    read: '2026-11-18'
+  twelve_month_renewal:
+    mark: meets
+    quote: American Indians and Alaska Natives, even those in Medicaid Expansion, will also continue to be renewed every 12 months.
+    url: https://dmas.virginia.gov/media/bf0lzoyd/hr1-work-requirement-member-toolkit.pdf
+    read: '2026-11-18'
+history: []

@@ -1,0 +1,53 @@
+# Evidence re-verified 2026-11-18 against primary sources.
+state: MA
+name: Massachusetts
+checked: '2026-11-18'
+start: '2027-01-01'
+unverified: false
+under_review: false
+components:
+  tribal_members:
+    mark: unpublished
+    quote: are a certain American Indian or Alaska Native
+    url: https://www.mass.gov/info-details/new-work-and-education-requirements-for-masshealth-members
+    read: '2026-11-18'
+  urban_and_descendants:
+    mark: unpublished
+    quote: are a certain American Indian or Alaska Native
+    url: https://www.mass.gov/info-details/new-work-and-education-requirements-for-masshealth-members
+    read: '2026-11-18'
+  alaska_natives:
+    mark: unpublished
+    quote: are a certain American Indian or Alaska Native
+    url: https://www.mass.gov/info-details/new-work-and-education-requirements-for-masshealth-members
+    read: '2026-11-18'
+  ihs_eligible:
+    mark: unpublished
+    quote: are a certain American Indian or Alaska Native
+    url: https://www.mass.gov/info-details/new-work-and-education-requirements-for-masshealth-members
+    read: '2026-11-18'
+  california_indians:
+    mark: unpublished
+    quote: are a certain American Indian or Alaska Native
+    url: https://www.mass.gov/info-details/new-work-and-education-requirements-for-masshealth-members
+    read: '2026-11-18'
+  data_first:
+    mark: meets
+    quote: MassHealth will use available data to confirm if you are excused from or already meeting these requirements.
+    url: https://www.mass.gov/info-details/new-work-and-education-requirements-for-masshealth-members
+    read: '2026-11-18'
+  non_document_proof:
+    mark: unpublished
+  tribal_or_clinic_channel:
+    mark: unpublished
+  status_not_rechecked:
+    mark: unpublished
+    quote: They do not impact people who are pregnant, or certain American Indians or Alaska Natives.
+    url: https://www.mass.gov/info-details/more-frequent-renewals-for-masshealth-members
+    read: '2026-11-18'
+  twelve_month_renewal:
+    mark: meets
+    quote: They do not impact people who are pregnant, or certain American Indians or Alaska Natives.
+    url: https://www.mass.gov/info-details/more-frequent-renewals-for-masshealth-members
+    read: '2026-11-18'
+history: []

@@ -1,0 +1,47 @@
+# Evidence re-verified 2026-11-18 against primary sources.
+state: CA
+name: California
+checked: '2026-11-18'
+start: 2027-01-01 per MEDIL I 26-25 (member letter says March 2027); DHCS requested a good-faith-effort exemption through 2027-06-30 for a WCER start of 2027-07-01
+unverified: false
+under_review: false
+components:
+  tribal_members:
+    mark: meets
+    quote: Are American Indian or Alaska Native.
+    url: https://www.dhcs.ca.gov/file/medil-i26-25-pdf/
+    read: '2026-11-18'
+  urban_and_descendants:
+    mark: unpublished
+  alaska_natives:
+    mark: meets
+    quote: Are American Indian or Alaska Native.
+    url: https://www.dhcs.ca.gov/file/medil-i26-25-pdf/
+    read: '2026-11-18'
+  ihs_eligible:
+    mark: unpublished
+  california_indians:
+    mark: unpublished
+  data_first:
+    mark: meets
+    quote: We may be able to use information that we already have about you
+    url: https://www.dhcs.ca.gov/file/medil-i26-25-pdf/
+    read: '2026-11-18'
+  non_document_proof:
+    mark: unpublished
+    quote: Self-attestation of American Indian/Alaska Native members status is accepted and counties must not request verification for this exemption.
+    url: https://www.dhcs.ca.gov/wp-content/uploads/2026/09/ACWDL-26-14.pdf
+    read: '2026-11-18'
+  tribal_or_clinic_channel:
+    mark: unpublished
+  status_not_rechecked:
+    mark: contradicts
+    quote: Exemptions must be verified every 6 months.
+    url: https://www.dhcs.ca.gov/ru/federal-impacts/Documents/HR1-Implementation-Plan-on-Eligibility-Webinar.pdf
+    read: '2026-11-18'
+  twelve_month_renewal:
+    mark: meets
+    quote: American Indian/Alaska Native members will remain on a 12-month renewal cycle unless otherwise protected.
+    url: https://www.dhcs.ca.gov/wp-content/uploads/2026/09/ACWDL-26-14.pdf
+    read: '2026-11-18'
+history: []

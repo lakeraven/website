@@ -1,0 +1,47 @@
+# Evidence re-verified 2026-11-18 against primary sources.
+state: AR
+name: Arkansas
+checked: '2026-11-18'
+start: Penalties 2027-01-01 (soft launch 2026-07-01); DHS letter to CMS 2026-11-05 says AR will follow federal guidance to implement by 2027-01-01
+unverified: false
+under_review: false
+components:
+  tribal_members:
+    mark: unpublished
+    quote: pregnant and postpartum women, disabled veterans, caregivers, and those with special medical needs
+    url: https://governor.arkansas.gov/news_post/welfare-to-work-requirement-rollout-begins-july-1/
+    read: '2026-11-18'
+  urban_and_descendants:
+    mark: unpublished
+    quote: pregnant and postpartum women, disabled veterans, caregivers, and those with special medical needs
+    url: https://governor.arkansas.gov/news_post/welfare-to-work-requirement-rollout-begins-july-1/
+    read: '2026-11-18'
+  alaska_natives:
+    mark: unpublished
+    quote: pregnant and postpartum women, disabled veterans, caregivers, and those with special medical needs
+    url: https://governor.arkansas.gov/news_post/welfare-to-work-requirement-rollout-begins-july-1/
+    read: '2026-11-18'
+  ihs_eligible:
+    mark: unpublished
+    quote: pregnant and postpartum women, disabled veterans, caregivers, and those with special medical needs
+    url: https://governor.arkansas.gov/news_post/welfare-to-work-requirement-rollout-begins-july-1/
+    read: '2026-11-18'
+  california_indians:
+    mark: unpublished
+    quote: pregnant and postpartum women, disabled veterans, caregivers, and those with special medical needs
+    url: https://governor.arkansas.gov/news_post/welfare-to-work-requirement-rollout-begins-july-1/
+    read: '2026-11-18'
+  data_first:
+    mark: meets
+    quote: DHS will begin running automated processes to determine if beneficiaries are exempt, meeting, or not meeting
+    url: https://governor.arkansas.gov/news_post/welfare-to-work-requirement-rollout-begins-july-1/
+    read: '2026-11-18'
+  non_document_proof:
+    mark: unpublished
+  tribal_or_clinic_channel:
+    mark: unpublished
+  status_not_rechecked:
+    mark: unpublished
+  twelve_month_renewal:
+    mark: unpublished
+history: []

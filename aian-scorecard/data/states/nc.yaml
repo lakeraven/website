@@ -1,0 +1,56 @@
+# Evidence re-verified 2026-11-18 against primary sources.
+state: NC
+name: North Carolina
+checked: '2026-11-18'
+start: '2027-01-01'
+unverified: false
+under_review: false
+components:
+  tribal_members:
+    mark: meets
+    quote: Are you American Indian, Alaska Native or eligible for Indian Health Services (IHS)?
+    url: https://medicaid.ncdhhs.gov/beneficiaries/impact-hr-1-and-federal-changes-medicaid/nc-medicaid-work-and-community-engagement-requirements
+    read: '2026-11-18'
+  urban_and_descendants:
+    mark: unpublished
+    quote: Are you American Indian, Alaska Native or eligible for Indian Health Services (IHS)?
+    url: https://medicaid.ncdhhs.gov/beneficiaries/impact-hr-1-and-federal-changes-medicaid/nc-medicaid-work-and-community-engagement-requirements
+    read: '2026-11-18'
+  alaska_natives:
+    mark: meets
+    quote: Are you American Indian, Alaska Native or eligible for Indian Health Services (IHS)?
+    url: https://medicaid.ncdhhs.gov/beneficiaries/impact-hr-1-and-federal-changes-medicaid/nc-medicaid-work-and-community-engagement-requirements
+    read: '2026-11-18'
+  ihs_eligible:
+    mark: meets
+    quote: Are you American Indian, Alaska Native or eligible for Indian Health Services (IHS)?
+    url: https://medicaid.ncdhhs.gov/beneficiaries/impact-hr-1-and-federal-changes-medicaid/nc-medicaid-work-and-community-engagement-requirements
+    read: '2026-11-18'
+  california_indians:
+    mark: meets
+    quote: Are you American Indian, Alaska Native or eligible for Indian Health Services (IHS)?
+    url: https://medicaid.ncdhhs.gov/beneficiaries/impact-hr-1-and-federal-changes-medicaid/nc-medicaid-work-and-community-engagement-requirements
+    read: '2026-11-18'
+  data_first:
+    mark: contradicts
+    quote: Collect any papers, medical records, official documents or other proof that you fall into one of these categories.
+    url: https://medicaid.ncdhhs.gov/beneficiaries/impact-hr-1-and-federal-changes-medicaid/work-and-community-engagement-requirement
+    read: '2026-11-18'
+  non_document_proof:
+    mark: contradicts
+    quote: You may have to provide documents to support your answer.
+    url: https://medicaid.ncdhhs.gov/beneficiaries/impact-hr-1-and-federal-changes-medicaid/work-and-community-engagement-requirement
+    read: '2026-11-18'
+  tribal_or_clinic_channel:
+    mark: unpublished
+  status_not_rechecked:
+    mark: unpublished
+    quote: Your local DSS may ask for more information to confirm that you do not need to meet the requirement.
+    url: https://medicaid.ncdhhs.gov/beneficiaries/impact-hr-1-and-federal-changes-medicaid/nc-medicaid-work-and-community-engagement-requirements
+    read: '2026-11-18'
+  twelve_month_renewal:
+    mark: meets
+    quote: American Indians, Alaska Natives and other members eligible for Indian Health Services (IHS) renew once a year.
+    url: https://medicaid.ncdhhs.gov/beneficiaries/impact-hr-1-and-federal-changes-medicaid/nc-medicaid-work-and-community-engagement-requirements
+    read: '2026-11-18'
+history: []

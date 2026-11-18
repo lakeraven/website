@@ -1,0 +1,56 @@
+# Evidence re-verified 2026-11-18 against primary sources.
+state: RI
+name: Rhode Island
+checked: '2026-11-18'
+start: 2027 (first renewal in 2027)
+unverified: false
+under_review: false
+components:
+  tribal_members:
+    mark: meets
+    quote: Are Native American or Alaska Native;
+    url: https://staycovered.ri.gov/updates-news/medicaid-updates/community-engagement-requirements
+    read: '2026-11-18'
+  urban_and_descendants:
+    mark: unpublished
+    quote: Are Native American or Alaska Native;
+    url: https://staycovered.ri.gov/updates-news/medicaid-updates/community-engagement-requirements
+    read: '2026-11-18'
+  alaska_natives:
+    mark: meets
+    quote: Are Native American or Alaska Native;
+    url: https://staycovered.ri.gov/updates-news/medicaid-updates/community-engagement-requirements
+    read: '2026-11-18'
+  ihs_eligible:
+    mark: unpublished
+    quote: Are Native American or Alaska Native;
+    url: https://staycovered.ri.gov/updates-news/medicaid-updates/community-engagement-requirements
+    read: '2026-11-18'
+  california_indians:
+    mark: unpublished
+    quote: Are Native American or Alaska Native;
+    url: https://staycovered.ri.gov/updates-news/medicaid-updates/community-engagement-requirements
+    read: '2026-11-18'
+  data_first:
+    mark: meets
+    quote: The State uses automated data matching first to reduce administrative burdens.
+    url: https://staycovered.ri.gov/updates-news/medicaid-updates/provider-community-partner-faqs
+    read: '2026-11-18'
+  non_document_proof:
+    mark: meets
+    quote: 'People may self-attest for the following:'
+    url: https://staycovered.ri.gov/updates-news/medicaid-updates/provider-community-partner-faqs
+    read: '2026-11-18'
+  tribal_or_clinic_channel:
+    mark: unpublished
+  status_not_rechecked:
+    mark: contradicts
+    quote: 'At each renewal, we will look at the past 6 months to see if you:'
+    url: https://staycovered.ri.gov/updates-news/medicaid-updates/community-engagement-requirements
+    read: '2026-11-18'
+  twelve_month_renewal:
+    mark: contradicts
+    quote: The new rule affects people who are ages 19–64 and get Medicaid through the Medicaid expansion program.
+    url: https://staycovered.ri.gov/updates-news/medicaid-updates/6-month-renewals
+    read: '2026-11-18'
+history: []

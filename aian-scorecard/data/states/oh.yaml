@@ -1,0 +1,59 @@
+# Evidence re-verified 2026-11-18 against primary sources.
+state: OH
+name: Ohio
+checked: '2026-11-18'
+start: '2027-01-01'
+unverified: false
+under_review: false
+components:
+  tribal_members:
+    mark: meets
+    quote: Native American, Urban Native American, or California Native American
+    url: https://dam.assets.ohio.gov/image/upload/medicaid.ohio.gov/Families%2C%20Individuals/Programs/Community/Group_VIII_Partner_Packet_08132026.pdf
+    read: '2026-11-18'
+  urban_and_descendants:
+    mark: meets
+    quote: An individual who is an Indian or an Urban Indian as defined in section 4 of the Indian Health Care Improvement Act
+    url: https://dam.assets.ohio.gov/image/upload/medicaid.ohio.gov/Stakeholders%2C%20Partners/LegalandContracts/ERF234670.pdf
+    read: '2026-11-18'
+  alaska_natives:
+    mark: meets
+    quote: An individual who is an Indian or an Urban Indian as defined in section 4 of the Indian Health Care Improvement Act
+    url: https://dam.assets.ohio.gov/image/upload/medicaid.ohio.gov/Stakeholders%2C%20Partners/LegalandContracts/ERF234670.pdf
+    read: '2026-11-18'
+  ihs_eligible:
+    mark: meets
+    quote: or has otherwise been determined eligible as an Indian for the Indian Health Services;
+    url: https://dam.assets.ohio.gov/image/upload/medicaid.ohio.gov/Stakeholders%2C%20Partners/LegalandContracts/ERF234670.pdf
+    read: '2026-11-18'
+  california_indians:
+    mark: meets
+    quote: a Californian Indian as described in section 809(a) of the Indian Health Care Improvement Act
+    url: https://dam.assets.ohio.gov/image/upload/medicaid.ohio.gov/Stakeholders%2C%20Partners/LegalandContracts/ERF234670.pdf
+    read: '2026-11-18'
+  data_first:
+    mark: meets
+    quote: ODM will first try to use data already available to electronically verify that the individual is excluded from or meeting the requirement.
+    url: https://dam.assets.ohio.gov/image/upload/medicaid.ohio.gov/Families%2C%20Individuals/Programs/Community/Group_VIII_Partner_Packet_08132026.pdf
+    read: '2026-11-18'
+  non_document_proof:
+    mark: contradicts
+    quote: they must provide proof by sharing one of the documents listed below with their local CDJFS office.
+    url: https://dam.assets.ohio.gov/image/upload/medicaid.ohio.gov/Families%2C%20Individuals/Programs/Community/Group_VIII_Partner_Packet_08132026.pdf
+    read: '2026-11-18'
+  tribal_or_clinic_channel:
+    mark: meets
+    quote: Official Statement from Federally Recognized Tribe
+    url: https://dam.assets.ohio.gov/image/upload/medicaid.ohio.gov/Families%2C%20Individuals/Programs/Community/Group_VIII_Partner_Packet_08132026.pdf
+    read: '2026-11-18'
+  status_not_rechecked:
+    mark: contradicts
+    quote: The member only needs to show exemption or compliance for at least one month since the last renewal.
+    url: https://dam.assets.ohio.gov/image/upload/medicaid.ohio.gov/Families%2C%20Individuals/Programs/Community/Group_VIII_Partner_Packet_08132026.pdf
+    read: '2026-11-18'
+  twelve_month_renewal:
+    mark: contradicts
+    quote: Beginning January 1, 2027, federal law will require renewals to take place every six months.
+    url: https://dam.assets.ohio.gov/image/upload/medicaid.ohio.gov/Families%2C%20Individuals/Programs/Community/Group_VIII_Partner_Packet_08132026.pdf
+    read: '2026-11-18'
+history: []

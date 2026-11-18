@@ -1,0 +1,53 @@
+# Evidence re-verified 2026-11-18 against primary sources.
+state: NM
+name: New Mexico
+checked: '2026-11-18'
+start: 2027-01-01 (proposed rule effective date)
+unverified: false
+under_review: false
+components:
+  tribal_members:
+    mark: meets
+    quote: American Indian or Alaska Native;
+    url: https://www.hca.nm.gov/wp-content/uploads/Tribal-Notification-26-17.pdf
+    read: '2026-11-18'
+  urban_and_descendants:
+    mark: unpublished
+  alaska_natives:
+    mark: meets
+    quote: American Indian or Alaska Native;
+    url: https://www.hca.nm.gov/wp-content/uploads/Tribal-Notification-26-17.pdf
+    read: '2026-11-18'
+  ihs_eligible:
+    mark: meets
+    quote: a broad definition, including individuals who are eligible to receive services at Indian Health Services facilities
+    url: https://www.hca.nm.gov/wp-content/uploads/HCA_HR1_MED_AmericanIndians_OnePager_07_forPrint.pdf
+    read: '2026-11-18'
+  california_indians:
+    mark: meets
+    quote: a broad definition, including individuals who are eligible to receive services at Indian Health Services facilities
+    url: https://www.hca.nm.gov/wp-content/uploads/HCA_HR1_MED_AmericanIndians_OnePager_07_forPrint.pdf
+    read: '2026-11-18'
+  data_first:
+    mark: unpublished
+    quote: The HCA verifies CE compliance or meeting an exclusion or exception at both application and renewal
+    url: https://www.hca.nm.gov/wp-content/uploads/Tribal-Notification-26-17.pdf
+    read: '2026-11-18'
+  non_document_proof:
+    mark: meets
+    quote: The exemption is based solely on your self-attestation of being American Indian.
+    url: https://www.hca.nm.gov/wp-content/uploads/HCA_HR1_MED_AmericanIndians_OnePager_07_forPrint.pdf
+    read: '2026-11-18'
+  tribal_or_clinic_channel:
+    mark: unpublished
+  status_not_rechecked:
+    mark: unpublished
+    quote: The HCA verifies CE compliance or meeting an exclusion or exception at both application and renewal
+    url: https://www.hca.nm.gov/wp-content/uploads/Tribal-Notification-26-17.pdf
+    read: '2026-11-18'
+  twelve_month_renewal:
+    mark: meets
+    quote: Native Americans are exempt from 6-month renewals and will continue to have 12-month renewal periods.
+    url: https://www.hca.nm.gov/wp-content/uploads/Notice-of-Opportunity-to-Comment-HR1-Amendments.pdf
+    read: '2026-11-18'
+history: []

@@ -1,0 +1,41 @@
+# Evidence re-verified 2026-11-18 against primary sources.
+state: NY
+name: New York
+checked: '2026-11-18'
+start: '2027-01-01'
+unverified: false
+under_review: false
+components:
+  tribal_members:
+    mark: meets
+    quote: American Indian or Alaska Native
+    url: https://info.nystateofhealth.ny.gov/stay-covered
+    read: '2026-11-18'
+  urban_and_descendants:
+    mark: unpublished
+    quote: American Indian or Alaska Native
+    url: https://info.nystateofhealth.ny.gov/stay-covered
+    read: '2026-11-18'
+  alaska_natives:
+    mark: meets
+    quote: American Indian or Alaska Native
+    url: https://info.nystateofhealth.ny.gov/stay-covered
+    read: '2026-11-18'
+  ihs_eligible:
+    mark: unpublished
+  california_indians:
+    mark: unpublished
+  data_first:
+    mark: unpublished
+  non_document_proof:
+    mark: unpublished
+    quote: You may need to meet certain conditions or show proof that you fit one of these exceptions
+    url: https://info.nystateofhealth.ny.gov/stay-covered
+    read: '2026-11-18'
+  tribal_or_clinic_channel:
+    mark: unpublished
+  status_not_rechecked:
+    mark: unpublished
+  twelve_month_renewal:
+    mark: unpublished
+history: []

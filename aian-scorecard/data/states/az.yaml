@@ -1,0 +1,50 @@
+# Evidence re-verified 2026-11-18 against primary sources.
+state: AZ
+name: Arizona
+checked: '2026-11-18'
+start: '2027-01-01'
+unverified: false
+under_review: false
+components:
+  tribal_members:
+    mark: meets
+    quote: An American Indian or Alaska Native eligible for Indian Health Service care
+    url: https://www.azahcccs.gov/AHCCCS/Initiatives/HR1/
+    read: '2026-11-18'
+  urban_and_descendants:
+    mark: unpublished
+    quote: An American Indian or Alaska Native eligible for Indian Health Service care
+    url: https://www.azahcccs.gov/AHCCCS/Initiatives/HR1/
+    read: '2026-11-18'
+  alaska_natives:
+    mark: meets
+    quote: An American Indian or Alaska Native eligible for Indian Health Service care
+    url: https://www.azahcccs.gov/AHCCCS/Initiatives/HR1/
+    read: '2026-11-18'
+  ihs_eligible:
+    mark: meets
+    quote: An American Indian or Alaska Native eligible for Indian Health Service care
+    url: https://www.azahcccs.gov/AHCCCS/Initiatives/HR1/
+    read: '2026-11-18'
+  california_indians:
+    mark: meets
+    quote: An American Indian or Alaska Native eligible for Indian Health Service care
+    url: https://www.azahcccs.gov/AHCCCS/Initiatives/HR1/
+    read: '2026-11-18'
+  data_first:
+    mark: unpublished
+  non_document_proof:
+    mark: unpublished
+    quote: Submit documentation if needed
+    url: https://www.azahcccs.gov/AHCCCS/Initiatives/HR1/
+    read: '2026-11-18'
+  tribal_or_clinic_channel:
+    mark: unpublished
+  status_not_rechecked:
+    mark: unpublished
+  twelve_month_renewal:
+    mark: unpublished
+    quote: This does not apply to kids, adults over the age of 65, individuals with disabilities, Tribal members
+    url: https://www.azahcccs.gov/AHCCCS/Initiatives/HR1/
+    read: '2026-11-18'
+history: []

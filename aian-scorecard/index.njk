@@ -1,0 +1,51 @@
+---
+layout: layouts/page
+title: AI/AN Medicaid exemption scorecard
+permalink: /aian-medicaid-scorecard/
+description: How closely each state's published Medicaid policy follows CMS rules for American Indians and Alaska Natives under the new work and renewal requirements.
+---
+{% set sc = aianScorecard %}
+{% if not sc.rubric.approved %}
+<div class="usa-alert usa-alert--warning usa-alert--slim"><div class="usa-alert__body"><p class="usa-alert__text"><strong>Draft.</strong> Grades are provisional while the rubric is under review and evidence is re-verified.</p></div></div>
+{% endif %}
+
+<h1>American Indian and Alaska Native Medicaid exemption scorecard</h1>
+
+<p>Federal law exempts American Indians and Alaska Natives from Medicaid's new work requirement and keeps their renewals at 12 months. This scorecard grades how closely each state's <strong>published</strong> policy follows the CMS rules that carry out those protections. It measures what states have written down, not what happens at every eligibility office.</p>
+
+<p>Grades update as states publish new policy. A state, tribe, or Indian health program can <a href="{{ '/aian-medicaid-scorecard/process/' | url }}">submit evidence</a> on any state's page. Last checked {{ sc.lastChecked }}.</p>
+
+<h2>Grades at a glance</h2>
+<ul class="usa-list">
+{% for c in sc.counts %}{% if c.n > 0 %}<li><strong>{{ c.grade }}</strong>: {{ c.n }} {% if c.n == 1 %}state{% else %}states{% endif %}</li>{% endif %}{% endfor %}
+</ul>
+
+<h2>All states</h2>
+<table class="usa-table usa-table--borderless usa-table--stacked">
+  <caption class="usa-sr-only">Grade for each state, with counts of requirements met, contradicted, and unpublished</caption>
+  <thead><tr><th scope="col">State</th><th scope="col">Grade</th><th scope="col">Met</th><th scope="col">Contradicted</th><th scope="col">Not published</th><th scope="col">Last checked</th></tr></thead>
+  <tbody>
+  {% for s in sc.states %}
+    <tr>
+      <th scope="row" data-label="State"><a href="{{ ('/aian-medicaid-scorecard/' + s.slug + '/') | url }}">{{ s.name }}</a>{% if s.under_review %} <span class="usa-tag">Evidence under review</span>{% endif %}</th>
+      <td data-label="Grade">{{ s.grade }}{% if s.status == 'not_subject' and not s.confirmed %} (to confirm){% endif %}</td>
+      <td data-label="Met">{% if s.status != 'not_subject' %}{{ s.met }}{% endif %}</td>
+      <td data-label="Contradicted">{% if s.status != 'not_subject' %}{{ s.contradicts }}{% endif %}</td>
+      <td data-label="Not published">{% if s.status != 'not_subject' %}{{ s.unpublished }}{% endif %}</td>
+      <td data-label="Last checked">{{ s.checked }}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+
+<h2 id="rubric">How grades work</h2>
+<p>Each state is checked against nine requirements. For each one, published state policy either <strong>meets</strong> it, <strong>contradicts</strong> it, or has <strong>not published</strong> anything. Silence never counts as meeting a requirement.</p>
+<table class="usa-table usa-table--borderless">
+  <thead><tr><th scope="col">Requirement</th><th scope="col">Source</th></tr></thead>
+  <tbody>{% for r in sc.rubric.requirements %}<tr><td>{{ r.label }}</td><td>{{ r.citation }}</td></tr>{% endfor %}</tbody>
+</table>
+<table class="usa-table usa-table--borderless">
+  <thead><tr><th scope="col">Grade</th><th scope="col">Rule</th></tr></thead>
+  <tbody>{% for g in sc.rubric.grades %}<tr><td>{{ g.grade }}</td><td>{{ g.rule }}</td></tr>{% endfor %}</tbody>
+</table>
+<p>We also report, but do not grade, {% for b in sc.rubric.best_practices %}{{ b.label | lower }} ({{ b.citation | lower }}){% endfor %}.</p>

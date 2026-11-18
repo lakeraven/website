@@ -1,0 +1,13 @@
+# Evidence re-verified 2026-11-18 against primary sources.
+state: TX
+name: Texas
+status: not_subject
+confirmed: true
+under_review: false
+components: {}
+history: []
+checked: '2026-11-18'
+status_source:
+  quote: The new Medicaid work requirement doesn't impact your Texas Medicaid benefits.
+  url: https://www.medicaid.gov/renew-info/tx
+  read: '2026-11-18'

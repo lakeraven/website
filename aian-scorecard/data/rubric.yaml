@@ -1,0 +1,56 @@
+# Grading rubric. DRAFT: awaiting approval; grades are provisional until approved.
+approved: false
+not_graded_unpublished_min: 7
+requirements:
+  - id: tribal_members
+    label: Members of federally recognized tribes, including Alaska Native villages
+    citation: 42 CFR 447.51 (route 1)
+  - id: urban_and_descendants
+    label: Urban Indians, including members of terminated or state-recognized tribes and first- or second-degree descendants
+    citation: 42 CFR 447.51 (route 2); 25 U.S.C. 1603(28)
+  - id: alaska_natives
+    label: Alaska Natives
+    citation: 42 CFR 447.51 (routes 2 and 4)
+  - id: ihs_eligible
+    label: Anyone eligible for Indian Health Service, tribal or urban Indian program services
+    citation: 42 CFR 447.51 (route 4); 42 CFR 136.12
+  - id: california_indians
+    label: California Indians
+    citation: 42 CFR 447.51 (route 4); 25 U.S.C. 1679(a)
+  - id: data_first
+    label: State checks its own records (claims, eligibility data) before asking the person
+    citation: 42 CFR 435.557(b), (c)(1)
+  - id: non_document_proof
+    label: Accepts proof other than documents; no denial solely for missing documents
+    citation: 42 CFR 435.557(b)(2)
+  - id: status_not_rechecked
+    label: Status is not re-checked between renewals
+    citation: 42 CFR 435.557(d)(4)
+  - id: twelve_month_renewal
+    label: Keeps 12-month renewals for American Indians and Alaska Natives in the expansion group
+    citation: Social Security Act 1902(e)(14)(L)(ii); CMS SMD 26-001
+best_practices:
+  - id: tribal_or_clinic_channel
+    label: A way for tribes, IHS and urban Indian clinics to confirm a person's status
+    citation: Tribal recommendation, not a CMS requirement
+grades:
+  - grade: A
+    rule: No contradictions, and 8 or 9 requirements met
+  - grade: B
+    rule: No contradictions, and 5 to 7 met
+  - grade: C
+    rule: One contradiction, or none but 4 or fewer met
+  - grade: D
+    rule: Two contradictions
+  - grade: F
+    rule: Three or more contradictions
+  - grade: Not graded
+    rule: Seven or more requirements unpublished, or sources could not be verified
+  - grade: Not subject
+    rule: State has not expanded Medicaid, so the expansion-group rules do not apply
+submission:
+  # Set form_url to a Google Form (or other) link once it exists; until then evidence goes by email.
+  form_url:
+  email: info@lakeraven.com
+  review_business_days: 10
+  downgrade_notice_days: 10

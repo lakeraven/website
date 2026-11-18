@@ -1,0 +1,47 @@
+# Evidence re-verified 2026-11-18 against primary sources.
+state: DC
+name: DC
+checked: '2026-11-18'
+start: '2027-01-01'
+unverified: false
+under_review: false
+components:
+  tribal_members:
+    mark: meets
+    quote: American Indians and Alaskan Natives who are eligible to receive services via the Indian Health Service
+    url: https://dhcf.dc.gov/sites/default/files/dc/sites/dhcf/publication/attachments/February%20FY26%20MCAC%20Presentation.pdf
+    read: '2026-11-18'
+  urban_and_descendants:
+    mark: unpublished
+    quote: American Indians and Alaskan Natives who are eligible to receive services via the Indian Health Service
+    url: https://dhcf.dc.gov/sites/default/files/dc/sites/dhcf/publication/attachments/February%20FY26%20MCAC%20Presentation.pdf
+    read: '2026-11-18'
+  alaska_natives:
+    mark: meets
+    quote: American Indians and Alaskan Natives who are eligible to receive services via the Indian Health Service
+    url: https://dhcf.dc.gov/sites/default/files/dc/sites/dhcf/publication/attachments/February%20FY26%20MCAC%20Presentation.pdf
+    read: '2026-11-18'
+  ihs_eligible:
+    mark: meets
+    quote: American Indians and Alaskan Natives who are eligible to receive services via the Indian Health Service
+    url: https://dhcf.dc.gov/sites/default/files/dc/sites/dhcf/publication/attachments/February%20FY26%20MCAC%20Presentation.pdf
+    read: '2026-11-18'
+  california_indians:
+    mark: meets
+    quote: American Indians and Alaskan Natives who are eligible to receive services via the Indian Health Service
+    url: https://dhcf.dc.gov/sites/default/files/dc/sites/dhcf/publication/attachments/February%20FY26%20MCAC%20Presentation.pdf
+    read: '2026-11-18'
+  data_first:
+    mark: unpublished
+  non_document_proof:
+    mark: unpublished
+  tribal_or_clinic_channel:
+    mark: unpublished
+  status_not_rechecked:
+    mark: unpublished
+  twelve_month_renewal:
+    mark: contradicts
+    quote: Most adults ages 19 to 64 without children must renew their Medicaid every 6 months instead of once a year.
+    url: https://dhcf.dc.gov/page/federal-changes-medicaid
+    read: '2026-11-18'
+history: []

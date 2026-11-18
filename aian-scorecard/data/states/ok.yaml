@@ -1,0 +1,56 @@
+# Evidence re-verified 2026-11-18 against primary sources.
+state: OK
+name: Oklahoma
+checked: '2026-11-18'
+start: 2027-01-01 (contingent on CMS approval)
+unverified: false
+under_review: false
+components:
+  tribal_members:
+    mark: meets
+    quote: an American Indian or Alaska Native individual who meets the criteria in 42 C.F.R. § 435.554
+    url: https://oklahoma.gov/content/dam/ok/en/okhca/docs/policy/proposed-changes/2026/9-1-26-blog-postings/APA%20WF%2026-06%20Regulatory%20Text%20draft.pdf
+    read: '2026-11-18'
+  urban_and_descendants:
+    mark: meets
+    quote: an American Indian or Alaska Native individual who meets the criteria in 42 C.F.R. § 435.554
+    url: https://oklahoma.gov/content/dam/ok/en/okhca/docs/policy/proposed-changes/2026/9-1-26-blog-postings/APA%20WF%2026-06%20Regulatory%20Text%20draft.pdf
+    read: '2026-11-18'
+  alaska_natives:
+    mark: meets
+    quote: an American Indian or Alaska Native individual who meets the criteria in 42 C.F.R. § 435.554
+    url: https://oklahoma.gov/content/dam/ok/en/okhca/docs/policy/proposed-changes/2026/9-1-26-blog-postings/APA%20WF%2026-06%20Regulatory%20Text%20draft.pdf
+    read: '2026-11-18'
+  ihs_eligible:
+    mark: meets
+    quote: an American Indian or Alaska Native individual who meets the criteria in 42 C.F.R. § 435.554
+    url: https://oklahoma.gov/content/dam/ok/en/okhca/docs/policy/proposed-changes/2026/9-1-26-blog-postings/APA%20WF%2026-06%20Regulatory%20Text%20draft.pdf
+    read: '2026-11-18'
+  california_indians:
+    mark: meets
+    quote: an American Indian or Alaska Native individual who meets the criteria in 42 C.F.R. § 435.554
+    url: https://oklahoma.gov/content/dam/ok/en/okhca/docs/policy/proposed-changes/2026/9-1-26-blog-postings/APA%20WF%2026-06%20Regulatory%20Text%20draft.pdf
+    read: '2026-11-18'
+  data_first:
+    mark: meets
+    quote: OHCA first attempts to verify an individual's status as a specified excluded individual
+    url: https://oklahoma.gov/content/dam/ok/en/okhca/docs/policy/proposed-changes/2026/9-1-26-blog-postings/APA%20WF%2026-06%20Regulatory%20Text%20draft.pdf
+    read: '2026-11-18'
+  non_document_proof:
+    mark: meets
+    quote: OHCA may request documentation or other information necessary to make the determination
+    url: https://oklahoma.gov/content/dam/ok/en/okhca/docs/policy/proposed-changes/2026/9-1-26-blog-postings/APA%20WF%2026-06%20Regulatory%20Text%20draft.pdf
+    read: '2026-11-18'
+  tribal_or_clinic_channel:
+    mark: unpublished
+  status_not_rechecked:
+    mark: meets
+    quote: will not require reverification once that status has been established
+    url: https://oklahoma.gov/ohca/policies-and-rules/proposed-changes/2026/apa-wf-26-04-perm.html
+    read: '2026-11-18'
+  twelve_month_renewal:
+    mark: meets
+    quote: Certification periods for American Indian/Alaska Native (AI/AN) individuals remain twelve (12) months
+    url: https://oklahoma.gov/content/dam/ok/en/okhca/docs/policy/proposed-changes/2026/9-1-26-blog-postings/APA%20WF%2026-04%20Regulatory%20Text%20draft.pdf
+    read: '2026-11-18'
+history: []

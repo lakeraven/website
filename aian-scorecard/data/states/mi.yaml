@@ -1,0 +1,50 @@
+# Evidence re-verified 2026-11-18 against primary sources.
+state: MI
+name: Michigan
+checked: '2026-11-18'
+start: 2027-01-01 (applies to HMP renewals on or after 2027-03-01)
+unverified: false
+under_review: false
+components:
+  tribal_members:
+    mark: meets
+    quote: An American Indian or Alaska Native (AI/AN).
+    url: https://www.michigan.gov/healthymiplan/new-medicaid-work-requirements
+    read: '2026-11-18'
+  urban_and_descendants:
+    mark: unpublished
+    quote: An American Indian or Alaska Native (AI/AN).
+    url: https://www.michigan.gov/healthymiplan/new-medicaid-work-requirements
+    read: '2026-11-18'
+  alaska_natives:
+    mark: meets
+    quote: An American Indian or Alaska Native (AI/AN).
+    url: https://www.michigan.gov/healthymiplan/new-medicaid-work-requirements
+    read: '2026-11-18'
+  ihs_eligible:
+    mark: unpublished
+  california_indians:
+    mark: unpublished
+  data_first:
+    mark: meets
+    quote: MDHHS will try to verify your situation using existing records before asking for additional information.
+    url: https://www.michigan.gov/healthymiplan/new-medicaid-work-requirements
+    read: '2026-11-18'
+  non_document_proof:
+    mark: unpublished
+    quote: you may also need to notify MDHHS about your exemptions
+    url: https://www.michigan.gov/healthymiplan/new-medicaid-work-requirements
+    read: '2026-11-18'
+  tribal_or_clinic_channel:
+    mark: unpublished
+  status_not_rechecked:
+    mark: contradicts
+    quote: MDHHS will check to see if you're meeting work requirements at each HMP renewal.
+    url: https://www.michigan.gov/healthymiplan/new-medicaid-work-requirements
+    read: '2026-11-18'
+  twelve_month_renewal:
+    mark: unpublished
+    quote: Most HMP beneficiaries will also transition from annual renewals to sixmonth renewals.
+    url: https://content.govdelivery.com/attachments/MIDHHS/2026/07/23/file_attachments/3722908/Work%20Requirements%20NR.pdf
+    read: '2026-11-18'
+history: []

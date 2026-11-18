@@ -1,0 +1,56 @@
+# Evidence re-verified 2026-11-18 against primary sources.
+state: MO
+name: Missouri
+checked: '2026-11-18'
+start: 2027-01-01 (6-month AEG redeterminations begin 2026-12-31 per DSS toolkit)
+unverified: false
+under_review: false
+components:
+  tribal_members:
+    mark: meets
+    quote: You meet the federal definition of an American Indian or Alaska Native.
+    url: https://dss.mo.gov/community-engagement-requirements-frequently-asked-questions
+    read: '2026-11-18'
+  urban_and_descendants:
+    mark: meets
+    quote: You meet the federal definition of an American Indian or Alaska Native.
+    url: https://dss.mo.gov/community-engagement-requirements-frequently-asked-questions
+    read: '2026-11-18'
+  alaska_natives:
+    mark: meets
+    quote: You meet the federal definition of an American Indian or Alaska Native.
+    url: https://dss.mo.gov/community-engagement-requirements-frequently-asked-questions
+    read: '2026-11-18'
+  ihs_eligible:
+    mark: meets
+    quote: You meet the federal definition of an American Indian or Alaska Native.
+    url: https://dss.mo.gov/community-engagement-requirements-frequently-asked-questions
+    read: '2026-11-18'
+  california_indians:
+    mark: meets
+    quote: You meet the federal definition of an American Indian or Alaska Native.
+    url: https://dss.mo.gov/community-engagement-requirements-frequently-asked-questions
+    read: '2026-11-18'
+  data_first:
+    mark: meets
+    quote: FSD must first check the information it already has or can get from other reliable sources.
+    url: https://dss.mo.gov/community-engagement-requirements-frequently-asked-questions
+    read: '2026-11-18'
+  non_document_proof:
+    mark: unpublished
+    quote: Send only the information the letter asks for and send it by the deadline.
+    url: https://dss.mo.gov/community-engagement-requirements-frequently-asked-questions
+    read: '2026-11-18'
+  tribal_or_clinic_channel:
+    mark: unpublished
+  status_not_rechecked:
+    mark: unpublished
+    quote: If you already have MO HealthNet, you must meet the requirements in at least one month since your last renewal.
+    url: https://dss.mo.gov/community-engagement-requirements-frequently-asked-questions
+    read: '2026-11-18'
+  twelve_month_renewal:
+    mark: contradicts
+    quote: Instead of renewing once a year, AEG members will renew every six months.
+    url: https://dss.mo.gov/community-engagement-requirements-frequently-asked-questions
+    read: '2026-11-18'
+history: []

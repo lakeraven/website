@@ -1,0 +1,59 @@
+# Evidence re-verified 2026-11-18 against primary sources.
+state: NE
+name: Nebraska
+checked: '2026-11-18'
+start: Live 2026-05-01
+unverified: false
+under_review: false
+components:
+  tribal_members:
+    mark: meets
+    quote: If you are a member of a federally recognized Native American tribe, an Urban Indian, a California Indian,
+    url: https://dhhs.ne.gov/Documents/MWR%20Tribal%20Exemptions%20One-Pager.pdf
+    read: '2026-11-18'
+  urban_and_descendants:
+    mark: unpublished
+    quote: American Indians and Alaska Natives (AI/AN), Urban Indians and California Indians.
+    url: https://dhhs.ne.gov/Documents/Tribal%20H.R.1%20Timeline.pdf
+    read: '2026-11-18'
+  alaska_natives:
+    mark: meets
+    quote: American Indians and Alaska Natives (AI/AN), Urban Indians and California Indians.
+    url: https://dhhs.ne.gov/Documents/Tribal%20H.R.1%20Timeline.pdf
+    read: '2026-11-18'
+  ihs_eligible:
+    mark: meets
+    quote: or otherwise eligible to receive services through the Indian Health Service (IHS), would not need to complete work requirement activities
+    url: https://dhhs.ne.gov/Documents/MLTC-WR-Requirements-FAQ.pdf
+    read: '2026-11-18'
+  california_indians:
+    mark: meets
+    quote: an Urban Indian, a California Indian,
+    url: https://dhhs.ne.gov/Documents/MWR%20Tribal%20Exemptions%20One-Pager.pdf
+    read: '2026-11-18'
+  data_first:
+    mark: meets
+    quote: Nebraska Medicaid will use information we already have to check if you meet work requirements or have an exemption.
+    url: https://dhhs.ne.gov/Documents/MWR%20Tribal%20Exemptions%20One-Pager.pdf
+    read: '2026-11-18'
+  non_document_proof:
+    mark: meets
+    quote: Mark that the applicant is Native American on the Medicaid application and/or screener questions
+    url: https://dhhs.ne.gov/Documents/Tribal%20H.R.1%20Timeline.pdf
+    read: '2026-11-18'
+  tribal_or_clinic_channel:
+    mark: meets
+    quote: Tribal facilities can submit a letter to DHHS stating that applicants and/or beneficiaries
+    url: https://dhhs.ne.gov/Documents/Tribal%20H.R.1%20Timeline.pdf
+    read: '2026-11-18'
+  status_not_rechecked:
+    mark: unpublished
+    quote: DHHS will only check that you're meeting work requirements or have an exemption at each regularly scheduled renewal.
+    url: https://dhhs.ne.gov/Documents/MLTC-WR-Requirements-FAQ.pdf
+    read: '2026-11-18'
+  twelve_month_renewal:
+    mark: meets
+    quote: Increases redeterminations for the Medicaid expansion group from every 12 months to every 6 months
+    url: https://dhhs.ne.gov/Documents/Tribal%20H.R.1%20Timeline.pdf
+    read: '2026-11-18'
+history: []

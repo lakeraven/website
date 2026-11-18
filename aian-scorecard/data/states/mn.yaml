@@ -1,0 +1,44 @@
+# Evidence re-verified 2026-11-18 against primary sources.
+state: MN
+name: Minnesota
+checked: '2026-11-18'
+start: '2027-01-01'
+unverified: false
+under_review: false
+components:
+  tribal_members:
+    mark: meets
+    quote: You are exempt from these requirements if you are an American Indian or Alaska Native.
+    url: https://mn.gov/dhs/assets/adult-expansion-mailing-ENG_tcm1053-754661.pdf
+    read: '2026-11-18'
+  urban_and_descendants:
+    mark: unpublished
+  alaska_natives:
+    mark: meets
+    quote: If you are an American Indian or Alaska Native (AI/AN) adult, you ARE NOT subject to these new requirements.
+    url: https://mn.gov/dhs/assets/AI-AN-federal-changes-flyer_tcm1053-759997.pdf
+    read: '2026-11-18'
+  ihs_eligible:
+    mark: unpublished
+  california_indians:
+    mark: unpublished
+  data_first:
+    mark: unpublished
+    quote: Some exemptions may be identified using information the state already has,
+    url: https://mn.gov/dhs/assets/2026-06-15_final_work-reqirements_key-messages_tcm1053-754356.pdf
+    read: '2026-11-18'
+  non_document_proof:
+    mark: meets
+    quote: Use the Renewal Lookup Tool to tell us you are American Indian or Alaska Native.
+    url: https://mn.gov/dhs/assets/AI-AN-federal-changes-flyer_tcm1053-759997.pdf
+    read: '2026-11-18'
+  tribal_or_clinic_channel:
+    mark: unpublished
+  status_not_rechecked:
+    mark: unpublished
+  twelve_month_renewal:
+    mark: meets
+    quote: If you are an American Indian or Alaska Native your Medical Assistance renewal will still occur annually.
+    url: https://mn.gov/dhs/assets/adult-expansion-mailing-ENG_tcm1053-754661.pdf
+    read: '2026-11-18'
+history: []

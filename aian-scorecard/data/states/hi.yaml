@@ -1,0 +1,50 @@
+# Evidence re-verified 2026-11-18 against primary sources.
+state: HI
+name: Hawaii
+checked: '2026-11-18'
+start: '2027-01-01'
+unverified: false
+under_review: false
+components:
+  tribal_members:
+    mark: meets
+    quote: Individuals recognized as American Indians or Alaska Natives
+    url: https://medquest.hawaii.gov/content/dam/medicaid-advisory-committee-(mac)/MAC%20Q2%20Meeting%20Deck%20for%2005.28.26%20-%20Final%20(1).pdf
+    read: '2026-11-18'
+  urban_and_descendants:
+    mark: contradicts
+    quote: Individuals recognized as American Indians or Alaska Natives and eligible for health services through the Indian Health Service.
+    url: https://medquest.hawaii.gov/content/dam/medicaid-advisory-committee-(mac)/MAC%20Q2%20Meeting%20Deck%20for%2005.28.26%20-%20Final%20(1).pdf
+    read: '2026-11-18'
+  alaska_natives:
+    mark: meets
+    quote: Individuals recognized as American Indians or Alaska Natives
+    url: https://medquest.hawaii.gov/content/dam/medicaid-advisory-committee-(mac)/MAC%20Q2%20Meeting%20Deck%20for%2005.28.26%20-%20Final%20(1).pdf
+    read: '2026-11-18'
+  ihs_eligible:
+    mark: meets
+    quote: and eligible for health services through the Indian Health Service.
+    url: https://medquest.hawaii.gov/content/dam/medicaid-advisory-committee-(mac)/MAC%20Q2%20Meeting%20Deck%20for%2005.28.26%20-%20Final%20(1).pdf
+    read: '2026-11-18'
+  california_indians:
+    mark: meets
+    quote: and eligible for health services through the Indian Health Service.
+    url: https://medquest.hawaii.gov/content/dam/medicaid-advisory-committee-(mac)/MAC%20Q2%20Meeting%20Deck%20for%2005.28.26%20-%20Final%20(1).pdf
+    read: '2026-11-18'
+  data_first:
+    mark: unpublished
+    quote: to verify compliance before requesting additional information from applicants.
+    url: https://medquest.hawaii.gov/content/dam/medicaid-advisory-committee-(mac)/MAC%20Q2%20Meeting%20Deck%20for%2005.28.26%20-%20Final%20(1).pdf
+    read: '2026-11-18'
+  non_document_proof:
+    mark: unpublished
+  tribal_or_clinic_channel:
+    mark: unpublished
+  status_not_rechecked:
+    mark: unpublished
+  twelve_month_renewal:
+    mark: contradicts
+    quote: For individuals described above, eligibility renewals will happen every six months instead of once per year
+    url: https://medquest.hawaii.gov/content/dam/medicaid-advisory-committee-(mac)/MAC%20Q2%20Meeting%20Deck%20for%2005.28.26%20-%20Final%20(1).pdf
+    read: '2026-11-18'
+history: []

@@ -1,0 +1,50 @@
+# Evidence re-verified 2026-11-18 against primary sources.
+state: DE
+name: Delaware
+checked: '2026-11-18'
+start: '2027-01-01'
+unverified: false
+under_review: false
+components:
+  tribal_members:
+    mark: meets
+    quote: A member of a federally recognized tribe
+    url: https://dhss.delaware.gov/dmma/home/medicaid-engage/
+    read: '2026-11-18'
+  urban_and_descendants:
+    mark: contradicts
+    quote: A member of a federally recognized tribe
+    url: https://dhss.delaware.gov/dmma/home/medicaid-engage/
+    read: '2026-11-18'
+  alaska_natives:
+    mark: unpublished
+    quote: A member of a federally recognized tribe
+    url: https://dhss.delaware.gov/dmma/home/medicaid-engage/
+    read: '2026-11-18'
+  ihs_eligible:
+    mark: contradicts
+    quote: A member of a federally recognized tribe
+    url: https://dhss.delaware.gov/dmma/home/medicaid-engage/
+    read: '2026-11-18'
+  california_indians:
+    mark: contradicts
+    quote: A member of a federally recognized tribe
+    url: https://dhss.delaware.gov/dmma/home/medicaid-engage/
+    read: '2026-11-18'
+  data_first:
+    mark: meets
+    quote: your Medicaid case manager will check the information we already have about you
+    url: https://dhss.delaware.gov/dmma/home/medicaid-engage/
+    read: '2026-11-18'
+  non_document_proof:
+    mark: unpublished
+  tribal_or_clinic_channel:
+    mark: unpublished
+  status_not_rechecked:
+    mark: unpublished
+  twelve_month_renewal:
+    mark: contradicts
+    quote: You will need to renew your Medicaid coverage every six months instead of every 12 months.
+    url: https://dhss.delaware.gov/dmma/home/medicaid-engage/
+    read: '2026-11-18'
+history: []

@@ -1,0 +1,50 @@
+# Evidence re-verified 2026-11-18 against primary sources.
+state: ID
+name: Idaho
+checked: '2026-11-18'
+start: 2027-01-01 (coverage periods ending on or after that date)
+unverified: false
+under_review: false
+components:
+  tribal_members:
+    mark: meets
+    quote: You are an American Indian or Alaska Native
+    url: https://healthandwelfare.idaho.gov/services-programs/medicaid-health/medicaid-expansion
+    read: '2026-11-18'
+  urban_and_descendants:
+    mark: unpublished
+  alaska_natives:
+    mark: meets
+    quote: You are an American Indian or Alaska Native
+    url: https://healthandwelfare.idaho.gov/services-programs/medicaid-health/medicaid-expansion
+    read: '2026-11-18'
+  ihs_eligible:
+    mark: meets
+    quote: You are eligible to receive Indian Health Services
+    url: https://healthandwelfare.idaho.gov/services-programs/medicaid-health/medicaid-expansion
+    read: '2026-11-18'
+  california_indians:
+    mark: meets
+    quote: You are eligible to receive Indian Health Services
+    url: https://healthandwelfare.idaho.gov/services-programs/medicaid-health/medicaid-expansion
+    read: '2026-11-18'
+  data_first:
+    mark: unpublished
+  non_document_proof:
+    mark: unpublished
+    quote: gather important medical or legal documents in case you need to show that you qualify for an exclusion or exemption
+    url: https://healthandwelfare.idaho.gov/services-programs/medicaid-health/medicaid-expansion
+    read: '2026-11-18'
+  tribal_or_clinic_channel:
+    mark: unpublished
+  status_not_rechecked:
+    mark: contradicts
+    quote: Re-evaluations will occur every six‑months
+    url: https://healthandwelfare.idaho.gov/services-programs/medicaid-health/medicaid-expansion
+    read: '2026-11-18'
+  twelve_month_renewal:
+    mark: contradicts
+    quote: verify their work history or community service participation twice a year
+    url: https://healthandwelfare.idaho.gov/news/idaho-department-health-and-welfare-announces-work-requirements-medicaid-expansion-recipients
+    read: '2026-11-18'
+history: []

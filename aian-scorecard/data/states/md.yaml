@@ -1,0 +1,50 @@
+# Evidence re-verified 2026-11-18 against primary sources.
+state: MD
+name: Maryland
+checked: '2026-11-18'
+start: '2027-01-01'
+unverified: false
+under_review: false
+components:
+  tribal_members:
+    mark: meets
+    quote: You are American Indian or Alaska Native
+    url: https://www.marylandhealthconnection.gov/CheckIn
+    read: '2026-11-18'
+  urban_and_descendants:
+    mark: unpublished
+    quote: You are American Indian or Alaska Native
+    url: https://www.marylandhealthconnection.gov/CheckIn
+    read: '2026-11-18'
+  alaska_natives:
+    mark: meets
+    quote: You are American Indian or Alaska Native
+    url: https://www.marylandhealthconnection.gov/CheckIn
+    read: '2026-11-18'
+  ihs_eligible:
+    mark: unpublished
+    quote: You are American Indian or Alaska Native
+    url: https://www.marylandhealthconnection.gov/CheckIn
+    read: '2026-11-18'
+  california_indians:
+    mark: unpublished
+    quote: You are American Indian or Alaska Native
+    url: https://www.marylandhealthconnection.gov/CheckIn
+    read: '2026-11-18'
+  data_first:
+    mark: meets
+    quote: Starting Jan. 1, 2027, Maryland Health Connection will check if you meet the work rules using data we already have.
+    url: https://www.marylandhealthconnection.gov/CheckIn
+    read: '2026-11-18'
+  non_document_proof:
+    mark: unpublished
+  tribal_or_clinic_channel:
+    mark: unpublished
+  status_not_rechecked:
+    mark: unpublished
+  twelve_month_renewal:
+    mark: contradicts
+    quote: Renew coverage every 6 months.
+    url: https://health.maryland.gov/mmcp/Documents/2611_MMA_HR1Impact.pdf
+    read: '2026-11-18'
+history: []

@@ -1,0 +1,56 @@
+# Evidence re-verified 2026-11-18 against primary sources.
+state: AK
+name: Alaska
+checked: '2026-11-18'
+start: '2027-01-01 (FAQ: Alaska has asked for more time; DPA will announce any new date)'
+unverified: false
+under_review: false
+components:
+  tribal_members:
+    mark: meets
+    quote: Alaska Native and American Indian individuals who meet the applicable federal definition are excluded from WCER.
+    url: https://health.alaska.gov/en/education/hr-1-ak-impacts/hr-1-medicaid-frequently-asked-questions/
+    read: '2026-11-18'
+  urban_and_descendants:
+    mark: meets
+    quote: Alaska Native and American Indian individuals who meet the applicable federal definition are excluded from WCER.
+    url: https://health.alaska.gov/en/education/hr-1-ak-impacts/hr-1-medicaid-frequently-asked-questions/
+    read: '2026-11-18'
+  alaska_natives:
+    mark: meets
+    quote: Alaska Native and American Indian individuals who meet the applicable federal definition are excluded from WCER.
+    url: https://health.alaska.gov/en/education/hr-1-ak-impacts/hr-1-medicaid-frequently-asked-questions/
+    read: '2026-11-18'
+  ihs_eligible:
+    mark: meets
+    quote: Alaska Native and American Indian individuals who meet the applicable federal definition are excluded from WCER.
+    url: https://health.alaska.gov/en/education/hr-1-ak-impacts/hr-1-medicaid-frequently-asked-questions/
+    read: '2026-11-18'
+  california_indians:
+    mark: meets
+    quote: Alaska Native and American Indian individuals who meet the applicable federal definition are excluded from WCER.
+    url: https://health.alaska.gov/en/education/hr-1-ak-impacts/hr-1-medicaid-frequently-asked-questions/
+    read: '2026-11-18'
+  data_first:
+    mark: meets
+    quote: including previously established Alaska Native or American Indian status
+    url: https://health.alaska.gov/en/education/hr-1-ak-impacts/hr-1-medicaid-frequently-asked-questions/
+    read: '2026-11-18'
+  non_document_proof:
+    mark: meets
+    quote: If the status cannot be established from available information, self-attestation may be accepted.
+    url: https://health.alaska.gov/en/education/hr-1-ak-impacts/hr-1-medicaid-frequently-asked-questions/
+    read: '2026-11-18'
+  tribal_or_clinic_channel:
+    mark: unpublished
+  status_not_rechecked:
+    mark: meets
+    quote: DPA will retain that determination for future Medicaid eligibility reviews.
+    url: https://health.alaska.gov/en/education/hr-1-ak-impacts/hr-1-medicaid-frequently-asked-questions/
+    read: '2026-11-18'
+  twelve_month_renewal:
+    mark: meets
+    quote: This change does not apply to Alaska Native and American Indian individuals in the Medicaid expansion group
+    url: https://health.alaska.gov/en/education/hr-1-ak-impacts/hr-1-medicaid-frequently-asked-questions/
+    read: '2026-11-18'
+history: []

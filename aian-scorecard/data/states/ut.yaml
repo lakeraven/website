@@ -1,0 +1,53 @@
+# Evidence re-verified 2026-11-18 against primary sources.
+state: UT
+name: Utah
+checked: '2026-11-18'
+start: '2027-01-01'
+unverified: false
+under_review: false
+components:
+  tribal_members:
+    mark: meets
+    quote: with a verified Federal Indian status, AI/AN status, or tribal enrollment
+    url: https://medicaid.utah.gov/?p=14041
+    read: '2026-11-18'
+  urban_and_descendants:
+    mark: unpublished
+    quote: Any of the above documents showing tribal membership through a parent or grandparent.
+    url: https://medicaid-documents.dhhs.utah.gov/Documents/pdfs/FINAL_ Letter for members with unverified tribal status.pdf
+    read: '2026-11-18'
+  alaska_natives:
+    mark: meets
+    quote: with a verified Federal Indian status, AI/AN status, or tribal enrollment
+    url: https://medicaid.utah.gov/?p=14041
+    read: '2026-11-18'
+  ihs_eligible:
+    mark: unpublished
+    quote: A medical record certified by IHS as being from their original records.
+    url: https://medicaid-documents.dhhs.utah.gov/Documents/pdfs/FINAL_ H.R. 1_ Medicaid members with unverified Federal Indian or AI_AN status staff toolkit.pdf
+    read: '2026-11-18'
+  california_indians:
+    mark: unpublished
+  data_first:
+    mark: meets
+    quote: Our records show that you are American Indian or Alaska Native (AI/AN) with a verified tribal status.
+    url: https://medicaid-documents.dhhs.utah.gov/Documents/pdfs/FINAL Letter for members with verified tribal status.pdf
+    read: '2026-11-18'
+  non_document_proof:
+    mark: contradicts
+    quote: Send DWS a copy of one of these items for each person in your home who is a tribal
+    url: https://medicaid-documents.dhhs.utah.gov/Documents/pdfs/Tribal verification flyer.pdf
+    read: '2026-11-18'
+  tribal_or_clinic_channel:
+    mark: meets
+    quote: 'IHS Face Sheet: A medical record certified by IHS as being from their original records.'
+    url: https://medicaid-documents.dhhs.utah.gov/Documents/pdfs/Tribal verification flyer.pdf
+    read: '2026-11-18'
+  status_not_rechecked:
+    mark: unpublished
+  twelve_month_renewal:
+    mark: meets
+    quote: You do not have to do these work and community activities and will have a review every 12 months.
+    url: https://medicaid.utah.gov/?p=14041
+    read: '2026-11-18'
+history: []

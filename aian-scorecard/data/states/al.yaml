@@ -1,0 +1,13 @@
+# Evidence re-verified 2026-11-18 against primary sources.
+state: AL
+name: Alabama
+status: not_subject
+confirmed: true
+under_review: false
+components: {}
+history: []
+checked: '2026-11-18'
+status_source:
+  quote: No New Work Requirement for Alabama Medicaid.
+  url: https://www.medicaid.gov/renew-info/al
+  read: '2026-11-18'

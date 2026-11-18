@@ -247,3 +247,18 @@ html[data-theme="dark"] {
     color: $dark-link;
   }
 }
+
+// Tables (AI/AN scorecard): USWDS tables default to a white fill.
+html[data-theme="dark"] .usa-table {
+  th,
+  td,
+  caption {
+    background-color: $dark-bg;
+    color: $dark-fg;
+    border-color: $dark-line;
+  }
+}
+
+.aian-finding {
+  white-space: nowrap;
+}
