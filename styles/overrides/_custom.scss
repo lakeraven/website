@@ -302,3 +302,9 @@ html[data-theme="dark"] .aian-dots { color: $dark-link; }
     .aian-sub, td[data-label="Impact"] .text-base { margin-left: 0.5rem; }
   }
 }
+.aian-dot {
+  width: 0.9em;
+  height: 0.9em;
+  margin-right: 0.1em;
+  vertical-align: -0.1em;
+}

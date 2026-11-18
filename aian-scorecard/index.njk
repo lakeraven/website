@@ -5,6 +5,7 @@ permalink: /aian-medicaid-scorecard/
 description: How closely each state's published Medicaid policy follows CMS rules for American Indians and Alaska Natives under the new work and renewal requirements.
 ---
 {% set sc = aianScorecard %}
+{% from "aian-dots.njk" import dots %}
 {% if not sc.rubric.approved %}
 <div class="usa-alert usa-alert--warning usa-alert--slim"><div class="usa-alert__body"><p class="usa-alert__text"><strong>Draft.</strong> Grades are provisional while the rubric is under review and evidence is re-verified.</p></div></div>
 {% endif %}
@@ -41,7 +42,7 @@ description: How closely each state's published Medicaid policy follows CMS rule
 <h2>All states, ranked</h2>
 <p>Ranked by requirements met, then fewest contradicted, then fewest unpublished. The grade follows mechanically from those counts (see <a href="#rubric">How grades work</a>).</p>
 {% set im = sc.rubric.impact %}
-<p class="aian-legend"><strong>Impact</strong> is our estimate of how many American Indian and Alaska Native people in the state could be exempt, on a log scale: {% for l in sc.impactLegend %}<span class="aian-dots" aria-hidden="true">{% for i in range(0, l.dots) %}&#9679;{% endfor %}</span> {{ l.range }}{% if not loop.last %}; {% endif %}{% endfor %}. It is the 2020 Census American Indian and Alaska Native population times an assumed {{ (im.subject_share * 100) | round }}% who are expansion adults subject to the work rule; no published source gives that share. <strong>To fix</strong> lists every requirement the state does not meet: contradictions first, then requirements with no published policy. Each links to the fix on the state's page.</p>
+<p class="aian-legend"><strong>Impact</strong> is drawn to scale: each {{ dots(1, 0) }} is {{ im.dot_size | aianNum }} American Indian and Alaska Native people we estimate could be exempt, and a partly filled dot shows the remainder, like a clock face: for example {{ dots(0, 0.25) }} is 2,500. It is the 2020 Census American Indian and Alaska Native population times an assumed {{ (im.subject_share * 100) | round }}% who are expansion adults subject to the work rule; no published source gives that share. <strong>To fix</strong> lists every requirement the state does not meet: contradictions first, then requirements with no published policy. Each links to the fix on the state's page.</p>
 <table class="usa-table usa-table--borderless usa-table--stacked aian-roster">
   <caption class="usa-sr-only">States ranked by requirements met, with grade, estimated impact, and the requirements each state still needs to fix</caption>
   <thead><tr><th scope="col">State</th><th scope="col">Score</th><th scope="col">Grade</th><th scope="col">Impact</th><th scope="col">To fix</th></tr></thead>
@@ -52,7 +53,7 @@ description: How closely each state's published Medicaid policy follows CMS rule
       <th scope="row" data-label="State"><a href="{{ url }}">{{ s.name }}</a>{% if s.under_review %} <span class="usa-tag">Evidence under review</span>{% endif %}</th>
       <td data-label="Score">{% if s.status != 'not_subject' %}<strong>{{ s.met }}/{{ sc.summary.total }}</strong><br><span class="text-base aian-sub">{{ s.contradicts }} contradicted, {{ s.unpublished }} unpublished</span>{% endif %}</td>
       <td data-label="Grade">{{ s.grade }}{% if s.status == 'not_subject' and not s.confirmed %} (to confirm){% endif %}</td>
-      <td data-label="Impact">{% if s.impact.dots %}<span class="aian-dots" role="img" aria-label="{{ s.impact.dots }} of 5: about {{ s.impact.estimate | aianNum }} estimated">{% for i in range(0, 5) %}{% if i < s.impact.dots %}&#9679;{% else %}&#9675;{% endif %}{% endfor %}</span><br><span class="text-base">about {{ s.impact.estimate | aianNum }}</span>{% if s.impact.published %}<br><span class="text-base">State reports {{ s.impact.published.count | aianNum }} <a href="{{ s.impact.published.url }}">verified</a></span>{% endif %}{% endif %}</td>
+      <td data-label="Impact">{% if s.status != 'not_subject' %}<span role="img" aria-label="about {{ s.impact.estimate | aianNum }} estimated">{{ dots(s.impact.full, s.impact.part) }}</span><br><span class="text-base">about {{ s.impact.estimate | aianNum }}</span>{% if s.impact.published %}<br><span class="text-base">State reports {{ s.impact.published.count | aianNum }} <a href="{{ s.impact.published.url }}">verified</a></span>{% endif %}{% endif %}</td>
       <td data-label="To fix">{% if s.status == 'not_subject' %}Not subject{% elif not s.improvements.length %}Nothing{% else %}{% set con = s.fixContradicts %}{% set unp = s.fixUnpublished %}{% if con.length %}<span class="aian-fix-kind">Contradicts:</span> {% for i in con %}<a href="{{ url }}#fix-{{ i.id }}">{{ i.short }}</a>{% if not loop.last %} · {% endif %}{% endfor %}{% endif %}{% if con.length and unp.length %}<br>{% endif %}{% if unp.length %}<span class="aian-fix-kind">Not published:</span> {% for i in unp %}<a href="{{ url }}#fix-{{ i.id }}">{{ i.short }}</a>{% if not loop.last %} · {% endif %}{% endfor %}{% endif %}{% endif %}</td>
     </tr>
   {% endfor %}

@@ -38,6 +38,14 @@ module.exports = function (config) {
   // Allow yaml to be used in the _data dir
   config.addDataExtension("yaml", contents => yaml.load(contents));
 
+  // Pie wedge for a partial impact dot: area proportional to the fraction, starting at 12 o'clock.
+  config.addFilter("aianWedge", (part) => {
+    const f = Math.min(Math.max(part, 0.03), 0.999);
+    const a = f * 2 * Math.PI;
+    const x = (10 + 8 * Math.sin(a)).toFixed(2), y = (10 - 8 * Math.cos(a)).toFixed(2);
+    return `M10 10 L10 2 A8 8 0 ${f > 0.5 ? 1 : 0} 1 ${x} ${y} Z`;
+  });
+
   config.addFilter("aianNum", (n) => Number(n).toLocaleString("en-US"));
 
   config.addFilter("readableDate", (dateObj) => {

@@ -83,8 +83,11 @@ module.exports = function () {
     if (!(s.state in pop)) { problems.push(`${s.state}: no population row`); continue; }
     const est = pop[s.state] * imp.subject_share;
     const rounded = Number(est.toPrecision(2));
-    const dots = s.status === "not_subject" ? 0 : 1 + imp.dot_floors.filter((f) => rounded >= f).length;
-    s.impact = { population: pop[s.state], estimate: rounded, dots, published: (imp.published || {})[s.state] || null };
+    const subject = s.status !== "not_subject";
+    // To scale: whole dots per dot_size, then the remainder as a fraction of a dot.
+    const full = subject ? Math.floor(est / imp.dot_size) : 0;
+    const part = subject ? (est - full * imp.dot_size) / imp.dot_size : 0;
+    s.impact = { population: pop[s.state], estimate: rounded, full, part: Math.round(part * 100) / 100, published: (imp.published || {})[s.state] || null };
   }
 
   if (problems.length) throw new Error("AI/AN scorecard evidence is missing sources:\n" + problems.join("\n"));
@@ -109,10 +112,5 @@ module.exports = function () {
   // Roster order: by score (most met, then fewest contradicted, then fewest silent), then name.
   const ranked = [...subject].sort((a, b) => b.met - a.met || a.contradicts - b.contradicts || a.unpublished - b.unpublished || a.name.localeCompare(b.name))
     .concat(states.filter((s) => s.status === "not_subject"));
-  const fl = imp.dot_floors, fmt = (n) => n.toLocaleString("en-US");
-  const impactLegend = [1, 2, 3, 4, 5].map((d) => ({
-    dots: d,
-    range: d === 1 ? `under ${fmt(fl[0])}` : d === 5 ? `${fmt(fl[3])} or more` : `${fmt(fl[d - 2])} to ${fmt(fl[d - 1] - 1)}`,
-  }));
-  return { rubric, states, ranked, impactLegend, counts, lastChecked, summary };
+  return { rubric, states, ranked, counts, lastChecked, summary };
 };

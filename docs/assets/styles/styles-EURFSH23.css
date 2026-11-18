@@ -30569,6 +30569,12 @@ html[data-theme=dark] .aian-dots {
     margin-left: 0.5rem;
   }
 }
+.aian-dot {
+  width: 0.9em;
+  height: 0.9em;
+  margin-right: 0.1em;
+  vertical-align: -0.1em;
+}
 /*! uswds @version */
 
-/*# sourceMappingURL=styles-WPAMFEA6.css.map */
+/*# sourceMappingURL=styles-EURFSH23.css.map */

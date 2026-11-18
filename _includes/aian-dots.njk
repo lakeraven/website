@@ -1,0 +1,2 @@
+{# Impact dots drawn to scale: one filled dot per dot_size people, then a pie wedge for the remainder. #}
+{% macro dots(full, part) %}<span class="aian-dots" aria-hidden="true">{% for i in range(0, full) %}<svg class="aian-dot" viewBox="0 0 20 20"><circle cx="10" cy="10" r="8" fill="currentColor"/></svg>{% endfor %}{% if part > 0 %}<svg class="aian-dot" viewBox="0 0 20 20"><circle cx="10" cy="10" r="7.25" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="{{ part | aianWedge }}" fill="currentColor"/></svg>{% endif %}</span>{% endmacro %}
