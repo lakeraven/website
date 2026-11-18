@@ -12,7 +12,7 @@ const M = "meets", C = "contradicts", U = "unpublished";
 
 test("rubric has ten requirements", () => assert.equal(ids.length, 10));
 test("all ten met is A", () => assert.equal(gradeState(make(Array(10).fill(M)), rubric).grade, "A"));
-test("nine met, one unpublished is A", () => assert.equal(gradeState(make([...Array(9).fill(M), U]), rubric).grade, "A"));
+test("nine met, one unpublished is B: A needs all ten", () => assert.equal(gradeState(make([...Array(9).fill(M), U]), rubric).grade, "B"));
 test("eight met is B", () => assert.equal(gradeState(make([...Array(8).fill(M), U, U]), rubric).grade, "B"));
 test("six met is B", () => assert.equal(gradeState(make([...Array(6).fill(M), U, U, U, U]), rubric).grade, "B"));
 test("five met, none contradicted is C", () => assert.equal(gradeState(make([...Array(5).fill(M), ...Array(5).fill(U)]), rubric).grade, "C"));
@@ -26,7 +26,7 @@ test("out-of-state requirement left out counts as unpublished", () => {
   delete s.components.out_of_state;
   const r = gradeState(s, rubric);
   assert.equal(r.unpublished, 1);
-  assert.equal(r.grade, "A");
+  assert.equal(r.grade, "B");
 });
 test("unknown mark strings count as unpublished, not met", () => {
   const r = gradeState(make(Array(10).fill("pass")), rubric);

@@ -2,7 +2,7 @@
 approved: true
 not_graded_unpublished_min: 8
 # Grade thresholds, scaled to ten requirements (2026-11-18).
-a_met_min: 9
+a_met_min: 10
 c_met_max: 5
 requirements:
   - id: tribal_members
@@ -41,9 +41,9 @@ best_practices:
     citation: Tribal recommendation, not a CMS requirement
 grades:
   - grade: A
-    rule: No contradictions, and 9 or 10 requirements met
+    rule: All 10 requirements met
   - grade: B
-    rule: No contradictions, and 6 to 8 met
+    rule: No contradictions, and 6 to 9 met
   - grade: C
     rule: One contradiction, or none but 5 or fewer met
   - grade: D
