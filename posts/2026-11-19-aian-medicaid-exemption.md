@@ -66,15 +66,17 @@ If you don't have documents, the state can't deny or end your coverage only for 
 
 ## What states must do first
 
-The race box on an application doesn't qualify anyone: the exclusion turns on the legal statuses above, not race. States may require only the information needed to decide eligibility, and race isn't part of that,<sup class="fn-ref"><a href="#ref-15" id="cite-15" aria-label="Reference 15">15</a></sup> so the race question can't be relied on to find everyone who qualifies. How the state verifies matters as much as the definition:<sup class="fn-ref"><a href="#ref-13" aria-label="Reference 13">13</a></sup>
+In short: the state must check the records it already has before asking you for anything. It can't deny you only because documents don't exist. Once it finds you qualify, it can't recheck before your next renewal unless something changed.<sup class="fn-ref"><a href="#ref-13" aria-label="Reference 13">13</a></sup>
+
+The race box on an application doesn't qualify anyone. The exclusion turns on the legal statuses above, not race. States may require only the information needed to decide eligibility, and race isn't part of that.<sup class="fn-ref"><a href="#ref-15" id="cite-15" aria-label="Reference 15">15</a></sup> So the race question can't be relied on to find everyone who qualifies. These are the verification rules, all required by federal regulation:<sup class="fn-ref"><a href="#ref-13" aria-label="Reference 13">13</a></sup>
 
 | Rule | What it requires |
 |---|---|
 | Data first | Check reliable information the state already holds, including its eligibility system, case records and claims from the past 12 months, before asking the person<sup class="fn-ref"><a href="#ref-13" aria-label="Reference 13">13</a></sup> |
 | No documents that don't exist | When the state's own data fall short: before 1 January 2028 it may accept other information; from then on it must require documentation when reasonably available; when none is reasonably available, it must accept other information; it may never deny or end coverage only because documents don't exist<sup class="fn-ref"><a href="#ref-13" aria-label="Reference 13">13</a></sup> |
-| No rechecking | Once excluded, a person is not re-verified before the next scheduled redetermination unless the state learns something changed.<sup class="fn-ref"><a href="#ref-13" aria-label="Reference 13">13</a></sup> The rule's preamble goes further: for American Indians, CMS says states may not reverify the status at all<sup class="fn-ref"><a href="#ref-16" id="cite-16" aria-label="Reference 16">16</a></sup> |
+| No rechecking | Once excluded, a person is not re-verified before the next scheduled redetermination unless the state learns something changed.<sup class="fn-ref"><a href="#ref-13" aria-label="Reference 13">13</a></sup> CMS guidance goes further: in the rule's preamble, CMS says states may not reverify American Indian status at all<sup class="fn-ref"><a href="#ref-16" id="cite-16" aria-label="Reference 16">16</a></sup> |
 
-On 13 November 2026, CMS offered states an optional "hold harmless" period through 30 June 2027.<sup class="fn-ref"><a href="#ref-17" id="cite-17" aria-label="Reference 17">17</a></sup> With CMS approval, a state can pause denials and disenrollments for people who haven't yet shown they qualify. It buys time to fix verification but changes nothing about who qualifies. States that want it from 1 January should tell CMS by 11 December 2026.
+On 13 November 2026, CMS offered states an optional "hold harmless" period through 30 June 2027.<sup class="fn-ref"><a href="#ref-17" id="cite-17" aria-label="Reference 17">17</a></sup> It is guidance a state can choose to use, not a requirement. With CMS approval, a state can pause denials and disenrollments for people who haven't yet shown they qualify. It buys time to fix verification but changes nothing about who qualifies. States that want it from 1 January should tell CMS by 11 December 2026.
 
 <figure>
   <a href="/assets/figures/aian-exemption-flow.svg"><img src="/assets/figures/aian-exemption-flow.svg" alt="Flowchart titled How do I determine if someone is exempt? Step 1: does the person meet the federal definition of Indian by any of four routes. Step 2: the state checks its own data first. Step 3: if the data fall short, the state may ask the person; before 1 January 2028 for documents or other information, and from then on for documents when reasonably available, otherwise other information. Step 4: never denied or cut off only because documents don't exist. Step 5: exempt from the work requirement, with renewals every 12 months. Step 6: no re-check before the next scheduled renewal. Side notes: tribal health systems are not in the loop, and tribal advisers asked CMS to advise states to share data with tribes; CMS offers an optional hold-harmless period through 30 June 2027; CMS says states may not reverify status at all."></a>
@@ -83,7 +85,7 @@ On 13 November 2026, CMS offered states an optional "hold harmless" period throu
 
 ## Where eligibility systems go wrong
 
-None of these fixes requires a state to collect tribal enrollment records, which belong to the Nations.
+Most failures come from a few design choices. Each row names one, what happens to people, and what the system should do instead. None of these fixes requires a state to collect tribal enrollment records. Those records belong to the Nations.
 
 | Mistake | What happens | What the system should do |
 |---|---|---|
@@ -118,15 +120,17 @@ The vendor's answers belong in the state's verification plan.<sup class="fn-ref"
 
 ## What the rule leaves open
 
-Urban programs face the hardest case: many patients belong to tribes in other states, descend from members, or belong to state-recognized or terminated tribes, and the state holds no tribal record for them. What leaves your program is your decision. We found nothing in the rule's verification requirements that requires sending a state your patients' tribal records.<sup class="fn-ref"><a href="#ref-13" aria-label="Reference 13">13</a></sup>
+In short: the rule tells states to use their own data, but it gives tribal health systems no defined role in verification.
+
+Urban programs face the hardest case. Many patients belong to tribes in other states, descend from members, or belong to state-recognized or terminated tribes. The state holds no tribal record for them. What leaves your program is your decision. We found nothing in the rule's verification requirements that requires sending a state your patients' tribal records.<sup class="fn-ref"><a href="#ref-13" aria-label="Reference 13">13</a></sup>
 
 That leaves a gap, and it helps to keep three things apart.
 
-**What federal law requires:** the exemption itself, for everyone who meets the federal definition; and that states use the reliable information they already hold before asking a person for more. When those data fall short, a state may still ask the person. Nothing in the verification rule requires a state to set up data sharing with tribal health systems.<sup class="fn-ref"><a href="#ref-13" aria-label="Reference 13">13</a></sup>
+**What federal law requires (binding):** the exemption itself, for everyone who meets the federal definition; and that states use the reliable information they already hold before asking a person for more. When those data fall short, a state may still ask the person. Nothing in the verification rule requires a state to set up data sharing with tribal health systems.<sup class="fn-ref"><a href="#ref-13" aria-label="Reference 13">13</a></sup>
 
-**What CMS advises:** in the rule's preamble, that states may not reverify a person's American Indian or Alaska Native status at all, which goes further than the regulation's own text;<sup class="fn-ref"><a href="#ref-16" aria-label="Reference 16">16</a></sup> and, in a 13 November 2026 letter to states, an optional hold-harmless period through 30 June 2027.<sup class="fn-ref"><a href="#ref-17" aria-label="Reference 17">17</a></sup>
+**What CMS advises (guidance, not regulation text):** in the rule's preamble, that states may not reverify a person's American Indian or Alaska Native status at all, which goes further than the regulation's own text;<sup class="fn-ref"><a href="#ref-16" aria-label="Reference 16">16</a></sup> and, in a 13 November 2026 letter to states, an optional hold-harmless period through 30 June 2027.<sup class="fn-ref"><a href="#ref-17" aria-label="Reference 17">17</a></sup>
 
-**What tribal advocates request:** the Tribal Technical Advisory Group asked CMS to "advise states to share data with Tribal entities within their borders."<sup class="fn-ref"><a href="#ref-21" id="cite-21" aria-label="Reference 21">21</a></sup> That is a request, not a rule.
+**What tribal advocates request (not binding):** the Tribal Technical Advisory Group asked CMS to "advise states to share data with Tribal entities within their borders."<sup class="fn-ref"><a href="#ref-21" id="cite-21" aria-label="Reference 21">21</a></sup> That is a request, not a rule.
 
 So the regulation creates the exemption and a duty to check the state's own data, but its text sets up no mechanism connecting state eligibility systems with the tribal health organizations that often know their patients best. Native Medicaid coverage shouldn't depend on whether one person can navigate a fragmented state verification process when reliable information may already exist within tribal health systems.
 
