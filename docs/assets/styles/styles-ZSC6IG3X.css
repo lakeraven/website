@@ -30568,6 +30568,16 @@ html[data-theme=dark] .aian-dots {
   .usa-prose > .aian-roster.usa-table--stacked td[data-label=Impact] .text-base {
     margin-left: 0.5rem;
   }
+  .usa-prose > .aian-roster.usa-table--stacked th[scope=row] {
+    min-width: 0;
+  }
+  .usa-prose > .aian-roster.usa-table--stacked td[data-label=Score],
+  .usa-prose > .aian-roster.usa-table--stacked td[data-label=Impact] {
+    white-space: normal;
+  }
+}
+.usa-layout-docs main {
+  min-width: 0;
 }
 .aian-dot {
   width: 0.9em;
@@ -30620,7 +30630,7 @@ html[data-theme=dark] .post-body table td {
   margin-left: 0.1em;
 }
 .post-body .fn-ref a {
-  text-decoration: none;
+  text-decoration: underline;
 }
 .post-body table.fn-table {
   display: table;
@@ -30673,7 +30683,7 @@ html[data-theme=dark] .post-body .fn-table tr:target {
   background: #3d3a1f;
 }
 .post-body .fn-back {
-  text-decoration: none;
+  text-decoration: underline;
 }
 .aian-src {
   font-size: 0.875em;
@@ -30702,4 +30712,4 @@ html[data-theme=dark] .aian-ungraded {
 }
 /*! uswds @version */
 
-/*# sourceMappingURL=styles-XI3JQRF2.css.map */
+/*# sourceMappingURL=styles-ZSC6IG3X.css.map */
