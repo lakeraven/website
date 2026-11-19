@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1800" width="1200" height="1800" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" role="img" aria-labelledby="t d">
+<title id="t">Am I exempt?</title>
+<desc id="d">Decision tree for individuals. Four yes/no questions, any yes is enough: A1 member of a federally recognized tribe (including Alaska Native villages and corporations); A2 lives in an HHS-designated urban center and is a member of any tribe including terminated or state-recognized, a child or grandchild of a member, or Alaska Native; A3 considered an Indian by Interior, such as one-half or more Indian blood or descent from a member living on a reservation on 1 June 1934; A4 eligible as an Indian for Indian Health Service or tribal care, including California Indians and Alaska Natives. Each yes lists documents CMS accepts. If no route applies, not exempt on this basis. Notes: no denial only for lack of documents; the race box does not decide it; many states ask for less than federal law covers.</desc>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#4A5560"/></marker></defs>
+<rect width="1200" height="1800" fill="#FFFFFF"/>
+<text x="60" y="62" font-size="34" font-weight="700" fill="#1B1F24" text-anchor="start"><tspan x="60" dy="0.0">Am I exempt?</tspan></text>
+<text x="60" y="98" font-size="17" font-weight="400" fill="#4A5560" text-anchor="start"><tspan x="60" dy="0.0">Medicaid work requirements and six-month renewals: the American Indian and Alaska Native exemption</tspan></text>
+<rect x="60" y="122" width="22" height="16" rx="3" fill="#E8F1FB" stroke="#1F5FA8" stroke-width="2"/>
+<text x="90" y="135" font-size="14.5" fill="#1B1F24">Who qualifies, under federal law</text>
+<rect x="356.8" y="122" width="22" height="16" rx="3" fill="#FFF4DC" stroke="#9A6400" stroke-width="2"/>
+<text x="386.8" y="135" font-size="14.5" fill="#1B1F24">What you can show (CMS lists)</text>
+<rect x="631.4000000000001" y="122" width="22" height="16" rx="3" fill="#FFFFFF" stroke="#B3261E" stroke-width="2" stroke-dasharray="5 4"/>
+<text x="661.4000000000001" y="135" font-size="14.5" fill="#1B1F24">Where state forms fall short</text>
+<text x="60" y="172" font-size="16" font-weight="600" fill="#1B1F24" text-anchor="start"><tspan x="60" dy="0.0">Answer the questions in order. A yes to any one is enough.</tspan></text>
+<rect x="60" y="200" width="610" height="215" rx="10" fill="#E8F1FB" stroke="#1F5FA8" stroke-width="2"/>
+<text x="656" y="222" font-size="11.5" font-weight="700" letter-spacing="1" fill="#1F5FA8" text-anchor="end">FEDERAL LAW</text>
+<rect x="76" y="218" width="40" height="26" rx="6" fill="#1F5FA8"/>
+<text x="96" y="237" font-size="15" font-weight="700" fill="#fff" text-anchor="middle"><tspan x="96" dy="0.0">A1</tspan></text>
+<text x="130" y="238" font-size="18.5" font-weight="700" fill="#1B1F24" text-anchor="start"><tspan x="130" dy="0.0">Are you a member of a federally recognized</tspan><tspan x="130" dy="24.4">tribe?</tspan></text>
+<circle cx="88" cy="289.42" r="3" fill="#1B1F24"/>
+<text x="100" y="294.42" font-size="15" font-weight="400" fill="#1B1F24" text-anchor="start"><tspan x="100" dy="0.0">Includes Alaska Native villages and Alaska Native</tspan><tspan x="100" dy="19.8">corporations.</tspan></text>
+<circle cx="88" cy="335.02000000000004" r="3" fill="#1B1F24"/>
+<text x="100" y="340.02000000000004" font-size="15" font-weight="400" fill="#1B1F24" text-anchor="start"><tspan x="100" dy="0.0">You don't need to live on a reservation.</tspan></text>
+<text x="84" y="401" font-size="13" font-weight="400" fill="#4A5560" text-anchor="start"><tspan x="84" dy="0.0">25 U.S.C. 1603(13), (14); 42 CFR 447.51</tspan></text>
+<rect x="730" y="220" width="410" height="175" rx="10" fill="#FFF4DC" stroke="#9A6400" stroke-width="2"/>
+<text x="1126" y="242" font-size="11.5" font-weight="700" letter-spacing="1" fill="#9A6400" text-anchor="end">CMS LISTS</text>
+<text x="748" y="250" font-size="16.5" font-weight="700" fill="#1E7B34" text-anchor="start"><tspan x="748" dy="0.0">You're exempt. You can show:</tspan></text>
+<circle cx="752" cy="275" r="3" fill="#1B1F24"/>
+<text x="764" y="280" font-size="14.5" font-weight="400" fill="#1B1F24" text-anchor="start"><tspan x="764" dy="0.0">Tribal enrollment card or membership letter</tspan></text>
+<circle cx="752" cy="300.14" r="3" fill="#1B1F24"/>
+<text x="764" y="305.14" font-size="14.5" font-weight="400" fill="#1B1F24" text-anchor="start"><tspan x="764" dy="0.0">Tribal census record</tspan></text>
+<circle cx="752" cy="325.28" r="3" fill="#1B1F24"/>
+<text x="764" y="330.28" font-size="14.5" font-weight="400" fill="#1B1F24" text-anchor="start"><tspan x="764" dy="0.0">Alaska Native village or corporation</tspan><tspan x="764" dy="19.1">document</tspan></text>
+<line x1="670" y1="307.5" x2="726" y2="307.5" stroke="#4A5560" stroke-width="2.5" marker-end="url(#ah)"/>
+<text x="678.0" y="297.5" font-size="15" font-weight="700" fill="#4A5560">Yes</text>
+<line x1="365.0" y1="415" x2="365.0" y2="451" stroke="#4A5560" stroke-width="2.5" marker-end="url(#ah)"/>
+<text x="375.0" y="437.0" font-size="15" font-weight="700" fill="#4A5560">No</text>
+<rect x="60" y="455" width="610" height="250" rx="10" fill="#E8F1FB" stroke="#1F5FA8" stroke-width="2"/>
+<text x="656" y="477" font-size="11.5" font-weight="700" letter-spacing="1" fill="#1F5FA8" text-anchor="end">FEDERAL LAW</text>
+<rect x="76" y="473" width="40" height="26" rx="6" fill="#1F5FA8"/>
+<text x="96" y="492" font-size="15" font-weight="700" fill="#fff" text-anchor="middle"><tspan x="96" dy="0.0">A2</tspan></text>
+<text x="130" y="493" font-size="18.5" font-weight="700" fill="#1B1F24" text-anchor="start"><tspan x="130" dy="0.0">Do you live in a city or town HHS counts as an</tspan><tspan x="130" dy="24.4">urban center, and are you any of these?</tspan></text>
+<circle cx="88" cy="544.42" r="3" fill="#1B1F24"/>
+<text x="100" y="549.42" font-size="15" font-weight="400" fill="#1B1F24" text-anchor="start"><tspan x="100" dy="0.0">A member of any tribe, including one terminated since 1940 or</tspan><tspan x="100" dy="19.8">recognized only by a state</tspan></text>
+<circle cx="88" cy="590.0199999999999" r="3" fill="#1B1F24"/>
+<text x="100" y="595.0199999999999" font-size="15" font-weight="400" fill="#1B1F24" text-anchor="start"><tspan x="100" dy="0.0">A child or grandchild of a tribal member</tspan></text>
+<circle cx="88" cy="615.8199999999998" r="3" fill="#1B1F24"/>
+<text x="100" y="620.8199999999998" font-size="15" font-weight="400" fill="#1B1F24" text-anchor="start"><tspan x="100" dy="0.0">An Alaska Native</tspan></text>
+<text x="84" y="691" font-size="13" font-weight="400" fill="#4A5560" text-anchor="start"><tspan x="84" dy="0.0">25 U.S.C. 1603(13)(A)-(D), (27), (28)</tspan></text>
+<rect x="730" y="475" width="410" height="178" rx="10" fill="#FFF4DC" stroke="#9A6400" stroke-width="2"/>
+<text x="1126" y="497" font-size="11.5" font-weight="700" letter-spacing="1" fill="#9A6400" text-anchor="end">CMS LISTS</text>
+<text x="748" y="505" font-size="16.5" font-weight="700" fill="#1E7B34" text-anchor="start"><tspan x="748" dy="0.0">You're exempt. You can show:</tspan></text>
+<circle cx="752" cy="530" r="3" fill="#1B1F24"/>
+<text x="764" y="535" font-size="14.5" font-weight="400" fill="#1B1F24" text-anchor="start"><tspan x="764" dy="0.0">Proof of where you live (lease, utility</tspan><tspan x="764" dy="19.1">bill, voter card)</tspan></text>
+<circle cx="752" cy="574.28" r="3" fill="#1B1F24"/>
+<text x="764" y="579.28" font-size="14.5" font-weight="400" fill="#1B1F24" text-anchor="start"><tspan x="764" dy="0.0">AND a tribal document showing your, your</tspan><tspan x="764" dy="19.1">parent's or your grandparent's membership</tspan></text>
+<line x1="670" y1="580.0" x2="726" y2="580.0" stroke="#4A5560" stroke-width="2.5" marker-end="url(#ah)"/>
+<text x="678.0" y="570.0" font-size="15" font-weight="700" fill="#4A5560">Yes</text>
+<line x1="365.0" y1="705" x2="365.0" y2="741" stroke="#4A5560" stroke-width="2.5" marker-end="url(#ah)"/>
+<text x="375.0" y="727.0" font-size="15" font-weight="700" fill="#4A5560">No</text>
+<rect x="60" y="745" width="610" height="250" rx="10" fill="#E8F1FB" stroke="#1F5FA8" stroke-width="2"/>
+<text x="656" y="767" font-size="11.5" font-weight="700" letter-spacing="1" fill="#1F5FA8" text-anchor="end">FEDERAL LAW</text>
+<rect x="76" y="763" width="40" height="26" rx="6" fill="#1F5FA8"/>
+<text x="96" y="782" font-size="15" font-weight="700" fill="#fff" text-anchor="middle"><tspan x="96" dy="0.0">A3</tspan></text>
+<text x="130" y="783" font-size="18.5" font-weight="700" fill="#1B1F24" text-anchor="start"><tspan x="130" dy="0.0">Does the Department of the Interior consider</tspan><tspan x="130" dy="24.4">you an Indian, for any purpose?</tspan></text>
+<circle cx="88" cy="834.42" r="3" fill="#1B1F24"/>
+<text x="100" y="839.42" font-size="15" font-weight="400" fill="#1B1F24" text-anchor="start"><tspan x="100" dy="0.0">You have one-half or more Indian blood</tspan></text>
+<circle cx="88" cy="860.2199999999999" r="3" fill="#1B1F24"/>
+<text x="100" y="865.2199999999999" font-size="15" font-weight="400" fill="#1B1F24" text-anchor="start"><tspan x="100" dy="0.0">You descend from a tribal member and were living on a</tspan><tspan x="100" dy="19.8">reservation on 1 June 1934 (few people today)</tspan></text>
+<circle cx="88" cy="905.8199999999998" r="3" fill="#1B1F24"/>
+<text x="100" y="910.8199999999998" font-size="15" font-weight="400" fill="#1B1F24" text-anchor="start"><tspan x="100" dy="0.0">You are an Alaska Native</tspan></text>
+<text x="84" y="981" font-size="13" font-weight="400" fill="#4A5560" text-anchor="start"><tspan x="84" dy="0.0">25 U.S.C. 5129; 42 CFR 447.51</tspan></text>
+<rect x="730" y="765" width="410" height="178" rx="10" fill="#FFF4DC" stroke="#9A6400" stroke-width="2"/>
+<text x="1126" y="787" font-size="11.5" font-weight="700" letter-spacing="1" fill="#9A6400" text-anchor="end">CMS LISTS</text>
+<text x="748" y="795" font-size="16.5" font-weight="700" fill="#1E7B34" text-anchor="start"><tspan x="748" dy="0.0">You're exempt. You can show:</tspan></text>
+<circle cx="752" cy="820" r="3" fill="#1B1F24"/>
+<text x="764" y="825" font-size="14.5" font-weight="400" fill="#1B1F24" text-anchor="start"><tspan x="764" dy="0.0">Certificate of Degree of Indian Blood (CDIB)</tspan><tspan x="764" dy="19.1">from the Bureau of Indian Affairs</tspan></text>
+<circle cx="752" cy="864.28" r="3" fill="#1B1F24"/>
+<text x="764" y="869.28" font-size="14.5" font-weight="400" fill="#1B1F24" text-anchor="start"><tspan x="764" dy="0.0">Any tribal enrollment document</tspan></text>
+<line x1="670" y1="870.0" x2="726" y2="870.0" stroke="#4A5560" stroke-width="2.5" marker-end="url(#ah)"/>
+<text x="678.0" y="860.0" font-size="15" font-weight="700" fill="#4A5560">Yes</text>
+<line x1="365.0" y1="995" x2="365.0" y2="1031" stroke="#4A5560" stroke-width="2.5" marker-end="url(#ah)"/>
+<text x="375.0" y="1017.0" font-size="15" font-weight="700" fill="#4A5560">No</text>
+<rect x="60" y="1035" width="610" height="290" rx="10" fill="#E8F1FB" stroke="#1F5FA8" stroke-width="2"/>
+<text x="656" y="1057" font-size="11.5" font-weight="700" letter-spacing="1" fill="#1F5FA8" text-anchor="end">FEDERAL LAW</text>
+<rect x="76" y="1053" width="40" height="26" rx="6" fill="#1F5FA8"/>
+<text x="96" y="1072" font-size="15" font-weight="700" fill="#fff" text-anchor="middle"><tspan x="96" dy="0.0">A4</tspan></text>
+<text x="130" y="1073" font-size="18.5" font-weight="700" fill="#1B1F24" text-anchor="start"><tspan x="130" dy="0.0">Are you eligible as an Indian for care from</tspan><tspan x="130" dy="24.4">the Indian Health Service or a tribal clinic?</tspan></text>
+<circle cx="88" cy="1124.42" r="3" fill="#1B1F24"/>
+<text x="100" y="1129.42" font-size="15" font-weight="400" fill="#1B1F24" text-anchor="start"><tspan x="100" dy="0.0">You are of Indian descent, belong to a community a local IHS</tspan><tspan x="100" dy="19.8">or tribal program serves, and it regards you as Indian</tspan></text>
+<circle cx="88" cy="1170.02" r="3" fill="#1B1F24"/>
+<text x="100" y="1175.02" font-size="15" font-weight="400" fill="#1B1F24" text-anchor="start"><tspan x="100" dy="0.0">You are a California Indian (for example, descended from a</tspan><tspan x="100" dy="19.8">California Indian of 1852 and part of a community IHS serves,</tspan><tspan x="100" dy="19.8">or on a rancheria distribution list, or holding a California</tspan><tspan x="100" dy="19.8">trust allotment)</tspan></text>
+<circle cx="88" cy="1255.22" r="3" fill="#1B1F24"/>
+<text x="100" y="1260.22" font-size="15" font-weight="400" fill="#1B1F24" text-anchor="start"><tspan x="100" dy="0.0">You are an Alaska Native</tspan></text>
+<text x="84" y="1311" font-size="13" font-weight="400" fill="#4A5560" text-anchor="start"><tspan x="84" dy="0.0">42 CFR 136.12; 25 U.S.C. 1679(a); 42 CFR 447.51</tspan></text>
+<rect x="730" y="1055" width="410" height="178" rx="10" fill="#FFF4DC" stroke="#9A6400" stroke-width="2"/>
+<text x="1126" y="1077" font-size="11.5" font-weight="700" letter-spacing="1" fill="#9A6400" text-anchor="end">CMS LISTS</text>
+<text x="748" y="1085" font-size="16.5" font-weight="700" fill="#1E7B34" text-anchor="start"><tspan x="748" dy="0.0">You're exempt. You can show:</tspan></text>
+<circle cx="752" cy="1110" r="3" fill="#1B1F24"/>
+<text x="764" y="1115" font-size="14.5" font-weight="400" fill="#1B1F24" text-anchor="start"><tspan x="764" dy="0.0">A record that you have received, or can</tspan><tspan x="764" dy="19.1">receive, care from an Indian health provider</tspan></text>
+<circle cx="752" cy="1154.2800000000002" r="3" fill="#1B1F24"/>
+<text x="764" y="1159.2800000000002" font-size="14.5" font-weight="400" fill="#1B1F24" text-anchor="start"><tspan x="764" dy="0.0">California: a BIA or tribal document for</tspan><tspan x="764" dy="19.1">your basis</tspan></text>
+<line x1="670" y1="1180.0" x2="726" y2="1180.0" stroke="#4A5560" stroke-width="2.5" marker-end="url(#ah)"/>
+<text x="678.0" y="1170.0" font-size="15" font-weight="700" fill="#4A5560">Yes</text>
+<line x1="365.0" y1="1325" x2="365.0" y2="1361" stroke="#4A5560" stroke-width="2.5" marker-end="url(#ah)"/>
+<rect x="60" y="1365" width="610" height="92" rx="10" fill="#F3F4F6" stroke="#6B7280" stroke-width="2"/>
+<text x="80" y="1401" font-size="17" font-weight="700" fill="#1B1F24" text-anchor="start"><tspan x="80" dy="0.0">Not exempt as an American Indian or Alaska Native.</tspan></text>
+<text x="80" y="1429" font-size="15" font-weight="400" fill="#1B1F24" text-anchor="start"><tspan x="80" dy="0.0">Other exemptions may still apply. Ask your Medicaid office.</tspan></text>
+<rect x="60.0" y="1495" width="350.0" height="230" rx="10" fill="#E8F1FB" stroke="#1F5FA8" stroke-width="2"/>
+<text x="396.0" y="1517" font-size="11.5" font-weight="700" letter-spacing="1" fill="#1F5FA8" text-anchor="end">FEDERAL LAW</text>
+<text x="78.0" y="1547" font-size="17" font-weight="700" fill="#1B1F24" text-anchor="start"><tspan x="78.0" dy="0.0">No documents?</tspan></text>
+<text x="78.0" y="1577.0" font-size="14.5" font-weight="400" fill="#1B1F24" text-anchor="start"><tspan x="78.0" dy="0.0">The state checks its own records first.</tspan><tspan x="78.0" dy="19.1">It can't deny you only because you can't</tspan><tspan x="78.0" dy="19.1">produce documents, and it must accept</tspan><tspan x="78.0" dy="19.1">other information when none are</tspan><tspan x="78.0" dy="19.1">reasonably available.</tspan></text>
+<text x="78.0" y="1710" font-size="13" font-weight="400" fill="#4A5560" text-anchor="start"><tspan x="78.0" dy="0.0">42 CFR 435.557(b)(2), (c)(1)</tspan></text>
+<rect x="425.0" y="1495" width="350.0" height="230" rx="10" fill="#E8F1FB" stroke="#1F5FA8" stroke-width="2"/>
+<text x="761.0" y="1517" font-size="11.5" font-weight="700" letter-spacing="1" fill="#1F5FA8" text-anchor="end">FEDERAL LAW</text>
+<text x="443.0" y="1547" font-size="17" font-weight="700" fill="#1B1F24" text-anchor="start"><tspan x="443.0" dy="0.0">The race box doesn't decide</tspan><tspan x="443.0" dy="22.4">it</tspan></text>
+<text x="443.0" y="1599.44" font-size="14.5" font-weight="400" fill="#1B1F24" text-anchor="start"><tspan x="443.0" dy="0.0">Checking "American Indian or Alaska</tspan><tspan x="443.0" dy="19.1">Native" on a form is not one of the</tspan><tspan x="443.0" dy="19.1">routes, and not checking it doesn't rule</tspan><tspan x="443.0" dy="19.1">you out.</tspan></text>
+<text x="443.0" y="1710" font-size="13" font-weight="400" fill="#4A5560" text-anchor="start"><tspan x="443.0" dy="0.0">42 CFR 447.51</tspan></text>
+<rect x="790.0" y="1495" width="350.0" height="230" rx="10" fill="#FFFFFF" stroke="#B3261E" stroke-width="2" stroke-dasharray="8 6"/>
+<text x="1126.0" y="1517" font-size="11.5" font-weight="700" letter-spacing="1" fill="#B3261E" text-anchor="end">STATE FORMS</text>
+<text x="808.0" y="1547" font-size="17" font-weight="700" fill="#1B1F24" text-anchor="start"><tspan x="808.0" dy="0.0">Many state forms cover less</tspan></text>
+<text x="808.0" y="1577.0" font-size="14.5" font-weight="400" fill="#1B1F24" text-anchor="start"><tspan x="808.0" dy="0.0">Some state forms describe only tribal</tspan><tspan x="808.0" dy="19.1">members, or accept only an enrollment</tspan><tspan x="808.0" dy="19.1">card. Federal law also covers questions</tspan><tspan x="808.0" dy="19.1">A2 to A4.</tspan></text>
+<text x="808.0" y="1710" font-size="13" font-weight="400" fill="#4A5560" text-anchor="start"><tspan x="808.0" dy="0.0">Lakeraven state scorecard</tspan></text>
+<text x="60" y="1742" font-size="13.5" font-weight="400" fill="#4A5560" text-anchor="start"><tspan x="60" dy="0.0">Simplified for illustration; not legal advice. "Urban center" means a community HHS has designated under 25 U.S.C. 1603(27).</tspan></text>
+<text x="60" y="1776" font-size="13.5" font-weight="600" fill="#4A5560" text-anchor="start"><tspan x="60" dy="0.0">Lakeraven · 19 November 2026 · Sources listed in the post</tspan></text>
+</svg>

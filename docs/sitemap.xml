@@ -1,22 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://lakeraven.com/posts/2019-01-13-an-extra/</loc>
-    <lastmod>2019-01-13</lastmod>
-  </url>
-  <url>
-    <loc>https://lakeraven.com/posts/2020-01-15-second-post/</loc>
-    <lastmod>2020-01-15</lastmod>
-  </url>
-  <url>
-    <loc>https://lakeraven.com/posts/2021-01-16-third-post/</loc>
-    <lastmod>2021-01-16</lastmod>
-  </url>
-  <url>
-    <loc>https://lakeraven.com/posts/2022-01-14-hello-world/</loc>
-    <lastmod>2022-01-14</lastmod>
-  </url>
-  <url>
     <loc>https://lakeraven.com/SECURITY/</loc>
     <lastmod>2026-11-18</lastmod>
   </url>
@@ -41,19 +25,7 @@
     <lastmod>2026-11-18</lastmod>
   </url>
   <url>
-    <loc>https://lakeraven.com/collections/</loc>
-    <lastmod>2026-11-18</lastmod>
-  </url>
-  <url>
     <loc>https://lakeraven.com/contact/</loc>
-    <lastmod>2026-11-18</lastmod>
-  </url>
-  <url>
-    <loc>https://lakeraven.com/document-with-sidenav/</loc>
-    <lastmod>2026-11-18</lastmod>
-  </url>
-  <url>
-    <loc>https://lakeraven.com/document/</loc>
     <lastmod>2026-11-18</lastmod>
   </url>
   <url>
@@ -79,5 +51,9 @@
   <url>
     <loc>https://lakeraven.com/aian-medicaid-scorecard/</loc>
     <lastmod>2026-11-18</lastmod>
+  </url>
+  <url>
+    <loc>https://lakeraven.com/blog/aian-medicaid-exemption/</loc>
+    <lastmod>2026-11-19</lastmod>
   </url>
 </urlset>

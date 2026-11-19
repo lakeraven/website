@@ -15,6 +15,8 @@ module.exports = function (config) {
 
   // Copy the `admin` folders to the output
   config.addPassthroughCopy("admin");
+  // Blog figures, served at /assets/figures/
+  config.addPassthroughCopy({ "blog-assets/figures": "assets/figures" });
 
   // Add plugins
   config.addPlugin(pluginRss);
