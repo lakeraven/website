@@ -105,6 +105,6 @@ So the regulation creates the exemption and a duty to check the state's own data
 
 Our [state scorecard](/aian-medicaid-scorecard/) checks every state's published policy against 10 requirements drawn from these rules, quotes and links the source for every finding, and updates as states publish new policy. As of 18 November 2026, only 3 of the 44 states subject to these rules meet all 10 in their published policy. The median state meets 4, and 25 publish policy that contradicts at least one. Each state's page lists exactly what it would take to raise its grade, with model language from a state that already gets it right.
 
-States, tribes and Indian health programs can send new evidence from any state's page. If your vendor, tribal liaison or health director needs this, send it on.
+States, tribes and Indian health programs can send new evidence from any state's page: choose "Submit evidence", share a public link to the policy, and we review it within 10 business days. If your vendor, tribal liaison or health director needs this, send it on.
 
 *Lakeraven builds software for Indian health care providers.*
