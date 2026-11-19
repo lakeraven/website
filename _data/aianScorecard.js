@@ -82,7 +82,8 @@ module.exports = function () {
   for (const s of states) {
     if (!(s.state in pop)) { problems.push(`${s.state}: no population row`); continue; }
     const est = pop[s.state] * imp.subject_share;
-    const rounded = Number(est.toPrecision(2));
+    // Three significant figures, so the shown number never crosses a dot boundary the dots do not (e.g. 39,935 shows as 39,900, not 40,000).
+    const rounded = Number(est.toPrecision(3));
     const subject = s.status !== "not_subject";
     // One whole dot per dot_size, rounded down; under dot_size shows a single half dot (Kimball, 18 Nov 2026).
     const full = subject ? Math.floor(est / imp.dot_size) : 0;

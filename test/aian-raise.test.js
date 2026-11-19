@@ -40,3 +40,11 @@ test("impact dots: one whole dot per 10,000 rounded down, a half dot under 10,00
     assert.strictEqual(s.impact.part, est < 10000 ? 0.5 : 0, s.state);
   }
 });
+
+test("impact: the number shown beside the dots agrees with the dot count", () => {
+  for (const s of data.states) {
+    if (s.status === "not_subject") continue;
+    const dots = s.impact.full;
+    assert.strictEqual(Math.floor(s.impact.estimate / 10000), dots, `${s.state} shows about ${s.impact.estimate} with ${dots} dots`);
+  }
+});
