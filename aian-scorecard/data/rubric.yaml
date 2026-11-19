@@ -121,8 +121,12 @@ grades:
   - grade: Not subject
     rule: State has not expanded Medicaid, so the expansion-group rules do not apply
 submission:
-  # Set form_url to a Google Form (or other) link once it exists; until then evidence goes by email.
-  form_url:
+  # Google Form (created by Kimball 2026-11-19). Responses land in Sheet 1Ku1rg-mLS67G98_St008aAn5PNd5xc37xcZk3OZfbp0.
+  # Buttons pre-fill State and Requirement; option text must match the Form's dropdowns exactly
+  # (state = the state's name, except DC = "District of Columbia"; requirement = the rubric's short name).
+  form_url: https://docs.google.com/forms/d/e/1FAIpQLSdjjzUO2CHju1dRptMgF52RugkkV-xJFsXKaPmZ5jeRw4vjgw/viewform
+  form_state_entry: entry.1234788762
+  form_requirement_entry: entry.370652702
   email: info@lakeraven.com
   review_business_days: 10
   downgrade_notice_days: 10

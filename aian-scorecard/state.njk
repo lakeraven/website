@@ -10,6 +10,7 @@ eleventyComputed:
 ---
 {% set sc = aianScorecard %}
 {% set sub = sc.rubric.submission %}
+{% set formState = "District of Columbia" if s.state == "DC" else s.name %}
 {% if not sc.rubric.approved %}
 <div class="usa-alert usa-alert--warning usa-alert--slim"><div class="usa-alert__body"><p class="usa-alert__text"><strong>Draft.</strong> This grade is provisional while the rubric is under review and evidence is re-verified.</p></div></div>
 {% endif %}
@@ -43,11 +44,7 @@ eleventyComputed:
     <p>{% if i.mark == 'contradicts' %}Replace the conflicting policy with policy that says{% else %}Publish policy that says{% endif %} {{ i.fix }}.</p>
     <p>With this fix alone: {{ s.met }} of {{ sc.rubric.requirements.length }} becomes {{ s.met + 1 }} of {{ sc.rubric.requirements.length }}, and the grade {% if i.gradeIfFixed == s.grade %}stays {{ s.grade }}{% else %}rises to {{ i.gradeIfFixed }}{% endif %}.</p>
     <p>Model language from <a href="{{ ('/aian-medicaid-scorecard/' + i.model.slug + '/') | url }}">{{ i.model.name }}</a>: &ldquo;{{ i.model.quote }}&rdquo; <a href="{{ i.model.url }}">Source</a></p>
-    {% if sub.form_url %}
-    <p><a class="usa-button usa-button--outline" href="{{ sub.form_url }}{{ s.state }}">Submit evidence for this requirement</a></p>
-    {% else %}
-    <p><a class="usa-button usa-button--outline" href="mailto:{{ sub.email }}?subject={{ ('Scorecard evidence: ' + s.name + ': ' + i.label) | urlencode }}&body={{ 'Link to the published policy:%0D%0AYour organization (state agency, tribe, Indian health program, other):%0D%0A' }}">Submit evidence for this requirement</a></p>
-    {% endif %}
+    <p><a class="usa-button usa-button--outline" href="{{ sub.form_url }}?usp=pp_url&amp;{{ sub.form_state_entry }}={{ formState | urlencode }}&amp;{{ sub.form_requirement_entry }}={{ i.short | urlencode }}" aria-label="Submit evidence for {{ i.short }}">Submit evidence for this requirement</a></p>
   </li>
 {% endfor %}
 </ol>
@@ -90,8 +87,4 @@ eleventyComputed:
 
 <h2 id="submit">Submit evidence</h2>
 <p>If {{ s.name }} has published policy that changes any finding above, send us a public link to it. Please send links rather than attachments. We review every submission within {{ sub.review_business_days }} business days, and we weigh evidence from tribes and Indian health programs the same as evidence from the state. <a href="{{ '/aian-medicaid-scorecard/process/' | url }}">How review works</a>.</p>
-{% if sub.form_url %}
-<p><a class="usa-button" href="{{ sub.form_url }}{{ s.state }}">Submit evidence for {{ s.name }}</a></p>
-{% else %}
-<p><a class="usa-button" href="mailto:{{ sub.email }}?subject={{ ('Scorecard evidence: ' + s.name) | urlencode }}&body={{ 'Link to the published policy:%0D%0AWhich requirement it addresses:%0D%0AYour organization (state agency, tribe, Indian health program, other):%0D%0A' }}">Email evidence for {{ s.name }}</a></p>
-{% endif %}
+<p><a class="usa-button" href="{{ sub.form_url }}?usp=pp_url&amp;{{ sub.form_state_entry }}={{ formState | urlencode }}">Submit evidence for {{ s.name }}</a></p>
