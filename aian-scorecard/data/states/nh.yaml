@@ -1,0 +1,31 @@
+# Evidence re-verified 2026-11-18 against primary sources.
+state: NH
+name: New Hampshire
+checked: '2026-11-18'
+start: 2027-01-01 (first redetermination in 2027, per NHPR)
+unverified: false
+under_review: false
+components:
+  out_of_state:
+    mark: unpublished
+  tribal_members:
+    mark: unpublished
+  urban_and_descendants:
+    mark: unpublished
+  alaska_natives:
+    mark: unpublished
+  ihs_eligible:
+    mark: unpublished
+  california_indians:
+    mark: unpublished
+  data_first:
+    mark: unpublished
+  non_document_proof:
+    mark: unpublished
+  tribal_or_clinic_channel:
+    mark: unpublished
+  status_not_rechecked:
+    mark: unpublished
+  twelve_month_renewal:
+    mark: unpublished
+history: []

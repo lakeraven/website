@@ -1,0 +1,52 @@
+# Evidence re-verified 2026-11-18 against primary sources.
+state: IA
+name: Iowa
+checked: '2026-11-18'
+start: '2026-12-01 (Iowa HHS Sept 2026 deck: ''Starting December 1, 2026''); states.yml value carries stray ** markup'
+unverified: false
+under_review: false
+components:
+  out_of_state:
+    mark: unpublished
+  tribal_members:
+    mark: meets
+    quote: You are an American Indian or Alaska Native
+    url: https://hhs.iowa.gov/media/18998/download
+    read: '2026-11-18'
+  urban_and_descendants:
+    mark: unpublished
+    quote: You are an American Indian or Alaska Native
+    url: https://hhs.iowa.gov/media/18998/download
+    read: '2026-11-18'
+  alaska_natives:
+    mark: meets
+    quote: You are an American Indian or Alaska Native
+    url: https://hhs.iowa.gov/media/18998/download
+    read: '2026-11-18'
+  ihs_eligible:
+    mark: unpublished
+  california_indians:
+    mark: unpublished
+  data_first:
+    mark: meets
+    quote: Iowa HHS will check records to see if you already meet the requirements or are excluded.
+    url: https://hhs.iowa.gov/media/19571/download
+    read: '2026-11-18'
+  non_document_proof:
+    mark: unpublished
+    quote: If HHS needs more proof, they will send you a letter telling you what to send.
+    url: https://hhs.iowa.gov/media/18998/download
+    read: '2026-11-18'
+  tribal_or_clinic_channel:
+    mark: unpublished
+  status_not_rechecked:
+    mark: unpublished
+    quote: Tell us if your community engagement situation changes
+    url: https://hhs.iowa.gov/media/18998/download
+    read: '2026-11-18'
+  twelve_month_renewal:
+    mark: meets
+    quote: 'AI/AN exception: Alaska Native/American Indian members will continue to receive a 12-month renewal period.'
+    url: https://hhs.iowa.gov/media/19532/download
+    read: '2026-11-18'
+history: []

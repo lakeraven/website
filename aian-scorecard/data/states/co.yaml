@@ -1,0 +1,52 @@
+# Evidence re-verified 2026-11-18 against primary sources.
+state: CO
+name: Colorado
+checked: '2026-11-18'
+start: '2027-01-01'
+unverified: false
+under_review: false
+components:
+  out_of_state:
+    mark: unpublished
+  tribal_members:
+    mark: meets
+    quote: American Indians and Alaska Natives (AI/AN) who are eligible for Indian Health Services (IHS),
+    url: https://www.healthfirstcolorado.gov/who-does-not-have-to-comply-with-work-requirements/
+    read: '2026-11-18'
+  urban_and_descendants:
+    mark: unpublished
+    quote: or an Urban Indian Health program, now or in the past
+    url: https://www.healthfirstcolorado.gov/who-does-not-have-to-comply-with-work-requirements/
+    read: '2026-11-18'
+  alaska_natives:
+    mark: meets
+    quote: American Indians and Alaska Natives (AI/AN) who are eligible for Indian Health Services (IHS),
+    url: https://www.healthfirstcolorado.gov/who-does-not-have-to-comply-with-work-requirements/
+    read: '2026-11-18'
+  ihs_eligible:
+    mark: unpublished
+    quote: American Indians and Alaska Natives (AI/AN) who are eligible for Indian Health Services (IHS),
+    url: https://www.healthfirstcolorado.gov/who-does-not-have-to-comply-with-work-requirements/
+    read: '2026-11-18'
+  california_indians:
+    mark: unpublished
+    quote: Members who are American Indian or Alaska Native, including Indian, Urban Indian, and California Indian members
+    url: https://www.healthfirstcolorado.gov/frequently-asked-questions/work-requirements/6-month-renewals-frequently-asked-questions/
+    read: '2026-11-18'
+  data_first:
+    mark: meets
+    quote: If enough information is not available to show that a member is exempt, a letter will be sent.
+    url: https://hcpf.colorado.gov/work-requirements-faqs
+    read: '2026-11-18'
+  non_document_proof:
+    mark: unpublished
+  tribal_or_clinic_channel:
+    mark: unpublished
+  status_not_rechecked:
+    mark: unpublished
+  twelve_month_renewal:
+    mark: meets
+    quote: Members who are American Indian or Alaska Native, including Indian, Urban Indian, and California Indian members
+    url: https://www.healthfirstcolorado.gov/frequently-asked-questions/work-requirements/6-month-renewals-frequently-asked-questions/
+    read: '2026-11-18'
+history: []

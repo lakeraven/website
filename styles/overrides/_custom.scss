@@ -269,3 +269,117 @@ html[data-theme="dark"] {
     color: $dark-link;
   }
 }
+
+// Tables (AI/AN scorecard): USWDS tables default to a white fill.
+html[data-theme="dark"] .usa-table {
+  th,
+  td,
+  caption {
+    background-color: $dark-bg;
+    color: $dark-fg;
+    border-color: $dark-line;
+  }
+}
+
+.aian-finding {
+  white-space: nowrap;
+}
+
+// Scorecard: how a state raises its grade
+.aian-raise {
+  border-left: 0.5rem solid #005ea2;
+  background: #f0f7fc;
+  padding: 0.5rem 1.25rem 1rem;
+  margin: 1.5rem 0;
+}
+.aian-fixes > li {
+  margin-bottom: 1.25rem;
+  p { margin: 0.25rem 0; }
+}
+html[data-theme="dark"] .aian-raise {
+  background: $dark-surface;
+  border-left-color: $dark-link;
+  color: $dark-fg;
+}
+.aian-dots {
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+  color: #005ea2;
+}
+html[data-theme="dark"] .aian-dots { color: $dark-link; }
+.aian-fix-kind { font-weight: 700; }
+.aian-roster td, .aian-roster th { vertical-align: top; }
+.aian-roster {
+  th[scope="row"] { min-width: 8rem; }
+  thead th { white-space: nowrap; }
+  td[data-label="Score"], td[data-label="Impact"] { white-space: nowrap; }
+}
+// Phones: compact rows, label and value on one line.
+@media all and (max-width: 29.99em) {
+  .usa-prose > .aian-roster.usa-table--stacked {
+    tr { padding: 0.5rem 0; }
+    th[data-label], td[data-label] { padding: 0.2rem 0.5rem; border-top: 0; border-bottom: 0; }
+    th[data-label]::before, td[data-label]::before { display: inline; margin: 0 0.5rem 0 0; padding: 0; }
+    td[data-label="Impact"] br, td[data-label="Score"] br { display: none; }
+    .aian-sub, td[data-label="Impact"] .text-base { margin-left: 0.5rem; }
+    // Let long values wrap so the table fits a 320px screen (WCAG 1.4.10).
+    th[scope="row"] { min-width: 0; }
+    td[data-label="Score"], td[data-label="Impact"] { white-space: normal; }
+  }
+}
+// A wide child must not stretch the page column past the screen.
+.usa-layout-docs main { min-width: 0; }
+.aian-dot {
+  width: 0.9em;
+  height: 0.9em;
+  margin-right: 0.1em;
+  vertical-align: -0.1em;
+}
+
+// Blog posts: tables scroll sideways on narrow screens instead of breaking words.
+.post-body table {
+  display: block;
+  overflow-x: auto;
+  th, td { word-break: normal; overflow-wrap: normal; hyphens: manual; min-width: 6rem; }
+  th:first-child, td:first-child { min-width: 12rem; }
+}
+.post-body figure { margin: 1.5rem 0; }
+.post-body figure img { max-width: 100%; height: auto; }
+.post-body table {
+  th, td { border: 0; border-bottom: 1px solid #a9aeb1; padding: 0.5rem 0.75rem 0.5rem 0; vertical-align: top; text-align: left; }
+  thead th { border-bottom-width: 2px; }
+}
+html[data-theme="dark"] .post-body table {
+  th, td { border-bottom-color: $dark-line; background: transparent; }
+}
+
+// Blog footnotes and references
+.post-body .fn-ref { font-size: 0.75em; line-height: 0; margin-left: 0.1em; }
+.post-body .fn-ref a { text-decoration: underline; }
+.post-body table.fn-table { display: table; width: 100%; table-layout: fixed; }
+.post-body .fn-table th:first-child, .post-body .fn-table td:first-child { width: 2.5rem; }
+.post-body .fn-table th:nth-child(2), .post-body .fn-table td:nth-child(2) { width: 38%; }
+@media (max-width: 39.99em) {
+  .post-body table.fn-table, .post-body .fn-table tbody { display: block; }
+  .post-body .fn-table thead { display: none; }
+  .post-body .fn-table tr { display: grid; grid-template-columns: 2rem 1fr; padding: 0.75rem 0; border-bottom: 1px solid #dfe1e2; }
+  .post-body .fn-table td { display: block; width: auto !important; border: 0; padding: 0 0 0.25rem 0; }
+  .post-body .fn-table td:nth-child(3) { grid-column: 2; }
+}
+.post-body .fn-table td:first-child { white-space: nowrap; vertical-align: top; }
+.post-body .fn-table td { vertical-align: top; }
+.post-body .fn-table tr:target { background: #fff5c2; }
+html[data-theme="dark"] .post-body .fn-table tr:target { background: #3d3a1f; }
+// Underlined so the links are not told apart by color alone (WCAG 1.4.1).
+.post-body .fn-back { text-decoration: underline; }
+
+// Scorecard: federal source links and ungraded box
+.aian-src { font-size: 0.875em; }
+.aian-ungraded { border-left: 4px solid #a9aeb1; background: #f0f0f0; padding: 0.5rem 1rem 0.75rem; margin: 1.5rem 0; }
+.aian-ungraded h2 { margin-top: 0.5rem; }
+html[data-theme="dark"] .aian-ungraded { background: #1c1d1f; border-left-color: #565c65; }
+@media (prefers-color-scheme: dark) { html:not([data-theme="light"]) .aian-ungraded { background: #1c1d1f; border-left-color: #565c65; } }
+.aian-sources tr:target { background: #fff5c2; }
+// Blog: and/or breakdown inside a table cell
+.post-body .route-logic { margin: 0.25rem 0 0; padding-left: 1.25rem; }
+.post-body .route-logic ul { margin: 0.25rem 0; padding-left: 1.25rem; }

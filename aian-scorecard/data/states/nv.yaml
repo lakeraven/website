@@ -1,0 +1,48 @@
+# Evidence re-verified 2026-11-18 against primary sources.
+state: NV
+name: Nevada
+checked: '2026-11-18'
+start: '2027-01-01'
+unverified: false
+under_review: false
+components:
+  out_of_state:
+    mark: unpublished
+  tribal_members:
+    mark: meets
+    quote: American Indians & Alaska Natives
+    url: https://www.dss.nv.gov/programs/Medicaid/medicaid-eligibility-rules-are-changing/
+    read: '2026-11-18'
+  urban_and_descendants:
+    mark: unpublished
+    quote: American Indians & Alaska Natives
+    url: https://www.dss.nv.gov/programs/Medicaid/medicaid-eligibility-rules-are-changing/
+    read: '2026-11-18'
+  alaska_natives:
+    mark: meets
+    quote: American Indians & Alaska Natives
+    url: https://www.dss.nv.gov/programs/Medicaid/medicaid-eligibility-rules-are-changing/
+    read: '2026-11-18'
+  ihs_eligible:
+    mark: unpublished
+  california_indians:
+    mark: unpublished
+  data_first:
+    mark: unpublished
+  non_document_proof:
+    mark: unpublished
+  tribal_or_clinic_channel:
+    mark: unpublished
+    quote: Providers should direct members to Nevada Medicaid or SilverSummit for final eligibility determinations.
+    url: https://www.silversummithealthplan.com/content/dam/centene/Nevada/Notifications/2026-documents/SSHP_Provider_HR1%20Toolkit_Digital_2026-08-17_FINAL%20(1).pdf
+    read: '2026-11-18'
+    secondary: true
+  status_not_rechecked:
+    mark: unpublished
+  twelve_month_renewal:
+    mark: unpublished
+    quote: some members will need to renew their coverage every 6 months
+    url: https://www.silversummithealthplan.com/content/dam/centene/Nevada/Notifications/2026-documents/SSHP_Provider_HR1%20Toolkit_Digital_2026-08-17_FINAL%20(1).pdf
+    read: '2026-11-18'
+    secondary: true
+history: []

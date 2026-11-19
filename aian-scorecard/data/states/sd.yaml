@@ -1,0 +1,55 @@
+# Evidence re-verified 2026-11-18 against primary sources.
+state: SD
+name: South Dakota
+checked: '2026-11-18'
+start: '2027-01-01'
+unverified: false
+under_review: false
+components:
+  out_of_state:
+    mark: unpublished
+  tribal_members:
+    mark: meets
+    quote: People who are Native American, enrolled in a tribe, or eligible for Indian Health Services
+    url: https://dss.sd.gov/docs/medicaid/HR1/townhall/08.19.26_Handout.pdf
+    read: '2026-11-18'
+  urban_and_descendants:
+    mark: unpublished
+    quote: Are American Indian or Alaska Native, including people who are eligible for Indian Health Service.
+    url: https://dss.sd.gov/medicaid/HR1.aspx
+    read: '2026-11-18'
+  alaska_natives:
+    mark: meets
+    quote: Are American Indian or Alaska Native, including people who are eligible for Indian Health Service.
+    url: https://dss.sd.gov/medicaid/HR1.aspx
+    read: '2026-11-18'
+  ihs_eligible:
+    mark: meets
+    quote: Are American Indian or Alaska Native, including people who are eligible for Indian Health Service.
+    url: https://dss.sd.gov/medicaid/HR1.aspx
+    read: '2026-11-18'
+  california_indians:
+    mark: meets
+    quote: People who are Native American, enrolled in a tribe, or eligible for Indian Health Services
+    url: https://dss.sd.gov/docs/medicaid/HR1/townhall/08.19.26_Handout.pdf
+    read: '2026-11-18'
+  data_first:
+    mark: meets
+    quote: DSS only asks for documents if information isn't in the file or electronically available.
+    url: https://dss.sd.gov/docs/medicaid/HR1/townhall/08.19.26_Handout.pdf
+    read: '2026-11-18'
+  non_document_proof:
+    mark: unpublished
+    quote: If you don't have documents, we'll send a form to fill out.
+    url: https://dss.sd.gov/docs/medicaid/HR1/townhall/08.19.26_Handout.pdf
+    read: '2026-11-18'
+  tribal_or_clinic_channel:
+    mark: unpublished
+  status_not_rechecked:
+    mark: unpublished
+  twelve_month_renewal:
+    mark: meets
+    quote: American Indians and Alaska Natives are exempt, including people who are eligible for Indian Health Service.
+    url: https://dss.sd.gov/medicaid/HR1.aspx
+    read: '2026-11-18'
+history: []

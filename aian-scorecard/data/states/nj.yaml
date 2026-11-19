@@ -1,0 +1,64 @@
+# Evidence re-verified 2026-11-18 against primary sources.
+state: NJ
+name: New Jersey
+checked: '2026-11-18'
+start: '2027-01-01'
+unverified: false
+under_review: false
+components:
+  out_of_state:
+    mark: meets
+    quote: In 2027, documentation is required only for four categories ... income, VA disability, work hours, and education ... for all other categories, a member's self-attestation is accepted.
+    url: https://www.nj.gov/humanservices/dmahs/documents/providers-stakeholders/obbba/Expansion_Adult_Stakeholder_Guidance.pdf
+    read: '2026-11-18'
+    secondary:
+      quote: A member of a federally recognized American Indian tribe or an Alaska Native; visit https://www.usa.gov/tribes for list
+      url: https://www.nj.gov/humanservices/dmahs/documents/providers-stakeholders/obbba/Expansion_Adult_Stakeholder_Guidance.pdf
+  tribal_members:
+    mark: meets
+    quote: A member of a federally recognized American Indian or Alaska Native tribe.
+    url: https://www.nj.gov/humanservices/dmahs/obbba/work-requirements/
+    read: '2026-11-18'
+  urban_and_descendants:
+    mark: contradicts
+    quote: A member of a federally recognized American Indian or Alaska Native tribe.
+    url: https://www.nj.gov/humanservices/dmahs/obbba/work-requirements/
+    read: '2026-11-18'
+  alaska_natives:
+    mark: meets
+    quote: A member of a federally recognized American Indian tribe or an Alaska Native; visit https://www.usa.gov/tribes for list
+    url: https://www.nj.gov/humanservices/dmahs/documents/providers-stakeholders/obbba/Expansion_Adult_Stakeholder_Guidance.pdf
+    read: '2026-11-18'
+  ihs_eligible:
+    mark: contradicts
+    quote: A member of a federally recognized American Indian or Alaska Native tribe.
+    url: https://www.nj.gov/humanservices/dmahs/obbba/work-requirements/
+    read: '2026-11-18'
+  california_indians:
+    mark: contradicts
+    quote: A member of a federally recognized American Indian or Alaska Native tribe.
+    url: https://www.nj.gov/humanservices/dmahs/obbba/work-requirements/
+    read: '2026-11-18'
+  data_first:
+    mark: meets
+    quote: First, NJ FamilyCare will check information it already has.
+    url: https://www.nj.gov/humanservices/dmahs/documents/providers-stakeholders/obbba/CE_Member_Notice.pdf
+    read: '2026-11-18'
+  non_document_proof:
+    mark: meets
+    quote: This is called "self-attestation," which is a legal statement
+    url: https://www.nj.gov/humanservices/dmahs/obbba/work-requirements/
+    read: '2026-11-18'
+  tribal_or_clinic_channel:
+    mark: unpublished
+  status_not_rechecked:
+    mark: unpublished
+    quote: NJ FamilyCare checks your situation at each renewal.
+    url: https://www.nj.gov/humanservices/dmahs/obbba/work-requirements/
+    read: '2026-11-18'
+  twelve_month_renewal:
+    mark: unpublished
+    quote: If you are an American Indian or Alaska Native, you keep a 12-month renewal cycle.
+    url: https://www.nj.gov/humanservices/dmahs/obbba/work-requirements/
+    read: '2026-11-18'
+history: []

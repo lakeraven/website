@@ -1,0 +1,68 @@
+# Evidence re-verified 2026-11-18 against primary sources.
+state: WI
+name: Wisconsin
+checked: '2026-11-18'
+start: 2027-01-01 new applicants; current members at renewals due 2027-03-31 onward
+unverified: false
+under_review: false
+components:
+  out_of_state:
+    mark: meets
+    quote: Effective October 26, 2026, self-attestation will be accepted from applicants and members
+    url: https://www.dhs.wisconsin.gov/dms/memos/ops/dms-ops-2026-33.pdf
+    read: '2026-11-18'
+    secondary:
+      quote: child or grandchild of a Tribal member (first or second degree), Urban Indian, California Indian, or eligible to receive health care from the Indian Health Service.
+      url: https://www.dhs.wisconsin.gov/dms/memos/ops/dms-ops-2026-33.pdf
+  tribal_members:
+    mark: meets
+    quote: Members of an American Indian Tribe or Alaska Native Village; children or grandchildren of a Tribal member
+    url: https://www.dhs.wisconsin.gov/dms/memos/ops/dms-ops-2026-33.pdf
+    read: '2026-11-18'
+  urban_and_descendants:
+    mark: meets
+    quote: (first or second degree); Urban Indians; California Indians;
+    url: https://www.dhs.wisconsin.gov/dms/memos/ops/dms-ops-2026-33.pdf
+    read: '2026-11-18'
+  alaska_natives:
+    mark: meets
+    quote: Members of an American Indian Tribe or Alaska Native Village; children or grandchildren of a Tribal member
+    url: https://www.dhs.wisconsin.gov/dms/memos/ops/dms-ops-2026-33.pdf
+    read: '2026-11-18'
+  ihs_eligible:
+    mark: meets
+    quote: and individuals eligible to receive health care from the Indian Health Service.
+    url: https://www.dhs.wisconsin.gov/dms/memos/ops/dms-ops-2026-33.pdf
+    read: '2026-11-18'
+  california_indians:
+    mark: meets
+    quote: (first or second degree); Urban Indians; California Indians;
+    url: https://www.dhs.wisconsin.gov/dms/memos/ops/dms-ops-2026-33.pdf
+    read: '2026-11-18'
+  data_first:
+    mark: meets
+    quote: If a member's Tribal status is already on file with DHS, the exemption will be automatically applied.
+    url: https://www.dhs.wisconsin.gov/dms/memos/ops/dms-ops-2026-33.pdf
+    read: '2026-11-18'
+  non_document_proof:
+    mark: meets
+    quote: Verification will only be required if reported information is questionable.
+    url: https://www.dhs.wisconsin.gov/dms/memos/ops/dms-ops-2026-33.pdf
+    read: '2026-11-18'
+  tribal_or_clinic_channel:
+    mark: unpublished
+  status_not_rechecked:
+    mark: meets
+    quote: This will be kept on file and you won’t have to report it again.
+    url: https://www.dhs.wisconsin.gov/publications/p03809c.pdf
+    read: '2026-11-18'
+    follow_up: >-
+      Wisconsin's work-requirement page says exemptions are checked annually at renewal, while this
+      flyer for tribal members and Operations Memo 26-33 say tribal status stays on file. We have not yet confirmed
+      which applies; this finding is open for review.
+  twelve_month_renewal:
+    mark: meets
+    quote: We will check for compliance or an exemption when someone first applies and then we'll check annually at renewal.
+    url: https://www.dhs.wisconsin.gov/medicaid/work.htm
+    read: '2026-11-18'
+history: []

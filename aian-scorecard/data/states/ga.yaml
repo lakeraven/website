@@ -1,0 +1,55 @@
+# Evidence re-verified 2026-11-18 against primary sources.
+state: GA
+name: Georgia
+checked: '2026-11-18'
+start: '2027-01-01 (SPA public notice: effective on CMS approval)'
+unverified: false
+under_review: false
+components:
+  out_of_state:
+    mark: unpublished
+  tribal_members:
+    mark: meets
+    quote: Are an American Indian or Alaska Native
+    url: https://pathways.georgia.gov/node/1646
+    read: '2026-11-18'
+  urban_and_descendants:
+    mark: unpublished
+    quote: Are an American Indian or Alaska Native
+    url: https://pathways.georgia.gov/node/1646
+    read: '2026-11-18'
+  alaska_natives:
+    mark: meets
+    quote: Are an American Indian or Alaska Native
+    url: https://pathways.georgia.gov/node/1646
+    read: '2026-11-18'
+  ihs_eligible:
+    mark: unpublished
+    quote: Are an American Indian or Alaska Native
+    url: https://pathways.georgia.gov/node/1646
+    read: '2026-11-18'
+  california_indians:
+    mark: unpublished
+    quote: Are an American Indian or Alaska Native
+    url: https://pathways.georgia.gov/node/1646
+    read: '2026-11-18'
+  data_first:
+    mark: unpublished
+  non_document_proof:
+    mark: unpublished
+    quote: DCH or its designee may request sufficient supporting information, including documentation, when applicable, to verify
+    url: https://dch.georgia.gov/document/document/medicaid-community-engagement-requirement-certain-adults-public-notice/download
+    read: '2026-11-18'
+  tribal_or_clinic_channel:
+    mark: unpublished
+  status_not_rechecked:
+    mark: contradicts
+    quote: 'Individuals are considered to have an exception for part of or all of a month if they are:'
+    url: https://pathways.georgia.gov/node/1646
+    read: '2026-11-18'
+  twelve_month_renewal:
+    mark: meets
+    quote: continuing monthly during Pathways enrollment, and at annual renewal
+    url: https://pathways.georgia.gov/node/1646
+    read: '2026-11-18'
+history: []

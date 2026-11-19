@@ -1,0 +1,61 @@
+# Evidence re-verified 2026-11-18 against primary sources; data_first and
+# twelve_month_renewal updated 2026-11-19 from keepmyahcccs.com (official AHCCCS site).
+state: AZ
+name: Arizona
+checked: '2026-11-19'
+start: '2027-01-01'
+unverified: false
+under_review: false
+components:
+  out_of_state:
+    mark: unpublished
+  tribal_members:
+    mark: meets
+    quote: An American Indian or Alaska Native eligible for Indian Health Service care
+    url: https://www.azahcccs.gov/AHCCCS/Initiatives/HR1/
+    read: '2026-11-18'
+  urban_and_descendants:
+    mark: unpublished
+    quote: An American Indian or Alaska Native eligible for Indian Health Service care
+    url: https://www.azahcccs.gov/AHCCCS/Initiatives/HR1/
+    read: '2026-11-18'
+  alaska_natives:
+    mark: meets
+    quote: An American Indian or Alaska Native eligible for Indian Health Service care
+    url: https://www.azahcccs.gov/AHCCCS/Initiatives/HR1/
+    read: '2026-11-18'
+  ihs_eligible:
+    mark: meets
+    quote: An American Indian or Alaska Native eligible for Indian Health Service care
+    url: https://www.azahcccs.gov/AHCCCS/Initiatives/HR1/
+    read: '2026-11-18'
+  california_indians:
+    mark: meets
+    quote: An American Indian or Alaska Native eligible for Indian Health Service care
+    url: https://www.azahcccs.gov/AHCCCS/Initiatives/HR1/
+    read: '2026-11-18'
+  data_first:
+    mark: meets
+    quote: If AHCCCS already has this information, you will be exempt automatically and do not need to take any extra steps.
+    url: https://keepmyahcccs.com/
+    read: '2026-11-19'
+  non_document_proof:
+    mark: unpublished
+    quote: Submit documentation if needed
+    url: https://www.azahcccs.gov/AHCCCS/Initiatives/HR1/
+    read: '2026-11-18'
+  tribal_or_clinic_channel:
+    mark: unpublished
+  status_not_rechecked:
+    mark: unpublished
+  twelve_month_renewal:
+    mark: meets
+    quote: American Indians or Alaska Natives in the adult group will continue to renew every 12 months.
+    url: https://keepmyahcccs.com/
+    read: '2026-11-19'
+history:
+  - date: '2026-11-19'
+    from: C
+    to: B
+    change: Arizona's member site says American Indian and Alaska Native members are exempt automatically when AHCCCS already has the information, and keep 12-month renewals. Check own data first and 12-month renewals now meet.
+    url: https://keepmyahcccs.com/

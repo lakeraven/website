@@ -17,8 +17,6 @@ ga:
 primary_navigation:
   - name: Home
     url: /
-#  - name: Blog
-#    url: /blog/
   - name: About
     url: /about/
   - name: Services
@@ -27,6 +25,8 @@ primary_navigation:
     url: /modernization/
   - name: Work with Us
     url: /work-with-us/
+  - name: Blog
+    url: /blog/
   - name: Contact
     url: /contact/
 #  - name: Document with sidenav

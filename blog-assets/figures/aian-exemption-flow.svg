@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1430" width="1200" height="1430" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" role="img" aria-labelledby="t d">
+<title id="t">How do I determine if someone is exempt?</title>
+<desc id="d">Flowchart of the American Indian and Alaska Native exemption from Medicaid's work requirement and six-month renewals: four routes under 42 CFR 447.51; state checks its own data first; if data fall short the state may ask, with documentation rules changing on 1 January 2028; never denied only for lack of documents; exempt from work requirement with 12-month renewals; no re-check before the next scheduled renewal. Side notes: tribal health systems have no defined role (TTAG asked CMS to advise states to share data); CMS optional hold-harmless through 30 June 2027; CMS preamble says states may not reverify status at all.</desc>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#4A5560"/></marker></defs>
+<rect width="1200" height="1430" fill="#FFFFFF"/>
+<text x="60" y="62" font-size="32" font-weight="700" fill="#1B1F24" text-anchor="start"><tspan x="60" dy="0.0">How do I determine if someone is exempt?</tspan></text>
+<text x="60" y="98" font-size="17" font-weight="400" fill="#4A5560" text-anchor="start"><tspan x="60" dy="0.0">For state Medicaid agencies and caseworkers: the American Indian and Alaska Native exemption</tspan></text>
+<rect x="60" y="122" width="22" height="16" rx="3" fill="#E8F1FB" stroke="#1F5FA8" stroke-width="2"/>
+<text x="90" y="135" font-size="14.5" fill="#1B1F24">What federal law requires</text>
+<rect x="314.0" y="122" width="22" height="16" rx="3" fill="#FFF4DC" stroke="#9A6400" stroke-width="2"/>
+<text x="344.0" y="135" font-size="14.5" fill="#1B1F24">What CMS advises</text>
+<rect x="499.6" y="122" width="22" height="16" rx="3" fill="#F1ECFA" stroke="#5B3FA0" stroke-width="2"/>
+<text x="529.6" y="135" font-size="14.5" fill="#1B1F24">What tribal advocates request</text>
+<rect x="784.0" y="122" width="22" height="16" rx="3" fill="#FFFFFF" stroke="#B3261E" stroke-width="2" stroke-dasharray="5 4"/>
+<text x="814.0" y="135" font-size="14.5" fill="#1B1F24">What is missing</text>
+<rect x="60" y="165" width="1080" height="312" rx="12" fill="#F7FAFD" stroke="#1F5FA8" stroke-width="2"/>
+<text x="1126" y="187" font-size="11.5" font-weight="700" letter-spacing="1" fill="#1F5FA8" text-anchor="end">FEDERAL LAW</text>
+<circle cx="90" cy="197" r="15" fill="#1F5FA8"/><text x="90" y="203" font-size="16" font-weight="700" fill="#fff" text-anchor="middle">1</text>
+<text x="116" y="204" font-size="19" font-weight="700" fill="#1B1F24" text-anchor="start"><tspan x="116" dy="0.0">Does the person meet the federal definition of Indian? Any one route is enough.</tspan></text>
+<rect x="80" y="227" width="248" height="170" rx="8" fill="#FFFFFF" stroke="#9DBBE0" stroke-width="1.5"/>
+<text x="94.0" y="255" font-size="16.5" font-weight="700" fill="#1B1F24" text-anchor="start"><tspan x="94.0" dy="0.0">Member of a federally</tspan><tspan x="94.0" dy="21.4">recognized tribe</tspan></text>
+<text x="94.0" y="302.45" font-size="14.5" font-weight="400" fill="#1B1F24" text-anchor="start"><tspan x="94.0" dy="0.0">Including Alaska Native</tspan><tspan x="94.0" dy="18.9">villages and Alaska Native</tspan><tspan x="94.0" dy="18.9">corporations. The only route</tspan><tspan x="94.0" dy="18.9">that needs federal</tspan><tspan x="94.0" dy="18.9">recognition.</tspan></text>
+<rect x="344" y="227" width="248" height="170" rx="8" fill="#FFFFFF" stroke="#9DBBE0" stroke-width="1.5"/>
+<text x="358.0" y="255" font-size="16.5" font-weight="700" fill="#1B1F24" text-anchor="start"><tspan x="358.0" dy="0.0">Urban Indian</tspan></text>
+<text x="358.0" y="281.0" font-size="14.5" font-weight="400" fill="#1B1F24" text-anchor="start"><tspan x="358.0" dy="0.0">Lives in an urban center HHS</tspan><tspan x="358.0" dy="18.9">designates and belongs to any</tspan><tspan x="358.0" dy="18.9">tribe (incl. terminated, or</tspan><tspan x="358.0" dy="18.9">recognized by their state),</tspan><tspan x="358.0" dy="18.9">is a child or grandchild of a</tspan><tspan x="358.0" dy="18.9">member, or is Alaska Native.</tspan></text>
+<rect x="608" y="227" width="248" height="170" rx="8" fill="#FFFFFF" stroke="#9DBBE0" stroke-width="1.5"/>
+<text x="622.0" y="255" font-size="16.5" font-weight="700" fill="#1B1F24" text-anchor="start"><tspan x="622.0" dy="0.0">Considered an Indian by</tspan><tspan x="622.0" dy="21.4">Interior</tspan></text>
+<text x="622.0" y="302.45" font-size="14.5" font-weight="400" fill="#1B1F24" text-anchor="start"><tspan x="622.0" dy="0.0">For any purpose, e.g. one-</tspan><tspan x="622.0" dy="18.9">half or more Indian blood</tspan><tspan x="622.0" dy="18.9">under the Indian</tspan><tspan x="622.0" dy="18.9">Reorganization Act (25 U.S.C.</tspan><tspan x="622.0" dy="18.9">5129).</tspan></text>
+<rect x="872" y="227" width="248" height="170" rx="8" fill="#FFFFFF" stroke="#9DBBE0" stroke-width="1.5"/>
+<text x="886.0" y="255" font-size="16.5" font-weight="700" fill="#1B1F24" text-anchor="start"><tspan x="886.0" dy="0.0">Considered an Indian by</tspan><tspan x="886.0" dy="21.4">HHS for Indian health</tspan><tspan x="886.0" dy="21.4">care</tspan></text>
+<text x="886.0" y="323.9" font-size="14.5" font-weight="400" fill="#1B1F24" text-anchor="start"><tspan x="886.0" dy="0.0">Including California Indians</tspan><tspan x="886.0" dy="18.9">and Alaska Natives (see 42</tspan><tspan x="886.0" dy="18.9">CFR 136.12).</tspan></text>
+<text x="80" y="427" font-size="15" font-weight="400" fill="#4A5560" text-anchor="start"><tspan x="80" dy="0.0">The race box on an application is not the test. How each route is met and proved: see "Am I exempt?". No route</tspan><tspan x="80" dy="19.5">applies? Not exempt under this rule (others may apply).</tspan></text>
+<text x="80" y="465" font-size="13" font-weight="400" fill="#4A5560" text-anchor="start"><tspan x="80" dy="0.0">42 CFR 435.554(c)(2); 42 CFR 447.51; 25 U.S.C. 1603(13), (14), (27), (28); 25 U.S.C. 5129; 42 CFR 136.12</tspan></text>
+<line x1="420.0" y1="477" x2="420.0" y2="513" stroke="#4A5560" stroke-width="2.5" marker-end="url(#ah)"/>
+<text x="432.0" y="500.0" font-size="15" font-weight="600" fill="#4A5560">Meets a route</text>
+<rect x="60" y="517" width="720" height="130" rx="10" fill="#E8F1FB" stroke="#1F5FA8" stroke-width="2"/>
+<text x="766" y="539" font-size="11.5" font-weight="700" letter-spacing="1" fill="#1F5FA8" text-anchor="end">FEDERAL LAW</text>
+<circle cx="90" cy="549" r="15" fill="#1F5FA8"/>
+<text x="90" y="555" font-size="16" font-weight="700" fill="#fff" text-anchor="middle">2</text>
+<text x="116" y="555" font-size="19" font-weight="700" fill="#1B1F24" text-anchor="start"><tspan x="116" dy="0.0">The state checks its own data first</tspan></text>
+<text x="116" y="583.0" font-size="16" font-weight="400" fill="#1B1F24" text-anchor="start"><tspan x="116" dy="0.0">Its eligibility system, case records and claims from the past 12 months, before</tspan><tspan x="116" dy="20.8">asking the person for anything. If the data confirm it, the person is exempt.</tspan></text>
+<text x="116" y="633" font-size="13" fill="#4A5560">42 CFR 435.557(a), (b), (c)(1)</text>
+<rect x="820" y="517" width="320" height="345" rx="10" fill="#FFFFFF" stroke="#B3261E" stroke-width="2" stroke-dasharray="8 6"/>
+<text x="1126" y="539" font-size="11.5" font-weight="700" letter-spacing="1" fill="#B3261E" text-anchor="end">THE GAP</text>
+<text x="838" y="555" font-size="19" font-weight="700" fill="#1B1F24" text-anchor="start"><tspan x="838" dy="0.0">Tribal health systems</tspan><tspan x="838" dy="24.7">are not in the loop</tspan></text>
+<text x="838" y="607.7" font-size="16" font-weight="400" fill="#1B1F24" text-anchor="start"><tspan x="838" dy="0.0">Nothing in 435.557 requires a state</tspan><tspan x="838" dy="20.8">to share data with tribes, IHS or</tspan><tspan x="838" dy="20.8">urban Indian programs, though they</tspan><tspan x="838" dy="20.8">often know who their patients are.</tspan></text>
+<rect x="836" y="729" width="288" height="118" rx="8" fill="#F1ECFA" stroke="#5B3FA0" stroke-width="2"/>
+<text x="1112" y="747" font-size="11.5" font-weight="700" letter-spacing="1" fill="#5B3FA0" text-anchor="end">TRIBAL REQUEST</text>
+<text x="850" y="771" font-size="14.5" font-weight="400" fill="#1B1F24" text-anchor="start"><tspan x="850" dy="0.0">TTAG asked CMS to "advise states to</tspan><tspan x="850" dy="18.9">share data with Tribal entities within</tspan><tspan x="850" dy="18.9">their borders." A request, not a rule.</tspan></text>
+<text x="850" y="835" font-size="13" font-weight="400" fill="#4A5560" text-anchor="start"><tspan x="850" dy="0.0">TTAG letter to CMS, 8 July 2026</tspan></text>
+<line x1="820" y1="582" x2="784" y2="582" stroke="#B3261E" stroke-width="2" stroke-dasharray="6 5"/>
+<line x1="420.0" y1="647" x2="420.0" y2="688" stroke="#4A5560" stroke-width="2.5" marker-end="url(#ah)"/>
+<text x="432.0" y="672.5" font-size="15" font-weight="600" fill="#4A5560">Data fall short</text>
+<rect x="60" y="692" width="720" height="170" rx="10" fill="#E8F1FB" stroke="#1F5FA8" stroke-width="2"/>
+<text x="766" y="714" font-size="11.5" font-weight="700" letter-spacing="1" fill="#1F5FA8" text-anchor="end">FEDERAL LAW</text>
+<circle cx="90" cy="724" r="15" fill="#1F5FA8"/>
+<text x="90" y="730" font-size="16" font-weight="700" fill="#fff" text-anchor="middle">3</text>
+<text x="116" y="730" font-size="19" font-weight="700" fill="#1B1F24" text-anchor="start"><tspan x="116" dy="0.0">The state may ask the person</tspan></text>
+<text x="116" y="848" font-size="13" fill="#4A5560">42 CFR 435.557(b)(2)(i)-(iii)</text>
+<rect x="78" y="748" width="334" height="84" rx="8" fill="#FFFFFF" stroke="#9DBBE0" stroke-width="1.5"/>
+<text x="92.0" y="774" font-size="16" font-weight="700" fill="#1B1F24" text-anchor="start"><tspan x="92.0" dy="0.0">Before 1 January 2028</tspan></text>
+<text x="92.0" y="798" font-size="14.5" font-weight="400" fill="#1B1F24" text-anchor="start"><tspan x="92.0" dy="0.0">Documents or other information.</tspan></text>
+<rect x="428" y="748" width="334" height="84" rx="8" fill="#FFFFFF" stroke="#9DBBE0" stroke-width="1.5"/>
+<text x="442.0" y="774" font-size="16" font-weight="700" fill="#1B1F24" text-anchor="start"><tspan x="442.0" dy="0.0">From 1 January 2028</tspan></text>
+<text x="442.0" y="798" font-size="14.5" font-weight="400" fill="#1B1F24" text-anchor="start"><tspan x="442.0" dy="0.0">Documents when reasonably available;</tspan><tspan x="442.0" dy="18.9">otherwise, other information.</tspan></text>
+<line x1="420.0" y1="862" x2="420.0" y2="893" stroke="#4A5560" stroke-width="2.5" marker-end="url(#ah)"/>
+<rect x="60" y="897" width="720" height="100" rx="10" fill="#E8F1FB" stroke="#1F5FA8" stroke-width="2"/>
+<text x="766" y="919" font-size="11.5" font-weight="700" letter-spacing="1" fill="#1F5FA8" text-anchor="end">FEDERAL LAW</text>
+<circle cx="90" cy="929" r="15" fill="#1F5FA8"/>
+<text x="90" y="935" font-size="16" font-weight="700" fill="#fff" text-anchor="middle">4</text>
+<text x="116" y="935" font-size="19" font-weight="700" fill="#1B1F24" text-anchor="start"><tspan x="116" dy="0.0">Never denied or cut off only because documents don't</tspan><tspan x="116" dy="24.7">exist</tspan></text>
+<text x="116" y="983" font-size="13" fill="#4A5560">42 CFR 435.557(b)(2)(iii)</text>
+<rect x="820" y="892" width="320" height="190" rx="10" fill="#FFF4DC" stroke="#9A6400" stroke-width="2"/>
+<text x="1126" y="914" font-size="11.5" font-weight="700" letter-spacing="1" fill="#9A6400" text-anchor="end">CMS ADVICE</text>
+<text x="838" y="930" font-size="19" font-weight="700" fill="#1B1F24" text-anchor="start"><tspan x="838" dy="0.0">Optional hold-</tspan><tspan x="838" dy="24.7">harmless</tspan></text>
+<text x="838" y="982.7" font-size="16" font-weight="400" fill="#1B1F24" text-anchor="start"><tspan x="838" dy="0.0">With CMS approval, a state can pause</tspan><tspan x="838" dy="20.8">denials and disenrollments through</tspan><tspan x="838" dy="20.8">30 June 2027 while it fixes</tspan><tspan x="838" dy="20.8">verification.</tspan></text>
+<text x="838" y="1068" font-size="13" fill="#4A5560">CMS letter SMD 26-006, 13 Nov 2026</text>
+<line x1="420.0" y1="997" x2="420.0" y2="1028" stroke="#4A5560" stroke-width="2.5" marker-end="url(#ah)"/>
+<text x="432.0" y="1017.5" font-size="15" font-weight="600" fill="#4A5560">Qualifies</text>
+<rect x="60" y="1032" width="720" height="112" rx="10" fill="#E8F1FB" stroke="#1F5FA8" stroke-width="2"/>
+<text x="766" y="1054" font-size="11.5" font-weight="700" letter-spacing="1" fill="#1F5FA8" text-anchor="end">FEDERAL LAW</text>
+<circle cx="90" cy="1064" r="15" fill="#1F5FA8"/>
+<text x="90" y="1070" font-size="16" font-weight="700" fill="#fff" text-anchor="middle">5</text>
+<text x="116" y="1070" font-size="19" font-weight="700" fill="#1B1F24" text-anchor="start"><tspan x="116" dy="0.0">Exempt from the work requirement, and renewals stay</tspan><tspan x="116" dy="24.7">every 12 months</tspan></text>
+<text x="116" y="1130" font-size="13" fill="#4A5560">42 CFR 435.554(c)(2); Social Security Act 1902(e)(14)(L)(ii); CMS SMD 26-001</text>
+<line x1="420.0" y1="1144" x2="420.0" y2="1175" stroke="#4A5560" stroke-width="2.5" marker-end="url(#ah)"/>
+<rect x="60" y="1179" width="720" height="130" rx="10" fill="#E8F1FB" stroke="#1F5FA8" stroke-width="2"/>
+<text x="766" y="1201" font-size="11.5" font-weight="700" letter-spacing="1" fill="#1F5FA8" text-anchor="end">FEDERAL LAW</text>
+<circle cx="90" cy="1211" r="15" fill="#1F5FA8"/>
+<text x="90" y="1217" font-size="16" font-weight="700" fill="#fff" text-anchor="middle">6</text>
+<text x="116" y="1217" font-size="19" font-weight="700" fill="#1B1F24" text-anchor="start"><tspan x="116" dy="0.0">No re-check before the next scheduled renewal</tspan></text>
+<text x="116" y="1245.0" font-size="16" font-weight="400" fill="#1B1F24" text-anchor="start"><tspan x="116" dy="0.0">Unless the state learns something changed.</tspan></text>
+<text x="116" y="1295" font-size="13" fill="#4A5560">42 CFR 435.557(d)(4)</text>
+<rect x="820" y="1179" width="320" height="130" rx="10" fill="#FFF4DC" stroke="#9A6400" stroke-width="2"/>
+<text x="1126" y="1201" font-size="11.5" font-weight="700" letter-spacing="1" fill="#9A6400" text-anchor="end">CMS ADVICE</text>
+<text x="838" y="1217" font-size="19" font-weight="700" fill="#1B1F24" text-anchor="start"><tspan x="838" dy="0.0">CMS goes further</tspan></text>
+<text x="838" y="1245.0" font-size="16" font-weight="400" fill="#1B1F24" text-anchor="start"><tspan x="838" dy="0.0">States may not reverify American</tspan><tspan x="838" dy="20.8">Indian status at all.</tspan></text>
+<text x="838" y="1295" font-size="13" fill="#4A5560">Rule preamble, 91 FR 33366</text>
+<text x="60" y="1368" font-size="13.5" font-weight="400" fill="#4A5560" text-anchor="start"><tspan x="60" dy="0.0">Simplified for illustration; not legal advice. 42 CFR 435.557 gives tribal health systems no defined role in verification.</tspan></text>
+<text x="60" y="1406" font-size="13.5" font-weight="600" fill="#4A5560" text-anchor="start"><tspan x="60" dy="0.0">Lakeraven · 19 November 2026 · Sources listed in the post</tspan></text>
+</svg>

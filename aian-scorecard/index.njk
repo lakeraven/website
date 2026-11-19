@@ -1,0 +1,102 @@
+---
+layout: layouts/page
+title: AI/AN Medicaid exemption scorecard
+permalink: /aian-medicaid-scorecard/
+description: How closely each state's published Medicaid policy follows CMS rules for American Indians and Alaska Natives under the new work and renewal requirements.
+---
+{% set sc = aianScorecard %}
+{% from "aian-dots.njk" import dots %}
+{% if not sc.rubric.approved %}
+<div class="usa-alert usa-alert--warning usa-alert--slim"><div class="usa-alert__body"><p class="usa-alert__text"><strong>Draft.</strong> Grades are provisional while the rubric is under review and evidence is re-verified.</p></div></div>
+{% endif %}
+
+<h1>American Indian and Alaska Native Medicaid exemption scorecard</h1>
+{% set sm = sc.summary %}
+<p class="usa-intro aian-headline">Only <strong>{{ sm.allMet }} of {{ sm.subject }}</strong> states meet all {{ sm.total }} requirements in their published policy. The median state meets <strong>{{ sm.median }}</strong>, and <strong>{{ sm.anyContradiction }}</strong> publish policy that contradicts at least one.</p>
+
+<p>Federal law exempts American Indians and Alaska Natives from Medicaid's new work requirement and keeps their renewals at 12 months. This scorecard grades how closely each state's <strong>published</strong> policy follows the CMS rules that carry out those protections. It measures what states have written down, not what happens at every eligibility office.</p>
+
+<p>Grades update as states publish new policy. A state, tribe, or Indian health program can <a href="{{ '/aian-medicaid-scorecard/process/' | url }}">submit evidence</a> on any state's page. Last checked {{ sc.lastChecked }}.</p>
+
+<h2>By the numbers</h2>
+<ul class="usa-list">
+  <li><strong>{{ sm.allMet }} of {{ sm.subject }}</strong> states subject to the new rules meet all {{ sm.total }} requirements in their published policy.</li>
+  <li>The median state meets <strong>{{ sm.median }} of {{ sm.total }}</strong>.</li>
+  <li><strong>{{ sm.anyContradiction }}</strong> states publish policy that contradicts at least one requirement.</li>
+  <li><strong>{{ sm.tribalChannel }}</strong> states publish a way for tribes or Indian health programs to confirm a person's status.</li>
+</ul>
+
+<h2 id="how-grades-change">How a state raises its grade</h2>
+<ol class="usa-list">
+  <li><strong>Publish a qualifying policy.</strong> Each state's page lists every requirement it does not yet meet, the policy that would meet it, model language from a state that already does, and the grade the state would reach.</li>
+  <li><strong>Send us the public link.</strong> Use the Submit evidence button on the state's page. A state agency, tribe, Indian health program, or anyone else can submit, and evidence from tribes and Indian health programs counts the same as the state's.</li>
+  <li><strong>We review within {{ sc.rubric.submission.review_business_days }} business days.</strong> The state's page shows Evidence under review until we finish.</li>
+  <li><strong>The grade updates.</strong> An upgrade publishes right away. A downgrade waits {{ sc.rubric.submission.downgrade_notice_days }} days after we notify the state. Every change is listed in the state's history with its date and source.</li>
+</ol>
+
+<h2>Grades at a glance</h2>
+<ul class="usa-list">
+{% for c in sc.counts %}{% if c.n > 0 %}<li><strong>{{ c.grade }}</strong>: {{ c.n }} {% if c.n == 1 %}state{% else %}states{% endif %}</li>{% endif %}{% endfor %}
+</ul>
+
+<h2>All states, ranked</h2>
+<p>Ranked by requirements met, then fewest contradicted, then fewest unpublished. See <a href="#rubric">How grades work</a> and <a href="#terms">Terms used</a>.</p>
+{% set im = sc.rubric.impact %}
+<ul class="usa-list aian-legend">
+  <li><strong>Score</strong>: how many of the {{ sc.summary.total }} requirements the state's published policy meets.</li>
+  <li><strong>Impact</strong>: roughly how many people could be exempt. Each {{ dots(1, 0) }} is about {{ im.dot_size | aianNum }} people, and {{ dots(0, 0.5) }} means fewer than {{ im.dot_size | aianNum }}. <a href="#impact-method">How we estimate this</a>.</li>
+  <li><strong>To fix</strong>: every requirement the state does not meet, contradictions first. Each links to the fix on the state's page.</li>
+</ul>
+<table class="usa-table usa-table--borderless usa-table--stacked aian-roster">
+  <caption class="usa-sr-only">States ranked by requirements met, with grade, estimated impact, and the requirements each state still needs to fix</caption>
+  <thead><tr><th scope="col">State</th><th scope="col">Score</th><th scope="col">Grade</th><th scope="col">Impact</th><th scope="col">To fix</th></tr></thead>
+  <tbody>
+  {% for s in sc.ranked %}
+    {% set url = ('/aian-medicaid-scorecard/' + s.slug + '/') | url %}
+    <tr>
+      <th scope="row" data-label="State"><a href="{{ url }}">{{ s.name }}</a>{% if s.under_review %} <span class="usa-tag">Evidence under review</span>{% endif %}</th>
+      <td data-label="Score">{% if s.status != 'not_subject' %}<strong>{{ s.met }}/{{ sc.summary.total }}</strong><br><span class="text-base aian-sub">{{ s.contradicts }} contradicted, {{ s.unpublished }} unpublished</span>{% endif %}</td>
+      <td data-label="Grade">{{ s.grade }}{% if s.status == 'not_subject' and not s.confirmed %} (to confirm){% endif %}</td>
+      <td data-label="Impact">{% if s.status != 'not_subject' %}<span role="img" aria-label="about {{ s.impact.estimate | aianNum }} estimated">{{ dots(s.impact.full, s.impact.part) }}</span><br><span class="text-base">about {{ s.impact.estimate | aianNum }}</span>{% if s.impact.published %}<br><span class="text-base">State reports {{ s.impact.published.count | aianNum }} <a href="{{ s.impact.published.url }}">verified</a></span>{% endif %}{% endif %}</td>
+      <td data-label="To fix">{% if s.status == 'not_subject' %}Not subject{% elif not s.improvements.length %}Nothing{% else %}{% set con = s.fixContradicts %}{% set unp = s.fixUnpublished %}{% if con.length %}<span class="aian-fix-kind">Contradicts:</span> {% for i in con %}<a href="{{ url }}#fix-{{ i.id }}">{{ i.short }}</a>{% if not loop.last %} · {% endif %}{% endfor %}{% endif %}{% if con.length and unp.length %}<br>{% endif %}{% if unp.length %}<span class="aian-fix-kind">Not published:</span> {% for i in unp %}<a href="{{ url }}#fix-{{ i.id }}">{{ i.short }}</a>{% if not loop.last %} · {% endif %}{% endfor %}{% endif %}{% endif %}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+
+<h2 id="rubric">How grades work</h2>
+<ul class="usa-list">
+  <li>Each state is checked against {{ sc.rubric.requirements.length }} requirements from federal law.</li>
+  <li>For each requirement, the state's published policy either <strong>meets</strong> it, <strong>contradicts</strong> it, or says nothing (<strong>not published</strong>).</li>
+  <li>Saying nothing never counts as meeting a requirement.</li>
+  <li>The grade follows from those counts:</li>
+</ul>
+<table class="usa-table usa-table--borderless">
+  <thead><tr><th scope="col">Grade</th><th scope="col">Rule</th></tr></thead>
+  <tbody>{% for g in sc.rubric.grades %}<tr><td>{{ g.grade }}</td><td>{{ g.rule }}</td></tr>{% endfor %}</tbody>
+</table>
+<p>Not graded: {% for b in sc.rubric.best_practices %}we also report whether a state offers {{ b.label | lower }}. It is a tribal recommendation, not a CMS requirement, so it does not affect the grade.{% endfor %}</p>
+
+<h2 id="impact-method">How we estimate impact</h2>
+<ul class="usa-list">
+  <li>We start from each state's 2020 Census count of people who identify as American Indian or Alaska Native alone.</li>
+  <li>We assume {{ (im.subject_share * 100) | round }}% of them are adults in the Medicaid expansion group, the people the new rules cover. No published source gives that share, so this is our estimate.</li>
+  <li>Each {{ dots(1, 0) }} is {{ im.dot_size | aianNum }} people, rounded down. A state under {{ im.dot_size | aianNum }} shows {{ dots(0, 0.5) }}.</li>
+  <li>Where a state has published its own count, we show it beside the estimate.</li>
+</ul>
+
+<h2 id="terms">Terms used</h2>
+<ul class="usa-list">
+  <li><strong>Expansion group</strong>: adults aged 19 to 64 who qualify for Medicaid because their state expanded it under the Affordable Care Act. The new work requirement and six-month renewals apply only to this group.</li>
+  <li><strong>Work requirement</strong>: the rule that some adults show work or other activities to keep Medicaid. Federal rules call it the community engagement requirement. Alaska calls it WCER, for work and community engagement requirements.</li>
+  <li><strong>Renewal</strong> (also called redetermination): the state's regular check that someone still qualifies for Medicaid.</li>
+  <li><strong>Published policy</strong>: anything the state has made public, such as a web page, manual, notice, form, plan amendment, or waiver.</li>
+  <li><strong>Not subject</strong>: a state that has not expanded Medicaid, so these rules do not apply there.</li>
+</ul>
+
+<h2 id="sources">Federal sources</h2>
+<p>What each requirement comes from, in plain language.</p>
+<table class="usa-table usa-table--borderless aian-sources">
+  <thead><tr><th scope="col">Requirement</th><th scope="col">What federal law says</th><th scope="col">Source</th></tr></thead>
+  <tbody>{% for r in sc.rubric.requirements %}<tr id="source-{{ r.id }}"><td>{{ r.label }}</td><td>{{ r.plain }}</td><td><a href="{{ r.source_url }}">{{ r.citation }}</a></td></tr>{% endfor %}</tbody>
+</table>

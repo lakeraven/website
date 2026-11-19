@@ -1,0 +1,59 @@
+# Provisional: evidence from 2026-10-11, re-verification in progress.
+state: VT
+name: Vermont
+checked: '2026-10-11'
+start: '2027'
+unverified: false
+under_review: false
+components:
+  out_of_state:
+    mark: unpublished
+  tribal_members:
+    mark: meets
+    quote: American Indian or Alaska Native
+    url: https://dvha.vermont.gov/medicaid-changes/how-to-meet-medicaid-work-requirements
+    read: '2026-10-11'
+  urban_and_descendants:
+    mark: unpublished
+    quote: American Indian or Alaska Native
+    url: https://dvha.vermont.gov/medicaid-changes/how-to-meet-medicaid-work-requirements
+    read: '2026-10-11'
+  alaska_natives:
+    mark: meets
+    quote: American Indian or Alaska Native
+    url: https://dvha.vermont.gov/medicaid-changes/how-to-meet-medicaid-work-requirements
+    read: '2026-10-11'
+  ihs_eligible:
+    mark: unpublished
+    quote: American Indian or Alaska Native
+    url: https://dvha.vermont.gov/medicaid-changes/how-to-meet-medicaid-work-requirements
+    read: '2026-10-11'
+  california_indians:
+    mark: unpublished
+    quote: American Indian or Alaska Native
+    url: https://dvha.vermont.gov/medicaid-changes/how-to-meet-medicaid-work-requirements
+    read: '2026-10-11'
+  data_first:
+    mark: unpublished
+    quote: In 2027, you will need to provide auditable self-attestation.
+    url: https://dvha.vermont.gov/medicaid-changes/how-to-meet-medicaid-work-requirements
+    read: '2026-10-11'
+  non_document_proof:
+    mark: meets
+    quote: In 2027, you will need to provide auditable self-attestation.
+    url: https://dvha.vermont.gov/medicaid-changes/how-to-meet-medicaid-work-requirements
+    read: '2026-10-11'
+  tribal_or_clinic_channel:
+    mark: unpublished
+    note: '"Auditable self-attestation" in 2027'
+  status_not_rechecked:
+    mark: contradicts
+    quote: After that, you will have to renew your Medicaid every 6 months, with a 6-month lookback period.
+    url: https://dvha.vermont.gov/medicaid-changes/how-to-meet-medicaid-work-requirements
+    read: '2026-10-11'
+  twelve_month_renewal:
+    mark: contradicts
+    quote: Medicaid eligibility reviewed every six months instead of once a year.
+    url: https://dvha.vermont.gov/medicaid-changes
+    read: '2026-10-11'
+history: []

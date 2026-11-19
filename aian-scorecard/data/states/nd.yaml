@@ -1,0 +1,49 @@
+# Evidence re-verified 2026-11-18 against primary sources.
+state: ND
+name: North Dakota
+checked: '2026-11-18'
+start: 2027-01-01 (applicants); members with a review due 2027-02-28
+unverified: false
+under_review: false
+components:
+  out_of_state:
+    mark: unpublished
+  tribal_members:
+    mark: meets
+    quote: Native Americans or Alaska Natives
+    url: https://www.hhs.nd.gov/StayCoveredND
+    read: '2026-11-18'
+  urban_and_descendants:
+    mark: unpublished
+    quote: Native Americans or Alaska Natives
+    url: https://www.hhs.nd.gov/StayCoveredND
+    read: '2026-11-18'
+  alaska_natives:
+    mark: meets
+    quote: Native Americans and Alaska Natives
+    url: https://www.hhs.nd.gov/StayCoveredND
+    read: '2026-11-18'
+  ihs_eligible:
+    mark: unpublished
+  california_indians:
+    mark: unpublished
+  data_first:
+    mark: unpublished
+    quote: Most members will have their work requirements verified automatically using federal income data
+    url: https://www.hhs.nd.gov/news/hhs-preparing-implement-federal-work-requirements-and-other-changes-medicaid-program
+    read: '2026-11-18'
+  non_document_proof:
+    mark: unpublished
+  tribal_or_clinic_channel:
+    mark: unpublished
+  status_not_rechecked:
+    mark: unpublished
+    quote: Other updates include more frequent reviews and new cost-sharing requirements for some members.
+    url: https://www.hhs.nd.gov/StayCoveredND
+    read: '2026-11-18'
+  twelve_month_renewal:
+    mark: meets
+    quote: Tribal members are excluded from these requirements and will still have an annual redetermination.
+    url: https://hhs.nd.gov/stayenrolled
+    read: '2026-11-18'
+history: []

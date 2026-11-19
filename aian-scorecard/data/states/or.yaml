@@ -1,0 +1,64 @@
+# Evidence re-verified 2026-11-18 against primary sources.
+state: OR
+name: Oregon
+checked: '2026-11-18'
+start: '2027-01-01'
+unverified: false
+under_review: false
+components:
+  out_of_state:
+    mark: meets
+    quote: You do not need to send any proof.
+    url: https://www.oregon.gov/oha/HSD/OHP/Documents/Work-Activity-Exemptions.pdf
+    read: '2026-11-18'
+    secondary:
+      quote: American Indian as defined at 447.51
+      url: https://www.oregon.gov/oha/HSD/OHP/Announcements/WFTC-Changes1026.pdf
+  tribal_members:
+    mark: meets
+    quote: You're an enrolled member of a federally recognized tribe (or your parent or grandparent is)
+    url: https://www.oregon.gov/oha/HSD/OHP/Pages/Federal-Changes.aspx
+    read: '2026-11-18'
+  urban_and_descendants:
+    mark: meets
+    quote: American Indian as defined at 447.51
+    url: https://www.oregon.gov/oha/HSD/OHP/Announcements/WFTC-Changes1026.pdf
+    read: '2026-11-18'
+  alaska_natives:
+    mark: meets
+    quote: or a shareholder in an Alaska Native Corporation.
+    url: https://www.oregon.gov/oha/HSD/OHP/Pages/Federal-Changes.aspx
+    read: '2026-11-18'
+  ihs_eligible:
+    mark: meets
+    quote: This also covers people who get care from Indian Health Services or a Tribal or Urban Indian clinic.
+    url: https://www.oregon.gov/oha/HSD/OHP/Pages/Federal-Changes.aspx
+    read: '2026-11-18'
+  california_indians:
+    mark: meets
+    quote: This also covers people who get care from Indian Health Services or a Tribal or Urban Indian clinic.
+    url: https://www.oregon.gov/oha/HSD/OHP/Pages/Federal-Changes.aspx
+    read: '2026-11-18'
+  data_first:
+    mark: meets
+    quote: or that an individual is a specified excluded individual using reliable information available in the state without requiring information from the individual when possible
+    url: https://www.oregon.gov/oha/HSD/OHP/Announcements/WFTC-Changes1026.pdf
+    read: '2026-11-18'
+  non_document_proof:
+    mark: meets
+    quote: You do not need to send any proof.
+    url: https://www.oregon.gov/oha/HSD/OHP/Documents/Work-Activity-Exemptions.pdf
+    read: '2026-11-18'
+  tribal_or_clinic_channel:
+    mark: unpublished
+  status_not_rechecked:
+    mark: meets
+    quote: This exemption never expires or needs to be renewed.
+    url: https://www.oregon.gov/oha/HSD/OHP/Documents/Work-Activity-Exemptions.pdf
+    read: '2026-11-18'
+  twelve_month_renewal:
+    mark: meets
+    quote: Are not American Indian/Alaska Native.
+    url: https://www.oregon.gov/oha/HSD/OHP/Pages/Federal-Changes.aspx
+    read: '2026-11-18'
+history: []

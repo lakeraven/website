@@ -1,0 +1,49 @@
+# Evidence re-verified 2026-11-18 against primary sources.
+state: ME
+name: Maine
+checked: '2026-11-18'
+start: '2027-01-01'
+unverified: false
+under_review: false
+components:
+  out_of_state:
+    mark: unpublished
+  tribal_members:
+    mark: meets
+    quote: American Indians and Alaskan Natives
+    url: https://www.maine.gov/dhhs/ofi/health-care-assistance/work
+    read: '2026-11-18'
+  urban_and_descendants:
+    mark: unpublished
+    quote: American Indians and Alaskan Natives
+    url: https://www.maine.gov/dhhs/ofi/health-care-assistance/work
+    read: '2026-11-18'
+  alaska_natives:
+    mark: meets
+    quote: American Indians and Alaskan Natives
+    url: https://www.maine.gov/dhhs/ofi/health-care-assistance/work
+    read: '2026-11-18'
+  ihs_eligible:
+    mark: unpublished
+  california_indians:
+    mark: unpublished
+  data_first:
+    mark: unpublished
+    quote: Sometimes, OFI can do this through an automatic check without needing more information from the member.
+    url: https://www.maine.gov/dhhs/ofi/federalchanges
+    read: '2026-11-18'
+  non_document_proof:
+    mark: unpublished
+    quote: OFI needs the member to complete the renewal form and provide documentation.
+    url: https://www.maine.gov/dhhs/ofi/federalchanges
+    read: '2026-11-18'
+  tribal_or_clinic_channel:
+    mark: unpublished
+  status_not_rechecked:
+    mark: unpublished
+  twelve_month_renewal:
+    mark: contradicts
+    quote: Eligibility renewals every 6 months instead of every 12 months.
+    url: https://www.maine.gov/dhhs/oms/providers/provider-bulletins/2027-mainecare-eligibility-changes-information-resources-and-partner-briefing-2026-08-21
+    read: '2026-11-18'
+history: []

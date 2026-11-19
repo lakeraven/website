@@ -1,0 +1,55 @@
+# Evidence re-verified 2026-11-18 against primary sources.
+state: KY
+name: Kentucky
+checked: '2026-11-18'
+start: 2027-01-01 (new applicants); current members from February 2027 renewals
+unverified: false
+under_review: false
+components:
+  out_of_state:
+    mark: unpublished
+  tribal_members:
+    mark: meets
+    quote: Member of a federally recognized tribe (American Indian or Alaska Native)
+    url: https://khbe.ky.gov/Enrollment/Pages/MedicaidChanges.aspx
+    read: '2026-11-18'
+  urban_and_descendants:
+    mark: contradicts
+    quote: Member of a federally recognized tribe (American Indian or Alaska Native)
+    url: https://khbe.ky.gov/Enrollment/Documents/MACE-001%20Outreach%20Updated.pdf
+    read: '2026-11-18'
+  alaska_natives:
+    mark: unpublished
+    quote: Member of a federally recognized tribe (American Indian or Alaska Native)
+    url: https://khbe.ky.gov/Enrollment/Documents/MACE-001%20Outreach%20Updated.pdf
+    read: '2026-11-18'
+  ihs_eligible:
+    mark: contradicts
+    quote: Member of a federally recognized tribe (American Indian or Alaska Native)
+    url: https://khbe.ky.gov/Enrollment/Documents/MACE-001%20Outreach%20Updated.pdf
+    read: '2026-11-18'
+  california_indians:
+    mark: contradicts
+    quote: Member of a federally recognized tribe (American Indian or Alaska Native)
+    url: https://khbe.ky.gov/Enrollment/Documents/MACE-001%20Outreach%20Updated.pdf
+    read: '2026-11-18'
+  data_first:
+    mark: meets
+    quote: Starting in 2027, Medicaid will check available information to see if you meet the requirements or qualify for an exemption.
+    url: https://khbe.ky.gov/Enrollment/Pages/MedicaidChanges.aspx
+    read: '2026-11-18'
+  non_document_proof:
+    mark: contradicts
+    quote: Begin gathering important medical or legal documents so you are ready
+    url: https://khbe.ky.gov/Enrollment/Pages/MedicaidChanges.aspx
+    read: '2026-11-18'
+  tribal_or_clinic_channel:
+    mark: unpublished
+  status_not_rechecked:
+    mark: unpublished
+  twelve_month_renewal:
+    mark: contradicts
+    quote: You must have a Medicaid renewal every six months if you are aged 19-64 and qualify for Medicaid based only on your income.
+    url: https://khbe.ky.gov/Enrollment/Pages/MedicaidChanges.aspx
+    read: '2026-11-18'
+history: []

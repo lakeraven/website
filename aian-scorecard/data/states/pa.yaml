@@ -1,0 +1,58 @@
+# Evidence re-verified 2026-11-18 against primary sources.
+state: PA
+name: Pennsylvania
+checked: '2026-11-18'
+start: '2027-01-01'
+unverified: false
+under_review: false
+components:
+  out_of_state:
+    mark: unpublished
+  tribal_members:
+    mark: meets
+    quote: Member of recognized American Indian or Alaska Native tribes;
+    url: https://www.pa.gov/content/dam/copapwp-pagov/en/dhs/documents/medicaid/hr1-related/cm-710-medicaid-initial-outreach.pdf
+    read: '2026-11-18'
+  urban_and_descendants:
+    mark: contradicts
+    quote: Member of recognized American Indian or Alaska Native tribes;
+    url: https://www.pa.gov/content/dam/copapwp-pagov/en/dhs/documents/medicaid/hr1-related/cm-710-medicaid-initial-outreach.pdf
+    read: '2026-11-18'
+  alaska_natives:
+    mark: unpublished
+    quote: Member of recognized American Indian or Alaska Native tribes;
+    url: https://www.pa.gov/content/dam/copapwp-pagov/en/dhs/documents/medicaid/hr1-related/cm-710-medicaid-initial-outreach.pdf
+    read: '2026-11-18'
+  ihs_eligible:
+    mark: contradicts
+    quote: Member of recognized American Indian or Alaska Native tribes;
+    url: https://www.pa.gov/content/dam/copapwp-pagov/en/dhs/documents/medicaid/hr1-related/cm-710-medicaid-initial-outreach.pdf
+    read: '2026-11-18'
+  california_indians:
+    mark: contradicts
+    quote: Member of recognized American Indian or Alaska Native tribes;
+    url: https://www.pa.gov/content/dam/copapwp-pagov/en/dhs/documents/medicaid/hr1-related/cm-710-medicaid-initial-outreach.pdf
+    read: '2026-11-18'
+  data_first:
+    mark: meets
+    quote: We will try to use the information already available to us about your case.
+    url: https://www.pa.gov/content/dam/copapwp-pagov/en/dhs/documents/medicaid/hr1-related/cm-710-medicaid-initial-outreach.pdf
+    read: '2026-11-18'
+  non_document_proof:
+    mark: meets
+    quote: Self-attestation will be accepted in 2027 for work requirement activity participation and exemptions (not income).
+    url: https://www.pa.gov/content/dam/copapwp-pagov/en/dhs/documents/medicaid/hr1-related/2026-08-26-hr1-stakeholder-briefing-cbos.pdf
+    read: '2026-11-18'
+  tribal_or_clinic_channel:
+    mark: unpublished
+  status_not_rechecked:
+    mark: contradicts
+    quote: You need to report your exemption at your next renewal
+    url: https://www.pa.gov/content/dam/copapwp-pagov/en/dhs/documents/medicaid/hr1-related/faq-medicaid-changes-hr1.pdf
+    read: '2026-11-18'
+  twelve_month_renewal:
+    mark: contradicts
+    quote: Starting in January 2027, some adults will have to renew their Medicaid every six months instead of every year.
+    url: https://www.pa.gov/content/dam/copapwp-pagov/en/dhs/documents/medicaid/hr1-related/faq-medicaid-changes-hr1.pdf
+    read: '2026-11-18'
+history: []

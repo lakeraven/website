@@ -1,0 +1,64 @@
+# Evidence re-verified 2026-11-18 against primary sources.
+state: IL
+name: Illinois
+checked: '2026-11-18'
+start: 2027-01-01 (existing members at first 2027 redetermination; new applicants after 5:00pm Dec 31, 2026)
+unverified: false
+under_review: false
+components:
+  out_of_state:
+    mark: meets
+    quote: In 2027, the state will accept "self-attestation" from customers of exemptions to work requirements
+    url: https://hfs.illinois.gov/medicalclients/medicaidguide/changes.html
+    read: '2026-11-18'
+    secondary:
+      quote: An American Indian/Alaska Native, an American Urban Indian, a California Indian, a member of a recognized tribe, or qualified to receive healthcare through the Indian Health Service (IHS)
+      url: https://hfs.illinois.gov/content/dam/soi/en/web/hfs/medicalclients/medicaidguide/ACAAdultCustomerNotice083126ToPrint.pdf
+  tribal_members:
+    mark: meets
+    quote: An American Indian/Alaska Native, an American Urban Indian, a California Indian, a member of a recognized tribe,
+    url: https://hfs.illinois.gov/content/dam/soi/en/web/hfs/medicalclients/medicaidguide/ACAAdultCustomerNotice083126ToPrint.pdf
+    read: '2026-11-18'
+  urban_and_descendants:
+    mark: meets
+    quote: An American Indian/Alaska Native, an American Urban Indian, a California Indian, a member of a recognized tribe,
+    url: https://hfs.illinois.gov/content/dam/soi/en/web/hfs/medicalclients/medicaidguide/ACAAdultCustomerNotice083126ToPrint.pdf
+    read: '2026-11-18'
+  alaska_natives:
+    mark: meets
+    quote: An American Indian/Alaska Native, an American Urban Indian, a California Indian, a member of a recognized tribe,
+    url: https://hfs.illinois.gov/content/dam/soi/en/web/hfs/medicalclients/medicaidguide/ACAAdultCustomerNotice083126ToPrint.pdf
+    read: '2026-11-18'
+  ihs_eligible:
+    mark: meets
+    quote: or qualified to receive healthcare through the Indian Health Service (IHS)
+    url: https://hfs.illinois.gov/content/dam/soi/en/web/hfs/medicalclients/medicaidguide/ACAAdultCustomerNotice083126ToPrint.pdf
+    read: '2026-11-18'
+  california_indians:
+    mark: meets
+    quote: An American Indian/Alaska Native, an American Urban Indian, a California Indian, a member of a recognized tribe,
+    url: https://hfs.illinois.gov/content/dam/soi/en/web/hfs/medicalclients/medicaidguide/ACAAdultCustomerNotice083126ToPrint.pdf
+    read: '2026-11-18'
+  data_first:
+    mark: meets
+    quote: We will first use information we already have to attempt to verify if you are exempt from work requirements
+    url: https://hfs.illinois.gov/content/dam/soi/en/web/hfs/medicalclients/medicaidguide/ACAAdultCustomerNotice083126ToPrint.pdf
+    read: '2026-11-18'
+  non_document_proof:
+    mark: meets
+    quote: Self-attestation requires you to promise that the information is true under penalty of perjury.
+    url: https://hfs.illinois.gov/medicalclients/medicaidguide/changes.html
+    read: '2026-11-18'
+  tribal_or_clinic_channel:
+    mark: unpublished
+  status_not_rechecked:
+    mark: meets
+    quote: States will not be required to (and may not) reverify someone's status as an American Indian
+    url: https://hfs.illinois.gov/content/dam/soi/en/web/hfs/info/fedresctr/hr1mod4exempteng.pdf
+    read: '2026-11-18'
+  twelve_month_renewal:
+    mark: contradicts
+    quote: even if you are exempt from work requirements, you will still need to renew your coverage every six months.
+    url: https://hfs.illinois.gov/medicalclients/medicaidguide/changes.html
+    read: '2026-11-18'
+history: []

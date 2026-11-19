@@ -1,0 +1,90 @@
+---
+layout: layouts/page
+pagination:
+  data: aianScorecard.states
+  size: 1
+  alias: s
+permalink: "/aian-medicaid-scorecard/{{ s.slug }}/"
+eleventyComputed:
+  title: "{{ s.name }}: AI/AN Medicaid exemption scorecard"
+---
+{% set sc = aianScorecard %}
+{% set sub = sc.rubric.submission %}
+{% set formState = "District of Columbia" if s.state == "DC" else s.name %}
+{% if not sc.rubric.approved %}
+<div class="usa-alert usa-alert--warning usa-alert--slim"><div class="usa-alert__body"><p class="usa-alert__text"><strong>Draft.</strong> This grade is provisional while the rubric is under review and evidence is re-verified.</p></div></div>
+{% endif %}
+
+<p><a href="{{ '/aian-medicaid-scorecard/' | url }}">All states</a></p>
+<h1>{{ s.name }}</h1>
+
+{% if s.under_review %}
+<div class="usa-alert usa-alert--info usa-alert--slim"><div class="usa-alert__body"><p class="usa-alert__text"><strong>Evidence under review.</strong> Someone has submitted new evidence for {{ s.name }}. The grade below stands until review is complete.</p></div></div>
+{% endif %}
+
+{% if s.status == 'not_subject' %}
+<p class="font-sans-lg"><strong>Not subject.</strong> {{ s.name }} has not expanded Medicaid, so the expansion-group work requirement and six-month renewals do not apply.{% if not s.confirmed %} (Status to be confirmed from a primary source.){% endif %}</p>
+{% else %}
+<p class="font-sans-lg">Grade: <strong>{{ s.grade }}</strong>. Meets {{ s.met }} of {{ aianScorecard.rubric.requirements.length }} requirements, contradicts {{ s.contradicts }}, and has not published policy on {{ s.unpublished }}.</p>
+<p>Evidence last checked {{ s.checked }}.{% if s.start %} Work requirement start date: {{ s.start }}.{% endif %}</p>
+
+{% if s.improvements.length %}
+<section class="aian-raise" aria-labelledby="raise">
+<h2 id="raise">How to raise this grade</h2>
+{% if s.nextStep %}
+<p><strong>To reach {{ s.nextStep.grade }}</strong>, {{ s.name }} needs to publish policy on {{ s.nextStep.fixes.length }} {% if s.nextStep.fixes.length == 1 %}requirement{% else %}requirements{% endif %}:</p>
+<ul class="usa-list">{% for f in s.nextStep.fixes %}<li>{{ f }}</li>{% endfor %}</ul>
+{% endif %}
+<p>Meeting all {{ s.improvements.length }} open requirements earns an <strong>{{ s.gradeIfAllFixed }}</strong>. Fixing a contradiction counts most, because it removes a contradiction and adds a met requirement.</p>
+<ol class="usa-list aian-fixes">
+{% for i in s.improvements %}
+  <li id="fix-{{ i.id }}">
+    <p><strong>{{ i.label }}</strong> <span class="aian-src-wrap"><a class="aian-src" href="{{ ('/aian-medicaid-scorecard/#source-' + i.id) | url }}">Federal source</a></span><br>
+    Now: {% if i.mark == 'contradicts' %}published policy contradicts this{% else %}nothing published{% endif %}.</p>
+    <p>{% if i.mark == 'contradicts' %}Replace the conflicting policy with policy that says{% else %}Publish policy that says{% endif %} {{ i.fix }}.</p>
+    <p>With this fix alone: {{ s.met }} of {{ sc.rubric.requirements.length }} becomes {{ s.met + 1 }} of {{ sc.rubric.requirements.length }}, and the grade {% if i.gradeIfFixed == s.grade %}stays {{ s.grade }}{% else %}rises to {{ i.gradeIfFixed }}{% endif %}.</p>
+    <p>Model language from <a href="{{ ('/aian-medicaid-scorecard/' + i.model.slug + '/') | url }}">{{ i.model.name }}</a>: &ldquo;{{ i.model.quote }}&rdquo; <a href="{{ i.model.url }}">Source</a></p>
+    <p><a class="usa-button usa-button--outline" href="{{ sub.form_url }}?usp=pp_url&amp;{{ sub.form_state_entry }}={{ formState | urlencode }}&amp;{{ sub.form_requirement_entry }}={{ i.short | urlencode }}" aria-label="Submit evidence for {{ i.short }}">Submit evidence for this requirement</a></p>
+  </li>
+{% endfor %}
+</ol>
+<p>Upgrades publish as soon as review confirms the policy, within {{ sub.review_business_days }} business days. <a href="{{ '/aian-medicaid-scorecard/process/' | url }}">How review works</a>.</p>
+</section>
+{% endif %}
+
+<h2>Graded requirements</h2>
+<p>These {{ sc.rubric.requirements.length }} requirements decide the grade.</p>
+<table class="usa-table usa-table--borderless usa-table--stacked">
+  <thead><tr><th scope="col">Requirement</th><th scope="col" class="aian-finding">Finding</th><th scope="col">What the state published</th></tr></thead>
+  <tbody>
+  {% for r in s.requirements %}
+    <tr>
+      <th scope="row" data-label="Requirement">{{ r.label }}<br><span class="text-base aian-src-wrap"><a class="aian-src" href="{{ ('/aian-medicaid-scorecard/#source-' + r.id) | url }}">Federal source</a></span></th>
+      <td data-label="Finding" class="aian-finding">{% if r.mark == 'meets' %}Meets{% elif r.mark == 'contradicts' %}Contradicts{% else %}Not published{% endif %}</td>
+      <td data-label="What the state published">{% if r.url %}&ldquo;{{ r.quote }}&rdquo; <a href="{{ r.url }}">Source</a>{% if r.read %}, read {{ r.read }}{% endif %}{% else %}Nothing found.{% endif %}{% if r.follow_up %}<br><strong>Flagged for follow-up:</strong> {{ r.follow_up }}{% endif %}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+
+<section class="aian-ungraded" aria-labelledby="ungraded">
+<h2 id="ungraded">Also reported (not graded)</h2>
+<p>This is a tribal recommendation, not a CMS requirement, so it does not change the grade.</p>
+<ul class="usa-list">
+{% for b in s.bestPractices %}<li>{{ b.label }}: {% if b.mark == 'meets' %}yes{% elif b.mark == 'contradicts' %}no{% else %}nothing published{% endif %}{% if b.url %} (<a href="{{ b.url }}">source</a>){% endif %}</li>{% endfor %}
+</ul>
+</section>
+{% endif %}
+
+<h2>History</h2>
+{% if s.history and s.history.length %}
+<ul class="usa-list">
+{% for h in s.history %}<li>{{ h.date }}: {{ h.from }} to {{ h.to }}. {{ h.change }} <a href="{{ h.url }}">Source</a></li>{% endfor %}
+</ul>
+{% else %}
+<p>No grade changes since first published.</p>
+{% endif %}
+
+<h2 id="submit">Submit evidence</h2>
+<p>If {{ s.name }} has published policy that changes any finding above, send us a public link to it. Please send links rather than attachments. We review every submission within {{ sub.review_business_days }} business days, and we weigh evidence from tribes and Indian health programs the same as evidence from the state. <a href="{{ '/aian-medicaid-scorecard/process/' | url }}">How review works</a>.</p>
+<p><a class="usa-button" href="{{ sub.form_url }}?usp=pp_url&amp;{{ sub.form_state_entry }}={{ formState | urlencode }}">Submit evidence for {{ s.name }}</a></p>

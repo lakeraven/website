@@ -1,0 +1,55 @@
+# Evidence re-verified 2026-11-18 against primary sources.
+state: WA
+name: Washington
+checked: '2026-11-18'
+start: '2027-01-01'
+unverified: false
+under_review: false
+components:
+  out_of_state:
+    mark: meets
+    quote: HCA accepts self-attestation of AI/AN status, and this will not change for work requirements.
+    url: https://www.hca.wa.gov/assets/program/hr1-frequently-asked-questions.pdf
+    read: '2026-11-18'
+    secondary:
+      quote: No. Enrollment in a federally recognized Tribe is not required.
+      url: https://www.hca.wa.gov/assets/program/hr1-frequently-asked-questions.pdf
+  tribal_members:
+    mark: meets
+    quote: • Enrolled in a federally recognized Tribe
+    url: https://www.hca.wa.gov/assets/program/hr1-frequently-asked-questions.pdf
+    read: '2026-11-18'
+  urban_and_descendants:
+    mark: meets
+    quote: No. Enrollment in a federally recognized Tribe is not required.
+    url: https://www.hca.wa.gov/assets/program/hr1-frequently-asked-questions.pdf
+    read: '2026-11-18'
+  alaska_natives:
+    mark: meets
+    quote: American Indian or Alaska Native
+    url: https://www.hca.wa.gov/assets/program/hr1-provider-toolkit.pdf
+    read: '2026-11-18'
+  ihs_eligible:
+    mark: unpublished
+  california_indians:
+    mark: unpublished
+  data_first:
+    mark: unpublished
+    quote: If self-attestation or an exemption cannot be verified through data sources, patients may receive
+    url: https://www.hca.wa.gov/assets/program/hr1-frequently-asked-questions.pdf
+    read: '2026-11-18'
+  non_document_proof:
+    mark: meets
+    quote: HCA accepts self-attestation of AI/AN status, and this will not change for work requirements.
+    url: https://www.hca.wa.gov/assets/program/hr1-frequently-asked-questions.pdf
+    read: '2026-11-18'
+  tribal_or_clinic_channel:
+    mark: unpublished
+  status_not_rechecked:
+    mark: unpublished
+  twelve_month_renewal:
+    mark: meets
+    quote: They will continue to receive a 12-month coverage period instead of a 6-month coverage period.
+    url: https://www.hca.wa.gov/assets/free-or-low-cost/hr1-impacts-webinar-series-3.pdf
+    read: '2026-11-18'
+history: []
