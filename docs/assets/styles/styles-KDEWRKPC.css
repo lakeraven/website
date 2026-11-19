@@ -30488,6 +30488,24 @@ html[data-theme=dark] .usa-footer__logo-heading,
 html[data-theme=dark] .usa-footer__contact-info a {
   color: #f0f0f0;
 }
+html[data-theme=dark] .text-base,
+html[data-theme=dark] .text-base-dark {
+  color: #c6cace;
+}
+html[data-theme=dark] .usa-button--outline:not(.usa-button--inverse),
+html[data-theme=dark] .usa-button--outline:not(.usa-button--inverse):visited {
+  background-color: transparent;
+  color: #73b3e7;
+  box-shadow: inset 0 0 0 2px #73b3e7;
+}
+html[data-theme=dark] .usa-button--outline:not(.usa-button--inverse):hover,
+html[data-theme=dark] .usa-button--outline:not(.usa-button--inverse):focus,
+html[data-theme=dark] .usa-button--outline:not(.usa-button--inverse):visited:hover,
+html[data-theme=dark] .usa-button--outline:not(.usa-button--inverse):visited:focus {
+  background-color: transparent;
+  color: #f0f0f0;
+  box-shadow: inset 0 0 0 2px #f0f0f0;
+}
 html[data-theme=dark] .usa-skipnav:focus {
   background-color: #1a2430;
   color: #73b3e7;
@@ -30720,4 +30738,4 @@ html[data-theme=dark] .aian-ungraded {
 }
 /*! uswds @version */
 
-/*# sourceMappingURL=styles-3YXJQBT3.css.map */
+/*# sourceMappingURL=styles-KDEWRKPC.css.map */
