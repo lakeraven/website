@@ -358,3 +358,6 @@ html[data-theme="dark"] .post-body .fn-table tr:target { background: #3d3a1f; }
 html[data-theme="dark"] .aian-ungraded { background: #1c1d1f; border-left-color: #565c65; }
 @media (prefers-color-scheme: dark) { html:not([data-theme="light"]) .aian-ungraded { background: #1c1d1f; border-left-color: #565c65; } }
 .aian-sources tr:target { background: #fff5c2; }
+// Blog: and/or breakdown inside a table cell
+.post-body .route-logic { margin: 0.25rem 0 0; padding-left: 1.25rem; }
+.post-body .route-logic ul { margin: 0.25rem 0; padding-left: 1.25rem; }
