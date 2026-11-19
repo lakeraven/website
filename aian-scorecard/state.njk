@@ -38,7 +38,7 @@ eleventyComputed:
 <ol class="usa-list aian-fixes">
 {% for i in s.improvements %}
   <li id="fix-{{ i.id }}">
-    <p><strong>{{ i.label }}</strong> ({{ i.citation }})<br>
+    <p><strong>{{ i.label }}</strong> <span class="aian-src-wrap"><a class="aian-src" href="{{ ('/aian-medicaid-scorecard/#source-' + i.id) | url }}">Federal source</a></span><br>
     Now: {% if i.mark == 'contradicts' %}published policy contradicts this{% else %}nothing published{% endif %}.</p>
     <p>{% if i.mark == 'contradicts' %}Replace the conflicting policy with policy that says{% else %}Publish policy that says{% endif %} {{ i.fix }}.</p>
     <p>With this fix alone: {{ s.met }} of {{ sc.rubric.requirements.length }} becomes {{ s.met + 1 }} of {{ sc.rubric.requirements.length }}, and the grade {% if i.gradeIfFixed == s.grade %}stays {{ s.grade }}{% else %}rises to {{ i.gradeIfFixed }}{% endif %}.</p>
@@ -55,13 +55,14 @@ eleventyComputed:
 </section>
 {% endif %}
 
-<h2>Requirements</h2>
+<h2>Graded requirements</h2>
+<p>These {{ sc.rubric.requirements.length }} requirements decide the grade.</p>
 <table class="usa-table usa-table--borderless usa-table--stacked">
   <thead><tr><th scope="col">Requirement</th><th scope="col" class="aian-finding">Finding</th><th scope="col">What the state published</th></tr></thead>
   <tbody>
   {% for r in s.requirements %}
     <tr>
-      <th scope="row" data-label="Requirement">{{ r.label }}<br><span class="text-base">{{ r.citation }}</span></th>
+      <th scope="row" data-label="Requirement">{{ r.label }}<br><span class="text-base aian-src-wrap"><a class="aian-src" href="{{ ('/aian-medicaid-scorecard/#source-' + r.id) | url }}">Federal source</a></span></th>
       <td data-label="Finding" class="aian-finding">{% if r.mark == 'meets' %}Meets{% elif r.mark == 'contradicts' %}Contradicts{% else %}Not published{% endif %}</td>
       <td data-label="What the state published">{% if r.url %}&ldquo;{{ r.quote }}&rdquo; <a href="{{ r.url }}">Source</a>{% if r.read %}, read {{ r.read }}{% endif %}{% else %}Nothing found.{% endif %}{% if r.follow_up %}<br><strong>Flagged for follow-up:</strong> {{ r.follow_up }}{% endif %}</td>
     </tr>
@@ -69,10 +70,13 @@ eleventyComputed:
   </tbody>
 </table>
 
-<h2>Also reported (not graded)</h2>
+<section class="aian-ungraded" aria-labelledby="ungraded">
+<h2 id="ungraded">Also reported (not graded)</h2>
+<p>This is a tribal recommendation, not a CMS requirement, so it does not change the grade.</p>
 <ul class="usa-list">
 {% for b in s.bestPractices %}<li>{{ b.label }}: {% if b.mark == 'meets' %}yes{% elif b.mark == 'contradicts' %}no{% else %}nothing published{% endif %}{% if b.url %} (<a href="{{ b.url }}">source</a>){% endif %}</li>{% endfor %}
 </ul>
+</section>
 {% endif %}
 
 <h2>History</h2>

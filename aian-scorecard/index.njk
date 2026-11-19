@@ -40,9 +40,13 @@ description: How closely each state's published Medicaid policy follows CMS rule
 </ul>
 
 <h2>All states, ranked</h2>
-<p>Ranked by requirements met, then fewest contradicted, then fewest unpublished. The grade follows mechanically from those counts (see <a href="#rubric">How grades work</a>).</p>
+<p>Ranked by requirements met, then fewest contradicted, then fewest unpublished. See <a href="#rubric">How grades work</a> and <a href="#terms">Terms used</a>.</p>
 {% set im = sc.rubric.impact %}
-<p class="aian-legend"><strong>Impact</strong>: each {{ dots(1, 0) }} is {{ im.dot_size | aianNum }} American Indian and Alaska Native people we estimate could be exempt, rounded down, and {{ dots(0, 0.5) }} means fewer than {{ im.dot_size | aianNum }}. It is the 2020 Census American Indian and Alaska Native population times an assumed {{ (im.subject_share * 100) | round }}% who are expansion adults subject to the work rule; no published source gives that share. <strong>To fix</strong> lists every requirement the state does not meet: contradictions first, then requirements with no published policy. Each links to the fix on the state's page.</p>
+<ul class="usa-list aian-legend">
+  <li><strong>Score</strong>: how many of the {{ sc.summary.total }} requirements the state's published policy meets.</li>
+  <li><strong>Impact</strong>: roughly how many people could be exempt. Each {{ dots(1, 0) }} is about {{ im.dot_size | aianNum }} people, and {{ dots(0, 0.5) }} means fewer than {{ im.dot_size | aianNum }}. <a href="#impact-method">How we estimate this</a>.</li>
+  <li><strong>To fix</strong>: every requirement the state does not meet, contradictions first. Each links to the fix on the state's page.</li>
+</ul>
 <table class="usa-table usa-table--borderless usa-table--stacked aian-roster">
   <caption class="usa-sr-only">States ranked by requirements met, with grade, estimated impact, and the requirements each state still needs to fix</caption>
   <thead><tr><th scope="col">State</th><th scope="col">Score</th><th scope="col">Grade</th><th scope="col">Impact</th><th scope="col">To fix</th></tr></thead>
@@ -61,13 +65,38 @@ description: How closely each state's published Medicaid policy follows CMS rule
 </table>
 
 <h2 id="rubric">How grades work</h2>
-<p>Each state is checked against {{ aianScorecard.rubric.requirements.length }} requirements. For each one, published state policy either <strong>meets</strong> it, <strong>contradicts</strong> it, or has <strong>not published</strong> anything. Silence never counts as meeting a requirement.</p>
-<table class="usa-table usa-table--borderless">
-  <thead><tr><th scope="col">Requirement</th><th scope="col">Source</th></tr></thead>
-  <tbody>{% for r in sc.rubric.requirements %}<tr><td>{{ r.label }}</td><td>{{ r.citation }}</td></tr>{% endfor %}</tbody>
-</table>
+<ul class="usa-list">
+  <li>Each state is checked against {{ sc.rubric.requirements.length }} requirements from federal law.</li>
+  <li>For each requirement, the state's published policy either <strong>meets</strong> it, <strong>contradicts</strong> it, or says nothing (<strong>not published</strong>).</li>
+  <li>Saying nothing never counts as meeting a requirement.</li>
+  <li>The grade follows from those counts:</li>
+</ul>
 <table class="usa-table usa-table--borderless">
   <thead><tr><th scope="col">Grade</th><th scope="col">Rule</th></tr></thead>
   <tbody>{% for g in sc.rubric.grades %}<tr><td>{{ g.grade }}</td><td>{{ g.rule }}</td></tr>{% endfor %}</tbody>
 </table>
-<p>We also report, but do not grade, {% for b in sc.rubric.best_practices %}{{ b.label | lower }} ({{ b.citation | lower }}){% endfor %}.</p>
+<p>Not graded: {% for b in sc.rubric.best_practices %}we also report whether a state offers {{ b.label | lower }}. It is a tribal recommendation, not a CMS requirement, so it does not affect the grade.{% endfor %}</p>
+
+<h2 id="impact-method">How we estimate impact</h2>
+<ul class="usa-list">
+  <li>We start from each state's 2020 Census count of people who identify as American Indian or Alaska Native alone.</li>
+  <li>We assume {{ (im.subject_share * 100) | round }}% of them are adults in the Medicaid expansion group, the people the new rules cover. No published source gives that share, so this is our estimate.</li>
+  <li>Each {{ dots(1, 0) }} is {{ im.dot_size | aianNum }} people, rounded down. A state under {{ im.dot_size | aianNum }} shows {{ dots(0, 0.5) }}.</li>
+  <li>Where a state has published its own count, we show it beside the estimate.</li>
+</ul>
+
+<h2 id="terms">Terms used</h2>
+<ul class="usa-list">
+  <li><strong>Expansion group</strong>: adults aged 19 to 64 who qualify for Medicaid because their state expanded it under the Affordable Care Act. The new work requirement and six-month renewals apply only to this group.</li>
+  <li><strong>Work requirement</strong>: the rule that some adults show work or other activities to keep Medicaid. Federal rules call it the community engagement requirement. Alaska calls it WCER, for work and community engagement requirements.</li>
+  <li><strong>Renewal</strong> (also called redetermination): the state's regular check that someone still qualifies for Medicaid.</li>
+  <li><strong>Published policy</strong>: anything the state has made public, such as a web page, manual, notice, form, plan amendment, or waiver.</li>
+  <li><strong>Not subject</strong>: a state that has not expanded Medicaid, so these rules do not apply there.</li>
+</ul>
+
+<h2 id="sources">Federal sources</h2>
+<p>What each requirement comes from, in plain language.</p>
+<table class="usa-table usa-table--borderless aian-sources">
+  <thead><tr><th scope="col">Requirement</th><th scope="col">What federal law says</th><th scope="col">Source</th></tr></thead>
+  <tbody>{% for r in sc.rubric.requirements %}<tr id="source-{{ r.id }}"><td>{{ r.label }}</td><td>{{ r.plain }}</td><td><a href="{{ r.source_url }}">{{ r.citation }}</a></td></tr>{% endfor %}</tbody>
+</table>

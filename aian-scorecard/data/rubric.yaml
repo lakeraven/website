@@ -9,60 +9,80 @@ requirements:
     short: Tribal members
     label: Members of federally recognized tribes, including Alaska Native villages
     citation: 42 CFR 447.51 (route 1)
+    plain: "Members of any federally recognized tribe, including Alaska Native villages and corporations, meet the federal definition of Indian."
+    source_url: https://www.law.cornell.edu/cfr/text/42/447.51
     fix: members of any federally recognized tribe, including Alaska Native villages and regional or village corporations, are exempt
     model: OR
   - id: urban_and_descendants
     short: Urban Indians and descendants
     label: Urban Indians, including members of terminated or state-recognized tribes and first- or second-degree descendants
     citation: 42 CFR 447.51 (route 2); 25 U.S.C. 1603(28)
+    plain: "People who live in an urban center HHS designates and belong to any tribe (including tribes terminated since 1940 or recognized by the state they live in), or are a child or grandchild of a member, meet the definition."
+    source_url: https://www.law.cornell.edu/uscode/text/25/1603
     fix: urban Indians are exempt, including members of terminated or state-recognized tribes and the children and grandchildren of tribal members
     model: WI
   - id: alaska_natives
     short: Alaska Natives
     label: Alaska Natives
     citation: 42 CFR 447.51 (routes 2 and 4)
+    plain: "Alaska Natives meet the definition."
+    source_url: https://www.law.cornell.edu/cfr/text/42/447.51
     fix: Alaska Natives are exempt
     model: NE
   - id: ihs_eligible
     short: IHS-eligible
     label: Anyone eligible for Indian Health Service, tribal or urban Indian program services
     citation: 42 CFR 447.51 (route 4); 42 CFR 136.12
+    plain: "Anyone eligible as an Indian for Indian Health Service care meets the definition."
+    source_url: https://www.law.cornell.edu/cfr/text/42/136.12
     fix: anyone eligible for services from the Indian Health Service or a tribal or urban Indian health program is exempt
     model: OR
   - id: california_indians
     short: California Indians
     label: California Indians
     citation: 42 CFR 447.51 (route 4); 25 U.S.C. 1679(a)
+    plain: "California Indians who are eligible for Indian health care under federal law meet the definition."
+    source_url: https://www.law.cornell.edu/uscode/text/25/1679
     fix: California Indians, as defined at 25 U.S.C. 1679(a), are exempt
     model: IL
   - id: data_first
     short: Check own data first
     label: State checks its own records (claims, eligibility data) before asking the person
     citation: 42 CFR 435.557(b), (c)(1)
+    plain: "The state must check reliable information it already holds, such as its eligibility records and recent claims, before asking the person."
+    source_url: https://www.govinfo.gov/content/pkg/FR-2026-06-29/pdf/C1-2026-11094.pdf
     fix: the state first checks records it already holds, such as prior American Indian or Alaska Native status and claims from Indian health providers, before asking the person for anything
     model: MT
   - id: non_document_proof
     short: Proof without documents
     label: Accepts proof other than documents; no denial solely for missing documents
     citation: 42 CFR 435.557(b)(2)
+    plain: "The state may never deny or end coverage only because documents don't exist. When no documents are reasonably available, it must accept other information."
+    source_url: https://www.govinfo.gov/content/pkg/FR-2026-06-29/pdf/C1-2026-11094.pdf
     fix: a person can qualify without documents, for example by self-attestation, and is never denied only for lacking documents
     model: OR
   - id: status_not_rechecked
     short: No re-checks
     label: Status is not re-checked between renewals
     citation: 42 CFR 435.557(d)(4)
+    plain: "Once a person is excluded, the state may not verify again before the next scheduled renewal unless it learns something changed."
+    source_url: https://www.govinfo.gov/content/pkg/FR-2026-06-29/pdf/C1-2026-11094.pdf
     fix: once a person's status is established it stays on file and is not checked again, including at renewal
     model: OR
   - id: twelve_month_renewal
     short: 12-month renewals
     label: Keeps 12-month renewals for American Indians and Alaska Natives in the expansion group
     citation: Social Security Act 1902(e)(14)(L)(ii); CMS SMD 26-001
+    plain: "American Indians and Alaska Natives in the expansion group keep renewals every 12 months instead of every six."
+    source_url: https://www.ssa.gov/OP_Home/ssact/title19/1902.htm
     fix: American Indians and Alaska Natives in the expansion group keep 12-month renewals
     model: OK
   - id: out_of_state
     short: Out-of-state tribes
     label: Covers members of any federally recognized tribe, not only tribes in the state, and accepts proof from people whose tribe is elsewhere
     citation: 42 CFR 447.51 (route 1); 25 U.S.C. 1603(13), (14)
+    plain: "The definition covers members of every federally recognized tribe, wherever the tribe is based."
+    source_url: https://www.law.cornell.edu/uscode/text/25/1603
     fix: members of tribes based in other states are exempt, with the same ways to show it as members of in-state tribes
     model: OR
 # Impact: estimated people a state's policy reaches: one whole dot per dot_size people, rounded down;

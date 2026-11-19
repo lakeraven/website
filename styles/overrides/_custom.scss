@@ -344,3 +344,11 @@ html[data-theme="dark"] .post-body table {
 .post-body .fn-table tr:target { background: #fff5c2; }
 html[data-theme="dark"] .post-body .fn-table tr:target { background: #3d3a1f; }
 .post-body .fn-back { text-decoration: none; }
+
+// Scorecard: federal source links and ungraded box
+.aian-src { font-size: 0.875em; }
+.aian-ungraded { border-left: 4px solid #a9aeb1; background: #f0f0f0; padding: 0.5rem 1rem 0.75rem; margin: 1.5rem 0; }
+.aian-ungraded h2 { margin-top: 0.5rem; }
+html[data-theme="dark"] .aian-ungraded { background: #1c1d1f; border-left-color: #565c65; }
+@media (prefers-color-scheme: dark) { html:not([data-theme="light"]) .aian-ungraded { background: #1c1d1f; border-left-color: #565c65; } }
+.aian-sources tr:target { background: #fff5c2; }
