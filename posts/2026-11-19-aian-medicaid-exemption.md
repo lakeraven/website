@@ -27,7 +27,7 @@ This post is for state eligibility staff, their vendors, and leaders of Indian h
 
 For the work requirement, a person is excluded if they "meet the definition of Indian at § 447.51" ([42 CFR 435.554(c)(2)](https://www.federalregister.gov/documents/2026/06/03/2026-11094/medicaid-program-community-engagement-requirement-for-certain-individuals)). The six-month renewal exemption covers the same groups in the statute, so they keep annual renewals (Social Security Act section 1902(e)(14)(L)(ii); CMS letter [SMD 26-001](https://www.medicaid.gov/federal-policy-guidance/downloads/smd26001.pdf)). The definition has four routes, and only the first requires membership in a federally recognized tribe:
 
-| Route ([42 CFR 447.51](https://www.law.cornell.edu/cfr/text/42/447.51)) | Must live in an urban center? | Federally recognized tribal membership needed? |
+| Route ([42 CFR 447.51](https://www.law.cornell.edu/cfr/text/42/447.51)) | Urban center required? | Recognized-tribe membership required? |
 |---|---|---|
 | Member of a federally recognized tribe, including an Alaska Native village or Alaska Native corporation | No | Yes |
 | Urban Indian: lives in an urban center (a community HHS designates; [25 U.S.C. 1603(27)](https://www.law.cornell.edu/uscode/text/25/1603)) and is a member of any tribe, band or group (including terminated or state-recognized ones) or a first- or second-degree descendant of a member; or is Eskimo, Aleut or other Alaska Native; or is considered an Indian by Interior or under HHS rules | Yes | No |
