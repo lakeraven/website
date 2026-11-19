@@ -30614,6 +30614,67 @@ html[data-theme=dark] .post-body table td {
   border-bottom-color: #3d4551;
   background: transparent;
 }
+.post-body .fn-ref {
+  font-size: 0.75em;
+  line-height: 0;
+  margin-left: 0.1em;
+}
+.post-body .fn-ref a {
+  text-decoration: none;
+}
+.post-body table.fn-table {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+.post-body .fn-table th:first-child,
+.post-body .fn-table td:first-child {
+  width: 2.5rem;
+}
+.post-body .fn-table th:nth-child(2),
+.post-body .fn-table td:nth-child(2) {
+  width: 38%;
+}
+@media (max-width: 39.99em) {
+  .post-body table.fn-table,
+  .post-body .fn-table tbody {
+    display: block;
+  }
+  .post-body .fn-table thead {
+    display: none;
+  }
+  .post-body .fn-table tr {
+    display: grid;
+    grid-template-columns: 2rem 1fr;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #dfe1e2;
+  }
+  .post-body .fn-table td {
+    display: block;
+    width: auto !important;
+    border: 0;
+    padding: 0 0 0.25rem 0;
+  }
+  .post-body .fn-table td:nth-child(3) {
+    grid-column: 2;
+  }
+}
+.post-body .fn-table td:first-child {
+  white-space: nowrap;
+  vertical-align: top;
+}
+.post-body .fn-table td {
+  vertical-align: top;
+}
+.post-body .fn-table tr:target {
+  background: #fff5c2;
+}
+html[data-theme=dark] .post-body .fn-table tr:target {
+  background: #3d3a1f;
+}
+.post-body .fn-back {
+  text-decoration: none;
+}
 /*! uswds @version */
 
-/*# sourceMappingURL=styles-GKTZKOT7.css.map */
+/*# sourceMappingURL=styles-CBZ6EIFA.css.map */
