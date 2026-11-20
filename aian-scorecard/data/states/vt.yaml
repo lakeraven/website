@@ -47,7 +47,7 @@ components:
     mark: unpublished
     note: '"Auditable self-attestation" in 2027'
   status_not_rechecked:
-    mark: contradicts
+    mark: disputed
     quote: After that, you will have to renew your Medicaid every 6 months, with a 6-month lookback period.
     url: https://dvha.vermont.gov/medicaid-changes/how-to-meet-medicaid-work-requirements
     read: '2026-10-11'
@@ -56,4 +56,9 @@ components:
     quote: Medicaid eligibility reviewed every six months instead of once a year.
     url: https://dvha.vermont.gov/medicaid-changes
     read: '2026-10-11'
-history: []
+history:
+  - date: '2026-11-20'
+    from: D
+    to: C
+    change: "We changed how we grade re-checks at renewal. The regulation bars checking status again between scheduled renewals; CMS's preamble says states may not reverify at all. A published check at renewal now shows as disputed: it no longer counts as a contradiction, and it does not count as met."
+    url: https://dvha.vermont.gov/medicaid-changes/how-to-meet-medicaid-work-requirements

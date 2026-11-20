@@ -46,7 +46,7 @@ components:
     url: https://www.dphhs.mt.gov/assets/medicaidchanges/AppendixB-CommunityEngagementExclusionForm.pdf
     read: '2026-11-18'
   status_not_rechecked:
-    mark: contradicts
+    mark: disputed
     quote: Where auditable self-declaration is accepted, the department generally verifies the information at redetermination,
     url: https://dphhs.mt.gov/medicaidchanges/VerificationMatrix
     read: '2026-11-18'
@@ -55,4 +55,9 @@ components:
     quote: This does not apply to American Indian/Alaskan Natives, as they must redetermine coverage every 12 months.
     url: https://dphhs.mt.gov/medicaidchanges/faqs
     read: '2026-11-18'
-history: []
+history:
+  - date: '2026-11-20'
+    from: C
+    to: B
+    change: "We changed how we grade re-checks at renewal. The regulation bars checking status again between scheduled renewals; CMS's preamble says states may not reverify at all. A published check at renewal now shows as disputed: it no longer counts as a contradiction, and it does not count as met."
+    url: https://dphhs.mt.gov/medicaidchanges/VerificationMatrix

@@ -44,7 +44,7 @@ module.exports = function () {
   }
   const withMark = (s, id, mark) => ({ ...s, components: { ...(s.components || {}), [id]: { mark } } });
   for (const s of states) {
-    if (s.status === "not_subject") { s.improvements = []; s.fixContradicts = []; s.fixUnpublished = []; continue; }
+    if (s.status === "not_subject") { s.improvements = []; s.fixContradicts = []; s.fixUnpublished = []; s.fixDisputed = []; continue; }
     s.improvements = s.requirements.filter((r) => r.mark !== "meets").map((r) => {
       const m = byCode[r.model];
       const mc = m.requirements.find((x) => x.id === r.id);
@@ -55,7 +55,8 @@ module.exports = function () {
       };
     });
     // Contradictions first: fixing one lowers the contradiction count and raises the score together.
-    s.improvements.sort((a, b) => (a.mark === "contradicts" ? 0 : 1) - (b.mark === "contradicts" ? 0 : 1));
+    const order = { contradicts: 0, disputed: 1, unpublished: 2 };
+    s.improvements.sort((a, b) => order[a.mark] - order[b.mark]);
     // Smallest set of fixes, in that order, that reaches a better grade.
     const rank = ["A", "B", "C", "D", "F", "Not graded"];
     s.nextStep = null;
@@ -70,6 +71,7 @@ module.exports = function () {
     }
     s.fixContradicts = s.improvements.filter((i) => i.mark === "contradicts");
     s.fixUnpublished = s.improvements.filter((i) => i.mark === "unpublished");
+    s.fixDisputed = s.improvements.filter((i) => i.mark === "disputed");
     s.gradeIfAllFixed = gradeState({ ...s, components: Object.fromEntries(rubric.requirements.map((r) => [r.id, { mark: "meets" }])) }, rubric).grade;
   }
 
@@ -108,6 +110,7 @@ module.exports = function () {
     allMet: subject.filter((s) => s.met === total).length,
     median,
     anyContradiction: subject.filter((s) => s.contradicts > 0).length,
+    anyDisputed: subject.filter((s) => s.disputed > 0).length,
     tribalChannel: subject.filter((s) => s.bestPractices.some((b) => b.id === "tribal_or_clinic_channel" && b.mark === "meets")).length,
   };
   // Roster order: by score (most met, then fewest contradicted, then fewest silent), then name.

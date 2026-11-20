@@ -55,7 +55,7 @@ components:
     url: https://dam.assets.ohio.gov/image/upload/medicaid.ohio.gov/Families%2C%20Individuals/Programs/Community/Group_VIII_Partner_Packet_08132026.pdf
     read: '2026-11-18'
   status_not_rechecked:
-    mark: contradicts
+    mark: disputed
     quote: The member only needs to show exemption or compliance for at least one month since the last renewal.
     url: https://dam.assets.ohio.gov/image/upload/medicaid.ohio.gov/Families%2C%20Individuals/Programs/Community/Group_VIII_Partner_Packet_08132026.pdf
     read: '2026-11-18'
@@ -64,4 +64,9 @@ components:
     quote: Beginning January 1, 2027, federal law will require renewals to take place every six months.
     url: https://dam.assets.ohio.gov/image/upload/medicaid.ohio.gov/Families%2C%20Individuals/Programs/Community/Group_VIII_Partner_Packet_08132026.pdf
     read: '2026-11-18'
-history: []
+history:
+  - date: '2026-11-20'
+    from: F
+    to: D
+    change: "We changed how we grade re-checks at renewal. The regulation bars checking status again between scheduled renewals; CMS's preamble says states may not reverify at all. A published check at renewal now shows as disputed: it no longer counts as a contradiction, and it does not count as met."
+    url: https://dam.assets.ohio.gov/image/upload/medicaid.ohio.gov/Families%2C%20Individuals/Programs/Community/Group_VIII_Partner_Packet_08132026.pdf

@@ -26,7 +26,7 @@ eleventyComputed:
 {% if s.status == 'not_subject' %}
 <p class="font-sans-lg"><strong>Not subject.</strong> {{ s.name }} has not expanded Medicaid, so the expansion-group work requirement and six-month renewals do not apply.{% if not s.confirmed %} (Status to be confirmed from a primary source.){% endif %}</p>
 {% else %}
-<p class="font-sans-lg">Grade: <strong>{{ s.grade }}</strong>. Meets {{ s.met }} of {{ aianScorecard.rubric.requirements.length }} requirements, contradicts {{ s.contradicts }}, and has not published policy on {{ s.unpublished }}.</p>
+<p class="font-sans-lg">Grade: <strong>{{ s.grade }}</strong>. Meets {{ s.met }} of {{ aianScorecard.rubric.requirements.length }} requirements, contradicts {{ s.contradicts }}, {% if s.disputed %}is disputed on {{ s.disputed }}, {% endif %}and has not published policy on {{ s.unpublished }}.</p>
 <p>Evidence last checked {{ s.checked }}.{% if s.start %} Work requirement start date: {{ s.start }}.{% endif %}</p>
 
 {% if s.improvements.length %}
@@ -41,8 +41,8 @@ eleventyComputed:
 {% for i in s.improvements %}
   <li id="fix-{{ i.id }}">
     <p><strong>{{ i.label }}</strong> <span class="aian-src-wrap"><a class="aian-src" href="{{ ('/aian-medicaid-scorecard/#source-' + i.id) | url }}">Federal source</a></span><br>
-    Now: {% if i.mark == 'contradicts' %}published policy contradicts this{% else %}nothing published{% endif %}.</p>
-    <p>{% if i.mark == 'contradicts' %}Replace the conflicting policy with policy that says{% else %}Publish policy that says{% endif %} {{ i.fix }}.</p>
+    Now: {% if i.mark == 'contradicts' %}published policy contradicts this{% elif i.mark == 'disputed' %}published policy checks status again at renewal, which the regulation allows but CMS's preamble says states may not do (disputed){% else %}nothing published{% endif %}.</p>
+    <p>{% if i.mark == 'contradicts' or i.mark == 'disputed' %}Replace that policy with policy that says{% else %}Publish policy that says{% endif %} {{ i.fix }}.</p>
     <p>With this fix alone: {{ s.met }} of {{ sc.rubric.requirements.length }} becomes {{ s.met + 1 }} of {{ sc.rubric.requirements.length }}, and the grade {% if i.gradeIfFixed == s.grade %}stays {{ s.grade }}{% else %}rises to {{ i.gradeIfFixed }}{% endif %}.</p>
     <p>Model language from <a href="{{ ('/aian-medicaid-scorecard/' + i.model.slug + '/') | url }}">{{ i.model.name }}</a>: &ldquo;{{ i.model.quote }}&rdquo; <a href="{{ i.model.url }}">Source</a></p>
     <p><a class="usa-button usa-button--outline" href="{{ sub.form_url }}?usp=pp_url&amp;{{ sub.form_state_entry }}={{ formState | urlencode }}&amp;{{ sub.form_requirement_entry }}={{ i.short | urlencode }}" aria-label="Submit evidence for {{ i.short }}">Submit evidence for this requirement</a></p>
@@ -61,8 +61,8 @@ eleventyComputed:
   {% for r in s.requirements %}
     <tr>
       <th scope="row" data-label="Requirement">{{ r.label }}<br><span class="text-base aian-src-wrap"><a class="aian-src" href="{{ ('/aian-medicaid-scorecard/#source-' + r.id) | url }}">Federal source</a></span></th>
-      <td data-label="Finding" class="aian-finding">{% if r.mark == 'meets' %}Meets{% elif r.mark == 'contradicts' %}Contradicts{% else %}Not published{% endif %}</td>
-      <td data-label="What the state published">{% if r.url %}&ldquo;{{ r.quote }}&rdquo; <a href="{{ r.url }}">Source</a>{% if r.read %}, read {{ r.read }}{% endif %}{% else %}Nothing found.{% endif %}{% if r.follow_up %}<br><strong>Flagged for follow-up:</strong> {{ r.follow_up }}{% endif %}</td>
+      <td data-label="Finding" class="aian-finding">{% if r.mark == 'meets' %}Meets{% elif r.mark == 'contradicts' %}Contradicts{% elif r.mark == 'disputed' %}{{ r.disputed_label }}{% else %}Not published{% endif %}</td>
+      <td data-label="What the state published">{% if r.url %}&ldquo;{{ r.quote }}&rdquo; <a href="{{ r.url }}">Source</a>{% if r.read %}, read {{ r.read }}{% endif %}{% else %}Nothing found.{% endif %}{% if r.follow_up %}<br><strong>Flagged for follow-up:</strong> {{ r.follow_up }}{% endif %}{% if r.interpretation and (r.mark == 'disputed' or r.mark == 'contradicts') %}<br><strong>A conflict in CMS's own rules:</strong> {{ r.interpretation }} {% for x in r.interpretation_sources %}<a href="{{ x.url }}">{{ x.label }}</a>{% if not loop.last %}; {% endif %}{% endfor %}.{% endif %}</td>
     </tr>
   {% endfor %}
   </tbody>

@@ -46,7 +46,7 @@ components:
   tribal_or_clinic_channel:
     mark: unpublished
   status_not_rechecked:
-    mark: contradicts
+    mark: disputed
     quote: You need to report your exemption at your next renewal
     url: https://www.pa.gov/content/dam/copapwp-pagov/en/dhs/documents/medicaid/hr1-related/faq-medicaid-changes-hr1.pdf
     read: '2026-11-18'
@@ -55,4 +55,9 @@ components:
     quote: Starting in January 2027, some adults will have to renew their Medicaid every six months instead of every year.
     url: https://www.pa.gov/content/dam/copapwp-pagov/en/dhs/documents/medicaid/hr1-related/faq-medicaid-changes-hr1.pdf
     read: '2026-11-18'
-history: []
+history:
+  - date: '2026-11-20'
+    from: F
+    to: F
+    change: "We changed how we grade re-checks at renewal. The regulation bars checking status again between scheduled renewals; CMS's preamble says states may not reverify at all. A published check at renewal now shows as disputed: it no longer counts as a contradiction, and it does not count as met."
+    url: https://www.pa.gov/content/dam/copapwp-pagov/en/dhs/documents/medicaid/hr1-related/faq-medicaid-changes-hr1.pdf

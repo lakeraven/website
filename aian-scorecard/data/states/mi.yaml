@@ -40,7 +40,7 @@ components:
   tribal_or_clinic_channel:
     mark: unpublished
   status_not_rechecked:
-    mark: contradicts
+    mark: disputed
     quote: MDHHS will check to see if you're meeting work requirements at each HMP renewal.
     url: https://www.michigan.gov/healthymiplan/new-medicaid-work-requirements
     read: '2026-11-18'
@@ -49,4 +49,9 @@ components:
     quote: Most HMP beneficiaries will also transition from annual renewals to sixmonth renewals.
     url: https://content.govdelivery.com/attachments/MIDHHS/2026/07/23/file_attachments/3722908/Work%20Requirements%20NR.pdf
     read: '2026-11-18'
-history: []
+history:
+  - date: '2026-11-20'
+    from: C
+    to: C
+    change: "We changed how we grade re-checks at renewal. The regulation bars checking status again between scheduled renewals; CMS's preamble says states may not reverify at all. A published check at renewal now shows as disputed: it no longer counts as a contradiction, and it does not count as met."
+    url: https://www.michigan.gov/healthymiplan/new-medicaid-work-requirements
