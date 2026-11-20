@@ -168,7 +168,9 @@ Most states fall short in the same few ways. The counts below are from the score
 
 States, tribes and Indian health programs can send new evidence from any state's page: choose "Submit evidence", share a public link to the policy, and we review it within 10 business days. If your vendor, tribal liaison or health director needs this, send it on.
 
-**Coming soon:** a companion post, *Getting the AI/AN exemption right in Medicaid eligibility systems*, on what these fixes look like inside a state's eligibility system, and a set of test scenarios that states and vendors can run against their own systems.
+Stating the rule correctly is only the first step. A grade measures what a state has published, not what its eligibility system does. The exemption protects people only if the system applies it: it checks the state's own data first, doesn't re-check a person's status before the next renewal, keeps renewals at 12 months,<sup class="fn-ref"><a href="#ref-6" aria-label="Reference 6">6</a>,<a href="#ref-13" aria-label="Reference 13">13</a></sup> and records a failed data match as "unknown," not "no." That next step applies to every state, including the three that earn an A.
+
+**Coming soon:** a companion post, *Getting the AI/AN exemption right in Medicaid eligibility systems*, on how to build these rules into a state's eligibility system, and a set of test scenarios that states and vendors can run against their own systems.
 
 *Lakeraven builds software for Indian health care providers.*
 
