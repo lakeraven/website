@@ -51,13 +51,19 @@ components:
     url: https://www.pa.gov/content/dam/copapwp-pagov/en/dhs/documents/medicaid/hr1-related/faq-medicaid-changes-hr1.pdf
     read: '2026-11-18'
   twelve_month_renewal:
-    mark: contradicts
+    mark: unpublished
     quote: Starting in January 2027, some adults will have to renew their Medicaid every six months instead of every year.
     url: https://www.pa.gov/content/dam/copapwp-pagov/en/dhs/documents/medicaid/hr1-related/faq-medicaid-changes-hr1.pdf
     read: '2026-11-18'
+    follow_up: "\"Some adults\" doesn't clearly include American Indians and Alaska Natives, so under our round-down rule this isn't a contradiction. We count this as not published."
 history:
   - date: '2026-11-20'
     from: F
     to: F
     change: "We changed how we grade re-checks at renewal. The regulation bars checking status again between scheduled renewals; CMS's preamble says states may not reverify at all. A published check at renewal now shows as disputed: it no longer counts as a contradiction, and it does not count as met."
+    url: https://www.pa.gov/content/dam/copapwp-pagov/en/dhs/documents/medicaid/hr1-related/faq-medicaid-changes-hr1.pdf
+  - date: '2026-11-20'
+    from: "F"
+    to: "F"
+    change: "We now round down when a state's wording is unclear. \"Some adults\" renew every six months doesn't clearly include American Indians and Alaska Natives, so 12-month renewals now count as not published instead of a contradiction."
     url: https://www.pa.gov/content/dam/copapwp-pagov/en/dhs/documents/medicaid/hr1-related/faq-medicaid-changes-hr1.pdf

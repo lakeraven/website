@@ -43,13 +43,20 @@ components:
   tribal_or_clinic_channel:
     mark: unpublished
   status_not_rechecked:
-    mark: contradicts
+    mark: unpublished
     quote: 'Individuals are considered to have an exception for part of or all of a month if they are:'
     url: https://pathways.georgia.gov/node/1646
     read: '2026-11-18'
+    follow_up: "This sentence is about monthly exceptions in Pathways generally. It doesn't clearly say American Indian or Alaska Native status is checked again, so under our round-down rule it isn't a contradiction. We count this as not published."
   twelve_month_renewal:
-    mark: meets
+    mark: unpublished
     quote: continuing monthly during Pathways enrollment, and at annual renewal
     url: https://pathways.georgia.gov/node/1646
     read: '2026-11-18'
-history: []
+    follow_up: "This sentence describes when Pathways checks participation, not how often American Indians and Alaska Natives renew. Under our round-down rule this counts as not published."
+history:
+  - date: '2026-11-20'
+    from: "C"
+    to: "Not graded"
+    change: "We now round down when a state's wording is unclear. Neither the re-check sentence nor the renewal sentence is clearly about American Indian or Alaska Native status, so both now count as not published. With eight requirements unpublished, Georgia is not graded."
+    url: https://pathways.georgia.gov/node/1646

@@ -40,13 +40,20 @@ components:
   tribal_or_clinic_channel:
     mark: unpublished
   status_not_rechecked:
-    mark: contradicts
+    mark: unpublished
     quote: Re-evaluations will occur every six‑months
     url: https://healthandwelfare.idaho.gov/services-programs/medicaid-health/medicaid-expansion
     read: '2026-11-18'
+    follow_up: "Idaho's general statement about six-month re-evaluations doesn't say whether American Indian or Alaska Native status is checked again. Under our round-down rule it isn't a contradiction. We count this as not published."
   twelve_month_renewal:
-    mark: contradicts
+    mark: unpublished
     quote: verify their work history or community service participation twice a year
     url: https://healthandwelfare.idaho.gov/news/idaho-department-health-and-welfare-announces-work-requirements-medicaid-expansion-recipients
     read: '2026-11-18'
-history: []
+    follow_up: "This sentence is about verifying work or community service twice a year, not about renewal periods for American Indians and Alaska Natives. Under our round-down rule it isn't a contradiction. We count this as not published."
+history:
+  - date: '2026-11-20'
+    from: "D"
+    to: "C"
+    change: "We now round down when a state's wording is unclear. Idaho's six-month re-evaluations and twice-a-year work checks aren't clearly about American Indian or Alaska Native status or renewal periods, so both now count as not published instead of contradictions."
+    url: https://healthandwelfare.idaho.gov/services-programs/medicaid-health/medicaid-expansion

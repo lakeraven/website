@@ -11,7 +11,8 @@ description: How closely each state's published Medicaid policy follows CMS rule
 {% endif %}
 
 <h1>American Indian and Alaska Native Medicaid exemption scorecard</h1>
-<p class="aian-disclaimer"><strong>Grades are our sourced assessment as of {{ sc.lastChecked }}.</strong> We will be wrong sometimes, and we correct quickly when shown published policy. <a href="{{ sc.rubric.submission.form_url }}">Send us a link</a>, or see <a href="{{ '/aian-medicaid-scorecard/process/' | url }}">how corrections work</a>. Each state's page lists every change we have made.</p>
+<p class="aian-disclaimer"><strong>Grades are our sourced assessment as of {{ sc.lastChecked }}.</strong> We will be wrong sometimes, and we correct quickly when shown published policy. <a href="{{ sc.rubric.submission.form_url }}">Send us a published policy link</a>, or see <a href="{{ '/aian-medicaid-scorecard/process/' | url }}">how corrections work</a>. Each state's page lists every change we have made.</p>
+<p class="aian-disclaimer" id="round-down"><strong>If there's any question, we round down.</strong> {{ sc.rubric.round_down | replace("If there's any question, we round down. ", "") }}</p>
 {% set sm = sc.summary %}
 {% set rq = sc.rubric.requirements | selectattr("interpretation") | first %}
 <div class="usa-alert usa-alert--info usa-alert--slim aian-cms-conflict"><div class="usa-alert__body"><p class="usa-alert__text"><strong>A conflict in CMS's own rules.</strong> {{ rq.interpretation }} Sources: {% for x in rq.interpretation_sources %}<a href="{{ x.url }}">{{ x.label }}</a>{% if not loop.last %}; {% endif %}{% endfor %}.</p></div></div>
@@ -19,7 +20,7 @@ description: How closely each state's published Medicaid policy follows CMS rule
 
 <p>Federal law exempts American Indians and Alaska Natives from Medicaid's new work requirement and keeps their renewals at 12 months. This scorecard grades how closely each state's <strong>published</strong> policy follows the CMS rules that carry out those protections. It measures what states have written down, not what happens at every eligibility office.</p>
 
-<p>Grades update as states publish new policy. A state, tribe, or Indian health program can <a href="{{ '/aian-medicaid-scorecard/process/' | url }}">submit evidence</a> on any state's page. Last checked {{ sc.lastChecked }}.</p>
+<p>Grades update as states publish new policy. A state, tribe, or Indian health program can <a href="{{ '/aian-medicaid-scorecard/process/' | url }}">send a published policy link</a> from any state's page. Last checked {{ sc.lastChecked }}.</p>
 
 <h2>By the numbers</h2>
 <ul class="usa-list">
@@ -33,7 +34,7 @@ description: How closely each state's published Medicaid policy follows CMS rule
 <h2 id="how-grades-change">How a state raises its grade</h2>
 <ol class="usa-list">
   <li><strong>Publish a qualifying policy.</strong> Each state's page lists every requirement it does not yet meet, the policy that would meet it, model language from a state that already does, and the grade the state would reach.</li>
-  <li><strong>Send us the public link.</strong> Use the Submit evidence button on the state's page. A state agency, tribe, Indian health program, or anyone else can submit, and evidence from tribes and Indian health programs counts the same as the state's.</li>
+  <li><strong>Send us the published policy link.</strong> Use the Send a published policy link button on the state's page. A state agency, tribe, Indian health program, or anyone else can submit, and evidence from tribes and Indian health programs counts the same as the state's.</li>
   <li><strong>We review within {{ sc.rubric.submission.review_business_days }} business days.</strong> The state's page shows Evidence under review until we finish.</li>
   <li><strong>The grade updates.</strong> An upgrade publishes right away. A downgrade waits {{ sc.rubric.submission.downgrade_notice_days }} days after we notify the state. Every change is listed in the state's history with its date and source.</li>
 </ol>
@@ -74,6 +75,7 @@ description: How closely each state's published Medicaid policy follows CMS rule
   <li>For each requirement, the state's published policy either <strong>meets</strong> it, <strong>contradicts</strong> it, or says nothing (<strong>not published</strong>).</li>
   <li>One more mark applies only to re-checks: <strong>disputed</strong>, for a published check at renewal. The regulation allows it but CMS's preamble says states may not reverify. Disputed counts neither as met nor as a contradiction. See the note on CMS's conflicting rules at the top of this page.</li>
   <li>Saying nothing never counts as meeting a requirement.</li>
+  <li><strong>If there's any question, we round down.</strong> A requirement is met only when the state's published words clearly commit to it. It is contradicted only when the state's words clearly apply to American Indians and Alaska Natives and conflict with the federal rule. Hedged (such as &ldquo;may&rdquo; or &ldquo;some adults&rdquo;), implied, or general wording counts as not published. We don't adjudicate what a state meant; the state can clarify its own published policy.</li>
   <li>The grade follows from those counts:</li>
 </ul>
 <table class="usa-table usa-table--borderless">

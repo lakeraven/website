@@ -1,5 +1,10 @@
 # Grading rubric. Approved 2026-11-18.
 approved: true
+# Round-down rule (Kimball, 20 Nov 2026): if there is any question, round down. "meets" needs clear
+# published state text that commits to the requirement; "contradicts" needs clear text that applies to
+# American Indians and Alaska Natives and conflicts with the federal rule. Hedged ("may", "some", "most"),
+# implied, or general wording earns neither: it is "unpublished". We don't adjudicate; states clarify.
+round_down: "If there's any question, we round down. A state gets credit only for policy it has clearly published, and we call something a contradiction only when the state's own words clearly apply to American Indians and Alaska Natives and conflict with the federal rule. Anything unclear, hedged (such as \"may\" or \"some adults\"), or only implied counts as not published. If you think a finding is wrong, the fix is for the state to clarify its own published policy. Send us the link and we'll update the grade."
 not_graded_unpublished_min: 8
 # Grade thresholds, scaled to ten requirements (2026-11-18).
 a_met_min: 10

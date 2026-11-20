@@ -34,10 +34,11 @@ components:
     url: https://www.healthfirstcolorado.gov/frequently-asked-questions/work-requirements/6-month-renewals-frequently-asked-questions/
     read: '2026-11-18'
   data_first:
-    mark: meets
+    mark: unpublished
     quote: If enough information is not available to show that a member is exempt, a letter will be sent.
     url: https://hcpf.colorado.gov/work-requirements-faqs
     read: '2026-11-18'
+    follow_up: "This sentence implies the state checks its own information before sending a letter, but doesn't say so. The clearer FAQ sentence we read in October is no longer on the page. Under our round-down rule this counts as not published."
   non_document_proof:
     mark: unpublished
   tribal_or_clinic_channel:
@@ -49,4 +50,9 @@ components:
     quote: Members who are American Indian or Alaska Native, including Indian, Urban Indian, and California Indian members
     url: https://www.healthfirstcolorado.gov/frequently-asked-questions/work-requirements/6-month-renewals-frequently-asked-questions/
     read: '2026-11-18'
-history: []
+history:
+  - date: '2026-11-20'
+    from: "C"
+    to: "C"
+    change: "We now round down when a state's wording is unclear. The FAQ only implies the state checks its own information first, so that requirement now counts as not published."
+    url: https://hcpf.colorado.gov/work-requirements-faqs
