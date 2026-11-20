@@ -168,6 +168,8 @@ Most states fall short in the same few ways. The counts below are from the score
 
 States, tribes and Indian health programs can send new evidence from any state's page: choose "Submit evidence", share a public link to the policy, and we review it within 10 business days. If your vendor, tribal liaison or health director needs this, send it on.
 
+**Coming soon:** a companion post, *Getting the AI/AN exemption right in Medicaid eligibility systems*, on what these fixes look like inside a state's eligibility system.
+
 *Lakeraven builds software for Indian health care providers.*
 
 ## References
