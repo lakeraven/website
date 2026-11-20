@@ -46,13 +46,19 @@ components:
   tribal_or_clinic_channel:
     mark: unpublished
   status_not_rechecked:
-    mark: contradicts
+    mark: unpublished
     quote: The state checks every three months.
     url: https://www.in.gov/fssa/hip/hip-work-requirements/info-for-hip-members
     read: '2026-11-18'
+    follow_up: "The three-month checks are of work hours. Indiana doesn't clearly say American Indian or Alaska Native status is checked again, so under our round-down rule this isn't a contradiction. We count this as not published."
   twelve_month_renewal:
     mark: contradicts
     quote: You renew HIP every six months, and the state checks your hours every three months.
     url: https://www.in.gov/fssa/hip/hip-work-requirements/info-for-hip-members
     read: '2026-11-18'
-history: []
+history:
+  - date: '2026-11-20'
+    from: "F"
+    to: "F"
+    change: "We now round down when a state's wording is unclear. The three-month checks are of work hours, not clearly of American Indian or Alaska Native status, so re-checks now count as not published instead of a contradiction."
+    url: https://www.in.gov/fssa/hip/hip-work-requirements/info-for-hip-members

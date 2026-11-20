@@ -7,13 +7,14 @@ unverified: false
 under_review: false
 components:
   out_of_state:
-    mark: meets
+    mark: unpublished
     quote: If the status cannot be established from available information, self-attestation may be accepted.
     url: https://health.alaska.gov/en/education/hr-1-ak-impacts/hr-1-medicaid-frequently-asked-questions/
     read: '2026-11-18'
     secondary:
       quote: Alaska Native and American Indian individuals who meet the applicable federal definition are excluded from WCER.
       url: https://health.alaska.gov/en/education/hr-1-ak-impacts/hr-1-medicaid-frequently-asked-questions/
+    follow_up: "Alaska covers anyone who meets the federal definition, but the only published way to prove it without records is self-attestation that \"may be accepted\". That doesn't commit the state, so under our round-down rule this counts as not published."
   tribal_members:
     mark: meets
     quote: Alaska Native and American Indian individuals who meet the applicable federal definition are excluded from WCER.
@@ -45,10 +46,11 @@ components:
     url: https://health.alaska.gov/en/education/hr-1-ak-impacts/hr-1-medicaid-frequently-asked-questions/
     read: '2026-11-18'
   non_document_proof:
-    mark: meets
+    mark: unpublished
     quote: If the status cannot be established from available information, self-attestation may be accepted.
     url: https://health.alaska.gov/en/education/hr-1-ak-impacts/hr-1-medicaid-frequently-asked-questions/
     read: '2026-11-18'
+    follow_up: "The FAQ says self-attestation \"may be accepted\" when status can't be established from records. \"May\" doesn't commit the state to accepting it, so under our round-down rule this counts as not published."
   tribal_or_clinic_channel:
     mark: unpublished
   status_not_rechecked:
@@ -61,4 +63,9 @@ components:
     quote: This change does not apply to Alaska Native and American Indian individuals in the Medicaid expansion group
     url: https://health.alaska.gov/en/education/hr-1-ak-impacts/hr-1-medicaid-frequently-asked-questions/
     read: '2026-11-18'
-history: []
+history:
+  - date: '2026-11-20'
+    from: "A"
+    to: "B"
+    change: "We now round down when a state's wording is unclear. Alaska's FAQ says self-attestation \"may be accepted\", which doesn't commit the state, so proof without documents and out-of-state tribes now count as not published."
+    url: https://health.alaska.gov/en/education/hr-1-ak-impacts/hr-1-medicaid-frequently-asked-questions/

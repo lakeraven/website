@@ -14,10 +14,11 @@ components:
     url: https://medquest.hawaii.gov/content/dam/medicaid-advisory-committee-(mac)/MAC%20Q2%20Meeting%20Deck%20for%2005.28.26%20-%20Final%20(1).pdf
     read: '2026-11-18'
   urban_and_descendants:
-    mark: contradicts
+    mark: unpublished
     quote: Individuals recognized as American Indians or Alaska Natives and eligible for health services through the Indian Health Service.
     url: https://medquest.hawaii.gov/content/dam/medicaid-advisory-committee-(mac)/MAC%20Q2%20Meeting%20Deck%20for%2005.28.26%20-%20Final%20(1).pdf
     read: '2026-11-18'
+    follow_up: "This wording comes from a summary slide in an advisory committee deck, not a policy document. It doesn't clearly exclude urban Indians or descendants, so under our round-down rule it isn't a contradiction. We count this as not published."
   alaska_natives:
     mark: meets
     quote: Individuals recognized as American Indians or Alaska Natives
@@ -49,4 +50,9 @@ components:
     quote: For individuals described above, eligibility renewals will happen every six months instead of once per year
     url: https://medquest.hawaii.gov/content/dam/medicaid-advisory-committee-(mac)/MAC%20Q2%20Meeting%20Deck%20for%2005.28.26%20-%20Final%20(1).pdf
     read: '2026-11-18'
-history: []
+history:
+  - date: '2026-11-20'
+    from: "D"
+    to: "C"
+    change: "We now round down when a state's wording is unclear. The advisory committee slide doesn't clearly exclude urban Indians or descendants, so that requirement now counts as not published instead of a contradiction."
+    url: https://medquest.hawaii.gov/content/dam/medicaid-advisory-committee-(mac)/MAC%20Q2%20Meeting%20Deck%20for%2005.28.26%20-%20Final%20(1).pdf

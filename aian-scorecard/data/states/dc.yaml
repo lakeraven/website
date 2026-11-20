@@ -42,8 +42,14 @@ components:
   status_not_rechecked:
     mark: unpublished
   twelve_month_renewal:
-    mark: contradicts
+    mark: unpublished
     quote: Most adults ages 19 to 64 without children must renew their Medicaid every 6 months instead of once a year.
     url: https://dhcf.dc.gov/page/federal-changes-medicaid
     read: '2026-11-18'
-history: []
+    follow_up: "\"Most adults\" doesn't clearly include American Indians and Alaska Natives, so under our round-down rule this isn't a contradiction. We count this as not published."
+history:
+  - date: '2026-11-20'
+    from: "C"
+    to: "C"
+    change: "We now round down when a state's wording is unclear. \"Most adults\" renew every six months doesn't clearly include American Indians and Alaska Natives, so 12-month renewals now count as not published instead of a contradiction."
+    url: https://dhcf.dc.gov/page/federal-changes-medicaid

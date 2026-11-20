@@ -17,7 +17,8 @@ eleventyComputed:
 
 <p><a href="{{ '/aian-medicaid-scorecard/' | url }}">All states</a></p>
 <h1>{{ s.name }}</h1>
-<p class="aian-disclaimer"><strong>Grades are our sourced assessment as of {{ s.checked }}.</strong> We will be wrong sometimes, and we correct quickly when shown published policy. <a href="#submit">Send us a link</a>, and see this page's <a href="#history">history of changes</a>.</p>
+<p class="aian-disclaimer"><strong>Grades are our sourced assessment as of {{ s.checked }}.</strong> We will be wrong sometimes, and we correct quickly when shown published policy. <a href="#submit">Send us a published policy link</a>, and see this page's <a href="#history">history of changes</a>.</p>
+<p class="aian-disclaimer"><strong>If there's any question, we round down.</strong> {{ sc.rubric.round_down | replace("If there's any question, we round down. ", "") }}</p>
 
 {% if s.under_review %}
 <div class="usa-alert usa-alert--info usa-alert--slim"><div class="usa-alert__body"><p class="usa-alert__text"><strong>Evidence under review.</strong> Someone has submitted new evidence for {{ s.name }}. The grade below stands until review is complete.</p></div></div>
@@ -45,7 +46,7 @@ eleventyComputed:
     <p>{% if i.mark == 'contradicts' or i.mark == 'disputed' %}Replace that policy with policy that says{% else %}Publish policy that says{% endif %} {{ i.fix }}.</p>
     <p>With this fix alone: {{ s.met }} of {{ sc.rubric.requirements.length }} becomes {{ s.met + 1 }} of {{ sc.rubric.requirements.length }}, and the grade {% if i.gradeIfFixed == s.grade %}stays {{ s.grade }}{% else %}rises to {{ i.gradeIfFixed }}{% endif %}.</p>
     <p>Model language from <a href="{{ ('/aian-medicaid-scorecard/' + i.model.slug + '/') | url }}">{{ i.model.name }}</a>: &ldquo;{{ i.model.quote }}&rdquo; <a href="{{ i.model.url }}">Source</a></p>
-    <p><a class="usa-button usa-button--outline" href="{{ sub.form_url }}?usp=pp_url&amp;{{ sub.form_state_entry }}={{ formState | urlencode }}&amp;{{ sub.form_requirement_entry }}={{ i.short | urlencode }}" aria-label="Submit evidence for {{ i.short }}">Submit evidence for this requirement</a></p>
+    <p><a class="usa-button usa-button--outline" href="{{ sub.form_url }}?usp=pp_url&amp;{{ sub.form_state_entry }}={{ formState | urlencode }}&amp;{{ sub.form_requirement_entry }}={{ i.short | urlencode }}" aria-label="Send a published policy link for {{ i.short }}">Send a published policy link</a></p>
   </li>
 {% endfor %}
 </ol>
@@ -86,6 +87,6 @@ eleventyComputed:
 <p>No grade changes since first published.</p>
 {% endif %}
 
-<h2 id="submit">Submit evidence</h2>
-<p>If {{ s.name }} has published policy that changes any finding above, send us a public link to it. Please send links rather than attachments. We review every submission within {{ sub.review_business_days }} business days, and we weigh evidence from tribes and Indian health programs the same as evidence from the state. <a href="{{ '/aian-medicaid-scorecard/process/' | url }}">How review works</a>.</p>
-<p><a class="usa-button" href="{{ sub.form_url }}?usp=pp_url&amp;{{ sub.form_state_entry }}={{ formState | urlencode }}">Submit evidence for {{ s.name }}</a></p>
+<h2 id="submit">Send a published policy link</h2>
+<p>If {{ s.name }} has published policy that changes any finding above, send us a public link to it. If a finding rests on unclear wording, the fix is a clearer published policy, not an argument about what the current wording means. Please send links rather than attachments. We review every submission within {{ sub.review_business_days }} business days, and we weigh evidence from tribes and Indian health programs the same as evidence from the state. <a href="{{ '/aian-medicaid-scorecard/process/' | url }}">How review works</a>.</p>
+<p><a class="usa-button" href="{{ sub.form_url }}?usp=pp_url&amp;{{ sub.form_state_entry }}={{ formState | urlencode }}">Send a published policy link for {{ s.name }}</a></p>

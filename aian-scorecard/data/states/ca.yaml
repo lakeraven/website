@@ -27,10 +27,11 @@ components:
   california_indians:
     mark: unpublished
   data_first:
-    mark: meets
+    mark: unpublished
     quote: We may be able to use information that we already have about you
     url: https://www.dhcs.ca.gov/file/medil-i26-25-pdf/
     read: '2026-11-18'
+    follow_up: "DHCS says it \"may be able to\" use information it already has. That doesn't commit to checking its own records first, so under our round-down rule this counts as not published."
   non_document_proof:
     mark: meets
     quote: Self-attestation of American Indian/Alaska Native members status is accepted and counties must not request verification for this exemption.
@@ -60,3 +61,8 @@ history:
     to: C
     change: The only evidence for a re-check contradiction was a general sentence in a preliminary February 2026 webinar with no American Indian or Alaska Native carve-out. No re-checks is now not published rather than a contradiction. California has no contradictions; the grade stays C because it meets 5 of 10, and B needs 6.
     url: https://www.dhcs.ca.gov/ru/federal-impacts/Documents/HR1-Implementation-Plan-on-Eligibility-Webinar.pdf
+  - date: '2026-11-20'
+    from: "C"
+    to: "C"
+    change: "We now round down when a state's wording is unclear. \"We may be able to use information that we already have\" doesn't commit DHCS to checking its records first, so that requirement now counts as not published."
+    url: https://www.dhcs.ca.gov/file/medil-i26-25-pdf/

@@ -39,10 +39,11 @@ components:
     url: https://khbe.ky.gov/Enrollment/Pages/MedicaidChanges.aspx
     read: '2026-11-18'
   non_document_proof:
-    mark: contradicts
+    mark: unpublished
     quote: Begin gathering important medical or legal documents so you are ready
     url: https://khbe.ky.gov/Enrollment/Pages/MedicaidChanges.aspx
     read: '2026-11-18'
+    follow_up: "This is general advice to everyone to gather documents. It doesn't say American Indians or Alaska Natives must provide documents, so under our round-down rule it isn't a contradiction. We count this as not published."
   tribal_or_clinic_channel:
     mark: unpublished
   status_not_rechecked:
@@ -52,4 +53,9 @@ components:
     quote: You must have a Medicaid renewal every six months if you are aged 19-64 and qualify for Medicaid based only on your income.
     url: https://khbe.ky.gov/Enrollment/Pages/MedicaidChanges.aspx
     read: '2026-11-18'
-history: []
+history:
+  - date: '2026-11-20'
+    from: "F"
+    to: "F"
+    change: "We now round down when a state's wording is unclear. The advice to gather documents is general, not a rule for American Indians and Alaska Natives, so proof without documents now counts as not published instead of a contradiction."
+    url: https://khbe.ky.gov/Enrollment/Pages/MedicaidChanges.aspx

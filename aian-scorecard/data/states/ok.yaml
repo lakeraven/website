@@ -39,10 +39,11 @@ components:
     url: https://oklahoma.gov/content/dam/ok/en/okhca/docs/policy/proposed-changes/2026/9-1-26-blog-postings/APA%20WF%2026-06%20Regulatory%20Text%20draft.pdf
     read: '2026-11-18'
   non_document_proof:
-    mark: meets
+    mark: unpublished
     quote: OHCA may request documentation or other information necessary to make the determination
     url: https://oklahoma.gov/content/dam/ok/en/okhca/docs/policy/proposed-changes/2026/9-1-26-blog-postings/APA%20WF%2026-06%20Regulatory%20Text%20draft.pdf
     read: '2026-11-18'
+    follow_up: "OHCA's draft rule lets it request \"documentation or other information\", but doesn't say it will accept proof without documents or never deny only for missing documents. Under our round-down rule this counts as not published."
   tribal_or_clinic_channel:
     mark: unpublished
   status_not_rechecked:
@@ -55,4 +56,9 @@ components:
     quote: Certification periods for American Indian/Alaska Native (AI/AN) individuals remain twelve (12) months
     url: https://oklahoma.gov/content/dam/ok/en/okhca/docs/policy/proposed-changes/2026/9-1-26-blog-postings/APA%20WF%2026-04%20Regulatory%20Text%20draft.pdf
     read: '2026-11-18'
-history: []
+history:
+  - date: '2026-11-20'
+    from: "B"
+    to: "B"
+    change: "We now round down when a state's wording is unclear. The draft rule doesn't commit to accepting proof without documents, so that requirement now counts as not published."
+    url: https://oklahoma.gov/content/dam/ok/en/okhca/docs/policy/proposed-changes/2026/9-1-26-blog-postings/APA%20WF%2026-06%20Regulatory%20Text%20draft.pdf
