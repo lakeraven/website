@@ -42,4 +42,4 @@ Lakeraven helps tribes plan and carry out the move from IHS-run systems to healt
 
 ## Beyond Health Care
 
-We also take on broader technology modernization and digital services work for governments and public programs. See [Technology Modernization](/modernization/).
+We also take on broader technology modernization, custom software, and AI-assisted work for governments, public programs, healthcare organizations, and private companies. See [Technology Modernization](/modernization/).
