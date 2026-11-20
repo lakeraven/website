@@ -35,4 +35,8 @@ Please send links, not attachments. Grades rest only on policy anyone can read.
 - It does not measure how individual cases are handled.
 - Policy a state has not published cannot earn credit.
 
+## Using this data
+
+Scorecard data licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), credit Lakeraven. You may share and adapt it, including commercially, as long as you credit Lakeraven and link to this scorecard.
+
 [Back to the scorecard](/aian-medicaid-scorecard/)
