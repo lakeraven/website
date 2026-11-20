@@ -30289,8 +30289,24 @@ h3 {
     Segoe UI Emoji,
     Segoe UI Symbol !important;
 }
-.direct-link {
-  display: none;
+.heading-anchor {
+  text-decoration: none;
+}
+.heading-anchor,
+.heading-anchor:link,
+.heading-anchor:visited,
+.heading-anchor:hover,
+.heading-anchor:focus,
+.heading-anchor:active {
+  color: inherit !important;
+}
+.heading-anchor:hover,
+.heading-anchor:focus {
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+:is(h2, h3, h4)[id] {
+  scroll-margin-top: 1rem;
 }
 .usa-hero {
   background-position-y: -100px;
@@ -30768,4 +30784,4 @@ html[data-theme=dark] .lr-announce a:focus {
 }
 /*! uswds @version */
 
-/*# sourceMappingURL=styles-EU2F6LKI.css.map */
+/*# sourceMappingURL=styles-45DWQ5H5.css.map */
