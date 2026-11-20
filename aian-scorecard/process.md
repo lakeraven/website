@@ -6,12 +6,11 @@ permalink: /aian-medicaid-scorecard/process/
 
 # How scorecard review works
 
-Anyone can send evidence that a state's published policy has changed: a state Medicaid agency, a tribe, an Indian Health Service, tribal or urban Indian program, or a member of the public.
+Anyone can send evidence that a state's published policy has changed, or that we got a finding wrong: a state Medicaid agency, a tribe, an Indian Health Service, tribal or urban Indian program, or a member of the public.
 
 ## What to send
 
-Use the evidence form, linked from every state's page as **Submit evidence**. It asks for:
-
+Use the [evidence form]({{ aianScorecard.rubric.submission.form_url }}). Each state's page also links to it as **Submit evidence**, with the state and requirement already filled in. You don't need a Google account. The form asks for:
 
 - A public link to the published policy, such as a state web page, manual section, bulletin, notice, state plan amendment, or waiver document.
 - Which requirement it addresses.
@@ -35,5 +34,9 @@ Please send links, not attachments. Grades rest only on policy anyone can read.
 - A grade measures a state's **published** policy against the federal rules for American Indians and Alaska Natives.
 - It does not measure how individual cases are handled.
 - Policy a state has not published cannot earn credit.
+
+## Using this data
+
+Scorecard data licensed [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), credit Lakeraven. You may share and adapt it, including commercially, as long as you credit Lakeraven and link to this scorecard.
 
 [Back to the scorecard](/aian-medicaid-scorecard/)
