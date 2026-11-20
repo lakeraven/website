@@ -1,7 +1,8 @@
-# Evidence re-verified 2026-11-18 against primary sources.
+# Evidence re-verified 2026-11-18 against primary sources. non_document_proof set to meets 2026-11-20
+# (Kimball approved): DHCS ACWDL 26-14 accepts AI/AN self-attestation and bars counties from requesting verification.
 state: CA
 name: California
-checked: '2026-11-18'
+checked: '2026-11-20'
 start: 2027-01-01 per MEDIL I 26-25 (member letter says March 2027); DHCS requested a good-faith-effort exemption through 2027-06-30 for a WCER start of 2027-07-01
 unverified: false
 under_review: false
@@ -30,7 +31,7 @@ components:
     url: https://www.dhcs.ca.gov/file/medil-i26-25-pdf/
     read: '2026-11-18'
   non_document_proof:
-    mark: unpublished
+    mark: meets
     quote: Self-attestation of American Indian/Alaska Native members status is accepted and counties must not request verification for this exemption.
     url: https://www.dhcs.ca.gov/wp-content/uploads/2026/09/ACWDL-26-14.pdf
     read: '2026-11-18'
@@ -46,4 +47,9 @@ components:
     quote: American Indian/Alaska Native members will remain on a 12-month renewal cycle unless otherwise protected.
     url: https://www.dhcs.ca.gov/wp-content/uploads/2026/09/ACWDL-26-14.pdf
     read: '2026-11-18'
-history: []
+history:
+  - date: '2026-11-20'
+    from: C
+    to: C
+    change: California's county instruction (ACWDL 26-14) accepts self-attestation of American Indian and Alaska Native status and tells counties not to request verification. Proof without documents now meets. The grade stays C because California still contradicts the no re-checks requirement.
+    url: https://www.dhcs.ca.gov/wp-content/uploads/2026/09/ACWDL-26-14.pdf
