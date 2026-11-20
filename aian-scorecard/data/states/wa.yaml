@@ -1,7 +1,8 @@
-# Evidence re-verified 2026-11-18 against primary sources.
+# Evidence re-verified 2026-11-18 against primary sources; data_first re-read 2026-11-20
+# after an outside fact check (HCA FAQ April 2026, webinar series 3 September 2026).
 state: WA
 name: Washington
-checked: '2026-11-18'
+checked: '2026-11-20'
 start: '2027-01-01'
 unverified: false
 under_review: false
@@ -34,10 +35,13 @@ components:
   california_indians:
     mark: unpublished
   data_first:
-    mark: unpublished
-    quote: If self-attestation or an exemption cannot be verified through data sources, patients may receive
+    mark: meets
+    quote: If self-attestation or an exemption cannot be verified through data sources, patients may receive a request for information letter.
     url: https://www.hca.wa.gov/assets/program/hr1-frequently-asked-questions.pdf
-    read: '2026-11-18'
+    read: '2026-11-20'
+    secondary:
+      quote: Beginning January 1, 2028, states will first use their available data sources to verify work requirements, exclusions, and exemptions.
+      url: https://www.hca.wa.gov/assets/free-or-low-cost/hr1-impacts-webinar-series-3.pdf
   non_document_proof:
     mark: meets
     quote: HCA accepts self-attestation of AI/AN status, and this will not change for work requirements.
@@ -52,4 +56,9 @@ components:
     quote: They will continue to receive a 12-month coverage period instead of a 6-month coverage period.
     url: https://www.hca.wa.gov/assets/free-or-low-cost/hr1-impacts-webinar-series-3.pdf
     read: '2026-11-18'
-history: []
+history:
+  - date: '2026-11-20'
+    from: B
+    to: B
+    change: Washington's April 2026 FAQ says a request for information letter goes out only when an exemption cannot be verified through data sources. We credit the same sequence in other states, such as Colorado, so check own data first now meets. Washington meets 7 of 10; the grade stays B because an A needs all 10.
+    url: https://www.hca.wa.gov/assets/program/hr1-frequently-asked-questions.pdf
