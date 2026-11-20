@@ -12,6 +12,14 @@ The home page uses wide.html layout, since it extends full width of page
   <a class="usa-skipnav" href="#main-content">Skip to main content</a>
 
 
+  {% unless page.url == "/blog/aian-medicaid-exemption/" %}
+  <section class="lr-announce" aria-label="Featured article">
+    <div class="grid-container">
+      <p><strong>New:</strong> <a href="{{ '/blog/aian-medicaid-exemption/' | url }}">Medicaid's new work and renewal rules: who counts as American Indian or Alaska Native, and how each state measures up</a></p>
+    </div>
+  </section>
+  {% endunless %}
+
   {% include "menu.html" primary_navigation: site.primary_navigation secondary_navigation: site.secondary_navigation %}
 
   {{ content }}

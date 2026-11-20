@@ -30736,6 +30736,36 @@ html[data-theme=dark] .aian-ungraded {
   margin: 0.25rem 0;
   padding-left: 1.25rem;
 }
+.lr-announce {
+  background-color: #d9e8f6;
+  color: #1b1b1b;
+  padding: 0.5rem 0;
+  font-size: 0.95rem;
+}
+.lr-announce p {
+  margin: 0;
+  max-width: none;
+}
+.lr-announce a {
+  color: #005ea2;
+  text-decoration: underline;
+}
+.lr-announce a:visited {
+  color: #54278f;
+}
+html[data-theme=dark] .lr-announce {
+  background-color: #1a2430;
+  color: #f0f0f0;
+  border-bottom: 1px solid #3d4551;
+}
+html[data-theme=dark] .lr-announce a,
+html[data-theme=dark] .lr-announce a:visited {
+  color: #73b3e7;
+}
+html[data-theme=dark] .lr-announce a:hover,
+html[data-theme=dark] .lr-announce a:focus {
+  color: #f0f0f0;
+}
 /*! uswds @version */
 
-/*# sourceMappingURL=styles-KDEWRKPC.css.map */
+/*# sourceMappingURL=styles-D7VFUEYI.css.map */
