@@ -31,11 +31,11 @@ requirements:
     model: NE
   - id: ihs_eligible
     short: IHS-eligible
-    label: Anyone eligible for Indian Health Service, tribal or urban Indian program services
+    label: Anyone determined eligible as an Indian for Indian Health Service care, including at tribal health programs
     citation: 42 CFR 447.51 (route 4); 42 CFR 136.12
     plain: "Anyone eligible as an Indian for Indian Health Service care meets the definition."
     source_url: https://www.law.cornell.edu/cfr/text/42/136.12
-    fix: anyone eligible for services from the Indian Health Service or a tribal or urban Indian health program is exempt
+    fix: anyone eligible as an Indian for Indian Health Service care, including care at tribal health programs, is exempt
     model: OR
   - id: california_indians
     short: California Indians
