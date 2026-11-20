@@ -1,6 +1,0 @@
-<h1 id="lakeravenwebsite" tabindex="-1">lakeraven/website</h1>
-<p>11ty site for <a href="http://lakeraven.com">lakeraven.com</a>. GitHub Pages serves the committed <code>docs/</code> folder from <code>main</code>, so merging to main publishes. Rebuild with <code>npm ci &amp;&amp; npm run build</code>, commit <code>docs/</code>, and run <code>npm test</code>.</p>
-<h2 id="rules" tabindex="-1">Rules <a class="heading-anchor" href="#rules" aria-label="Link to this section: Rules"><span aria-hidden="true">#</span></a></h2>
-<ul>
-<li><strong>Every heading is linkable.</strong> Every <code>h2</code>–<code>h4</code> must have a stable <code>id</code> and a &quot;#&quot; link. The build adds both (<code>lib/heading-anchors.js</code>), and <code>npm test</code> fails if a built page breaks the rule. Never rename an existing heading <code>id</code>; keep it explicitly if you change the heading text. Details in <code>CONTRIBUTING.md</code> under &quot;Site rule: every heading is linkable&quot;.</li>
-</ul>
