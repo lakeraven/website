@@ -17,6 +17,7 @@ eleventyComputed:
 
 <p><a href="{{ '/aian-medicaid-scorecard/' | url }}">All states</a></p>
 <h1>{{ s.name }}</h1>
+<p class="aian-disclaimer"><strong>Grades are our sourced assessment as of {{ s.checked }}.</strong> We will be wrong sometimes, and we correct quickly when shown published policy. <a href="#submit">Send us a link</a>, and see this page's <a href="#history">history of changes</a>.</p>
 
 {% if s.under_review %}
 <div class="usa-alert usa-alert--info usa-alert--slim"><div class="usa-alert__body"><p class="usa-alert__text"><strong>Evidence under review.</strong> Someone has submitted new evidence for {{ s.name }}. The grade below stands until review is complete.</p></div></div>
@@ -76,7 +77,7 @@ eleventyComputed:
 </section>
 {% endif %}
 
-<h2>History</h2>
+<h2 id="history">History</h2>
 {% if s.history and s.history.length %}
 <ul class="usa-list">
 {% for h in s.history %}<li>{{ h.date }}: {{ h.from }} to {{ h.to }}. {{ h.change }} <a href="{{ h.url }}">Source</a></li>{% endfor %}

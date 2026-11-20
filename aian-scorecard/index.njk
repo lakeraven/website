@@ -11,6 +11,7 @@ description: How closely each state's published Medicaid policy follows CMS rule
 {% endif %}
 
 <h1>American Indian and Alaska Native Medicaid exemption scorecard</h1>
+<p class="aian-disclaimer"><strong>Grades are our sourced assessment as of {{ sc.lastChecked }}.</strong> We will be wrong sometimes, and we correct quickly when shown published policy. <a href="{{ sc.rubric.submission.form_url }}">Send us a link</a>, or see <a href="{{ '/aian-medicaid-scorecard/process/' | url }}">how corrections work</a>. Each state's page lists every change we have made.</p>
 {% set sm = sc.summary %}
 <p class="usa-intro aian-headline">Only <strong>{{ sm.allMet }} of {{ sm.subject }}</strong> states meet all {{ sm.total }} requirements in their published policy. The median state meets <strong>{{ sm.median }}</strong>, and <strong>{{ sm.anyContradiction }}</strong> publish policy that contradicts at least one.</p>
 
