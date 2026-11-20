@@ -1,13 +1,20 @@
 # Evidence re-verified 2026-11-18 against primary sources.
+# 2026-11-20 after an outside fact check: DSS's 21 Oct 2025 tribal consultation deck says self-attestation of AI/AN status,
+# tribal membership or IHS eligibility is verification; DSS's 21 Apr 2026 consultation minutes confirm no other documentation
+# is required. Proof without documents and out-of-state tribes now meet. The deck also reproduces IHCIA 4(13) and (28) as the
+# text of H.R. 1, but no DSS document adopts urban Indians or descendants as its own test, so urban stays not published.
 state: SD
 name: South Dakota
-checked: '2026-11-18'
+checked: '2026-11-20'
 start: '2027-01-01'
 unverified: false
 under_review: false
 components:
   out_of_state:
-    mark: unpublished
+    mark: meets
+    quote: Self-attestation is verification when individuals indicate they are American Indian or Alaska Native, a member of a federally recognized tribe, or IHS-eligible on an application or renewal form.
+    url: https://dss.sd.gov/docs/medicaid/general_info/tribal/2025/10.21/House_Resolution_1.pdf
+    read: '2026-11-20'
   tribal_members:
     mark: meets
     quote: People who are Native American, enrolled in a tribe, or eligible for Indian Health Services
@@ -17,7 +24,8 @@ components:
     mark: unpublished
     quote: Are American Indian or Alaska Native, including people who are eligible for Indian Health Service.
     url: https://dss.sd.gov/medicaid/HR1.aspx
-    read: '2026-11-18'
+    read: '2026-11-20'
+    follow_up: DSS's October 2025 tribal consultation deck reproduces the federal definitions of Indian and Urban Indian (25 U.S.C. 1603(13) and (28)) as the text of H.R. 1, but it does not say DSS will use them as its test, and every later DSS document describes the exemption as Native American, tribally enrolled, or eligible for Indian Health Service. Because DSS accepts self-attestation of American Indian or Alaska Native status, many urban Indians and descendants may be exempt in practice. We count this as not published until DSS says so.
   alaska_natives:
     mark: meets
     quote: Are American Indian or Alaska Native, including people who are eligible for Indian Health Service.
@@ -39,10 +47,10 @@ components:
     url: https://dss.sd.gov/docs/medicaid/HR1/townhall/08.19.26_Handout.pdf
     read: '2026-11-18'
   non_document_proof:
-    mark: unpublished
-    quote: If you don't have documents, we'll send a form to fill out.
-    url: https://dss.sd.gov/docs/medicaid/HR1/townhall/08.19.26_Handout.pdf
-    read: '2026-11-18'
+    mark: meets
+    quote: Self-attestation is verification when individuals indicate they are American Indian or Alaska Native, a member of a federally recognized tribe, or IHS-eligible on an application or renewal form.
+    url: https://dss.sd.gov/docs/medicaid/general_info/tribal/2025/10.21/House_Resolution_1.pdf
+    read: '2026-11-20'
   tribal_or_clinic_channel:
     mark: unpublished
   status_not_rechecked:
@@ -52,4 +60,9 @@ components:
     quote: American Indians and Alaska Natives are exempt, including people who are eligible for Indian Health Service.
     url: https://dss.sd.gov/medicaid/HR1.aspx
     read: '2026-11-18'
-history: []
+history:
+  - date: '2026-11-20'
+    from: B
+    to: B
+    change: South Dakota's October 2025 tribal consultation deck says self-attestation of American Indian or Alaska Native status, membership in a federally recognized tribe, or IHS eligibility on an application or renewal form is verification. DSS's April 2026 consultation minutes confirm that people who indicate they are American Indian or Alaska Native need no other documentation. Proof without documents now meets. Because the self-attestation covers members of any federally recognized tribe, out-of-state tribes also meets. South Dakota meets 8 of 10; the grade stays B because an A needs all 10.
+    url: https://dss.sd.gov/docs/medicaid/general_info/tribal/2025/10.21/House_Resolution_1.pdf
