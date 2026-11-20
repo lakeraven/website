@@ -10,41 +10,34 @@ tags:
 ---
 
 
-*Last reviewed 19 November 2026. We will update this post when the rule or state policies change. Sources are numbered and listed under [References](#references) at the end.*
+*Last reviewed 20 November 2026. We update this post as federal rules and state policies change. Sources are numbered and listed under [References](#references) at the end.*
 
-Two of Medicaid's new rules for expansion adults don't apply to American Indian and Alaska Native people: the work requirement, and renewals every six months instead of every twelve. But the legal definition is broader than tribal enrollment. It has nothing to do with race. And eligibility systems can get it wrong.
+Two of Medicaid's new rules for expansion adults, the work requirement and renewals every six months instead of once a year, don't apply to American Indian and Alaska Native people. On paper, that sounds simple. In practice, it isn't: the federal definition of who counts is much broader than tribal enrollment, has nothing to do with race, and is easy for state eligibility systems to get wrong.
 
-States are already doing this differently. KFF Health News reported that North Carolina accepts proof such as a tribal enrollment card, a tribal census record, or confirmation from the Eastern Band of Cherokee Indians' Tribal Option, while Montana told reporters that people who declare their tribal status won't need more proof.<sup class="fn-ref"><a href="#ref-1" id="cite-1" aria-label="Reference 1">1</a></sup> The last time eligibility checks tightened, the National Council of Urban Indian Health estimated that over 850,000 American Indians and Alaska Natives were terminated from Medicaid by May 2024.<sup class="fn-ref"><a href="#ref-2" id="cite-2" aria-label="Reference 2">2</a></sup>
+States are already taking very different approaches. KFF Health News reported that North Carolina accepts proof such as a tribal enrollment card, a tribal census record, or confirmation from the Eastern Band of Cherokee Indians' Tribal Option, while Montana told reporters that people who declare their tribal status won't need more proof.<sup class="fn-ref"><a href="#ref-1" id="cite-1" aria-label="Reference 1">1</a></sup> The stakes are high. The last time eligibility checks tightened, the National Council of Urban Indian Health estimated that more than 850,000 American Indians and Alaska Natives lost Medicaid by May 2024.<sup class="fn-ref"><a href="#ref-2" id="cite-2" aria-label="Reference 2">2</a></sup>
 
-Proof that works in one state may not travel. In North Carolina, according to the same report, confirmation from the Eastern Band's Tribal Option counts as proof.<sup class="fn-ref"><a href="#ref-1" aria-label="Reference 1">1</a></sup> The Tribal Option is a care management program created by the Cherokee Indian Hospital Authority and offered mainly in five western North Carolina counties.<sup class="fn-ref"><a href="#ref-3" id="cite-3" aria-label="Reference 3">3</a></sup> It won't help an Eastern Band citizen on Medicaid in another state unless that state accepts it. The same problem faces any tribal citizen whose state Medicaid agency has no working relationship with their tribe. As Liz Malerba, director of policy and legislative affairs for the United South and Eastern Tribes, put it: "A Navajo Nation citizen living in Connecticut, for example, may have a difficult time being identified by the state."<sup class="fn-ref"><a href="#ref-1" aria-label="Reference 1">1</a></sup> About 87% of Native people live outside what the Census Bureau calls tribal statistical areas, such as reservations.<sup class="fn-ref"><a href="#ref-4" id="cite-4" aria-label="Reference 4">4</a></sup> The federal definition covers members of every federally recognized tribe, wherever the tribe is based. A state that recognizes only in-state tribes or in-state records will miss people the rule exempts.
-
-This post is for Native people checking whether they qualify, leaders of Indian health and urban Indian programs, and state eligibility staff and their vendors. In short:
-
-- Four routes qualify for both exemptions, and only one needs membership in a federally recognized tribe.
-- Most failures come from treating the exemption as a single yes-or-no flag.
-- Only 2 of the 44 states subject to these rules meet all 10 requirements in our [state scorecard](/aian-medicaid-scorecard/).
+Even a sensible state rule can break down at the state line. The Tribal Option is a care management program created by the Cherokee Indian Hospital Authority and offered mainly in five western North Carolina counties.<sup class="fn-ref"><a href="#ref-3" id="cite-3" aria-label="Reference 3">3</a></sup> Its confirmation counts in North Carolina, but it won't help an Eastern Band citizen on Medicaid in another state unless that state accepts it. The same gap faces any tribal citizen whose state Medicaid agency has no working relationship with their tribe. As Liz Malerba, director of policy and legislative affairs for the United South and Eastern Tribes, put it: "A Navajo Nation citizen living in Connecticut, for example, may have a difficult time being identified by the state."<sup class="fn-ref"><a href="#ref-1" aria-label="Reference 1">1</a></sup> About 87% of Native people live outside what the Census Bureau calls tribal statistical areas, such as reservations.<sup class="fn-ref"><a href="#ref-4" id="cite-4" aria-label="Reference 4">4</a></sup> Because the federal definition covers members of every federally recognized tribe, wherever the tribe is based, a state that recognizes only in-state tribes or in-state records will miss people the rule exempts.
 
 Where to start:
 
-- **If you want to know whether you qualify,** start with [If you are American Indian or Alaska Native](#if-you-are-american-indian-or-alaska-native), then read [Who qualifies](#who-qualifies) and [Am I exempt, and what can I show?](#am-i-exempt-and-what-can-i-show)
-- **If you lead an Indian health or urban Indian program,** read [Questions to ask](#questions-to-ask) and [What the rule leaves open](#what-the-rule-leaves-open).
-- **If you run or build an eligibility system,** read [What states must do first](#what-states-must-do-first) and [Where eligibility systems go wrong](#where-eligibility-systems-go-wrong).
+- **Checking your own coverage?** Start with [If you are American Indian or Alaska Native](#if-you-are-american-indian-or-alaska-native), then read [Who qualifies](#who-qualifies) and [What proof can I show?](#what-proof-can-i-show)
+- **Leading an Indian health or urban Indian program?** Read [Questions to ask](#questions-to-ask) and [What the rule leaves open](#what-the-rule-leaves-open).
+- **Building or running an eligibility system?** Go to [What states must do first](#what-states-must-do-first) and [Where eligibility systems go wrong](#where-eligibility-systems-go-wrong).
+- **Wondering how your state measures up?** Only 2 of the 44 states subject to these rules meet all 10 requirements in our [state scorecard](/aian-medicaid-scorecard/).
 
 ## If you are American Indian or Alaska Native
 
-**Do these rules apply to me?** If you meet the federal definition of "Indian", they don't. You don't have to meet the work requirement, and your renewals stay once a year.<sup class="fn-ref"><a href="#ref-5" aria-label="Reference 5">5</a>,<a href="#ref-6" aria-label="Reference 6">6</a></sup> You don't need to live on a reservation or belong to a tribe in your state. The next section lists the four ways to qualify.<sup class="fn-ref"><a href="#ref-8" aria-label="Reference 8">8</a></sup>
+**Do these rules apply to me?** Not if you meet the federal definition of "Indian." You don't have to meet the work requirement, and your renewals stay once a year.<sup class="fn-ref"><a href="#ref-5" id="cite-5" aria-label="Reference 5">5</a>,<a href="#ref-6" id="cite-6" aria-label="Reference 6">6</a>,<a href="#ref-7" id="cite-7" aria-label="Reference 7">7</a></sup> You don't need to live on a reservation or belong to a tribe based in your state. There are four ways to qualify, listed in the next section.<sup class="fn-ref"><a href="#ref-8" aria-label="Reference 8">8</a></sup>
 
-**Do I need to do anything right now?** Your state should check the records it already has before it asks you for anything.<sup class="fn-ref"><a href="#ref-13" aria-label="Reference 13">13</a></sup> Some states say this plainly. Arizona tells its members: "If AHCCCS already has this information, you will be exempt automatically and do not need to take any extra steps."<sup class="fn-ref"><a href="#ref-22" id="cite-22" aria-label="Reference 22">22</a></sup>
+**Do I need to do anything right now?** Ideally, no. Your state is supposed to check the records it already has before it asks you for paperwork.<sup class="fn-ref"><a href="#ref-13" aria-label="Reference 13">13</a></sup> Arizona says this plainly to its members: "If AHCCCS already has this information, you will be exempt automatically and do not need to take any extra steps."<sup class="fn-ref"><a href="#ref-22" id="cite-22" aria-label="Reference 22">22</a></sup>
 
-**What should I do?** Keep your address, phone number and email up to date with your Medicaid office, and open every letter it sends. That is how you will hear if your state needs anything from you. Arizona gives its members the same advice.<sup class="fn-ref"><a href="#ref-22" aria-label="Reference 22">22</a></sup>
+**What should I watch for?** Make sure your Medicaid office has your current address, phone number and email, and open every letter it sends. That is how you'll hear if your state needs anything from you, and Arizona gives its members the same advice.<sup class="fn-ref"><a href="#ref-22" aria-label="Reference 22">22</a></sup>
 
-**What if the state asks for proof?** The next sections list what you can show. If you don't have documents, the state can't deny or end your coverage only for that.<sup class="fn-ref"><a href="#ref-13" aria-label="Reference 13">13</a></sup>
-
-**Where can I get help?** Ask your tribe's health program, an Indian Health Service or tribal clinic, or an urban Indian health program. You can find an Indian health facility on the [IHS health care map](https://www.ihs.gov/findhealthcare/).<sup class="fn-ref"><a href="#ref-23" id="cite-23" aria-label="Reference 23">23</a></sup> You can find an urban Indian organization through the [IHS Office of Urban Indian Health Programs](https://www.ihs.gov/urban/).<sup class="fn-ref"><a href="#ref-24" id="cite-24" aria-label="Reference 24">24</a></sup>
+**What if the state asks for proof I don't have?** Don't panic. A state can't deny or end your coverage only because you lack documents.<sup class="fn-ref"><a href="#ref-13" aria-label="Reference 13">13</a></sup> [What proof can I show?](#what-proof-can-i-show) lists what works. For help, contact your tribe's health program, an Indian Health Service or tribal clinic, or an urban Indian health program. You can find a facility on the [IHS health care map](https://www.ihs.gov/findhealthcare/)<sup class="fn-ref"><a href="#ref-23" id="cite-23" aria-label="Reference 23">23</a></sup> and an urban Indian organization through the [IHS Office of Urban Indian Health Programs](https://www.ihs.gov/urban/).<sup class="fn-ref"><a href="#ref-24" id="cite-24" aria-label="Reference 24">24</a></sup>
 
 ## Who qualifies
 
-If you meet the federal definition of "Indian", you don't have to meet the work requirement,<sup class="fn-ref"><a href="#ref-5" id="cite-5" aria-label="Reference 5">5</a></sup> and your Medicaid renewals stay once a year instead of every six months.<sup class="fn-ref"><a href="#ref-6" id="cite-6" aria-label="Reference 6">6</a>,<a href="#ref-7" id="cite-7" aria-label="Reference 7">7</a></sup> The definition has four routes. You qualify if any one is true: you belong to a federally recognized tribe; you live in an urban center and belong to a tribe, or are a member's child or grandchild; the Interior Department considers you an Indian; or you can get Indian Health Service care as an Indian. The table gives the details:<sup class="fn-ref"><a href="#ref-8" id="cite-8" aria-label="Reference 8">8</a></sup>
+The definition has four routes, and any one is enough: you belong to a federally recognized tribe; you live in an urban center and belong to a tribe, or are a member's child or grandchild; the Interior Department considers you an Indian; or you can get Indian Health Service care as an Indian. The table gives the details:<sup class="fn-ref"><a href="#ref-8" id="cite-8" aria-label="Reference 8">8</a></sup>
 
 | Route | Urban center required? | Recognized-tribe membership required? |
 |---|---|---|
@@ -60,16 +53,16 @@ A few terms:
 - **State-recognized tribe:** a tribe recognized by a state but not by the federal government. The urban route counts tribes recognized by the state where the person lives.<sup class="fn-ref"><a href="#ref-9" aria-label="Reference 9">9</a></sup>
 - **Urban center:** a community HHS has found to have enough urban Indians with unmet health needs to qualify for urban Indian health programs. It is not every city.<sup class="fn-ref"><a href="#ref-9" aria-label="Reference 9">9</a></sup>
 
-## Am I exempt, and what can I show?
+## What proof can I show?
 
-Your state should check its own records first, such as your Medicaid case file and claims from Indian health providers, before asking you for anything.<sup class="fn-ref"><a href="#ref-13" id="cite-13" aria-label="Reference 13">13</a></sup> If it asks, these can show you qualify:<sup class="fn-ref"><a href="#ref-14" id="cite-14" aria-label="Reference 14">14</a></sup>
+Your state should check its own records first, such as your Medicaid case file and claims from Indian health providers.<sup class="fn-ref"><a href="#ref-13" id="cite-13" aria-label="Reference 13">13</a></sup> If it still asks, these can show you qualify:<sup class="fn-ref"><a href="#ref-14" id="cite-14" aria-label="Reference 14">14</a></sup>
 
 - **Tribal member:** a tribal enrollment card or membership letter, a tribal census record, or a document from your Alaska Native village or corporation.
 - **Urban Indian:** proof of where you live, such as a lease, utility bill or voter card, and a tribal document showing your, your parent's or your grandparent's membership.
 - **Considered an Indian by Interior:** a Certificate of Degree of Indian Blood (CDIB) from the Bureau of Indian Affairs, or a tribal enrollment document.
 - **Eligible for Indian health care:** a record that you have received, or can receive, care from an Indian health provider. California Indians can also use a Bureau of Indian Affairs or tribal document for their basis.
 
-If you don't have documents, the state can't deny or end your coverage only for that. It can accept other information instead, and from 1 January 2028 it must do so when no documents are reasonably available.<sup class="fn-ref"><a href="#ref-13" aria-label="Reference 13">13</a></sup> Checking "American Indian or Alaska Native" on a form doesn't decide it either way.<sup class="fn-ref"><a href="#ref-8" aria-label="Reference 8">8</a></sup> If your state's form or notice describes only tribal members, federal law still covers the other three routes.
+Without documents, the state can't deny or end your coverage for that reason alone. It can accept other information instead, and from 1 January 2028 it must do so when no documents are reasonably available.<sup class="fn-ref"><a href="#ref-13" aria-label="Reference 13">13</a></sup> Checking "American Indian or Alaska Native" on a form doesn't decide it either way.<sup class="fn-ref"><a href="#ref-8" aria-label="Reference 8">8</a></sup> If your state's form or notice describes only tribal members, federal law still covers the other three routes.
 
 <figure>
   <a href="/assets/figures/aian-am-i-exempt.svg"><img src="/assets/figures/aian-am-i-exempt.svg" alt="Decision tree: Am I exempt? A text version follows the figure."></a>
@@ -79,9 +72,9 @@ If you don't have documents, the state can't deny or end your coverage only for 
 
 ## What states must do first
 
-In short: the state must check the records it already has before asking you for anything. It can't deny you only because documents don't exist. Once it finds you qualify, it can't recheck before your next renewal unless something changed.<sup class="fn-ref"><a href="#ref-13" aria-label="Reference 13">13</a></sup>
+The state must check the records it already has before asking you for anything. It can't deny you only because documents don't exist, and once it finds you qualify, it can't check again before your next renewal unless something changed.<sup class="fn-ref"><a href="#ref-13" aria-label="Reference 13">13</a></sup>
 
-The race box on an application doesn't qualify anyone. The exclusion turns on the legal statuses above, not race. States may require only the information needed to decide eligibility, and race isn't part of that.<sup class="fn-ref"><a href="#ref-15" id="cite-15" aria-label="Reference 15">15</a></sup> So the race question can't be relied on to find everyone who qualifies. Federal rules also set how a state checks. The short version: use what the state already has, never require documents that don't exist, and don't check again before the next renewal. These are the verification rules, all required by federal regulation:<sup class="fn-ref"><a href="#ref-13" aria-label="Reference 13">13</a></sup>
+Checking the race box on an application doesn't qualify anyone, because the exclusion turns on the legal statuses above, not race. States may require only the information needed to decide eligibility, and race isn't part of that,<sup class="fn-ref"><a href="#ref-15" id="cite-15" aria-label="Reference 15">15</a></sup> so the race question can't be relied on to find everyone who qualifies. Federal regulation sets three verification rules:<sup class="fn-ref"><a href="#ref-13" aria-label="Reference 13">13</a></sup>
 
 | Rule | What it requires |
 |---|---|
@@ -89,7 +82,7 @@ The race box on an application doesn't qualify anyone. The exclusion turns on th
 | No documents that don't exist | When the state's own data fall short: before 1 January 2028 it may accept other information; from then on it must require documentation when reasonably available; when none is reasonably available, it must accept other information; it may never deny or end coverage only because documents don't exist<sup class="fn-ref"><a href="#ref-13" aria-label="Reference 13">13</a></sup> |
 | No rechecking | Once excluded, a person is not re-verified before the next scheduled renewal (redetermination) unless the state learns something changed.<sup class="fn-ref"><a href="#ref-13" aria-label="Reference 13">13</a></sup> CMS's preamble goes further: in its explanation published with the rule, CMS says states may not reverify American Indian status at all<sup class="fn-ref"><a href="#ref-16" id="cite-16" aria-label="Reference 16">16</a></sup> |
 
-On 13 November 2026, CMS offered states an optional "hold harmless" period through 30 June 2027.<sup class="fn-ref"><a href="#ref-17" id="cite-17" aria-label="Reference 17">17</a></sup> It is guidance a state can choose to use, not a requirement. With CMS approval, a state can pause denials and disenrollments for people who haven't yet shown they qualify. In plain terms, a state that uses it won't cut people off during that time just because their exemption hasn't been confirmed yet. It buys time to fix verification but changes nothing about who qualifies. States that want it from 1 January should tell CMS by 11 December 2026.
+On 13 November 2026, CMS offered states an optional "hold harmless" period through 30 June 2027.<sup class="fn-ref"><a href="#ref-17" id="cite-17" aria-label="Reference 17">17</a></sup> It's optional guidance, not a requirement. With CMS approval, a state can pause denials and disenrollments for people who haven't yet shown they qualify. No one is cut off during that time just because their exemption hasn't been confirmed. It buys time to fix verification but doesn't change who qualifies. States that want it from 1 January should tell CMS by 11 December 2026.
 
 <figure>
   <a href="/assets/figures/aian-exemption-flow.svg"><img src="/assets/figures/aian-exemption-flow.svg" alt="Flowchart: How do I determine if someone is exempt? A text version follows the figure."></a>
@@ -99,7 +92,7 @@ On 13 November 2026, CMS offered states an optional "hold harmless" period throu
 
 ## Where eligibility systems go wrong
 
-Most failures come from a few design choices, and the most common is treating the exemption as one yes-or-no flag. Each row names one, what happens to people, and what the system should do instead. None of these fixes requires a state to collect tribal enrollment records. Those records belong to the Nations.
+Most failures come from a few design choices, and the most common is treating the exemption as one yes-or-no flag. Each row below names a choice, what happens to people, and what the system should do instead. None of these fixes requires a state to collect tribal enrollment records, which belong to the Nations.
 
 | Mistake | What happens | What the system should do |
 |---|---|---|
@@ -130,13 +123,13 @@ A system's behavior depends on its configuration as much as its code. Ask these 
 | Indian health programs, to the state | What happens to the exclusion if a data source is down? |
 | Indian health programs, to the state | Will you use the CMS hold-harmless period, and what will you fix in verification before it ends? |
 
-The vendor's answers belong in the state's verification plan.<sup class="fn-ref"><a href="#ref-13" aria-label="Reference 13">13</a>,<a href="#ref-19" id="cite-19" aria-label="Reference 19">19</a></sup> Where Indian health programs or urban Indian organizations provide care, the state must also ask their advice. It must do so before submitting any plan amendment or waiver likely to directly affect them.<sup class="fn-ref"><a href="#ref-20" id="cite-20" aria-label="Reference 20">20</a></sup>
+The vendor's answers belong in the state's verification plan.<sup class="fn-ref"><a href="#ref-13" aria-label="Reference 13">13</a>,<a href="#ref-19" id="cite-19" aria-label="Reference 19">19</a></sup> Where Indian health programs or urban Indian organizations provide care, the state must also seek their advice before submitting any plan amendment or waiver likely to directly affect them.<sup class="fn-ref"><a href="#ref-20" id="cite-20" aria-label="Reference 20">20</a></sup>
 
 ## What the rule leaves open
 
-In short: the rule tells states to use their own data, but it gives tribal health systems no defined role in verification.
+The rule tells states to use their own data, but it gives tribal health systems no defined role in verification.
 
-Urban programs face the hardest case. Many patients belong to tribes in other states, descend from members, or belong to state-recognized or terminated tribes. The state holds no tribal record for them. What leaves your program is your decision. We found nothing in the rule's verification requirements that requires sending a state your patients' tribal records.<sup class="fn-ref"><a href="#ref-13" aria-label="Reference 13">13</a></sup>
+Urban programs face the hardest case. Many of their patients belong to tribes in other states, descend from members, or belong to state-recognized or terminated tribes, and the state holds no tribal record for them. What leaves your program is your decision: we found nothing in the rule's verification requirements that requires sending a state your patients' tribal records.<sup class="fn-ref"><a href="#ref-13" aria-label="Reference 13">13</a></sup>
 
 That leaves a gap, and it helps to keep three things apart.
 
@@ -170,7 +163,7 @@ Most states fall short in the same few ways. The counts below are from the score
 
 States, tribes and Indian health programs can send new evidence from any state's page: choose "Send a published policy link", share a public link to the policy, and we review it within 10 business days. If your vendor, tribal liaison or health director needs this, send it on.
 
-Stating the rule correctly is only the first step. A grade measures what a state has published, not what its eligibility system does. The exemption protects people only if the system applies it: it checks the state's own data first, doesn't re-check a person's status before the next renewal, keeps renewals at 12 months,<sup class="fn-ref"><a href="#ref-6" aria-label="Reference 6">6</a>,<a href="#ref-13" aria-label="Reference 13">13</a></sup> and records a failed data match as "unknown," not "no." That next step applies to every state, including the three that earn an A.
+Stating the rule correctly is only the first step. A grade measures what a state has published, not what its eligibility system does. The exemption protects people only if the system applies it: it checks the state's own data first, doesn't re-check a person's status before the next renewal, keeps renewals at 12 months,<sup class="fn-ref"><a href="#ref-6" aria-label="Reference 6">6</a>,<a href="#ref-13" aria-label="Reference 13">13</a></sup> and records a failed data match as "unknown," not "no." That next step applies to every state, including the two that earn an A.
 
 **Coming soon:** a companion post, *Getting the AI/AN exemption right in Medicaid eligibility systems*, on how to build these rules into a state's eligibility system, and a set of test scenarios that states and vendors can run against their own systems.
 
