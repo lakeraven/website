@@ -4,17 +4,19 @@ const fs = require("fs");
 const path = require("path");
 const { addHeadingAnchors, headingsMissingIds, duplicateIds, slugify } = require("../lib/heading-anchors");
 
-test("adds a readable id and a # link to an h2 without one", () => {
+test("adds a readable id and makes the heading text the link", () => {
   const out = addHeadingAnchors('<h2 class="x">How we help</h2>');
-  assert.strictEqual(
-    out,
-    '<h2 id="how-we-help" class="x">How we help <a class="heading-anchor" href="#how-we-help" aria-label="Link to this section: How we help"><span aria-hidden="true">#</span></a></h2>'
-  );
+  assert.strictEqual(out, '<h2 id="how-we-help" class="x"><a class="heading-anchor" href="#how-we-help">How we help</a></h2>');
+});
+
+test("a heading that already contains a link keeps it and gets only the id", () => {
+  const out = addHeadingAnchors('<h3><a href="/post">Post title</a></h3>');
+  assert.strictEqual(out, '<h3 id="post-title"><a href="/post">Post title</a></h3>');
 });
 
 test("keeps an existing id so old links keep working", () => {
   const out = addHeadingAnchors('<h2 id="raise">How to raise this grade</h2>');
-  assert.match(out, /^<h2 id="raise">How to raise this grade <a class="heading-anchor" href="#raise"/);
+  assert.strictEqual(out, '<h2 id="raise"><a class="heading-anchor" href="#raise">How to raise this grade</a></h2>');
 });
 
 test("makes generated ids unique on the page, including against existing ids", () => {

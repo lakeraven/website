@@ -4,21 +4,14 @@ h1, h2, h3 {
   font-family: family("sans") !important;
 }
 
-// Section links: every h2–h4 gets a "#" link (lib/heading-anchors.js).
-// Hidden until the heading is hovered or the link has keyboard focus,
-// always shown on touch screens, where there is no hover.
+// Section links: the text of every h2–h4 links to its own id
+// (lib/heading-anchors.js). It looks like a heading, not a link, until
+// hovered or focused, when it is underlined; focus keeps the USWDS ring.
+// !important beats the theme link colors (e.g. dark mode's a:not(.usa-button)).
 .heading-anchor {
-  margin-left: units(1);
-  color: color("base");
-  font-weight: normal;
+  &, &:link, &:visited, &:hover, &:focus, &:active { color: inherit !important; }
   text-decoration: none;
-  opacity: 0;
-  &:hover { color: color("primary"); text-decoration: underline; }
-  &:focus { opacity: 1; }
-}
-:is(h2, h3, h4):hover > .heading-anchor { opacity: 1; }
-@media (hover: none) {
-  .heading-anchor { opacity: 0.6; }
+  &:hover, &:focus { text-decoration: underline; text-underline-offset: 0.15em; }
 }
 // Leave room above a section jumped to by its anchor.
 :is(h2, h3, h4)[id] { scroll-margin-top: units(2); }

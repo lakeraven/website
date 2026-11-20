@@ -26,7 +26,7 @@ async function getFontFiles(assetPath) {
     });
 }
 
-async function createAssetPaths() {
+async function createAssetPaths(result) {
   const assetPath = path.join(__dirname, "../docs/assets");
   let assetDirs = await fs.readdir(assetPath, { withFileTypes: true });
   const fontFiles = await getFontFiles(assetPath);
@@ -52,6 +52,19 @@ async function createAssetPaths() {
     })
   );
   const assets = Object.assign({}, ...assetsFiles.flat(), ...fontFiles.flat());
+
+  // docs/assets can hold older hashed builds (kept for one deploy so cached
+  // HTML doesn't load unstyled). The listing above then picks whichever
+  // sorts last, which may be stale, so point each key at the file esbuild
+  // wrote in this run.
+  for (const out of Object.keys(result.metafile.outputs)) {
+    const rel = path.relative(path.join(__dirname, "../docs/assets"), path.resolve(out));
+    const { dir, name, ext } = path.parse(rel);
+    if (!dir) continue;
+    const hashedAt = name.lastIndexOf("-");
+    const originalName = hashedAt > -1 ? name.slice(0, hashedAt) : name;
+    assets[`${originalName}${ext}`] = `/assets/${dir}/${path.basename(rel)}`;
+  }
   const outputData = path.join(__dirname, "../_data/assetPaths.json");
 
   return await fs.writeFile(outputData, JSON.stringify(assets, null, 2));
@@ -90,8 +103,9 @@ esbuild
       }),
     ],
     bundle: true,
+    metafile: true,
   })
-  .then(() => createAssetPaths())
+  .then((result) => createAssetPaths(result))
   .then(() => {
     console.log("Assets have been built!");
     process.exit();

@@ -4,4 +4,4 @@
 
 ## Rules
 
-- **Every heading is linkable.** Every `h2`–`h4` must have a stable `id` and a "#" link. The build adds both (`lib/heading-anchors.js`), and `npm test` fails if a built page breaks the rule. Never rename an existing heading `id`; keep it explicitly if you change the heading text. Details in `CONTRIBUTING.md` under "Site rule: every heading is linkable".
+- **Every heading is linkable.** Every `h2`–`h4` must have a stable `id`, and its text links to that `id`. The build adds both (`lib/heading-anchors.js`), and `npm test` fails if a built page breaks the rule. Never rename an existing heading `id`; keep it explicitly if you change the heading text. Details in `CONTRIBUTING.md` under "Site rule: every heading is linkable".
