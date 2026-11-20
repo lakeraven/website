@@ -40,3 +40,15 @@ test("best practice does not affect the grade", () => {
   s.components.tribal_or_clinic_channel = { mark: C };
   assert.equal(gradeState(s, rubric).grade, "A");
 });
+
+// Re-checks at renewal (Kimball, 20 Nov 2026): "disputed" is neither met nor a contradiction.
+const D = "disputed";
+test("disputed is not a contradiction: eight met plus one disputed is B", () => {
+  const r = gradeState(make([...Array(8).fill(M), D, U]), rubric);
+  assert.equal(r.grade, "B");
+  assert.equal(r.contradicts, 0);
+  assert.equal(r.disputed, 1);
+});
+test("disputed is not met: nine met plus one disputed is B, not A", () => assert.equal(gradeState(make([...Array(9).fill(M), D]), rubric).grade, "B"));
+test("disputed does not count toward Not graded", () => assert.equal(gradeState(make([M, M, D, ...Array(7).fill(U)]), rubric).grade, "C"));
+test("disputed plus one contradiction is still C", () => assert.equal(gradeState(make([...Array(8).fill(M), D, C]), rubric).grade, "C"));

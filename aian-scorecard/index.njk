@@ -13,6 +13,8 @@ description: How closely each state's published Medicaid policy follows CMS rule
 <h1>American Indian and Alaska Native Medicaid exemption scorecard</h1>
 <p class="aian-disclaimer"><strong>Grades are our sourced assessment as of {{ sc.lastChecked }}.</strong> We will be wrong sometimes, and we correct quickly when shown published policy. <a href="{{ sc.rubric.submission.form_url }}">Send us a link</a>, or see <a href="{{ '/aian-medicaid-scorecard/process/' | url }}">how corrections work</a>. Each state's page lists every change we have made.</p>
 {% set sm = sc.summary %}
+{% set rq = sc.rubric.requirements | selectattr("interpretation") | first %}
+<div class="usa-alert usa-alert--info usa-alert--slim aian-cms-conflict"><div class="usa-alert__body"><p class="usa-alert__text"><strong>A conflict in CMS's own rules.</strong> {{ rq.interpretation }} Sources: {% for x in rq.interpretation_sources %}<a href="{{ x.url }}">{{ x.label }}</a>{% if not loop.last %}; {% endif %}{% endfor %}.</p></div></div>
 <p class="usa-intro aian-headline">Only <strong>{{ sm.allMet }} of {{ sm.subject }}</strong> states meet all {{ sm.total }} requirements in their published policy. The median state meets <strong>{{ sm.median }}</strong>, and <strong>{{ sm.anyContradiction }}</strong> publish policy that contradicts at least one.</p>
 
 <p>Federal law exempts American Indians and Alaska Natives from Medicaid's new work requirement and keeps their renewals at 12 months. This scorecard grades how closely each state's <strong>published</strong> policy follows the CMS rules that carry out those protections. It measures what states have written down, not what happens at every eligibility office.</p>
@@ -24,6 +26,7 @@ description: How closely each state's published Medicaid policy follows CMS rule
   <li><strong>{{ sm.allMet }} of {{ sm.subject }}</strong> states subject to the new rules meet all {{ sm.total }} requirements in their published policy.</li>
   <li>The median state meets <strong>{{ sm.median }} of {{ sm.total }}</strong>.</li>
   <li><strong>{{ sm.anyContradiction }}</strong> states publish policy that contradicts at least one requirement.</li>
+  <li><strong>{{ sm.anyDisputed }}</strong> states publish that they check status again at renewal. The regulation allows that, but CMS's preamble says states may not reverify, so we mark it <strong>disputed</strong>.</li>
   <li><strong>{{ sm.tribalChannel }}</strong> states publish a way for tribes or Indian health programs to confirm a person's status.</li>
 </ul>
 
@@ -56,10 +59,10 @@ description: How closely each state's published Medicaid policy follows CMS rule
     {% set url = ('/aian-medicaid-scorecard/' + s.slug + '/') | url %}
     <tr>
       <th scope="row" data-label="State"><a href="{{ url }}">{{ s.name }}</a>{% if s.under_review %} <span class="usa-tag">Evidence under review</span>{% endif %}</th>
-      <td data-label="Score">{% if s.status != 'not_subject' %}<strong>{{ s.met }}/{{ sc.summary.total }}</strong><br><span class="text-base aian-sub">{{ s.contradicts }} contradicted, {{ s.unpublished }} unpublished</span>{% endif %}</td>
+      <td data-label="Score">{% if s.status != 'not_subject' %}<strong>{{ s.met }}/{{ sc.summary.total }}</strong><br><span class="text-base aian-sub">{{ s.contradicts }} contradicted, {% if s.disputed %}{{ s.disputed }} disputed, {% endif %}{{ s.unpublished }} unpublished</span>{% endif %}</td>
       <td data-label="Grade">{{ s.grade }}{% if s.status == 'not_subject' and not s.confirmed %} (to confirm){% endif %}</td>
       <td data-label="Impact">{% if s.status != 'not_subject' %}<span role="img" aria-label="about {{ s.impact.estimate | aianNum }} estimated">{{ dots(s.impact.full, s.impact.part) }}</span><br><span class="text-base">about {{ s.impact.estimate | aianNum }} (modeled estimate)</span>{% if s.impact.published %}<br><span class="text-base">State reports {{ s.impact.published.count | aianNum }} <a href="{{ s.impact.published.url }}">already verified as exempt</a></span>{% endif %}{% endif %}</td>
-      <td data-label="To fix">{% if s.status == 'not_subject' %}Not subject{% elif not s.improvements.length %}Nothing{% else %}{% set con = s.fixContradicts %}{% set unp = s.fixUnpublished %}{% if con.length %}<span class="aian-fix-kind">Contradicts:</span> {% for i in con %}<a href="{{ url }}#fix-{{ i.id }}">{{ i.short }}</a>{% if not loop.last %} · {% endif %}{% endfor %}{% endif %}{% if con.length and unp.length %}<br>{% endif %}{% if unp.length %}<span class="aian-fix-kind">Not published:</span> {% for i in unp %}<a href="{{ url }}#fix-{{ i.id }}">{{ i.short }}</a>{% if not loop.last %} · {% endif %}{% endfor %}{% endif %}{% endif %}</td>
+      <td data-label="To fix">{% if s.status == 'not_subject' %}Not subject{% elif not s.improvements.length %}Nothing{% else %}{% set con = s.fixContradicts %}{% set dis = s.fixDisputed %}{% set unp = s.fixUnpublished %}{% if con.length %}<span class="aian-fix-kind">Contradicts:</span> {% for i in con %}<a href="{{ url }}#fix-{{ i.id }}">{{ i.short }}</a>{% if not loop.last %} · {% endif %}{% endfor %}{% endif %}{% if con.length and (dis.length or unp.length) %}<br>{% endif %}{% if dis.length %}<span class="aian-fix-kind">Disputed:</span> {% for i in dis %}<a href="{{ url }}#fix-{{ i.id }}">{{ i.short }}</a>{% if not loop.last %} · {% endif %}{% endfor %}{% endif %}{% if dis.length and unp.length %}<br>{% endif %}{% if unp.length %}<span class="aian-fix-kind">Not published:</span> {% for i in unp %}<a href="{{ url }}#fix-{{ i.id }}">{{ i.short }}</a>{% if not loop.last %} · {% endif %}{% endfor %}{% endif %}{% endif %}</td>
     </tr>
   {% endfor %}
   </tbody>
@@ -69,6 +72,7 @@ description: How closely each state's published Medicaid policy follows CMS rule
 <ul class="usa-list">
   <li>Each state is checked against {{ sc.rubric.requirements.length }} requirements from federal law.</li>
   <li>For each requirement, the state's published policy either <strong>meets</strong> it, <strong>contradicts</strong> it, or says nothing (<strong>not published</strong>).</li>
+  <li>One more mark applies only to re-checks: <strong>disputed</strong>, for a published check at renewal. The regulation allows it but CMS's preamble says states may not reverify. Disputed counts neither as met nor as a contradiction. See the note on CMS's conflicting rules at the top of this page.</li>
   <li>Saying nothing never counts as meeting a requirement.</li>
   <li>The grade follows from those counts:</li>
 </ul>

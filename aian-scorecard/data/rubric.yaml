@@ -69,6 +69,17 @@ requirements:
     source_url: https://www.govinfo.gov/content/pkg/FR-2026-06-29/pdf/C1-2026-11094.pdf
     fix: once a person's status is established it stays on file and is not checked again, including at renewal
     model: OR
+    # Kimball, 20 Nov 2026: grade by the regulation. A check between renewals contradicts; a published
+    # check at renewal is "disputed" (neither met nor a contradiction), because CMS's own sources disagree.
+    disputed_label: Conflicts with CMS preamble (disputed)
+    interpretation: "CMS says three different things about re-checking. The regulation, 42 CFR 435.557(d)(4), bars verifying a person's status again between regularly scheduled renewals unless the state learns something changed. The preamble to the rule says states \"may not reverify\" American Indian status at all. CMS training slides say status \"cannot be verified more frequently than at each renewal.\" Until CMS resolves this, we grade by the regulation: a check between renewals is a contradiction, and a published check at renewal is disputed. Disputed counts neither as met nor as a contradiction. We read the preamble as CMS's intent, so our fix asks states not to check again at renewal either."
+    interpretation_sources:
+      - label: 42 CFR 435.557(d)(4)
+        url: https://www.govinfo.gov/content/pkg/FR-2026-06-29/pdf/C1-2026-11094.pdf
+      - label: Preamble, 91 FR 33366
+        url: https://www.federalregister.gov/documents/2026/06/03/2026-11094/medicaid-program-community-engagement-requirement-for-certain-individuals
+      - label: CMS slides, slide 29
+        url: https://www.medicaid.gov/medicaid/downloads/ce-requirement-ifc-deck.pdf
   - id: twelve_month_renewal
     short: 12-month renewals
     label: Keeps 12-month renewals for American Indians and Alaska Natives in the expansion group
