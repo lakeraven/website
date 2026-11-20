@@ -8,6 +8,7 @@ const yaml = require("js-yaml");
 const svgSprite = require("eleventy-plugin-svg-sprite");
 const { imageShortcode, imageWithClassShortcode } = require("./config");
 const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
+const { addHeadingAnchors } = require("./lib/heading-anchors");
 
 module.exports = function (config) {
   // Set pathPrefix for site
@@ -102,15 +103,18 @@ module.exports = function (config) {
     breaks: true,
     linkify: true,
   }).use(markdownItAnchor, {
-    permalink: markdownItAnchor.permalink.ariaHidden({
-      placement: "after",
-      class: "direct-link",
-      symbol: "#",
-      level: [1, 2, 3, 4],
-    }),
+    // Ids only. The visible "#" link is added site-wide by the
+    // heading-anchors transform below, so every page uses the same markup.
     slugify: config.getFilter("slug"),
   });
   config.setLibrary("md", markdownLibrary);
+
+  // Site-wide rule: every h2–h4 has an id and a "#" link to it.
+  // See lib/heading-anchors.js and CONTRIBUTING.md.
+  config.addTransform("heading-anchors", function (content) {
+    const out = this.page && this.page.outputPath;
+    return out && out.endsWith(".html") ? addHeadingAnchors(content) : content;
+  });
 
   // Override Browsersync defaults (used only with --serve)
   config.setBrowserSyncConfig({
