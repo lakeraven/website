@@ -78,6 +78,15 @@ description: How closely each state's published Medicaid policy follows CMS rule
 </table>
 <p>Not graded: {% for b in sc.rubric.best_practices %}we also report whether a state offers {{ b.label | lower }}. It is a tribal recommendation, not a CMS requirement, so it does not affect the grade.{% endfor %}</p>
 
+<h2 id="reading-wording">How we read "eligible for Indian Health Service care"</h2>
+<p>Many states exempt people "eligible for Indian Health Service care" without listing each group the federal rule covers. We read that wording this way:</p>
+<ul class="usa-list">
+  <li>It <strong>meets</strong> IHS-eligible, Alaska Natives, and California Indians. The federal definition of Indian (<a href="https://www.law.cornell.edu/cfr/text/42/447.51">42 CFR 447.51</a>) counts anyone the Secretary of Health and Human Services considers an Indian for Indian health care, "including as a California Indian, Eskimo, Aleut, or other Alaska Native." California Indians are eligible for Indian Health Service care by statute (<a href="https://www.law.cornell.edu/uscode/text/25/1679">25 U.S.C. 1679(a)</a>).</li>
+  <li>It <strong>meets</strong> Tribal members. Indian Health Service rules list tribal membership and enrollment as evidence of eligibility (<a href="https://www.law.cornell.edu/cfr/text/42/136.12">42 CFR 136.12</a>).</li>
+  <li>It does <strong>not</strong> meet Urban Indians and descendants. Urban Indian programs serve people, such as descendants and members of state-recognized tribes, who may not be eligible for Indian Health Service care. A state meets that requirement only by naming them or by adopting the full federal definition.</li>
+</ul>
+<p>A state can remove any doubt by publishing the full federal definition. Each state's page links the fix.</p>
+
 <h2 id="impact-method">How we estimate impact</h2>
 <ul class="usa-list">
   <li>We start from each state's 2020 Census count of people who identify as American Indian or Alaska Native alone.</li>
