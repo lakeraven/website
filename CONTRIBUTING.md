@@ -17,3 +17,18 @@ As part of a U.S. government agency, the General Services Administration (GSA)�
 This project is in the public domain within the United States, and copyright and related rights in the work worldwide are waived through the [CC0 1.0 Universal public domain dedication](https://creativecommons.org/publicdomain/zero/1.0/).
 
 All contributions to this project will be released under the CC0 dedication. By submitting a pull request or issue, you are agreeing to comply with this waiver of copyright interest.
+
+## Site rule: every heading is linkable
+
+Every `h2`, `h3` and `h4` on lakeraven.com has a stable `id` and a "#" link next to it, so people can link straight to a section (for example `/aian-medicaid-scorecard/ca/#raise`). This is enforced in the build, not page by page:
+
+- `lib/heading-anchors.js` runs as an Eleventy transform on every HTML page (Markdown, Nunjucks and Liquid). It keeps any `id` a heading already has, gives the rest a readable slug of their text (made unique on the page with `-2`, `-3`), and adds the "#" link. The link shows on hover or keyboard focus, and has an accessible name ("Link to this section: …").
+- Markdown headings get their ids from `markdown-it-anchor` (configured in `.eleventy.js`), so ids on existing posts don't change.
+- `npm test` includes a build check (`test/heading-anchors.test.js`) that fails if any built page in `docs/` has an `h2`–`h4` without an `id`, or a heading `id` used twice on a page. Run `npm run build` before `npm test`.
+
+When you write a page:
+
+- Don't rename an existing heading `id`. People and other pages link to it. If you change a heading's text, keep the old `id` by writing it explicitly (`<h2 id="old-id">New text</h2>`).
+- Give a heading an explicit short `id` when you link to it from elsewhere (as the scorecard does with `#raise`, `#history`, `#submit`).
+- To leave the "#" link off one heading (a hero slogan, say), add `data-anchor="off"`. The heading still gets an `id`.
+- Headings inside a link (a whole clickable card) get an `id` but no "#" link, because links can't be nested.
