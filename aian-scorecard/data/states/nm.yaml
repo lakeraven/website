@@ -1,20 +1,29 @@
 # Evidence re-verified 2026-11-18 against primary sources.
+# 2026-11-20 after an outside fact check: proposed 8.296.400.10(H)(2) NMAC adopts the full federal definition
+# (IHCIA 4(13) and (28), 809(a), IHS-determined), so urban, IHS-eligible, California Indians and out-of-state now cite it;
+# data_first meets on the tribal notice's data-then-notice sequence (same reading as OK).
 state: NM
 name: New Mexico
-checked: '2026-11-18'
+checked: '2026-11-20'
 start: 2027-01-01 (proposed rule effective date)
 unverified: false
 under_review: false
 components:
   out_of_state:
-    mark: unpublished
+    mark: meets
+    quote: is an Indian or an urban Indian as defined in paragraphs (13) and (28) of section 4 of the Indian Health Care Improvement Act.
+    url: https://www.hca.nm.gov/wp-content/uploads/Proposed-8.296.400-NMAC.pdf
+    read: '2026-11-20'
   tribal_members:
     mark: meets
     quote: American Indian or Alaska Native;
     url: https://www.hca.nm.gov/wp-content/uploads/Tribal-Notification-26-17.pdf
     read: '2026-11-18'
   urban_and_descendants:
-    mark: unpublished
+    mark: meets
+    quote: is an Indian or an urban Indian as defined in paragraphs (13) and (28) of section 4 of the Indian Health Care Improvement Act.
+    url: https://www.hca.nm.gov/wp-content/uploads/Proposed-8.296.400-NMAC.pdf
+    read: '2026-11-20'
   alaska_natives:
     mark: meets
     quote: American Indian or Alaska Native;
@@ -22,19 +31,19 @@ components:
     read: '2026-11-18'
   ihs_eligible:
     mark: meets
-    quote: a broad definition, including individuals who are eligible to receive services at Indian Health Services facilities
-    url: https://www.hca.nm.gov/wp-content/uploads/HCA_HR1_MED_AmericanIndians_OnePager_07_forPrint.pdf
-    read: '2026-11-18'
+    quote: has otherwise been determined eligible as an Indian for the Indian health service under the department of health and human services regulations.
+    url: https://www.hca.nm.gov/wp-content/uploads/Proposed-8.296.400-NMAC.pdf
+    read: '2026-11-20'
   california_indians:
     mark: meets
-    quote: a broad definition, including individuals who are eligible to receive services at Indian Health Services facilities
-    url: https://www.hca.nm.gov/wp-content/uploads/HCA_HR1_MED_AmericanIndians_OnePager_07_forPrint.pdf
-    read: '2026-11-18'
+    quote: is a California Indian as described in section 809(a) of such Act
+    url: https://www.hca.nm.gov/wp-content/uploads/Proposed-8.296.400-NMAC.pdf
+    read: '2026-11-20'
   data_first:
-    mark: unpublished
-    quote: The HCA verifies CE compliance or meeting an exclusion or exception at both application and renewal
+    mark: meets
+    quote: The HCA will provide a 30-day notice requesting verification of CE compliance or meeting an exclusion or exception for applicants and beneficiaries at renewal if unable to approve or renew Other Adult Medicaid using available data sources
     url: https://www.hca.nm.gov/wp-content/uploads/Tribal-Notification-26-17.pdf
-    read: '2026-11-18'
+    read: '2026-11-20'
   non_document_proof:
     mark: meets
     quote: The exemption is based solely on your self-attestation of being American Indian.
@@ -44,12 +53,18 @@ components:
     mark: unpublished
   status_not_rechecked:
     mark: unpublished
-    quote: The HCA verifies CE compliance or meeting an exclusion or exception at both application and renewal
+    quote: The HCA verifies CE compliance or meeting an exclusion or exception at both application and renewal using available data sources.
     url: https://www.hca.nm.gov/wp-content/uploads/Tribal-Notification-26-17.pdf
-    read: '2026-11-18'
+    read: '2026-11-20'
+    follow_up: This is a general rule for all exclusions, with no American Indian or Alaska Native carve-out. HCA's American Indian flyer says the exemption rests solely on the person's self-attestation, which stays on file, so a check at renewal may mean reading that record rather than asking again. No published HCA document says whether American Indian or Alaska Native status is checked again between or at renewals. We count this as not published, not as a contradiction.
   twelve_month_renewal:
     mark: meets
     quote: Native Americans are exempt from 6-month renewals and will continue to have 12-month renewal periods.
     url: https://www.hca.nm.gov/wp-content/uploads/Notice-of-Opportunity-to-Comment-HR1-Amendments.pdf
     read: '2026-11-18'
-history: []
+history:
+  - date: '2026-11-20'
+    from: B
+    to: B
+    change: "New Mexico's proposed rule (8.296.400.10(H)(2) NMAC, noticed August 11, 2026) exempts anyone who is an Indian or urban Indian under the Indian Health Care Improvement Act, a California Indian, or determined eligible as an Indian for Indian Health Service care. That is the full federal definition, so Urban Indians and descendants now meets, IHS-eligible and California Indians now cite the rule's own wording, and Out-of-state tribes meets because the definition has no in-state limit and proof is self-attestation. Check own data first now meets: the tribal notice says HCA uses available data and asks the person only if it cannot. New Mexico meets 9 of 10; the grade stays B because A needs all 10."
+    url: https://www.hca.nm.gov/wp-content/uploads/Proposed-8.296.400-NMAC.pdf

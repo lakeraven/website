@@ -1,7 +1,8 @@
 # Evidence re-verified 2026-11-18 against primary sources.
+# data_first and non_document_proof contradicts -> unpublished 2026-11-20 after an outside fact check (see follow_up).
 state: NC
 name: North Carolina
-checked: '2026-11-18'
+checked: '2026-11-20'
 start: '2027-01-01'
 unverified: false
 under_review: false
@@ -34,15 +35,17 @@ components:
     url: https://medicaid.ncdhhs.gov/beneficiaries/impact-hr-1-and-federal-changes-medicaid/nc-medicaid-work-and-community-engagement-requirements
     read: '2026-11-18'
   data_first:
-    mark: contradicts
+    mark: unpublished
     quote: Collect any papers, medical records, official documents or other proof that you fall into one of these categories.
     url: https://medicaid.ncdhhs.gov/beneficiaries/impact-hr-1-and-federal-changes-medicaid/work-and-community-engagement-requirement
-    read: '2026-11-18'
+    read: '2026-11-20'
+    follow_up: This is general advice for all 20 exemption categories on the page, not an instruction about American Indian or Alaska Native status, and it doesn't say the state skips its own records. North Carolina told KFF Health News (13 November 2026) that 3,400 Native enrollees are already verified and will be exempted automatically, which suggests it does use data on file, but no published North Carolina policy says so. We count this as not published, not as a contradiction.
   non_document_proof:
-    mark: contradicts
+    mark: unpublished
     quote: You may have to provide documents to support your answer.
     url: https://medicaid.ncdhhs.gov/beneficiaries/impact-hr-1-and-federal-changes-medicaid/work-and-community-engagement-requirement
-    read: '2026-11-18'
+    read: '2026-11-20'
+    follow_up: Federal rules let a state ask for documents once its own records fall short. What they bar is denying someone only because documents don't exist. This general sentence covers all 20 exemption categories and says nothing about people without documents, so we count it as not published, not as a contradiction.
   tribal_or_clinic_channel:
     mark: unpublished
   status_not_rechecked:
@@ -55,4 +58,9 @@ components:
     quote: American Indians, Alaska Natives and other members eligible for Indian Health Services (IHS) renew once a year.
     url: https://medicaid.ncdhhs.gov/beneficiaries/impact-hr-1-and-federal-changes-medicaid/nc-medicaid-work-and-community-engagement-requirements
     read: '2026-11-18'
-history: []
+history:
+  - date: '2026-11-20'
+    from: D
+    to: C
+    change: The two contradictions rested on general sentences that apply to every exemption category ("Collect any papers ... or other proof", "You may have to provide documents"). Federal rules allow a state to ask for documents; they bar skipping the state's own records and denying someone only because documents don't exist, and North Carolina's page says neither. Check own data first and proof without documents are now not published. North Carolina meets 5 of 10 with no contradictions, which is a C.
+    url: https://medicaid.ncdhhs.gov/beneficiaries/impact-hr-1-and-federal-changes-medicaid/work-and-community-engagement-requirement
