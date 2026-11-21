@@ -30573,10 +30573,51 @@ html[data-theme=dark] .aian-dots {
 }
 .aian-roster thead th {
   white-space: nowrap;
+  vertical-align: bottom;
 }
-.aian-roster td[data-label=Score],
-.aian-roster td[data-label=Impact] {
+.aian-roster .aian-th-note {
+  display: block;
+  font-weight: 400;
+  font-size: 0.85em;
+  white-space: normal;
+  max-width: 9rem;
+}
+.aian-roster .aian-col-score,
+.aian-roster .aian-impact-n {
   white-space: nowrap;
+}
+.aian-roster .aian-col-impact {
+  min-width: 7rem;
+  max-width: 11rem;
+}
+.aian-roster .aian-fix-kind {
+  margin: 0 0 0.1rem;
+  font-size: 0.9em;
+}
+.aian-roster .aian-fix-kind ~ .aian-fix-kind {
+  margin-top: 0.5rem;
+}
+.aian-roster .aian-fix-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.aian-roster .aian-fix-list li {
+  position: relative;
+  margin: 0 0 0.15rem;
+  padding-left: 1.4em;
+  line-height: 1.4;
+}
+.aian-roster .aian-fix-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.3em;
+  width: 0.8em;
+  height: 0.8em;
+  border: 1.5px solid currentColor;
+  border-radius: 2px;
+  opacity: 0.7;
 }
 @media all and (max-width: 29.99em) {
   .usa-prose > .aian-roster.usa-table--stacked tr {
@@ -30594,20 +30635,29 @@ html[data-theme=dark] .aian-dots {
     margin: 0 0.5rem 0 0;
     padding: 0;
   }
-  .usa-prose > .aian-roster.usa-table--stacked td[data-label=Impact] br,
-  .usa-prose > .aian-roster.usa-table--stacked td[data-label=Score] br {
+  .usa-prose > .aian-roster.usa-table--stacked .aian-col-impact br {
     display: none;
   }
-  .usa-prose > .aian-roster.usa-table--stacked .aian-sub,
-  .usa-prose > .aian-roster.usa-table--stacked td[data-label=Impact] .text-base {
+  .usa-prose > .aian-roster.usa-table--stacked .aian-impact-n,
+  .usa-prose > .aian-roster.usa-table--stacked .aian-impact-pub {
     margin-left: 0.5rem;
+  }
+  .usa-prose > .aian-roster.usa-table--stacked .aian-impact-pub {
+    display: block;
+    margin-left: 0;
+  }
+  .usa-prose > .aian-roster.usa-table--stacked .aian-col-fix .aian-fix-kind:first-of-type {
+    margin-top: 0.25rem;
   }
   .usa-prose > .aian-roster.usa-table--stacked th[scope=row] {
     min-width: 0;
   }
-  .usa-prose > .aian-roster.usa-table--stacked td[data-label=Score],
-  .usa-prose > .aian-roster.usa-table--stacked td[data-label=Impact] {
+  .usa-prose > .aian-roster.usa-table--stacked .aian-col-score,
+  .usa-prose > .aian-roster.usa-table--stacked .aian-col-impact {
     white-space: normal;
+  }
+  .usa-prose > .aian-roster.usa-table--stacked .aian-col-impact {
+    max-width: none;
   }
 }
 .usa-layout-docs main {
@@ -30782,6 +30832,77 @@ html[data-theme=dark] .lr-announce a:hover,
 html[data-theme=dark] .lr-announce a:focus {
   color: #f0f0f0;
 }
+.aian-roster tbody tr:nth-child(even),
+.aian-roster tbody tr:nth-child(even) > * {
+  background-color: #f0f0f0;
+}
+html[data-theme=dark] .aian-roster tbody tr:nth-child(even),
+html[data-theme=dark] .aian-roster tbody tr:nth-child(even) > * {
+  background-color: #1a2430;
+}
+.aian-sort {
+  display: block;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.aian-sort:focus-visible {
+  outline: 0.25rem solid #2491ff;
+  outline-offset: 0.2rem;
+}
+.aian-sort:hover {
+  text-decoration: underline;
+}
+.aian-sort-icon {
+  margin-left: 0.25em;
+}
+.aian-roster thead th[aria-sort] {
+  background-color: transparent;
+}
+html[data-theme=dark] .aian-roster thead th[aria-sort] {
+  background-color: #0f1720;
+  color: #f0f0f0;
+}
+.aian-sort-icon::after {
+  content: "\2195";
+  opacity: 0.55;
+}
+th[aria-sort=ascending] .aian-sort-icon::after {
+  content: "\2191";
+  opacity: 1;
+}
+th[aria-sort=descending] .aian-sort-icon::after {
+  content: "\2193";
+  opacity: 1;
+}
+.aian-sort-select {
+  display: none;
+  margin: 1rem 0 0.5rem;
+}
+.aian-sort-select .usa-label {
+  margin-top: 0;
+}
+.aian-sort-select .usa-select {
+  max-width: 100%;
+}
+@media all and (max-width: 29.99em) {
+  .aian-sort-select {
+    display: block;
+  }
+}
+html[data-theme=dark] .aian-sort-select .usa-label {
+  color: #f0f0f0;
+}
+html[data-theme=dark] .aian-sort-select .usa-select {
+  background-color: #1a2430;
+  color: #f0f0f0;
+  border-color: #c6cace;
+}
 /*! uswds @version */
 
-/*# sourceMappingURL=styles-45DWQ5H5.css.map */
+/*# sourceMappingURL=styles-PWMEUZ65.css.map */
