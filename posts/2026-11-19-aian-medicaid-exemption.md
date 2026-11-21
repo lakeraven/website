@@ -37,27 +37,14 @@ Where to start:
 
 ## Who qualifies
 
-The federal definition has four routes. You qualify if **any one** of these is true:<sup class="fn-ref"><a href="#ref-8" id="cite-8" aria-label="Reference 8">8</a></sup>
-
-- You are a member of a **federally recognized** tribe, including an Alaska Native village or Alaska Native corporation.
-- **Or** you are an urban Indian. That requires **both** of these:
-  - You live in an urban center (a community HHS has designated, not every city).
-  - **And** any one of these is true:
-    - You are a member of **any** tribe, band or other organized group of Indians, including a tribe terminated since 1940 or one recognized by the state where you live.
-    - **Or** you are a child or grandchild of such a member.
-    - **Or** you are Eskimo, Aleut or other Alaska Native.
-    - **Or** you are considered an Indian by the Interior Department or under HHS rules.<sup class="fn-ref"><a href="#ref-9" aria-label="Reference 9">9</a></sup>
-- **Or** the Secretary of the Interior considers you an Indian for any purpose.<sup class="fn-ref"><a href="#ref-10" aria-label="Reference 10">10</a></sup>
-- **Or** HHS considers you an Indian for Indian health care, including California Indians and Alaska Natives.<sup class="fn-ref"><a href="#ref-11" aria-label="Reference 11">11</a></sup>
-
-The table gives the details:
+The federal definition has four routes. You qualify if **any one** of these routes is true:<sup class="fn-ref"><a href="#ref-8" id="cite-8" aria-label="Reference 8">8</a></sup>
 
 | Route | Urban center required? | Recognized-tribe membership required? |
 |---|---|---|
-| Member of a federally recognized tribe, including an Alaska Native village or Alaska Native corporation<sup class="fn-ref"><a href="#ref-9" id="cite-9" aria-label="Reference 9">9</a></sup> | No | Yes |
-| Urban Indian, when both are true:<ul class="route-logic"><li>Lives in an urban center</li><li>And is any one of these:<ul><li>A member of any tribe, band or group, including tribes terminated since 1940 or recognized by the state where the person lives</li><li>Or a child or grandchild of a member</li><li>Or Eskimo, Aleut or other Alaska Native</li><li>Or considered an Indian by Interior or under HHS rules<sup class="fn-ref"><a href="#ref-9" aria-label="Reference 9">9</a></sup></li></ul></li></ul> | Yes | No |
-| Considered an Indian by the Secretary of the Interior for any purpose, for example a person of one-half or more Indian blood<sup class="fn-ref"><a href="#ref-10" id="cite-10" aria-label="Reference 10">10</a></sup> | No | No |
-| Considered by HHS to be an Indian for purposes of Indian health care eligibility, including California Indians and Alaska Natives<sup class="fn-ref"><a href="#ref-11" id="cite-11" aria-label="Reference 11">11</a>,<a href="#ref-12" id="cite-12" aria-label="Reference 12">12</a></sup> | No | No; IHS looks at descent and community recognition |
+| Member of <strong>any</strong> federally recognized tribe, <strong>including tribes outside your state</strong>, and including an Alaska Native village or Alaska Native corporation<sup class="fn-ref"><a href="#ref-9" id="cite-9" aria-label="Reference 9">9</a></sup> | No | Yes |
+| <strong>Or</strong> an urban Indian, which <strong>requires both</strong>:<ul class="route-logic"><li>Lives in an urban center</li><li><strong>And</strong> is any one of these:<ul><li>A member of <strong>any</strong> tribe, band or other organized group of Indians, <strong>including one based outside your state</strong>, a tribe terminated since 1940, or a tribe recognized by the state where the person lives</li><li><strong>Or</strong> a child or grandchild of such a member</li><li><strong>Or</strong> Eskimo, Aleut or other Alaska Native</li><li><strong>Or</strong> considered an Indian by Interior or under HHS rules<sup class="fn-ref"><a href="#ref-9" aria-label="Reference 9">9</a></sup></li></ul></li></ul> | Yes | No |
+| <strong>Or</strong> considered an Indian by the Secretary of the Interior for any purpose, for example a person of one-half or more Indian blood<sup class="fn-ref"><a href="#ref-10" id="cite-10" aria-label="Reference 10">10</a></sup> | No | No |
+| <strong>Or</strong> considered by HHS to be an Indian for purposes of Indian health care eligibility, including California Indians and Alaska Natives<sup class="fn-ref"><a href="#ref-11" id="cite-11" aria-label="Reference 11">11</a>,<a href="#ref-12" id="cite-12" aria-label="Reference 12">12</a></sup> | No | No; IHS looks at descent and community recognition |
 
 A few terms:
 

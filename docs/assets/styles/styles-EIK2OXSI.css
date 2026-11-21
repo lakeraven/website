@@ -30794,11 +30794,11 @@ html[data-theme=dark] .aian-ungraded {
 .aian-sources tr:target {
   background: #fff5c2;
 }
-.post-body .route-logic {
+.route-logic {
   margin: 0.25rem 0 0;
   padding-left: 1.25rem;
 }
-.post-body .route-logic ul {
+.route-logic ul {
   margin: 0.25rem 0;
   padding-left: 1.25rem;
 }
@@ -30832,13 +30832,14 @@ html[data-theme=dark] .lr-announce a:hover,
 html[data-theme=dark] .lr-announce a:focus {
   color: #f0f0f0;
 }
-.aian-roster tbody tr:nth-child(even),
-.aian-roster tbody tr:nth-child(even) > * {
+.usa-table--striped tbody tr:nth-child(odd),
+.usa-table--striped tbody tr:nth-child(odd) > * {
   background-color: #f0f0f0;
 }
-html[data-theme=dark] .aian-roster tbody tr:nth-child(even),
-html[data-theme=dark] .aian-roster tbody tr:nth-child(even) > * {
+html[data-theme=dark] .usa-table--striped tbody tr:nth-child(odd),
+html[data-theme=dark] .usa-table--striped tbody tr:nth-child(odd) > * {
   background-color: #1a2430;
+  color: #f0f0f0;
 }
 .aian-sort {
   display: block;
@@ -30905,4 +30906,4 @@ html[data-theme=dark] .aian-sort-select .usa-select {
 }
 /*! uswds @version */
 
-/*# sourceMappingURL=styles-PWMEUZ65.css.map */
+/*# sourceMappingURL=styles-EIK2OXSI.css.map */
