@@ -30290,26 +30290,20 @@ h3 {
     Segoe UI Symbol !important;
 }
 .heading-anchor {
-  margin-left: 0.5rem;
-  color: #71767a;
-  font-weight: normal;
   text-decoration: none;
-  opacity: 0;
 }
-.heading-anchor:hover {
-  color: #005ea2;
-  text-decoration: underline;
+.heading-anchor,
+.heading-anchor:link,
+.heading-anchor:visited,
+.heading-anchor:hover,
+.heading-anchor:focus,
+.heading-anchor:active {
+  color: inherit !important;
 }
+.heading-anchor:hover,
 .heading-anchor:focus {
-  opacity: 1;
-}
-:is(h2, h3, h4):hover > .heading-anchor {
-  opacity: 1;
-}
-@media (hover: none) {
-  .heading-anchor {
-    opacity: 0.6;
-  }
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
 }
 :is(h2, h3, h4)[id] {
   scroll-margin-top: 1rem;
@@ -30579,10 +30573,51 @@ html[data-theme=dark] .aian-dots {
 }
 .aian-roster thead th {
   white-space: nowrap;
+  vertical-align: bottom;
 }
-.aian-roster td[data-label=Score],
-.aian-roster td[data-label=Impact] {
+.aian-roster .aian-th-note {
+  display: block;
+  font-weight: 400;
+  font-size: 0.85em;
+  white-space: normal;
+  max-width: 9rem;
+}
+.aian-roster .aian-col-score,
+.aian-roster .aian-impact-n {
   white-space: nowrap;
+}
+.aian-roster .aian-col-impact {
+  min-width: 7rem;
+  max-width: 11rem;
+}
+.aian-roster .aian-fix-kind {
+  margin: 0 0 0.1rem;
+  font-size: 0.9em;
+}
+.aian-roster .aian-fix-kind ~ .aian-fix-kind {
+  margin-top: 0.5rem;
+}
+.aian-roster .aian-fix-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.aian-roster .aian-fix-list li {
+  position: relative;
+  margin: 0 0 0.15rem;
+  padding-left: 1.4em;
+  line-height: 1.4;
+}
+.aian-roster .aian-fix-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.3em;
+  width: 0.8em;
+  height: 0.8em;
+  border: 1.5px solid currentColor;
+  border-radius: 2px;
+  opacity: 0.7;
 }
 @media all and (max-width: 29.99em) {
   .usa-prose > .aian-roster.usa-table--stacked tr {
@@ -30600,19 +30635,25 @@ html[data-theme=dark] .aian-dots {
     margin: 0 0.5rem 0 0;
     padding: 0;
   }
-  .usa-prose > .aian-roster.usa-table--stacked td[data-label=Impact] br,
-  .usa-prose > .aian-roster.usa-table--stacked td[data-label=Score] br {
+  .usa-prose > .aian-roster.usa-table--stacked .aian-col-impact br {
     display: none;
   }
-  .usa-prose > .aian-roster.usa-table--stacked .aian-sub,
-  .usa-prose > .aian-roster.usa-table--stacked td[data-label=Impact] .text-base {
+  .usa-prose > .aian-roster.usa-table--stacked .aian-impact-n,
+  .usa-prose > .aian-roster.usa-table--stacked .aian-impact-pub {
     margin-left: 0.5rem;
+  }
+  .usa-prose > .aian-roster.usa-table--stacked .aian-impact-pub {
+    display: block;
+    margin-left: 0;
+  }
+  .usa-prose > .aian-roster.usa-table--stacked .aian-col-fix .aian-fix-kind:first-of-type {
+    margin-top: 0.25rem;
   }
   .usa-prose > .aian-roster.usa-table--stacked th[scope=row] {
     min-width: 0;
   }
-  .usa-prose > .aian-roster.usa-table--stacked td[data-label=Score],
-  .usa-prose > .aian-roster.usa-table--stacked td[data-label=Impact] {
+  .usa-prose > .aian-roster.usa-table--stacked .aian-col-score,
+  .usa-prose > .aian-roster.usa-table--stacked .aian-col-impact {
     white-space: normal;
   }
 }
@@ -30790,4 +30831,4 @@ html[data-theme=dark] .lr-announce a:focus {
 }
 /*! uswds @version */
 
-/*# sourceMappingURL=styles-X2RPVPLT.css.map */
+/*# sourceMappingURL=styles-EBHSIEA2.css.map */

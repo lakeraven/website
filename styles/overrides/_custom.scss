@@ -330,13 +330,31 @@ html[data-theme="dark"] .aian-dots { color: $dark-link; }
   }
   .aian-col-score, .aian-impact-n { white-space: nowrap; }
   .aian-col-impact { min-width: 7rem; max-width: 11rem; }
-  // Status counts as a short vertical list.
-  .aian-counts {
+  // To fix: a static checklist, one requirement per line, grouped by status.
+  .aian-fix-kind { margin: 0 0 0.1rem; font-size: 0.9em; }
+  .aian-fix-kind ~ .aian-fix-kind { margin-top: 0.5rem; }
+  .aian-fix-list {
     list-style: none;
-    margin: 0.15rem 0 0;
+    margin: 0;
     padding: 0;
-    font-size: 0.9em;
-    li { margin: 0; line-height: 1.35; }
+    li {
+      position: relative;
+      margin: 0 0 0.15rem;
+      padding-left: 1.4em;
+      line-height: 1.4;
+    }
+    // Decorative empty box; the list itself carries the meaning.
+    li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.3em;
+      width: 0.8em;
+      height: 0.8em;
+      border: 1.5px solid currentColor;
+      border-radius: 2px;
+      opacity: 0.7;
+    }
   }
 }
 // Phones: compact rows, label and value on one line.
@@ -348,7 +366,7 @@ html[data-theme="dark"] .aian-dots { color: $dark-link; }
     .aian-col-impact br { display: none; }
     .aian-impact-n, .aian-impact-pub { margin-left: 0.5rem; }
     .aian-impact-pub { display: block; margin-left: 0; }
-    .aian-counts { margin-left: 0.25rem; }
+    .aian-col-fix .aian-fix-kind:first-of-type { margin-top: 0.25rem; }
     // Let long values wrap so the table fits a 320px screen (WCAG 1.4.10).
     th[scope="row"] { min-width: 0; }
     .aian-col-score, .aian-col-impact { white-space: normal; }
