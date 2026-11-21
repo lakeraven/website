@@ -115,5 +115,5 @@ description: How closely each state's published Medicaid policy follows CMS rule
 <p>What each requirement comes from, in plain language.</p>
 <table class="usa-table usa-table--borderless usa-table--striped aian-sources">
   <thead><tr><th scope="col">Requirement</th><th scope="col">What federal law says</th><th scope="col">Source</th></tr></thead>
-  <tbody>{% for r in sc.rubric.requirements %}<tr id="source-{{ r.id }}"><td>{{ r.label }}</td><td>{{ r.plain }}</td><td><a href="{{ r.source_url }}">{{ r.citation }}</a></td></tr>{% endfor %}</tbody>
+  <tbody>{% for r in sc.rubric.requirements %}<tr id="source-{{ r.id }}"><td>{{ r.label }}</td><td>{% if r.plain_html %}{{ r.plain_html | safe }}{% else %}{{ r.plain }}{% endif %}</td><td><a href="{{ r.source_url }}">{{ r.citation }}</a></td></tr>{% endfor %}</tbody>
 </table>

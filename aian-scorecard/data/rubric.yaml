@@ -15,6 +15,7 @@ requirements:
     label: Members of federally recognized tribes, including Alaska Native villages
     citation: 42 CFR 447.51 (route 1)
     plain: "Members of any federally recognized tribe, including Alaska Native villages and corporations, meet the federal definition of Indian."
+    plain_html: "Members of <strong>any</strong> federally recognized tribe, <strong>including tribes outside the state</strong>, and including Alaska Native villages and corporations, meet the federal definition of Indian."
     source_url: https://www.law.cornell.edu/cfr/text/42/447.51
     fix: members of any federally recognized tribe, including Alaska Native villages and regional or village corporations, are exempt
     model: OR
@@ -23,6 +24,8 @@ requirements:
     label: Urban Indians, including members of terminated or state-recognized tribes and first- or second-degree descendants
     citation: 42 CFR 447.51 (route 2); 25 U.S.C. 1603(28)
     plain: "People who live in an urban center HHS designates and belong to any tribe (including tribes terminated since 1940 or recognized by the state they live in), or are a child or grandchild of a member, meet the definition."
+    plain_html: >-
+      Urban Indians meet the definition. That <strong>requires both</strong>:<ul class="route-logic"><li>The person lives in an urban center HHS designates</li><li><strong>And</strong> is any one of these:<ul><li>A member of <strong>any</strong> tribe, band or other organized group of Indians, <strong>including one based outside the state</strong>, a tribe terminated since 1940, or a tribe recognized by the state where the person lives</li><li><strong>Or</strong> a child or grandchild of such a member</li><li><strong>Or</strong> Eskimo, Aleut or other Alaska Native</li><li><strong>Or</strong> considered an Indian by Interior or under HHS rules</li></ul></li></ul>
     source_url: https://www.law.cornell.edu/uscode/text/25/1603
     fix: urban Indians are exempt, including members of terminated or state-recognized tribes and the children and grandchildren of tribal members
     model: WI
