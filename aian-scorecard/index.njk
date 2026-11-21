@@ -53,16 +53,16 @@ description: How closely each state's published Medicaid policy follows CMS rule
   <li><strong>To fix</strong>: a checklist of every requirement the state does not meet, grouped and counted as contradicted, disputed, or not published, contradictions first. Each item links to the fix on the state's page.</li>
 </ul>
 {% set gradeOrder = ["A", "B", "C", "D", "F", "Not graded", "Not subject"] %}
-<table class="usa-table usa-table--borderless usa-table--stacked aian-roster" data-sortable>
+<table class="usa-table usa-table--borderless usa-table--stacked aian-roster" data-sortable data-sort-default-label="Rank (default)">
   <caption class="usa-sr-only">States ranked by requirements met, with grade, estimated impact, and the requirements each state still needs to fix</caption>
-  <thead><tr><th scope="col" data-sort-type="text">State</th><th scope="col" data-sort-type="number" data-sort-first="desc">Score <span class="aian-th-note">met of {{ sc.summary.total }}</span></th><th scope="col" data-sort-type="number">Grade</th><th scope="col" data-sort-type="number" data-sort-first="desc">Impact <span class="aian-th-note">people, modeled estimate (approx.)</span></th><th scope="col">To fix</th></tr></thead>
+  <thead><tr><th scope="col" data-sort-type="text">State</th><th scope="col" data-sort-type="number" data-sort-first="desc">Score <span class="aian-th-note">met of {{ sc.summary.total }}</span></th><th scope="col" data-sort-type="number" data-sort-words="best to worst|worst to best">Grade</th><th scope="col" data-sort-type="number" data-sort-first="desc">Impact <span class="aian-th-note">people, modeled estimate (approx.)</span></th><th scope="col">To fix</th></tr></thead>
   <tbody>
   {% for s in sc.ranked %}
     {% set url = ('/aian-medicaid-scorecard/' + s.slug + '/') | url %}
     <tr>
       <th scope="row" data-label="State" data-sort-value="{{ s.name }}"><a href="{{ url }}">{{ s.name }}</a>{% if s.under_review %} <span class="usa-tag">Evidence under review</span>{% endif %}</th>
       <td class="aian-col-score" data-sort-value="{% if s.status != 'not_subject' %}{{ s.met }}{% endif %}" data-label="Score (met of {{ sc.summary.total }})">{% if s.status != 'not_subject' %}<strong>{{ s.met }}/{{ sc.summary.total }}</strong>{% endif %}</td>
-      <td class="aian-col-grade" data-sort-value="{{ gradeOrder.indexOf(s.grade) }}" data-label="Grade">{{ s.grade }}{% if s.status == 'not_subject' and not s.confirmed %} (to confirm){% endif %}</td>
+      <td class="aian-col-grade" data-sort-value="{% if s.status != 'not_subject' %}{{ gradeOrder.indexOf(s.grade) }}{% endif %}" data-label="Grade">{{ s.grade }}{% if s.status == 'not_subject' and not s.confirmed %} (to confirm){% endif %}</td>
       <td class="aian-col-impact" data-sort-value="{% if s.status != 'not_subject' %}{{ s.impact.estimate }}{% endif %}" data-label="Impact (modeled, approx.)">{% if s.status != 'not_subject' %}{{ dots(s.impact.full, s.impact.part) }}<br><span class="aian-impact-n">{{ s.impact.estimate | aianNum }}</span>{% if s.impact.published %}<br><span class="text-base aian-impact-pub">State reports {{ s.impact.published.count | aianNum }} <a href="{{ s.impact.published.url }}">already verified as exempt</a></span>{% endif %}{% endif %}</td>
       <td class="aian-col-fix" data-label="To fix">{% if s.status == 'not_subject' %}Not subject{% elif not s.improvements.length %}Nothing{% else %}{% for g in [['Contradicts', s.fixContradicts], ['Disputed', s.fixDisputed], ['Not published', s.fixUnpublished]] %}{% if g[1].length %}<p class="aian-fix-kind">{{ g[0] }} ({{ g[1].length }})</p><ul class="aian-fix-list">{% for i in g[1] %}<li><a href="{{ url }}#fix-{{ i.id }}">{{ i.short }}</a></li>{% endfor %}</ul>{% endif %}{% endfor %}{% endif %}</td>
     </tr>

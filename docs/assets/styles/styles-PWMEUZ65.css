@@ -30880,6 +30880,29 @@ th[aria-sort=descending] .aian-sort-icon::after {
   content: "\2193";
   opacity: 1;
 }
+.aian-sort-select {
+  display: none;
+  margin: 1rem 0 0.5rem;
+}
+.aian-sort-select .usa-label {
+  margin-top: 0;
+}
+.aian-sort-select .usa-select {
+  max-width: 100%;
+}
+@media all and (max-width: 29.99em) {
+  .aian-sort-select {
+    display: block;
+  }
+}
+html[data-theme=dark] .aian-sort-select .usa-label {
+  color: #f0f0f0;
+}
+html[data-theme=dark] .aian-sort-select .usa-select {
+  background-color: #1a2430;
+  color: #f0f0f0;
+  border-color: #c6cace;
+}
 /*! uswds @version */
 
-/*# sourceMappingURL=styles-LBONZ3FC.css.map */
+/*# sourceMappingURL=styles-PWMEUZ65.css.map */

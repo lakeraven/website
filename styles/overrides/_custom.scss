@@ -475,3 +475,18 @@ html[data-theme="dark"] .aian-roster thead th[aria-sort] { background-color: $da
 .aian-sort-icon::after { content: "\2195"; opacity: 0.55; }
 th[aria-sort="ascending"] .aian-sort-icon::after { content: "\2191"; opacity: 1; }
 th[aria-sort="descending"] .aian-sort-icon::after { content: "\2193"; opacity: 1; }
+
+// Phone sort control: shown only where the stacked layout hides the header row.
+.aian-sort-select {
+  display: none;
+  margin: 1rem 0 0.5rem;
+  .usa-label { margin-top: 0; }
+  .usa-select { max-width: 100%; }
+}
+@media all and (max-width: 29.99em) {
+  .aian-sort-select { display: block; }
+}
+html[data-theme="dark"] .aian-sort-select {
+  .usa-label { color: $dark-fg; }
+  .usa-select { background-color: $dark-surface; color: $dark-fg; border-color: $dark-muted; }
+}
