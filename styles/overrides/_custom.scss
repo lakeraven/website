@@ -448,11 +448,22 @@ html[data-theme="dark"] .lr-announce {
   a:hover, a:focus { color: $dark-fg; }
 }
 
-// Roster: zebra stripes. nth-child follows the DOM, so stripes stay correct after a sort.
-.aian-roster tbody tr:nth-child(even),
-.aian-roster tbody tr:nth-child(even) > * { background-color: #f0f0f0; }
-html[data-theme="dark"] .aian-roster tbody tr:nth-child(even),
-html[data-theme="dark"] .aian-roster tbody tr:nth-child(even) > * { background-color: $dark-surface; }
+// Striped tables: add USWDS's usa-table--striped class. The light stripe is
+// the USWDS token $theme-table-stripe-background-color (base-lightest); dark
+// mode uses $dark-stripe. Unlike stock USWDS, row headers (th) and whole rows
+// (for the stacked phone layout) stripe too. nth-child follows the DOM, so
+// stripes stay correct after a sort.
+$dark-stripe: $dark-surface;
+.usa-table--striped tbody tr:nth-child(odd),
+.usa-table--striped tbody tr:nth-child(odd) > * {
+  background-color: color($theme-table-stripe-background-color);
+}
+html[data-theme="dark"] .usa-table--striped tbody tr:nth-child(odd),
+html[data-theme="dark"] .usa-table--striped tbody tr:nth-child(odd) > * {
+  background-color: $dark-stripe;
+  // USWDS sets a dark text color for its light stripe; undo it here.
+  color: $dark-fg;
+}
 
 // Sortable column headers: the button fills the header and keeps its text.
 .aian-sort {

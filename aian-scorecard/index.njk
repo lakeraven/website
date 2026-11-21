@@ -53,7 +53,7 @@ description: How closely each state's published Medicaid policy follows CMS rule
   <li><strong>To fix</strong>: a checklist of every requirement the state does not meet, grouped and counted as contradicted, disputed, or not published, contradictions first. Each item links to the fix on the state's page.</li>
 </ul>
 {% set gradeOrder = ["A", "B", "C", "D", "F", "Not graded", "Not subject"] %}
-<table class="usa-table usa-table--borderless usa-table--stacked aian-roster" data-sortable data-sort-default-label="Rank (default)">
+<table class="usa-table usa-table--borderless usa-table--striped usa-table--stacked aian-roster" data-sortable data-sort-default-label="Rank (default)">
   <caption class="usa-sr-only">States ranked by requirements met, with grade, estimated impact, and the requirements each state still needs to fix</caption>
   <thead><tr><th scope="col" data-sort-type="text">State</th><th scope="col" data-sort-type="number" data-sort-first="desc">Score <span class="aian-th-note">met of {{ sc.summary.total }}</span></th><th scope="col" data-sort-type="number" data-sort-words="best to worst|worst to best">Grade</th><th scope="col" data-sort-type="number" data-sort-first="desc">Impact <span class="aian-th-note">people, modeled estimate (approx.)</span></th><th scope="col">To fix</th></tr></thead>
   <tbody>
@@ -79,7 +79,7 @@ description: How closely each state's published Medicaid policy follows CMS rule
   <li><strong>If there's any question, we round down.</strong> A requirement is met only when the state's published words clearly commit to it. It is contradicted only when the state's words clearly apply to American Indians and Alaska Natives and conflict with the federal rule. Hedged (such as &ldquo;may&rdquo; or &ldquo;some adults&rdquo;), implied, or general wording counts as not published. We don't adjudicate what a state meant; the state can clarify its own published policy.</li>
   <li>The grade follows from those counts:</li>
 </ul>
-<table class="usa-table usa-table--borderless">
+<table class="usa-table usa-table--borderless usa-table--striped">
   <thead><tr><th scope="col">Grade</th><th scope="col">Rule</th></tr></thead>
   <tbody>{% for g in sc.rubric.grades %}<tr><td>{{ g.grade }}</td><td>{{ g.rule }}</td></tr>{% endfor %}</tbody>
 </table>
@@ -113,7 +113,7 @@ description: How closely each state's published Medicaid policy follows CMS rule
 
 <h2 id="sources">Federal sources</h2>
 <p>What each requirement comes from, in plain language.</p>
-<table class="usa-table usa-table--borderless aian-sources">
+<table class="usa-table usa-table--borderless usa-table--striped aian-sources">
   <thead><tr><th scope="col">Requirement</th><th scope="col">What federal law says</th><th scope="col">Source</th></tr></thead>
   <tbody>{% for r in sc.rubric.requirements %}<tr id="source-{{ r.id }}"><td>{{ r.label }}</td><td>{{ r.plain }}</td><td><a href="{{ r.source_url }}">{{ r.citation }}</a></td></tr>{% endfor %}</tbody>
 </table>
