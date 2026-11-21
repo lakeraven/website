@@ -37,7 +37,20 @@ Where to start:
 
 ## Who qualifies
 
-The definition has four routes, and any one is enough: you belong to a federally recognized tribe; you live in an urban center and belong to a tribe, or are a member's child or grandchild; the Interior Department considers you an Indian; or you can get Indian Health Service care as an Indian. The table gives the details:<sup class="fn-ref"><a href="#ref-8" id="cite-8" aria-label="Reference 8">8</a></sup>
+The federal definition has four routes. You qualify if **any one** of these is true:<sup class="fn-ref"><a href="#ref-8" id="cite-8" aria-label="Reference 8">8</a></sup>
+
+- You are a member of a **federally recognized** tribe, including an Alaska Native village or Alaska Native corporation.
+- **Or** you are an urban Indian. That takes **both** of these:
+  - You live in an urban center (a community HHS has designated, not every city).
+  - **And** any one of these is true:
+    - You are a member of **any** tribe, band or other organized group of Indians, including a tribe terminated since 1940 or one recognized by the state where you live.
+    - **Or** you are a child or grandchild of such a member.
+    - **Or** you are Eskimo, Aleut or other Alaska Native.
+    - **Or** you are considered an Indian by the Interior Department or under HHS rules.<sup class="fn-ref"><a href="#ref-9" aria-label="Reference 9">9</a></sup>
+- **Or** the Secretary of the Interior considers you an Indian for any purpose.<sup class="fn-ref"><a href="#ref-10" aria-label="Reference 10">10</a></sup>
+- **Or** HHS considers you an Indian for Indian health care, including California Indians and Alaska Natives.<sup class="fn-ref"><a href="#ref-11" aria-label="Reference 11">11</a></sup>
+
+The table gives the details:
 
 | Route | Urban center required? | Recognized-tribe membership required? |
 |---|---|---|
