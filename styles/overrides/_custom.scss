@@ -370,6 +370,7 @@ html[data-theme="dark"] .aian-dots { color: $dark-link; }
     // Let long values wrap so the table fits a 320px screen (WCAG 1.4.10).
     th[scope="row"] { min-width: 0; }
     .aian-col-score, .aian-col-impact { white-space: normal; }
+    .aian-col-impact { max-width: none; }
   }
 }
 // A wide child must not stretch the page column past the screen.
@@ -446,3 +447,31 @@ html[data-theme="dark"] .lr-announce {
   a, a:visited { color: $dark-link; }
   a:hover, a:focus { color: $dark-fg; }
 }
+
+// Roster: zebra stripes. nth-child follows the DOM, so stripes stay correct after a sort.
+.aian-roster tbody tr:nth-child(even),
+.aian-roster tbody tr:nth-child(even) > * { background-color: #f0f0f0; }
+html[data-theme="dark"] .aian-roster tbody tr:nth-child(even),
+html[data-theme="dark"] .aian-roster tbody tr:nth-child(even) > * { background-color: $dark-surface; }
+
+// Sortable column headers: the button fills the header and keeps its text.
+.aian-sort {
+  display: block;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+  &:focus-visible { outline: 0.25rem solid #2491ff; outline-offset: 0.2rem; }
+  &:hover { text-decoration: underline; }
+}
+.aian-sort-icon { margin-left: 0.25em; }
+// USWDS shades a sorted header light blue; keep our own header colors.
+.aian-roster thead th[aria-sort] { background-color: transparent; }
+html[data-theme="dark"] .aian-roster thead th[aria-sort] { background-color: $dark-bg; color: $dark-fg; }
+.aian-sort-icon::after { content: "\2195"; opacity: 0.55; }
+th[aria-sort="ascending"] .aian-sort-icon::after { content: "\2191"; opacity: 1; }
+th[aria-sort="descending"] .aian-sort-icon::after { content: "\2193"; opacity: 1; }
