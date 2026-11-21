@@ -184,7 +184,7 @@ Stating the rule correctly is only the first step. A grade measures what a state
 
 ## References
 
-<table class="usa-table usa-table--borderless fn-table">
+<table class="usa-table usa-table--borderless usa-table--striped fn-table">
 <thead><tr><th scope="col">#</th><th scope="col">Source</th><th scope="col">What it says</th></tr></thead>
 <tbody>
 <tr id="ref-1"><td>1</td><td><a href="https://kffhealthnews.org/health-care-costs/medicaid-work-rule-requirement-native-american-north-carolina-exemption-coverage/">KFF Health News, report on how states verify the Native exemption from Medicaid work rules, 13 November 2026</a></td><td>What North Carolina and Montana told reporters about the proof they accept, and Liz Malerba's quote. <a href="#cite-1" class="fn-back" aria-label="Back to reference 1 in the text">↩</a></td></tr>
