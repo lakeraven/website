@@ -40,7 +40,7 @@ Where to start:
 The federal definition has four routes. You qualify if **any one** of these is true:<sup class="fn-ref"><a href="#ref-8" id="cite-8" aria-label="Reference 8">8</a></sup>
 
 - You are a member of a **federally recognized** tribe, including an Alaska Native village or Alaska Native corporation.
-- **Or** you are an urban Indian. That takes **both** of these:
+- **Or** you are an urban Indian. That requires **both** of these:
   - You live in an urban center (a community HHS has designated, not every city).
   - **And** any one of these is true:
     - You are a member of **any** tribe, band or other organized group of Indians, including a tribe terminated since 1940 or one recognized by the state where you live.
